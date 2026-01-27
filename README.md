@@ -35,6 +35,7 @@ MOM/
 │
 └── assets/              # Configuration & Styling
     └── styles.py        # Global Stylesheets & Themes
+```
 
 ## ⚙️ Installation
 
