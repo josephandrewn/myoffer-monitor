@@ -21,7 +21,6 @@ The application is divided into three main modules:
 
 The project follows a modular structure to separate logic from configuration:
 
-```text
 MOM/
 │
 ├── main.py              # Application Entry Point
@@ -35,3 +34,42 @@ MOM/
 │
 └── assets/              # Configuration & Styling
     └── styles.py        # Global Stylesheets & Themes
+
+## ⚙️ Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/REPO_NAME.git](https://github.com/YOUR_USERNAME/REPO_NAME.git)
+    cd MOM
+    ```
+
+2.  **Set up a virtual environment (Recommended):**
+    ```bash
+    # Windows
+    python -m venv venv
+    venv\Scripts\activate
+
+    # Mac/Linux
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## ▶️ Usage
+
+To launch the application, run the `main.py` file from the root directory:
+
+```bash
+python main.py
+
+## 🤝 Contributing
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
