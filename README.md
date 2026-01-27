@@ -21,6 +21,7 @@ The application is divided into three main modules:
 
 The project follows a modular structure to separate logic from configuration:
 
+```text
 MOM/
 │
 ├── main.py              # Application Entry Point
