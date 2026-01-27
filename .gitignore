@@ -6,3 +6,4 @@ venv/
 .vscode/
 scans/
 output/
+old_files/
