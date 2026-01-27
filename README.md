@@ -65,6 +65,7 @@ To launch the application, run the `main.py` file from the root directory:
 
 ```bash
 python main.py
+```
 
 ## 🤝 Contributing
 
