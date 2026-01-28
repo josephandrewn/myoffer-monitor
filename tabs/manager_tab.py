@@ -9,7 +9,7 @@ from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QPushButton,
 from PyQt6.QtGui import (QColor, QFont, QUndoStack, QUndoCommand)
 from PyQt6.QtCore import Qt, pyqtSignal
 
-import styles
+import assets.styles as styles 
 
 # --- UNDO COMMANDS ---
 class CommandEditCell(QUndoCommand):

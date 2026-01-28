@@ -16,7 +16,7 @@ from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QPushButton,
 from PyQt6.QtCore import QThread, pyqtSignal, Qt
 from PyQt6.QtGui import QColor, QFont
 
-import styles
+import assets.styles as styles 
 
 # --- 1. LOGIC & HELPERS ---
 
