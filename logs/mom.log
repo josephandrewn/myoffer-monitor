@@ -1,0 +1,25 @@
+2026-01-28 15:58:30 - logger - INFO - info:69 - Logging system initialized
+2026-01-28 16:36:09 - logger - INFO - info:69 - Logging system initialized
+2026-01-28 16:36:09 - test_basic - INFO - info:69 - This is an INFO message
+2026-01-28 16:36:09 - test_basic - WARNING - warning:73 - This is a WARNING message
+2026-01-28 16:36:09 - test_basic - ERROR - error:81 - This is an ERROR message
+2026-01-28 16:36:09 - test_structured - INFO - info:69 - Testing structured logging | client=Test Client | url=https://test.com | status=TEST
+2026-01-28 16:36:09 - test_scan - INFO - info:69 - Starting scan | client=Test Client | url=https://test.com
+2026-01-28 16:36:09 - test_scan - INFO - info:69 - Scan complete | client=Test Client | url=https://test.com | status=PASS | vendor=Test Vendor | config=STD | details=Test passed
+2026-01-28 16:36:09 - test_error - ERROR - error:81 - Intentional test error
+Exception: division by zero
+Traceback: Traceback (most recent call last):
+  File "test_logging.py", line 96, in test_error_logging
+    result = 1 / 0
+ZeroDivisionError: division by zero
+
+2026-01-28 16:37:50 - logger - INFO - info:69 - Logging system initialized
+2026-01-28 16:37:50 - database - INFO - info:69 - Database initialized | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/data/mom_data.db
+2026-01-28 16:37:50 - database - INFO - info:69 - Site added | client=Test Client | url=https://testclient.com | id=1
+2026-01-28 16:37:50 - database - INFO - info:69 - Database backup created | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/backups/backup_20260128_163750.db
+2026-01-28 16:42:59 - database - INFO - info:69 - Site deleted | id=1
+2026-01-28 16:44:49 - logger - INFO - info:69 - Logging system initialized
+2026-01-28 16:44:49 - integration_test - INFO - info:69 - Integration test message | test=successful
+2026-01-28 16:44:49 - database - INFO - info:69 - Database initialized | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/data/mom_data.db
+2026-01-28 16:44:49 - database - INFO - info:69 - Site added | client=Integration Test | url=https://integration-test.com | id=2
+2026-01-28 16:44:49 - database - INFO - info:69 - Site deleted | id=2

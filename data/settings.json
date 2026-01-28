@@ -1,0 +1,17 @@
+{
+  "auto_save_enabled": true,
+  "auto_save_interval": 300,
+  "auto_backup_enabled": true,
+  "backup_interval_hours": 24,
+  "max_backups_to_keep": 7,
+  "window_width": 1400,
+  "window_height": 900,
+  "remember_window_size": true,
+  "default_csv_path": "",
+  "recent_files": [],
+  "max_recent_files": 10,
+  "show_scan_complete_notification": true,
+  "play_sound_on_complete": false,
+  "enable_debug_mode": false,
+  "log_level": "INFO"
+}

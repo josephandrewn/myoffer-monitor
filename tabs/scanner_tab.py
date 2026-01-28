@@ -18,6 +18,11 @@ from PyQt6.QtGui import QColor, QFont
 
 import assets.styles as styles 
 
+from config import scanner_config, VENDOR_DETECTION_RULES, BLOCK_DETECTION_PHRASES
+from logger import get_logger, LogExecutionTime
+
+logger = get_logger(__name__)
+
 # --- 1. LOGIC & HELPERS ---
 
 def save_evidence_screenshot(driver, client_name, status):
@@ -40,7 +45,7 @@ def save_evidence_screenshot(driver, client_name, status):
         driver.save_screenshot(full_path)
         return True
     except Exception as e:
-        print(f"Screenshot failed: {e}")
+        logger.error("Screenshot failed", exception=e, client=client_name)
         return False
 
 def detect_provider(soup):
@@ -88,134 +93,144 @@ def check_url_rules(driver, url, client_name):
     MAX_WAIT_TIME = 15 
     SETTLE_TIME = 3
     MAX_ATTEMPTS = 2
-    
-    for attempt in range(1, MAX_ATTEMPTS + 1):
-        try:
-            driver.get(url)
-            
-            start_time = time.time()
-            while (time.time() - start_time) < MAX_WAIT_TIME:
-                if BASE_TARGET in driver.page_source:
-                    time.sleep(SETTLE_TIME)
-                    break
-                time.sleep(1)
-
-            soup = BeautifulSoup(driver.page_source, 'html.parser')
-            text_content = soup.get_text().lower()
-            html_str = str(soup).lower()
-            title_tag = soup.title.string.lower() if soup.title else ""
-            
-            detected_vendor = detect_provider(soup)
-            if not detected_vendor: detected_vendor = "Other"
-
-            # --- 1. BLOCK CHECK ---
-            block_phrases = [
-                "detected unusual activity", "unusual activity from your ip",
-                "verify you are a human", "verify you are human",
-                "access denied", "security challenge", "please enable cookies",
-                "captcha-delivery", "challenge-platform", "just a moment...",
-                "attention required", "cloudflare"
-            ]
-            
-            is_blocked_text = any(phrase in text_content for phrase in block_phrases)
-            is_blocked_title = any(phrase in title_tag for phrase in block_phrases)
-            is_blocked_vendor = "Security Block" in detected_vendor
-            
-            scan_status = "UNKNOWN"
-            scan_msg = ""
-            scan_config = "NONE"
-
-            if (is_blocked_text or is_blocked_title or is_blocked_vendor) and BASE_TARGET not in html_str:
-                scan_status = 'BLOCKED'
-                scan_msg = 'Bot Detection / CAPTCHA'
-                scan_config = 'ERR'
-                detected_vendor = "Security Block"
-            else:
-                # Standard Scan
-                counts = {
-                    "std":    {"head": 0, "body": 0},
-                    "dcom":   {"head": 0, "body": 0},
-                    "spa":    {"head": 0, "body": 0},
-                    "bundle": {"head": 0, "body": 0} 
-                }
-
-                def scan_section(section, name):
-                    if not section: return
-                    for script in section.find_all('script'):
-                        s = str(script)
-                        if TARGET_SPA in s: counts["spa"][name] += 1
-                        elif TARGET_DCOM in s: counts["dcom"][name] += 1
-                        elif TARGET_BUNDLE in s: counts["bundle"][name] += 1
-                        elif TARGET_STD in s: counts["std"][name] += 1
-
-                scan_section(soup.find('head'), "head")
-                scan_section(soup.find('body'), "body")
-
-                total_std    = counts["std"]["head"] + counts["std"]["body"]
-                total_dcom   = counts["dcom"]["head"] + counts["dcom"]["body"]
-                total_spa    = counts["spa"]["head"] + counts["spa"]["body"]
-                total_bundle = counts["bundle"]["head"] + counts["bundle"]["body"]
+    with LogExecutionTime(logger, "url_scan", url=url, client=client_name):
+        for attempt in range(1, MAX_ATTEMPTS + 1):
+            try:
+                driver.get(url)
                 
-                # --- LOGIC RULES ---
-                if total_std == 0 and total_dcom == 0 and total_spa == 0 and total_bundle == 0:
-                    scan_status, scan_msg, scan_config = 'FAIL', 'No scripts found', 'NONE'
-                
-                elif total_spa > 0:
-                    scan_config = 'SPA'
-                    if total_spa == 4 and counts["spa"]["head"] == 0: scan_status, scan_msg = 'PASS', 'Perfect (Rule of 4)'
-                    else: scan_status, scan_msg = 'WARN', f'Found {total_spa} (Expected 4)'
-                
-                elif total_dcom > 0:
-                    scan_config = 'DCOM'
-                    if total_dcom == 1 and counts["dcom"]["head"] == 0: scan_status, scan_msg = 'PASS', 'Perfect (Rule of 1)'
-                    else: scan_status, scan_msg = 'WARN', f'Found {total_dcom} (Expected 1)'
-                
-                elif total_bundle > 0:
-                    scan_config = 'BUNDLE'
-                    if total_bundle == 2 and counts["bundle"]["head"] == 0: scan_status, scan_msg = 'PASS', 'Perfect (Rule of 2)'
-                    else: scan_status, scan_msg = 'WARN', f'Found {total_bundle} (Expected 2)'
-                
-                elif total_std > 0:
-                    scan_config = 'STD'
-                    if detected_vendor in ["DealerOn", "Dealer.com"]:
-                        if total_std == 1 and counts["std"]["head"] == 0: 
-                            scan_status, scan_msg = 'PASS', f'Perfect ({detected_vendor} Rule of 1)'
-                        else: 
-                            scan_status, scan_msg = 'WARN', f'Found {total_std} ({detected_vendor} expects 1)'
-                    else:
-                        if total_std == 2 and counts["std"]["head"] == 0: 
-                            scan_status, scan_msg = 'PASS', 'Perfect (Rule of 2)'
-                        else: 
-                            scan_status, scan_msg = 'WARN', f'Found {total_std} (Expected 2)'
+                start_time = time.time()
+                while (time.time() - start_time) < MAX_WAIT_TIME:
+                    if BASE_TARGET in driver.page_source:
+                        time.sleep(SETTLE_TIME)
+                        break
+                    time.sleep(1)
 
-            if scan_status == 'PASS':
+                soup = BeautifulSoup(driver.page_source, 'html.parser')
+                text_content = soup.get_text().lower()
+                html_str = str(soup).lower()
+                title_tag = soup.title.string.lower() if soup.title else ""
+                
+                detected_vendor = detect_provider(soup)
+                if not detected_vendor: detected_vendor = "Other"
+
+                # --- 1. BLOCK CHECK ---
+                block_phrases = [
+                    "detected unusual activity", "unusual activity from your ip",
+                    "verify you are a human", "verify you are human",
+                    "access denied", "security challenge", "please enable cookies",
+                    "captcha-delivery", "challenge-platform", "just a moment...",
+                    "attention required", "cloudflare"
+                ]
+                
+                is_blocked_text = any(phrase in text_content for phrase in block_phrases)
+                is_blocked_title = any(phrase in title_tag for phrase in block_phrases)
+                is_blocked_vendor = "Security Block" in detected_vendor
+                
+                scan_status = "UNKNOWN"
+                scan_msg = ""
+                scan_config = "NONE"
+
+                if (is_blocked_text or is_blocked_title or is_blocked_vendor) and BASE_TARGET not in html_str:
+                    scan_status = 'BLOCKED'
+                    scan_msg = 'Bot Detection / CAPTCHA'
+                    scan_config = 'ERR'
+                    detected_vendor = "Security Block"
+                else:
+                    # Standard Scan
+                    counts = {
+                        "std":    {"head": 0, "body": 0},
+                        "dcom":   {"head": 0, "body": 0},
+                        "spa":    {"head": 0, "body": 0},
+                        "bundle": {"head": 0, "body": 0} 
+                    }
+
+                    def scan_section(section, name):
+                        if not section: return
+                        for script in section.find_all('script'):
+                            s = str(script)
+                            if TARGET_SPA in s: counts["spa"][name] += 1
+                            elif TARGET_DCOM in s: counts["dcom"][name] += 1
+                            elif TARGET_BUNDLE in s: counts["bundle"][name] += 1
+                            elif TARGET_STD in s: counts["std"][name] += 1
+
+                    scan_section(soup.find('head'), "head")
+                    scan_section(soup.find('body'), "body")
+
+                    total_std    = counts["std"]["head"] + counts["std"]["body"]
+                    total_dcom   = counts["dcom"]["head"] + counts["dcom"]["body"]
+                    total_spa    = counts["spa"]["head"] + counts["spa"]["body"]
+                    total_bundle = counts["bundle"]["head"] + counts["bundle"]["body"]
+                    
+                    # --- LOGIC RULES ---
+                    if total_std == 0 and total_dcom == 0 and total_spa == 0 and total_bundle == 0:
+                        scan_status, scan_msg, scan_config = 'FAIL', 'No scripts found', 'NONE'
+                    
+                    elif total_spa > 0:
+                        scan_config = 'SPA'
+                        if total_spa == 4 and counts["spa"]["head"] == 0: scan_status, scan_msg = 'PASS', 'Perfect (Rule of 4)'
+                        else: scan_status, scan_msg = 'WARN', f'Found {total_spa} (Expected 4)'
+                    
+                    elif total_dcom > 0:
+                        scan_config = 'DCOM'
+                        if total_dcom == 1 and counts["dcom"]["head"] == 0: scan_status, scan_msg = 'PASS', 'Perfect (Rule of 1)'
+                        else: scan_status, scan_msg = 'WARN', f'Found {total_dcom} (Expected 1)'
+                    
+                    elif total_bundle > 0:
+                        scan_config = 'BUNDLE'
+                        if total_bundle == 2 and counts["bundle"]["head"] == 0: scan_status, scan_msg = 'PASS', 'Perfect (Rule of 2)'
+                        else: scan_status, scan_msg = 'WARN', f'Found {total_bundle} (Expected 2)'
+                    
+                    elif total_std > 0:
+                        scan_config = 'STD'
+                        if detected_vendor in ["DealerOn", "Dealer.com"]:
+                            if total_std == 1 and counts["std"]["head"] == 0: 
+                                scan_status, scan_msg = 'PASS', f'Perfect ({detected_vendor} Rule of 1)'
+                            else: 
+                                scan_status, scan_msg = 'WARN', f'Found {total_std} ({detected_vendor} expects 1)'
+                        else:
+                            if total_std == 2 and counts["std"]["head"] == 0: 
+                                scan_status, scan_msg = 'PASS', 'Perfect (Rule of 2)'
+                            else: 
+                                scan_status, scan_msg = 'WARN', f'Found {total_std} (Expected 2)'
+
+                if scan_status == 'PASS':
+                    return {
+                        'status': scan_status, 
+                        'msg': scan_msg, 
+                        'config': scan_config, 
+                        'vendor': detected_vendor
+                    }
+                
+                if attempt < MAX_ATTEMPTS:
+                    print(f"Attempt {attempt} failed ({scan_status}). Retrying...")
+                    time.sleep(5)
+                    continue
+                
+                save_evidence_screenshot(driver, client_name, scan_status)
+                scan_msg += " (Saved Img)"
+
+                logger.scan_result(
+                    client=client_name,
+                    url=url,
+                    status=scan_status,
+                    vendor=detected_vendor,
+                    config=scan_config,
+                    details=scan_msg
+                )
+                
                 return {
                     'status': scan_status, 
                     'msg': scan_msg, 
                     'config': scan_config, 
                     'vendor': detected_vendor
                 }
-            
-            if attempt < MAX_ATTEMPTS:
-                print(f"Attempt {attempt} failed ({scan_status}). Retrying...")
-                time.sleep(5)
-                continue
-            
-            save_evidence_screenshot(driver, client_name, scan_status)
-            scan_msg += " (Saved Img)"
-            
-            return {
-                'status': scan_status, 
-                'msg': scan_msg, 
-                'config': scan_config, 
-                'vendor': detected_vendor
-            }
 
-        except Exception as e:
-            if attempt < MAX_ATTEMPTS:
-                time.sleep(5)
-                continue
-            return {'status': 'ERROR', 'msg': str(e), 'config': 'ERR', 'vendor': 'ERR'}
+            except Exception as e:
+                if attempt < MAX_ATTEMPTS:
+                    time.sleep(5)
+                    continue
+                return {'status': 'ERROR', 'msg': str(e), 'config': 'ERR', 'vendor': 'ERR'}
+        pass
 
 
 # --- 2. WORKER (Stability Fix Applied) ---

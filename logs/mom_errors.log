@@ -1,0 +1,8 @@
+2026-01-28 16:36:09 - test_basic - ERROR - error:81 - This is an ERROR message
+2026-01-28 16:36:09 - test_error - ERROR - error:81 - Intentional test error
+Exception: division by zero
+Traceback: Traceback (most recent call last):
+  File "test_logging.py", line 96, in test_error_logging
+    result = 1 / 0
+ZeroDivisionError: division by zero
+

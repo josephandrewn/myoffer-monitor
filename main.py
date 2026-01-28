@@ -12,6 +12,12 @@ from tabs.scanner_tab import ScannerTab
 
 import assets.styles as styles 
 
+from config import app_settings, save_settings
+from logger import get_logger
+from database import get_database
+
+logger = get_logger(__name__)
+
 class MainApp(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -29,6 +35,7 @@ class MainApp(QMainWindow):
         toolbar.setMovable(False)
         toolbar.setStyleSheet("QToolBar { background: white; border-bottom: 1px solid #D2D2D7; padding: 10px; }")
         toolbar.setIconSize(QSize(20, 20)) 
+        
         self.addToolBar(toolbar)
 
         # Save Action
@@ -72,6 +79,28 @@ class MainApp(QMainWindow):
         self.manager.data_modified.connect(self.sync_data)
         self.scanner.scan_update_signal.connect(self.update_master_record)
         self.tabs.currentChanged.connect(self.on_tab_changed)
+
+        backup_action = QAction("Create Backup", self)
+        backup_action.triggered.connect(self.create_backup)
+        
+        # Auto-save timer
+        if app_settings.auto_save_enabled:
+            self.auto_save_timer = QTimer()
+            self.auto_save_timer.timeout.connect(self.auto_save)
+            self.auto_save_timer.start(app_settings.auto_save_interval * 1000)
+            logger.info("Auto-save enabled", interval=app_settings.auto_save_interval)
+
+    def auto_save(self):
+        """Auto-save current state"""
+        try:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+            df = self.manager.get_dataframe()
+            df.to_csv(auto_save_path, index=False)
+            logger.info("Auto-save completed", path=str(auto_save_path))
+            self.status_label.setText("Auto-saved")
+        except Exception as e:
+            logger.error("Auto-save failed", exception=e)
 
     def trigger_save(self):
         """Redirects the global save button to the Manager's save logic."""
@@ -124,6 +153,20 @@ class MainApp(QMainWindow):
         self.manager.update_row_style(original_idx)
         
         self.status_label.setText(f"Updated Record #{original_idx + 1}: {status}")
+
+    def create_backup(self):
+        """Create database backup"""
+        try:
+            db = get_database()
+            backup_path = db.create_backup()
+            QMessageBox.information(
+                self, "Backup Created", 
+                f"Database backed up successfully!\n{backup_path}"
+            )
+            logger.info("Manual backup created", path=str(backup_path))
+        except Exception as e:
+            logger.error("Backup failed", exception=e)
+            QMessageBox.critical(self, "Backup Error", str(e))
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

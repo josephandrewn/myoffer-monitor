@@ -11,6 +11,12 @@ from PyQt6.QtCore import Qt, pyqtSignal
 
 import assets.styles as styles 
 
+from config import DEFAULT_COLUMNS, app_settings
+from logger import get_logger
+from database import get_database
+
+logger = get_logger(__name__)
+
 # --- UNDO COMMANDS ---
 class CommandEditCell(QUndoCommand):
     def __init__(self, manager, row, col, old_text, new_text):
@@ -402,8 +408,10 @@ class ManagerTab(QWidget):
             QMessageBox.information(self, "Saved", f"Snapshot saved successfully!\n{file_path}")
             self.undo_stack.setClean() 
             self.file_path = file_path
+            self.sync_to_database()
         except Exception as e:
             QMessageBox.critical(self, "Error Saving", str(e))
+            
 
     def filter_table(self):
         search_text = self.search_bar.text().lower()
@@ -430,3 +438,18 @@ class ManagerTab(QWidget):
                     status_match = False
 
             self.table.setRowHidden(r, not (text_match and status_match))
+
+    def sync_to_database(self):
+        """Sync current table data to database"""
+        if not config.ENABLE_DATABASE:
+            return
+        
+        try:
+            db = get_database()
+            df = self.get_dataframe()
+            db.from_dataframe(df, replace=True)
+            logger.info("Data synced to database", records=len(df))
+        except Exception as e:
+            logger.error("Failed to sync to database", exception=e)
+            QMessageBox.warning(self, "Database Sync Error", 
+                            f"Could not sync to database: {str(e)}")

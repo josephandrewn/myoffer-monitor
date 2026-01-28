@@ -1,0 +1,46 @@
+{
+  "max_wait_time": 15,
+  "settle_time": 3,
+  "max_attempts": 2,
+  "min_delay_between_scans": 2.0,
+  "max_delay_between_scans": 5.0,
+  "page_load_timeout": 30,
+  "headless_mode": true,
+  "browser_window_size": [
+    1920,
+    1080
+  ],
+  "user_agent": "",
+  "max_concurrent_scans": 1,
+  "take_screenshots": true,
+  "screenshot_on_fail_only": false,
+  "target_scripts": {
+    "SPA": "idrove.it/behaviour.spa.js",
+    "DCOM": "idrove.it/behaviour.dcom.js",
+    "STD": "idrove.it/behaviour.js",
+    "BUNDLE": "idrove.it/behaviour.bundle.js"
+  },
+  "expected_counts": {
+    "SPA": 4,
+    "DCOM": 1,
+    "BUNDLE": 2,
+    "STD": 1
+  },
+  "vendor_rules": {
+    "DealerOn": {
+      "config": "STD",
+      "count": 1,
+      "allow_head": false
+    },
+    "Dealer.com": {
+      "config": "STD",
+      "count": 1,
+      "allow_head": false
+    },
+    "Dealer Inspire": {
+      "config": "STD",
+      "count": 2,
+      "allow_head": true
+    }
+  }
+}
