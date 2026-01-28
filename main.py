@@ -6,13 +6,10 @@ from PyQt6.QtGui import QAction, QIcon
 from PyQt6.QtCore import Qt, QSize 
 
 # --- UPDATED IMPORTS ---
-# We now import from the 'tabs' package
+# Removed 'tabs.launchpad_tab'
 from tabs.manager_tab import ManagerTab
 from tabs.scanner_tab import ScannerTab
-from tabs.launchpad_tab import LaunchpadTab
 
-# We import styles from 'assets' and keep the alias 'styles' 
-# so the rest of your code works without changes
 import assets.styles as styles 
 
 class MainApp(QMainWindow):
@@ -53,19 +50,16 @@ class MainApp(QMainWindow):
         self.tabs = QTabWidget()
         self.tabs.setTabPosition(QTabWidget.TabPosition.North)
 
-        # Initialize the Sub-Apps
+        # Initialize the Sub-Apps (Launchpad Removed)
         self.manager = ManagerTab()
-        self.launchpad = LaunchpadTab() 
         self.scanner = ScannerTab()
 
         self.tabs.addTab(self.manager, " Data Manager")
-        self.tabs.addTab(self.launchpad, " Launchpad") 
         self.tabs.addTab(self.scanner, " Site Scanner")
         
         # Add icons to Tabs
         self.tabs.setTabIcon(0, qta.icon('fa5s.table', color=styles.COLORS["accent"]))
-        self.tabs.setTabIcon(1, qta.icon('fa5s.rocket', color=styles.COLORS["accent"])) 
-        self.tabs.setTabIcon(2, qta.icon('fa5s.robot', color=styles.COLORS["accent"]))
+        self.tabs.setTabIcon(1, qta.icon('fa5s.robot', color=styles.COLORS["accent"]))
         
         main_layout.addWidget(self.tabs)
 
@@ -87,25 +81,23 @@ class MainApp(QMainWindow):
     def on_tab_changed(self, index):
         """
         Handles logic when switching tabs.
+        Index 0: Data Manager
+        Index 1: Site Scanner
         """
-        if index == 2: # Switching TO Scanner
+        if index == 1: # Switching TO Scanner
             self.manager.table.setSortingEnabled(False)
             self.sync_data()
             self.status_label.setText("Scanner Mode: Viewing Active Pending Records")
             
-        elif index == 1: # Switching TO Launchpad
-            self.sync_data()
-            self.status_label.setText("Launchpad Mode: Browser Automation")
-            
-        else: # Switching BACK to Manager
+        else: # Switching BACK to Manager (Index 0)
             self.manager.table.setSortingEnabled(True)
             self.status_label.setText("Manager Mode: Editing Master List")
 
     def sync_data(self):
-        """Syncs data from Manager to both Scanner and Launchpad"""
+        """Syncs data from Manager to Scanner"""
         df = self.manager.get_dataframe()
         self.scanner.load_from_dataframe(df)
-        self.launchpad.refresh_client_list(df) 
+        # Removed Launchpad sync
         
         count = len(df) if df is not None else 0
         self.status_label.setText(f"Synced {count} records.")

@@ -7,8 +7,8 @@
 The application is divided into three main modules:
 
 * **📊 Data Manager:** A master list view to edit, sort, and manage client data records. Includes CSV export functionality (`Ctrl+S`).
-* **🚀 Launchpad:** A dedicated interface for browser automation and client list handling.
 * **🤖 Site Scanner:** An automated tool to scan pending records and update the Master List with real-time status, vendor, and configuration details.
+* **🚀 Launchpad:** A dedicated interface for client list handling, initializing a new client from contract PDF, ~eventually~ automated onboarding emails. This piece is still broken at the moment.
 
 ## 🛠️ Tech Stack
 
