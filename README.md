@@ -8,7 +8,6 @@ The application is divided into three main modules:
 
 * **📊 Data Manager:** A master list view to edit, sort, and manage client data records. Includes CSV export functionality (`Ctrl+S`).
 * **🤖 Site Scanner:** An automated tool to scan pending records and update the Master List with real-time status, vendor, and configuration details.
-* **🚀 Launchpad:** A dedicated interface for client list handling, initializing a new client from contract PDF, ~eventually~ automated onboarding emails. This piece is still broken at the moment.
 
 ## 🛠️ Tech Stack
 
@@ -30,8 +29,7 @@ MOM/
 │
 ├── tabs/                # Application Logic Modules
 │   ├── manager_tab.py
-│   ├── scanner_tab.py
-│   └── launchpad_tab.py
+│   └── scanner_tab.py
 │
 └── assets/              # Configuration & Styling
     └── styles.py        # Global Stylesheets & Themes
