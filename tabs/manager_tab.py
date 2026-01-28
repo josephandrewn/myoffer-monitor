@@ -1,8 +1,6 @@
 import sys
 import pandas as pd
 import qtawesome as qta 
-import pdfplumber
-import re
 from datetime import datetime
 from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QPushButton, 
                              QTableWidget, QTableWidgetItem, QHeaderView, 
@@ -12,147 +10,6 @@ from PyQt6.QtGui import (QColor, QFont, QUndoStack, QUndoCommand)
 from PyQt6.QtCore import Qt, pyqtSignal
 
 import styles
-
-# --- HELPER: PDF EXTRACTION ---
-def extract_client_data_from_pdf(pdf_path):
-    """
-    Parses the Client PDF to extract launch configuration data.
-    Uses line-by-line scanning to handle columnar layouts better.
-    """
-    extracted_data = {
-        "client_name": "New Client",
-        "website_url": "https://",
-        "provider": "",
-        "primary_name": "",
-        "primary_email": "",
-        "gm_name": "",
-        "gm_email": "",
-        "lead_email": "",
-        "crm_email": ""
-    }
-
-    try:
-        with pdfplumber.open(pdf_path) as pdf:
-            # We focus on Page 1 & 2 mostly
-            full_text = ""
-            for i, page in enumerate(pdf.pages):
-                if i > 2: break # Only need first 3 pages usually
-                full_text += page.extract_text() + "\n"
-    except Exception as e:
-        print(f"PDF Read Error: {e}")
-        return extracted_data
-
-    lines = full_text.split('\n')
-    
-    # --- 1. Client Name Strategy ---
-    # Heuristic: The client name often appears before "CONTRACT FOR SERVICE"
-    # or is the first non-header line.
-    for i, line in enumerate(lines):
-        clean_line = line.strip()
-        if "CONTRACT FOR SERVICE" in clean_line:
-            # Look at the 1-2 lines before this
-            if i > 0 and len(lines[i-1].strip()) > 3:
-                extracted_data["client_name"] = lines[i-1].strip()
-            break
-        # Fallback: If we see "Triple Threatt" (header), maybe the NEXT line is the client
-        if "TRIPLE" in clean_line and "THREATT" in clean_line:
-            # Check upcoming lines
-            if i + 2 < len(lines):
-                candidate = lines[i+2].strip()
-                if candidate and "my OFFER" not in candidate:
-                    extracted_data["client_name"] = candidate
-
-    # --- 2. Field Scanning ---
-    # We loop through lines. If we find a label, we look ahead for the value.
-    
-    for i, line in enumerate(lines):
-        line_lower = line.lower()
-        
-        # Helper to grab next non-empty line
-        def get_next_value(start_index):
-            for j in range(start_index + 1, min(start_index + 5, len(lines))):
-                val = lines[j].strip()
-                if val and "_" not in val and ":" not in val: # Avoid empty lines or other labels
-                    return val
-            return ""
-
-        # URL
-        if "website url" in line_lower:
-            # First, check if the URL is ON this line
-            match = re.search(r"((https?://)?(www\.)?\S+\.\S+)", line)
-            
-            # CHECK: Is the match valid and not just "https://"?
-            if match and len(match.group(1)) > 10: 
-                extracted_data["website_url"] = match.group(1)
-            else:
-                # Look ahead for a URL-like string in the next 5 lines
-                for j in range(i + 1, min(i + 6, len(lines))):
-                    scan_line = lines[j].strip()
-                    url_match = re.search(r"((https?://)?(www\.)?\S+\.\S+)", scan_line)
-                    if url_match and len(url_match.group(1)) > 10: # Ensure length > 10
-                        extracted_data["website_url"] = url_match.group(1)
-                        break
-
-        # Vendor
-        if "website vendor" in line_lower:
-            # Common vendors list to validate against
-            known_vendors = ["Dealer Inspire", "Dealer.com", "Sokal", "DealerOn", "Fox Dealer", "FordDirect", "Shift Digital"]
-            
-            found_vendor = ""
-            # Check current line
-            for v in known_vendors:
-                if v.lower() in line_lower: found_vendor = v
-            
-            # Check next lines if not found
-            if not found_vendor:
-                val = get_next_value(i)
-                if val: found_vendor = val
-            
-            if found_vendor: extracted_data["provider"] = found_vendor
-
-        # Primary Contact Name (Look for "Primary Contact Name" but NOT "Email")
-        if "primary contact name" in line_lower:
-            parts = line.split(":")
-            if len(parts) > 1 and parts[1].strip():
-                extracted_data["primary_name"] = parts[1].strip()
-            else:
-                extracted_data["primary_name"] = get_next_value(i)
-
-        # Primary Email
-        if "primary contact email" in line_lower:
-            match = re.search(r"(\S+@\S+)", line)
-            if match: extracted_data["primary_email"] = match.group(1)
-            else:
-                # check next line
-                val = get_next_value(i)
-                if "@" in val: extracted_data["primary_email"] = val
-
-        # GM Name
-        if "general manager name" in line_lower:
-            parts = line.split(":")
-            if len(parts) > 1 and parts[1].strip():
-                extracted_data["gm_name"] = parts[1].strip()
-            else:
-                extracted_data["gm_name"] = get_next_value(i)
-
-        # GM Email
-        if "general manager email" in line_lower:
-            match = re.search(r"(\S+@\S+)", line)
-            if match: extracted_data["gm_email"] = match.group(1)
-            else:
-                val = get_next_value(i)
-                if "@" in val: extracted_data["gm_email"] = val
-
-        # CRM Email
-        if "crm destination email" in line_lower:
-             match = re.search(r"(\S+@\S+)", line)
-             if match: extracted_data["crm_email"] = match.group(1)
-             else:
-                val = get_next_value(i)
-                if "@" in val: extracted_data["crm_email"] = val
-
-    return extracted_data
-
 
 # --- UNDO COMMANDS ---
 class CommandEditCell(QUndoCommand):
@@ -214,33 +71,24 @@ class CommandToggleActive(QUndoCommand):
         self.manager.emit_change()
 
 class CommandAddRow(QUndoCommand):
-    def __init__(self, manager, row_idx, data=None):
+    def __init__(self, manager, row_idx):
         super().__init__("Add Row")
         self.manager = manager
         self.table = manager.table
         self.row_idx = row_idx
-        self.data = data 
 
     def redo(self):
         self.table.blockSignals(True)
         self.table.insertRow(self.row_idx)
-        if self.data:
-            # Data expected to include hidden columns now
-            for col, text in enumerate(self.data):
-                self.table.setItem(self.row_idx, col, QTableWidgetItem(text))
-        else:
-            # Default Empty Row
-            self.table.setItem(self.row_idx, 0, QTableWidgetItem("New Client"))
-            self.table.setItem(self.row_idx, 1, QTableWidgetItem("https://"))
-            self.table.setItem(self.row_idx, 2, QTableWidgetItem("")) 
-            self.table.setItem(self.row_idx, 3, QTableWidgetItem("")) 
-            self.table.setItem(self.row_idx, 4, QTableWidgetItem("PENDING"))
-            self.table.setItem(self.row_idx, 5, QTableWidgetItem("")) 
-            self.table.setItem(self.row_idx, 6, QTableWidgetItem("Yes"))
-            
-            # Initialize Hidden Columns (7-12)
-            for c in range(7, 13):
-                self.table.setItem(self.row_idx, c, QTableWidgetItem(""))
+        
+        # Default Empty Row
+        self.table.setItem(self.row_idx, 0, QTableWidgetItem("New Client"))
+        self.table.setItem(self.row_idx, 1, QTableWidgetItem("https://"))
+        self.table.setItem(self.row_idx, 2, QTableWidgetItem("")) 
+        self.table.setItem(self.row_idx, 3, QTableWidgetItem("")) 
+        self.table.setItem(self.row_idx, 4, QTableWidgetItem("PENDING"))
+        self.table.setItem(self.row_idx, 5, QTableWidgetItem("")) 
+        self.table.setItem(self.row_idx, 6, QTableWidgetItem("Yes"))
 
         self.manager.update_row_style(self.row_idx)
         self.table.blockSignals(False)
@@ -275,6 +123,42 @@ class CommandDeleteRow(QUndoCommand):
         self.table.blockSignals(False)
         self.manager.emit_change()
 
+class CommandResetStatus(QUndoCommand):
+    def __init__(self, manager, row_indices):
+        super().__init__("Reset Status")
+        self.manager = manager
+        self.table = manager.table
+        self.row_indices = row_indices
+        self.previous_data = {} # {row: {col: text}}
+
+    def redo(self):
+        self.table.blockSignals(True)
+        for row in self.row_indices:
+            # Save state for undo
+            self.previous_data[row] = {}
+            for col in [3, 4, 5, 6]: # Config, Status, Details, Active
+                item = self.table.item(row, col)
+                self.previous_data[row][col] = item.text() if item else ""
+            
+            # Reset values
+            self.table.item(row, 3).setText("")          # Config -> Empty
+            self.table.item(row, 4).setText("PENDING")   # Status -> PENDING
+            self.table.item(row, 5).setText("")          # Details -> Empty
+            self.table.item(row, 6).setText("Yes")       # Active -> Yes
+            
+            self.manager.update_row_style(row)
+        self.table.blockSignals(False)
+        self.manager.emit_change()
+
+    def undo(self):
+        self.table.blockSignals(True)
+        for row, cols in self.previous_data.items():
+            for col, text in cols.items():
+                self.table.item(row, col).setText(text)
+            self.manager.update_row_style(row)
+        self.table.blockSignals(False)
+        self.manager.emit_change()
+
 
 # --- MAIN WIDGET ---
 class ManagerTab(QWidget):
@@ -284,10 +168,8 @@ class ManagerTab(QWidget):
         super().__init__()
         
         self.file_path = None
-        # Updated columns to include hidden fields for PDF data
         self.columns = [
-            "Client Name", "URL", "Provider", "Config", "Status", "Details", "Active",
-            "Primary Name", "Primary Email", "GM Name", "GM Email", "Lead Email", "CRM Email"
+            "Client Name", "URL", "Provider", "Config", "Status", "Details", "Active"
         ]
         self.df = pd.DataFrame(columns=self.columns)
         self.undo_stack = QUndoStack(self)
@@ -319,15 +201,13 @@ class ManagerTab(QWidget):
         self.btn_undo.setEnabled(False)
         self.undo_stack.canUndoChanged.connect(self.btn_undo.setEnabled)
         
-        # --- NEW: IMPORT PDF BUTTON ---
-        self.btn_import = QPushButton(" Import PDF")
-        self.btn_import.setObjectName("btn_primary")
-        self.btn_import.setIcon(qta.icon('fa5s.file-pdf', color='white'))
-        self.btn_import.clicked.connect(self.import_pdf_dialog)
-
         self.btn_add = QPushButton(" Add Manual")
         self.btn_add.setIcon(qta.icon('fa5s.plus-circle', color='#555'))
         self.btn_add.clicked.connect(self.add_row)
+        
+        self.btn_reset = QPushButton(" Reset Status")
+        self.btn_reset.setIcon(qta.icon('fa5s.sync-alt', color='#555'))
+        self.btn_reset.clicked.connect(self.reset_status)
         
         self.btn_archive = QPushButton(" Archive")
         self.btn_archive.setIcon(qta.icon('fa5s.archive', color='#555'))
@@ -340,12 +220,13 @@ class ManagerTab(QWidget):
 
         self.undo_stack.indexChanged.connect(self.emit_change)
 
+        # Layout Order
         top_layout.addWidget(self.btn_load)
         top_layout.addWidget(self.btn_save)
         top_layout.addWidget(self.btn_undo)
         top_layout.addStretch()
-        top_layout.addWidget(self.btn_import) # Added here
         top_layout.addWidget(self.btn_add)
+        top_layout.addWidget(self.btn_reset) 
         top_layout.addWidget(self.btn_archive) 
         top_layout.addWidget(self.btn_del)
         layout.addWidget(top_frame)
@@ -371,10 +252,6 @@ class ManagerTab(QWidget):
         self.table.setHorizontalHeaderLabels(self.columns)
         self.table.setSortingEnabled(True)
         
-        # Hide the extra data columns
-        for i in range(7, 13):
-            self.table.setColumnHidden(i, True)
-
         header = self.table.horizontalHeader()
         header.setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
         header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
@@ -448,17 +325,10 @@ class ManagerTab(QWidget):
             self.file_path = path
             try:
                 self.df = pd.read_csv(path)
+                self.df = self.df.reindex(columns=self.columns, fill_value="")
                 
-                # Ensure all columns exist, even if CSV is old format
-                for col in self.columns:
-                    if col not in self.df.columns:
-                        if col == "Active": val = "Yes"
-                        elif col == "Status": val = "PENDING"
-                        else: val = ""
-                        self.df[col] = val
-                
-                self.df['Status'] = self.df['Status'].fillna('PENDING')
-                self.df['Active'] = self.df['Active'].fillna('Yes')
+                self.df['Status'] = self.df['Status'].replace("", "PENDING").fillna('PENDING')
+                self.df['Active'] = self.df['Active'].replace("", "Yes").fillna('Yes')
                 
                 self.undo_stack.clear()
                 self.populate_table()
@@ -473,7 +343,6 @@ class ManagerTab(QWidget):
         
         for i, row in self.df.iterrows():
             self.table.insertRow(i)
-            # Loop through all columns (visible and hidden)
             for c, col_name in enumerate(self.columns):
                 val = str(row[col_name]) if pd.notna(row[col_name]) else ""
                 self.table.setItem(i, c, QTableWidgetItem(val))
@@ -484,9 +353,6 @@ class ManagerTab(QWidget):
         self.table.setSortingEnabled(True)
 
     def on_item_changed(self, item):
-        # We handle edits via UndoStack commands primarily, 
-        # but direct edits need to be captured if we want undo support for them.
-        # For simplicity in this snippets, we let direct edits happen.
         pass 
 
     def add_row(self):
@@ -494,37 +360,6 @@ class ManagerTab(QWidget):
         command = CommandAddRow(self, row_idx) 
         self.undo_stack.push(command)
         self.table.scrollToBottom()
-
-    # --- NEW: IMPORT PDF FUNCTION ---
-    def import_pdf_dialog(self):
-        file_name, _ = QFileDialog.getOpenFileName(self, "Open Client PDF", "", "PDF Files (*.pdf)")
-        if not file_name: return
-
-        data = extract_client_data_from_pdf(file_name)
-        
-        # Prepare the row data based on our self.columns list
-        row_data = [
-            data.get("client_name", "New Client"), # 0 Client Name
-            data.get("website_url", "https://"),   # 1 URL
-            data.get("provider", ""),              # 2 Provider
-            "",                                    # 3 Config
-            "PENDING",                             # 4 Status
-            "Imported from PDF",                   # 5 Details
-            "Yes",                                 # 6 Active
-            data.get("primary_name", ""),          # 7 Primary Name
-            data.get("primary_email", ""),         # 8 Primary Email
-            data.get("gm_name", ""),               # 9 GM Name
-            data.get("gm_email", ""),              # 10 GM Email
-            data.get("lead_email", ""),            # 11 Lead Email
-            data.get("crm_email", "")              # 12 CRM Email
-        ]
-
-        row_idx = self.table.rowCount()
-        command = CommandAddRow(self, row_idx, row_data)
-        self.undo_stack.push(command)
-        
-        self.table.scrollToBottom()
-        QMessageBox.information(self, "Import Successful", "Client data extracted and added to list.")
 
     def delete_row(self):
         rows = sorted(set(index.row() for index in self.table.selectedIndexes()), reverse=True)
@@ -543,6 +378,15 @@ class ManagerTab(QWidget):
         rows = sorted(set(index.row() for index in self.table.selectedIndexes()))
         if not rows: return
         command = CommandToggleActive(self, rows)
+        self.undo_stack.push(command)
+
+    def reset_status(self):
+        rows = sorted(set(index.row() for index in self.table.selectedIndexes()))
+        if not rows: 
+            QMessageBox.information(self, "Select Rows", "Please select rows to reset.")
+            return
+            
+        command = CommandResetStatus(self, rows)
         self.undo_stack.push(command)
 
     def save_csv(self):
