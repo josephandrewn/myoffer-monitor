@@ -1,0 +1,90 @@
+Client Name,URL,Provider,Config,Status,Details,Active
+865 Autos LLC,www.865autos.com,Other,BUNDLE,PASS,Perfect (Rule of 2),Yes
+Allen Chevrolet,www.allenchevy.com,DealerOn,STD,PASS,Perfect (DealerOn Rule of 1),Yes
+Auto Gallery Ford,www.autogalleryford.com,Dealer Inspire,STD,PASS,Perfect (Rule of 2),Yes
+Barbour Hendrick Honda,www.barbourhendrickhonda.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Bay Ridge Subaru,www.brooklynsubarudeals.com,Dealer.com,DCOM,PASS,Perfect (Rule of 1),Yes
+Beach Chevrolet,www.thebeachchevrolet.com,Sokal,STD,PASS,Perfect (Rule of 2),Yes
+Chrysler Dodge Jeep Ram of Elizabethton,www.nagcdjr.com,Dealer.com,STD,WARN,Found 2 (Dealer.com expects 1) (Saved Img),Yes
+East Charlotte Nissan,www.eastcharlottenissan.com,Team Velocity,NONE,FAIL,No scripts found (Saved Img),Yes
+Ford of Elizabethton,www.fordofelizabethton.com,Dealer.com,STD,WARN,Found 4 (Dealer.com expects 1) (Saved Img),Yes
+Hendrick Acura Charlotte,www.hendrickacura.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick Acura of Pleasanton,www.acuraofpleasanton.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick Acura Southpoint,www.acurasouthpoint.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick Buick GMC Cary,www.hendrickbuickgmccary.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick CDJR of Concord,www.hendrickchryslerdodgejeepramofconcord.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick Chevrolet Cary,www.hendrickchevrolet.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick Honda Bradenton,www.hendrickhondabradenton.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick Honda Hickory,www.hendrickhondahickory.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick Honda of Concord,www.hondaofconcord.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick Kia of Concord,www.hendrickkiaofconcord.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick MINI Charlotte,www.hendrickmini.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick Subaru Hoover,www.hendricksubaruhoover.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick Subaru Southpoint,www.subarusouthpoint.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick Volkswagen of Concord,www.hendrickvwofconcord.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Hendrick Volvo Cars of Charleston,www.hendrickvolvocars.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Honda Cars of Aiken,www.hondacarsofaiken.com,ERR,ERR,ERROR,"Message: timeout: Timed out receiving message from renderer: 29.961
+  (Session info: chrome=144.0.7559.109)
+Stacktrace:
+0   undetected_chromedriver             0x0000000100988b68 undetected_chromedriver + 6712168
+1   undetected_chromedriver             0x00000001009803ca undetected_chromedriver + 6677450
+2   undetected_chromedriver             0x0000000100390f25 undetected_chromedriver + 454437
+3   undetected_chromedriver             0x00000001003785c7 undetected_chromedriver + 353735
+4   undetected_chromedriver             0x00000001003782dd undetected_chromedriver + 352989
+5   undetected_chromedriver             0x00000001003760a9 undetected_chromedriver + 344233
+6   undetected_chromedriver             0x00000001003769ff undetected_chromedriver + 346623
+7   undetected_chromedriver             0x0000000100385bb0 undetected_chromedriver + 408496
+8   undetected_chromedriver             0x000000010039fc53 undetected_chromedriver + 515155
+9   undetected_chromedriver             0x00000001003a669b undetected_chromedriver + 542363
+10  undetected_chromedriver             0x00000001003770fd undetected_chromedriver + 348413
+11  undetected_chromedriver             0x000000010039f8d0 undetected_chromedriver + 514256
+12  undetected_chromedriver             0x000000010042f6f4 undetected_chromedriver + 1103604
+13  undetected_chromedriver             0x00000001003d7a11 undetected_chromedriver + 743953
+14  undetected_chromedriver             0x00000001003d8811 undetected_chromedriver + 747537
+15  undetected_chromedriver             0x0000000100941241 undetected_chromedriver + 6419009
+16  undetected_chromedriver             0x00000001009455da undetected_chromedriver + 6436314
+17  undetected_chromedriver             0x0000000100920a29 undetected_chromedriver + 6285865
+18  undetected_chromedriver             0x0000000100946038 undetected_chromedriver + 6438968
+19  undetected_chromedriver             0x000000010090eaa0 undetected_chromedriver + 6212256
+20  undetected_chromedriver             0x000000010096c668 undetected_chromedriver + 6596200
+21  undetected_chromedriver             0x000000010096c822 undetected_chromedriver + 6596642
+22  undetected_chromedriver             0x000000010097ffd1 undetected_chromedriver + 6676433
+23  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+",Yes
+Honda Cars of McKinney,www.hondacarsofmckinney.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Honda Cars of Rock Hill,www.hondacarsrockhill.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Honda Indian Trail,www.hondaofindiantrail.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Jeff Gordon Chevrolet,www.jeffgordonchevy.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
+Joe Cooper Lincoln of Edmond,joecooperlincoln.com,Dealer.com,SPA,WARN,Found 6 (Expected 4) (Saved Img),Yes
+Nissan of Garden City,www.nissanofgardencity.com,Sokal,STD,WARN,Found 4 (Expected 2) (Saved Img),Yes
+Nissan of Hendersonville,www.nissanofhendersonville.com,Dealer.com,NONE,FAIL,No scripts found (Saved Img),Yes
+Rusty Wallace Kia Alcoa,www.rustywallacekiaalcoa.com,ERR,ERR,ERROR,"Message: timeout: Timed out receiving message from renderer: 29.940
+  (Session info: chrome=144.0.7559.109)
+Stacktrace:
+0   undetected_chromedriver             0x0000000102efab68 undetected_chromedriver + 6712168
+1   undetected_chromedriver             0x0000000102ef23ca undetected_chromedriver + 6677450
+2   undetected_chromedriver             0x0000000102902f25 undetected_chromedriver + 454437
+3   undetected_chromedriver             0x00000001028ea5c7 undetected_chromedriver + 353735
+4   undetected_chromedriver             0x00000001028ea2dd undetected_chromedriver + 352989
+5   undetected_chromedriver             0x00000001028e80a9 undetected_chromedriver + 344233
+6   undetected_chromedriver             0x00000001028e89ff undetected_chromedriver + 346623
+7   undetected_chromedriver             0x00000001028f7bb0 undetected_chromedriver + 408496
+8   undetected_chromedriver             0x0000000102911c53 undetected_chromedriver + 515155
+9   undetected_chromedriver             0x000000010291869b undetected_chromedriver + 542363
+10  undetected_chromedriver             0x00000001028e90fd undetected_chromedriver + 348413
+11  undetected_chromedriver             0x00000001029118d0 undetected_chromedriver + 514256
+12  undetected_chromedriver             0x00000001029a16f4 undetected_chromedriver + 1103604
+13  undetected_chromedriver             0x0000000102949a11 undetected_chromedriver + 743953
+14  undetected_chromedriver             0x000000010294a811 undetected_chromedriver + 747537
+15  undetected_chromedriver             0x0000000102eb3241 undetected_chromedriver + 6419009
+16  undetected_chromedriver             0x0000000102eb75da undetected_chromedriver + 6436314
+17  undetected_chromedriver             0x0000000102e92a29 undetected_chromedriver + 6285865
+18  undetected_chromedriver             0x0000000102eb8038 undetected_chromedriver + 6438968
+19  undetected_chromedriver             0x0000000102e80aa0 undetected_chromedriver + 6212256
+20  undetected_chromedriver             0x0000000102ede668 undetected_chromedriver + 6596200
+21  undetected_chromedriver             0x0000000102ede822 undetected_chromedriver + 6596642
+22  undetected_chromedriver             0x0000000102ef1fd1 undetected_chromedriver + 6676433
+23  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+",Yes

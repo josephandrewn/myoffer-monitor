@@ -6,3 +6,976 @@ Traceback: Traceback (most recent call last):
     result = 1 / 0
 ZeroDivisionError: division by zero
 
+2026-01-28 19:05:34 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 19:10:34 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 19:15:34 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 19:20:34 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 19:25:34 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 19:30:34 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 19:46:42 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 19:51:42 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 19:56:42 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 20:01:42 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 20:06:42 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 20:11:42 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 20:16:42 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 20:37:37 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 20:42:37 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 21:20:16 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 21:25:16 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 21:30:16 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 21:35:16 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 21:40:16 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 21:45:16 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 21:50:16 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 21:55:16 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 22:00:16 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 22:05:16 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 22:10:16 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 22:15:16 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 22:37:23 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 22:42:23 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 22:47:23 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 22:52:23 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 22:57:23 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 23:02:23 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 23:07:23 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 23:12:23 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 23:17:23 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 23:22:23 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 23:27:23 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 23:32:23 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 23:53:21 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-28 23:58:21 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 00:03:21 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 00:08:21 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 00:13:21 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 00:18:21 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 00:23:21 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 00:28:21 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 00:33:21 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 00:38:21 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 00:43:21 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 01:02:49 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 01:07:48 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 01:12:48 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 01:17:48 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 01:22:48 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 01:27:48 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 01:32:48 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 01:37:48 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 01:42:48 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 01:47:48 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 01:52:48 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 01:57:48 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 02:34:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 02:39:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 02:44:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 02:49:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 02:54:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 02:59:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 03:04:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 03:09:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 03:14:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 03:19:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 03:24:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 03:29:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 03:34:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 03:39:39 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 04:00:57 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 04:05:57 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 04:10:57 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 04:15:57 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 04:20:57 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 04:25:57 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 04:30:57 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 04:35:57 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 04:40:57 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 04:45:57 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 04:50:57 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 04:55:57 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 05:00:57 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 05:19:50 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 05:24:49 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 06:02:11 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 06:07:11 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 06:12:11 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 06:17:11 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 06:22:11 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 06:27:11 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 06:32:11 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 06:37:11 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 06:42:11 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 06:47:11 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 06:52:11 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 06:57:11 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 07:32:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 07:37:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 07:42:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 07:47:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 07:52:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 07:57:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 08:02:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 08:07:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 08:12:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 08:17:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 08:22:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 08:27:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 08:32:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 08:37:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 08:42:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 08:47:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 08:52:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 08:57:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 09:02:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 09:07:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 09:12:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 09:17:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 09:22:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 09:27:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 09:32:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 09:37:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 09:42:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 09:47:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 09:52:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 09:57:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 10:02:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 10:07:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 10:12:58 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 10:47:37 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 10:52:37 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+
+2026-01-29 10:57:37 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'datetime' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 96, in auto_save
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+NameError: name 'datetime' is not defined
+

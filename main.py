@@ -1,9 +1,10 @@
 import sys
 import qtawesome as qta
+from datetime import datetime
 from PyQt6.QtWidgets import (QApplication, QMainWindow, QTabWidget, QMessageBox, 
                              QVBoxLayout, QWidget, QLabel, QToolBar)
 from PyQt6.QtGui import QAction, QIcon
-from PyQt6.QtCore import Qt, QSize 
+from PyQt6.QtCore import Qt, QSize, QTimer
 
 # --- UPDATED IMPORTS ---
 # Removed 'tabs.launchpad_tab'

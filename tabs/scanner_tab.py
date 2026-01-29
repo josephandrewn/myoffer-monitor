@@ -25,6 +25,96 @@ logger = get_logger(__name__)
 
 # --- 1. LOGIC & HELPERS ---
 
+# ============================================================================
+# SITES THAT REQUIRE SESSION WARMING
+# ============================================================================
+# These sites have aggressive bot detection and need extra steps.
+# Update this list as you discover more problematic sites.
+
+PROBLEMATIC_SITES = [
+    # Security providers
+    'cloudflare',
+    'imperva',
+    'incapsula',
+    'perimeter',
+    'distil',
+    
+    # High-volume dealer groups (add more as you discover them)
+    'lithia.com',
+    'autonation.com',
+    'carmax.com',
+    'penske',
+    'asbury',
+    
+    # Specific vendors known for strict security
+    # Add more as you find sites that consistently block you
+    'dealer.com',
+    'dealertrack',
+    'audinorthlake.com',
+    'audisouthaustin.com',
+    'audiusa',
+]
+
+def needs_session_warming(url):
+    """
+    Check if a URL needs session warming based on known problematic patterns.
+    
+    Args:
+        url: The full URL to check (e.g., 'https://example.dealer.com/inventory')
+    
+    Returns:
+        Boolean: True if site needs warming, False otherwise
+    """
+    url_lower = url.lower()
+    
+    for pattern in PROBLEMATIC_SITES:
+        if pattern in url_lower:
+            return True
+    
+    return False
+
+
+def warm_up_session(driver, target_url):
+    """
+    Visits the homepage before going to the target page.
+    This makes the visit look more natural and less bot-like.
+    
+    Think of it like: Real users usually land on homepage first,
+    then navigate to specific pages. Bots go directly to target page.
+    
+    Args:
+        driver: Selenium WebDriver instance
+        target_url: The actual page we want to scan
+    """
+    from urllib.parse import urlparse
+    
+    try:
+        # Extract the base URL (homepage)
+        parsed = urlparse(target_url)
+        homepage = f"{parsed.scheme}://{parsed.netloc}"
+        
+        print(f"    → Warming session: visiting {homepage}")
+        
+        # Visit homepage first
+        driver.get(homepage)
+        
+        # Wait a bit (pretend to look at homepage)
+        delay = random.uniform(4, 8)
+        time.sleep(delay)
+        
+        # Optional: Scroll down a bit (looks even more human)
+        try:
+            driver.execute_script("window.scrollTo(0, 500);")
+            time.sleep(0.5)
+        except:
+            pass  # If scroll fails, no big deal
+        
+        print(f"    → Session warmed, now visiting target page")
+        
+    except Exception as e:
+        # If warming fails, just continue to target
+        print(f"    ⚠ Session warming failed (continuing anyway): {e}")
+
 def save_evidence_screenshot(driver, client_name, status):
     """
     Takes a screenshot of the current browser state.
@@ -96,6 +186,15 @@ def check_url_rules(driver, url, client_name):
     with LogExecutionTime(logger, "url_scan", url=url, client=client_name):
         for attempt in range(1, MAX_ATTEMPTS + 1):
             try:
+                # Check if this site needs special treatment
+                use_warming = needs_session_warming(url)
+                if use_warming:
+                    print(f"  [WARMING] {client_name} - site requires session warming")
+                    warm_up_session(driver, url)
+                else:
+                    print(f"  [DIRECT] {client_name} - direct access")
+
+                # Now load the actual target page
                 driver.get(url)
                 
                 start_time = time.time()
@@ -203,7 +302,8 @@ def check_url_rules(driver, url, client_name):
                 
                 if attempt < MAX_ATTEMPTS:
                     print(f"Attempt {attempt} failed ({scan_status}). Retrying...")
-                    time.sleep(5)
+                    error_delay = random.uniform(3, 8)
+                    time.sleep(error_delay)
                     continue
                 
                 save_evidence_screenshot(driver, client_name, scan_status)
@@ -227,11 +327,44 @@ def check_url_rules(driver, url, client_name):
 
             except Exception as e:
                 if attempt < MAX_ATTEMPTS:
-                    time.sleep(5)
+                    error_delay = random.uniform(3, 8)
+                    time.sleep(error_delay)
                     continue
                 return {'status': 'ERROR', 'msg': str(e), 'config': 'ERR', 'vendor': 'ERR'}
         pass
 
+# ============================================================================
+# HUMAN DELAY SIMULATION
+# ============================================================================
+
+def human_delay(base_seconds=3):
+    """
+    Simulates realistic human delay patterns.
+    
+    Humans don't wait the same amount of time between actions:
+    - 70% of time: Normal browsing (2-5 seconds)
+    - 20% of time: Quick action (0.5-2 seconds) - they know what they want
+    - 10% of time: Distracted (5-15 seconds) - checking phone, reading, etc.
+    
+    This makes scan timing less predictable and more human-like.
+    
+    Returns:
+        float: The delay time in seconds
+    """
+    rand = random.random()  # Get random number between 0 and 1
+    
+    if rand < 0.70:  # 70% of the time
+        # Normal browsing behavior
+        delay = random.uniform(2.0, 5.0)
+    elif rand < 0.90:  # Next 20% (70-90%)
+        # Quick user who knows what they want
+        delay = random.uniform(0.5, 2.0)
+    else:  # Last 10% (90-100%)
+        # User got distracted, takes longer
+        delay = random.uniform(5.0, 15.0)
+    
+    time.sleep(delay)
+    return delay
 
 # --- 2. WORKER (Stability Fix Applied) ---
 class BatchWorker(QThread):
@@ -245,7 +378,7 @@ class BatchWorker(QThread):
         self.is_running = True
 
     def run(self):
-        RESTART_EVERY = 25
+        RESTART_EVERY = 3
         driver = self.start_driver()
         total = len(self.data_list)
 
@@ -274,47 +407,118 @@ class BatchWorker(QThread):
             self.result_signal.emit(row_idx, result)
             self.progress_signal.emit(int(((i + 1) / total) * 100))
             
-            time.sleep(random.uniform(2, 4))
+            delay = human_delay()
 
         try: driver.quit()
         except: pass
         self.finished_signal.emit()
 
     def start_driver(self):
+        """
+        Creates a stealthy browser instance with randomized fingerprints
+        to avoid bot detection.
+        """
         last_err = None
         
         for attempt in range(3):
             try: 
-                # 1. Create Options FRESH for every attempt
+                # === STEP 1: Create Fresh Options ===
                 options = uc.ChromeOptions()
-                options.add_argument("--start-maximized")
-                # options.add_argument("--headless") 
-
-                # Windows Stability Arguments
+                
+                # === STEP 2: Randomize User Agent ===
+                # These are real Chrome user agents from different versions/platforms
+                user_agents = [
+                    # Windows Chrome
+                    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
+                    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+                    # Mac Chrome
+                    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                    'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
+                    # Linux Chrome
+                    'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                ]
+                chosen_ua = random.choice(user_agents)
+                options.add_argument(f'--user-agent={chosen_ua}')
+                
+                # === STEP 3: Randomize Window Size ===
+                # Common real screen resolutions
+                window_sizes = [
+                    (1920, 1080),  # Full HD
+                    (1366, 768),   # Laptop standard
+                    (1440, 900),   # MacBook Pro
+                    (1536, 864),   # Surface Pro
+                    (1280, 720),   # HD
+                ]
+                width, height = random.choice(window_sizes)
+                options.add_argument(f'--window-size={width},{height}')
+                
+                # === STEP 4: Randomize Language ===
+                languages = ['en-US,en', 'en-GB,en', 'en-CA,en']
+                options.add_argument(f'--accept-lang={random.choice(languages)}')
+                
+                # === STEP 5: Anti-Detection Arguments ===
+                # These hide the fact that we're using automation
+                options.add_argument('--disable-blink-features=AutomationControlled')
+                
+                # === STEP 6: Stability Arguments (keep your existing ones) ===
                 options.add_argument("--disable-popup-blocking")
                 options.add_argument("--no-sandbox")
                 options.add_argument("--disable-dev-shm-usage")
-
-                # 2. Launch with FIXED VERSION (Updated to 144)
-                # version_main=144 ensures it matches your updated Chrome 144 install
-                driver = uc.Chrome(options=options, use_subprocess=True, version_main=144)
+                options.add_argument("--disable-gpu")
+                options.add_argument("--disable-extensions")
+                options.add_argument("--disable-notifications")
+                
+                # === STEP 7: Create Driver ===
+                driver = uc.Chrome(options=options, version_main=144)
+                
+                # === STEP 8: Advanced Stealth (JavaScript Injection) ===
+                # This masks properties that reveal we're a bot
+                driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
+                    'source': '''
+                        // Hide webdriver property
+                        Object.defineProperty(navigator, 'webdriver', {
+                            get: () => undefined
+                        });
+                        
+                        // Mock plugins to look more real
+                        Object.defineProperty(navigator, 'plugins', {
+                            get: () => [1, 2, 3, 4, 5]
+                        });
+                        
+                        // Mock languages
+                        Object.defineProperty(navigator, 'languages', {
+                            get: () => ['en-US', 'en']
+                        });
+                        
+                        // Remove automation indicators
+                        window.chrome = {
+                            runtime: {}
+                        };
+                        
+                        // Mock permissions
+                        const originalQuery = window.navigator.permissions.query;
+                        window.navigator.permissions.query = (parameters) => (
+                            parameters.name === 'notifications' ?
+                                Promise.resolve({ state: Notification.permission }) :
+                                originalQuery(parameters)
+                        );
+                    '''
+                })
+                
+                # === STEP 9: Set Timeouts ===
+                driver.set_page_load_timeout(30)
+                
+                print(f"✓ Browser started (UA: {chosen_ua[:50]}..., Size: {width}x{height})")
                 return driver
-            
-            except Exception as e: 
-                print(f"Driver launch attempt {attempt+1} failed: {e}")
+                
+            except Exception as e:
                 last_err = e
-                
-                # Auto-kill stuck chrome processes if launch fails
-                try:
-                    import os
-                    os.system("taskkill /f /im chrome.exe")
-                except:
-                    pass
-                
-                time.sleep(4)
-                
-        # If we exit the loop, we failed 3 times
-        raise Exception(f"Could not launch Chrome. Last Error: {last_err}")
+                print(f"Browser start attempt {attempt + 1} failed: {e}")
+                time.sleep(2)
+        
+        # If all attempts failed
+        raise Exception(f"Failed to start browser after 3 attempts: {last_err}")
 
     def stop(self):
         self.is_running = False
