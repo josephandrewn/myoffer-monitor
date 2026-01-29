@@ -4,7 +4,10 @@ import csv
 import random
 import os 
 import re 
-from datetime import datetime
+import requests
+from datetime import datetime, timedelta
+from typing import Optional, Dict, List, Set
+import json
 import pandas as pd
 import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
@@ -26,10 +29,267 @@ logger = get_logger(__name__)
 # --- 1. LOGIC & HELPERS ---
 
 # ============================================================================
+# BLOCK TRACKER - Manages UNVERIFIABLE status
+# ============================================================================
+
+class BlockTracker:
+    """
+    Tracks blocked sites and determines when they should be marked UNVERIFIABLE.
+    Persists data to JSON so it survives app restarts.
+    """
+    
+    BLOCK_THRESHOLD = 2  # Consecutive blocks before UNVERIFIABLE
+    HISTORY_DAYS = 30     # Only count blocks within this window
+    
+    def __init__(self, data_dir: str = "data"):
+        self.data_dir = data_dir
+        self.history_file = os.path.join(data_dir, "block_history.json")
+        self.block_history: Dict[str, List[str]] = {}
+        self.known_unverifiable: Set[str] = set()
+        self._load()
+    
+    def _get_domain(self, url: str) -> str:
+        """Extract clean domain from URL."""
+        try:
+            from urllib.parse import urlparse
+            parsed = urlparse(url)
+            domain = parsed.netloc.lower()
+            if domain.startswith('www.'):
+                domain = domain[4:]
+            return domain
+        except:
+            return url.lower()
+    
+    def _load(self):
+        """Load block history from disk."""
+        try:
+            if os.path.exists(self.history_file):
+                with open(self.history_file, 'r') as f:
+                    data = json.load(f)
+                    self.block_history = data.get('history', {})
+                    self.known_unverifiable = set(data.get('unverifiable', []))
+                    if self.known_unverifiable:
+                        print(f"📋 Loaded {len(self.known_unverifiable)} unverifiable sites from history")
+        except Exception as e:
+            print(f"Warning: Could not load block history: {e}")
+            self.block_history = {}
+            self.known_unverifiable = set()
+    
+    def _save(self):
+        """Save block history to disk."""
+        try:
+            os.makedirs(self.data_dir, exist_ok=True)
+            with open(self.history_file, 'w') as f:
+                json.dump({
+                    'history': self.block_history,
+                    'unverifiable': sorted(list(self.known_unverifiable)),
+                    'last_updated': datetime.now().isoformat()
+                }, f, indent=2)
+        except Exception as e:
+            print(f"Warning: Could not save block history: {e}")
+    
+    def is_unverifiable(self, url: str) -> bool:
+        """Check if a site is marked as unverifiable."""
+        domain = self._get_domain(url)
+        return domain in self.known_unverifiable
+    
+    def get_block_count(self, url: str) -> int:
+        """Get the current block count for a site."""
+        domain = self._get_domain(url)
+        if domain not in self.block_history:
+            return 0
+        cutoff = (datetime.now() - timedelta(days=self.HISTORY_DAYS)).isoformat()
+        recent = [t for t in self.block_history[domain] if t > cutoff]
+        return len(recent)
+    
+    def record_block(self, url: str) -> tuple:
+        """
+        Record a block event. 
+        Returns: (consecutive_count, is_now_unverifiable)
+        """
+        domain = self._get_domain(url)
+        now = datetime.now()
+        
+        if domain not in self.block_history:
+            self.block_history[domain] = []
+        
+        cutoff = (now - timedelta(days=self.HISTORY_DAYS)).isoformat()
+        self.block_history[domain] = [
+            t for t in self.block_history[domain] if t > cutoff
+        ]
+        
+        self.block_history[domain].append(now.isoformat())
+        consecutive = len(self.block_history[domain])
+        is_unverifiable = consecutive >= self.BLOCK_THRESHOLD
+        
+        if is_unverifiable and domain not in self.known_unverifiable:
+            self.known_unverifiable.add(domain)
+            print(f"⚠️  {domain} marked UNVERIFIABLE after {consecutive} blocks")
+        
+        self._save()
+        return consecutive, is_unverifiable
+    
+    def record_success(self, url: str):
+        """Record a successful scan - clears block history for domain."""
+        domain = self._get_domain(url)
+        changed = False
+        
+        if domain in self.block_history:
+            del self.block_history[domain]
+            changed = True
+        
+        if domain in self.known_unverifiable:
+            self.known_unverifiable.remove(domain)
+            print(f"✓ {domain} removed from UNVERIFIABLE (successful scan)")
+            changed = True
+        
+        if changed:
+            self._save()
+    
+    def reset_site(self, url: str):
+        """Reset a site's unverifiable status for re-testing."""
+        domain = self._get_domain(url)
+        changed = False
+        
+        if domain in self.known_unverifiable:
+            self.known_unverifiable.remove(domain)
+            changed = True
+        
+        if domain in self.block_history:
+            del self.block_history[domain]
+            changed = True
+        
+        if changed:
+            print(f"↻ {domain} reset for re-scanning")
+            self._save()
+    
+    def get_unverifiable_domains(self) -> List[str]:
+        """Get list of all unverifiable domains."""
+        return sorted(list(self.known_unverifiable))
+
+
+# ============================================================================
+# QUICK HTTP CHECK - Tier 1 scanning (no browser needed)
+# ============================================================================
+
+def quick_http_check(url: str) -> Optional[dict]:
+    """
+    Tier 1: Quick HTTP request to check for script in raw HTML.
+    
+    Returns:
+        - dict with status info if conclusive
+        - None if inconclusive (needs browser check)
+    """
+    SCRIPT_SIGNATURES = [
+        'idrove.it/behaviour.spa.js',
+        'idrove.it/behaviour.dcom.js',
+        'idrove.it/behaviour.bundle.js',
+        'idrove.it/behaviour.js',
+        'idrove.it/behaviour',
+    ]
+    
+    BOT_DETECTION_PHRASES = [
+        'checking your browser',
+        'please enable javascript',
+        'captcha',
+        'access denied',
+        'bot detected',
+        'security check',
+        'please wait while we verify',
+        'ray id',
+        'cf-browser-verification',
+        'challenge-platform',
+        'ddos protection',
+        'pardon our interruption',
+        'just a moment',
+        'attention required',
+    ]
+    
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.5',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'DNT': '1',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1',
+    }
+    
+    try:
+        response = requests.get(url, headers=headers, timeout=10, allow_redirects=True)
+        
+        if response.status_code == 403:
+            return None  # Blocked - need browser
+        
+        if response.status_code >= 400:
+            return {
+                'status': 'FAIL',
+                'vendor': 'HTTP Error',
+                'config': 'ERR',
+                'msg': f'Status code: {response.status_code}',
+                'method': 'http_quick'
+            }
+        
+        html = response.text
+        html_lower = html.lower()
+        
+        # Check for bot detection
+        for phrase in BOT_DETECTION_PHRASES:
+            if phrase in html_lower:
+                return None  # Bot detection present - need browser
+        
+        # Check for our script signatures
+        for sig in SCRIPT_SIGNATURES:
+            if sig.lower() in html_lower:
+                # Determine config type
+                if 'spa.js' in sig:
+                    config = 'SPA'
+                elif 'dcom.js' in sig:
+                    config = 'DCOM'
+                elif 'bundle.js' in sig:
+                    config = 'BUNDLE'
+                else:
+                    config = 'STD'
+                
+                return {
+                    'status': 'PASS',
+                    'vendor': 'Quick HTTP',
+                    'config': config,
+                    'msg': f'Found via HTTP: {sig}',
+                    'method': 'http_quick'
+                }
+        
+        # Script not found - might be loaded via JS, need browser
+        return None
+        
+    except requests.Timeout:
+        return None  # Try browser
+    except requests.exceptions.SSLError:
+        return {
+            'status': 'FAIL',
+            'vendor': 'SSL Error',
+            'config': 'ERR',
+            'msg': 'SSL certificate verification failed',
+            'method': 'http_quick'
+        }
+    except requests.exceptions.ConnectionError as e:
+        error_str = str(e).lower()
+        if 'name or service not known' in error_str or 'getaddrinfo failed' in error_str:
+            return {
+                'status': 'FAIL',
+                'vendor': 'DNS Error',
+                'config': 'ERR',
+                'msg': 'Domain does not resolve',
+                'method': 'http_quick'
+            }
+        return None  # Other connection errors - try browser
+    except Exception:
+        return None
+
+
+# ============================================================================
 # SITES THAT REQUIRE SESSION WARMING
 # ============================================================================
-# These sites have aggressive bot detection and need extra steps.
-# Update this list as you discover more problematic sites.
 
 PROBLEMATIC_SITES = [
     # Security providers
@@ -39,7 +299,7 @@ PROBLEMATIC_SITES = [
     'perimeter',
     'distil',
     
-    # High-volume dealer groups (add more as you discover them)
+    # High-volume dealer groups
     'lithia.com',
     'autonation.com',
     'carmax.com',
@@ -47,7 +307,6 @@ PROBLEMATIC_SITES = [
     'asbury',
     
     # Specific vendors known for strict security
-    # Add more as you find sites that consistently block you
     'dealer.com',
     'dealertrack',
     'audinorthlake.com',
@@ -56,21 +315,11 @@ PROBLEMATIC_SITES = [
 ]
 
 def needs_session_warming(url):
-    """
-    Check if a URL needs session warming based on known problematic patterns.
-    
-    Args:
-        url: The full URL to check (e.g., 'https://example.dealer.com/inventory')
-    
-    Returns:
-        Boolean: True if site needs warming, False otherwise
-    """
+    """Check if a URL needs session warming based on known problematic patterns."""
     url_lower = url.lower()
-    
     for pattern in PROBLEMATIC_SITES:
         if pattern in url_lower:
             return True
-    
     return False
 
 
@@ -78,48 +327,32 @@ def warm_up_session(driver, target_url):
     """
     Visits the homepage before going to the target page.
     This makes the visit look more natural and less bot-like.
-    
-    Think of it like: Real users usually land on homepage first,
-    then navigate to specific pages. Bots go directly to target page.
-    
-    Args:
-        driver: Selenium WebDriver instance
-        target_url: The actual page we want to scan
     """
     from urllib.parse import urlparse
     
     try:
-        # Extract the base URL (homepage)
         parsed = urlparse(target_url)
         homepage = f"{parsed.scheme}://{parsed.netloc}"
         
         print(f"    → Warming session: visiting {homepage}")
-        
-        # Visit homepage first
         driver.get(homepage)
-        
-        # Wait a bit (pretend to look at homepage)
         delay = random.uniform(4, 8)
         time.sleep(delay)
         
-        # Optional: Scroll down a bit (looks even more human)
         try:
             driver.execute_script("window.scrollTo(0, 500);")
             time.sleep(0.5)
         except:
-            pass  # If scroll fails, no big deal
+            pass
         
         print(f"    → Session warmed, now visiting target page")
         
     except Exception as e:
-        # If warming fails, just continue to target
         print(f"    ⚠ Session warming failed (continuing anyway): {e}")
 
+
 def save_evidence_screenshot(driver, client_name, status):
-    """
-    Takes a screenshot of the current browser state.
-    Saved to: /scans/YYYY-MM-DD/{STATUS}_{ClientName}.png
-    """
+    """Takes a screenshot of the current browser state."""
     try:
         today = datetime.now().strftime("%Y-%m-%d")
         base_folder = os.path.join(os.getcwd(), "scans", today)
@@ -137,6 +370,7 @@ def save_evidence_screenshot(driver, client_name, status):
     except Exception as e:
         logger.error("Screenshot failed", exception=e, client=client_name)
         return False
+
 
 def detect_provider(soup):
     text_content = soup.get_text().lower()
@@ -170,6 +404,7 @@ def detect_provider(soup):
 
     return "Other"
 
+
 def check_url_rules(driver, url, client_name):
     """
     Double-Tap Logic with Updated Rules for Dealer.com
@@ -183,6 +418,7 @@ def check_url_rules(driver, url, client_name):
     MAX_WAIT_TIME = 15 
     SETTLE_TIME = 3
     MAX_ATTEMPTS = 2
+    
     with LogExecutionTime(logger, "url_scan", url=url, client=client_name):
         for attempt in range(1, MAX_ATTEMPTS + 1):
             try:
@@ -333,135 +569,217 @@ def check_url_rules(driver, url, client_name):
                 return {'status': 'ERROR', 'msg': str(e), 'config': 'ERR', 'vendor': 'ERR'}
         pass
 
+
 # ============================================================================
 # HUMAN DELAY SIMULATION
 # ============================================================================
 
 def human_delay(base_seconds=3):
-    """
-    Simulates realistic human delay patterns.
+    """Simulates realistic human delay patterns."""
+    rand = random.random()
     
-    Humans don't wait the same amount of time between actions:
-    - 70% of time: Normal browsing (2-5 seconds)
-    - 20% of time: Quick action (0.5-2 seconds) - they know what they want
-    - 10% of time: Distracted (5-15 seconds) - checking phone, reading, etc.
-    
-    This makes scan timing less predictable and more human-like.
-    
-    Returns:
-        float: The delay time in seconds
-    """
-    rand = random.random()  # Get random number between 0 and 1
-    
-    if rand < 0.70:  # 70% of the time
-        # Normal browsing behavior
+    if rand < 0.70:
         delay = random.uniform(2.0, 5.0)
-    elif rand < 0.90:  # Next 20% (70-90%)
-        # Quick user who knows what they want
+    elif rand < 0.90:
         delay = random.uniform(0.5, 2.0)
-    else:  # Last 10% (90-100%)
-        # User got distracted, takes longer
+    else:
         delay = random.uniform(5.0, 15.0)
     
     time.sleep(delay)
     return delay
 
-# --- 2. WORKER (Stability Fix Applied) ---
+
+# --- 2. WORKER (With Tiered Scanning) ---
 class BatchWorker(QThread):
     progress_signal = pyqtSignal(int)
     result_signal = pyqtSignal(int, dict) 
     finished_signal = pyqtSignal()
 
-    def __init__(self, data_list):
+    def __init__(self, data_list, block_tracker: BlockTracker = None):
         super().__init__()
         self.data_list = data_list
         self.is_running = True
+        self.block_tracker = block_tracker
 
     def run(self):
+        """
+        Two-phase scanning:
+        Phase 1: Quick HTTP checks (no browser)
+        Phase 2: Browser scans for sites that need it
+        """
         RESTART_EVERY = 3
-        driver = self.start_driver()
         total = len(self.data_list)
-
-        for i, item in enumerate(self.data_list):
-            if not self.is_running: break
+        sites_needing_browser = []
+        completed = 0
+        
+        # ================================================================
+        # PHASE 1: Quick HTTP checks (fast, no browser needed)
+        # ================================================================
+        print("\n" + "=" * 60)
+        print("PHASE 1: Quick HTTP Checks")
+        print("=" * 60)
+        
+        for item in self.data_list:
+            if not self.is_running:
+                break
             
-            # Restart browser periodically to prevent memory leaks
-            if i > 0 and i % RESTART_EVERY == 0:
-                try: driver.quit()
-                except: pass
-                time.sleep(3)
-                driver = self.start_driver()
-
-            row_idx, client, url, original_idx = item 
+            row_idx, client, url, original_idx = item
+            
+            # Check if UNVERIFIABLE (skip entirely)
+            if self.block_tracker and self.block_tracker.is_unverifiable(url):
+                result = {
+                    'status': 'UNVERIFIABLE',
+                    'vendor': 'Manual Required',
+                    'config': 'N/A',
+                    'msg': 'Site blocks automation. Manual check required.',
+                    'original_index': original_idx
+                }
+                self.result_signal.emit(row_idx, result)
+                completed += 1
+                self.progress_signal.emit(int((completed / total) * 100))
+                print(f"  [SKIP] {client} - UNVERIFIABLE")
+                continue
+            
+            # Try quick HTTP check
+            quick_result = quick_http_check(url)
+            
+            if quick_result is not None:
+                # Got conclusive result without browser!
+                quick_result['original_index'] = original_idx
+                
+                if quick_result['status'] == 'PASS' and self.block_tracker:
+                    self.block_tracker.record_success(url)
+                
+                self.result_signal.emit(row_idx, quick_result)
+                completed += 1
+                self.progress_signal.emit(int((completed / total) * 100))
+                print(f"  [QUICK] {client} - {quick_result['status']}")
+            else:
+                # Needs browser scan
+                sites_needing_browser.append(item)
+                print(f"  [QUEUE] {client} - needs browser")
+        
+        # ================================================================
+        # PHASE 2: Browser scans (only for sites that need it)
+        # ================================================================
+        if sites_needing_browser and self.is_running:
+            print("\n" + "=" * 60)
+            print(f"PHASE 2: Browser Scans ({len(sites_needing_browser)} sites)")
+            print("=" * 60)
+            
+            driver = self.start_driver()
+            browser_count = 0
+            
+            for item in sites_needing_browser:
+                if not self.is_running:
+                    break
+                
+                row_idx, client, url, original_idx = item
+                
+                # Restart browser periodically
+                if browser_count > 0 and browser_count % RESTART_EVERY == 0:
+                    try:
+                        driver.quit()
+                    except:
+                        pass
+                    time.sleep(3)
+                    driver = self.start_driver()
+                
+                try:
+                    result = check_url_rules(driver, url, client)
+                except Exception as e:
+                    try:
+                        driver.quit()
+                    except:
+                        pass
+                    driver = self.start_driver()
+                    result = {'status': 'ERROR', 'msg': 'Browser crashed/Recovered', 'config': 'ERR', 'vendor': 'ERR'}
+                
+                # Handle BLOCKED with escalation to UNVERIFIABLE
+                if result.get('status') == 'BLOCKED' and self.block_tracker:
+                    count, is_unverifiable = self.block_tracker.record_block(url)
+                    
+                    if is_unverifiable:
+                        result = {
+                            'status': 'UNVERIFIABLE',
+                            'vendor': 'Persistent Block',
+                            'config': 'N/A',
+                            'msg': f'Blocked {count}x. Manual verification required.'
+                        }
+                        print(f"  [UNVERIFIABLE] {client} - escalated after {count} blocks")
+                    else:
+                        result['msg'] = f"{result.get('msg', '')} ({count}/{BlockTracker.BLOCK_THRESHOLD})"
+                        print(f"  [BLOCKED] {client} - {count}/{BlockTracker.BLOCK_THRESHOLD}")
+                
+                elif result.get('status') == 'PASS':
+                    if self.block_tracker:
+                        self.block_tracker.record_success(url)
+                    print(f"  [PASS] {client}")
+                
+                else:
+                    print(f"  [{result.get('status')}] {client}")
+                
+                result['original_index'] = original_idx
+                self.result_signal.emit(row_idx, result)
+                completed += 1
+                self.progress_signal.emit(int((completed / total) * 100))
+                
+                browser_count += 1
+                
+                # Human delay between scans
+                if self.is_running:
+                    human_delay()
             
             try:
-                result = check_url_rules(driver, url, client)
-            except Exception:
-                # If checking failed (e.g. window closed), restart driver and report error
-                try: driver.quit()
-                except: pass
-                driver = self.start_driver()
-                result = {'status': 'ERROR', 'msg': 'Browser crashed/Recovered', 'config': 'ERR', 'vendor': 'ERR'}
-
-            result['original_index'] = original_idx 
-            self.result_signal.emit(row_idx, result)
-            self.progress_signal.emit(int(((i + 1) / total) * 100))
-            
-            delay = human_delay()
-
-        try: driver.quit()
-        except: pass
+                driver.quit()
+            except:
+                pass
+        
+        print("\n" + "=" * 60)
+        print("SCAN COMPLETE")
+        print("=" * 60)
+        
         self.finished_signal.emit()
 
     def start_driver(self):
-        """
-        Creates a stealthy browser instance with randomized fingerprints
-        to avoid bot detection.
-        """
+        """Creates a stealthy browser instance with randomized fingerprints."""
         last_err = None
         
         for attempt in range(3):
             try: 
-                # === STEP 1: Create Fresh Options ===
                 options = uc.ChromeOptions()
                 
-                # === STEP 2: Randomize User Agent ===
-                # These are real Chrome user agents from different versions/platforms
+                # Randomize User Agent
                 user_agents = [
-                    # Windows Chrome
                     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
                     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
                     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-                    # Mac Chrome
                     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
                     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
-                    # Linux Chrome
                     'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
                 ]
                 chosen_ua = random.choice(user_agents)
                 options.add_argument(f'--user-agent={chosen_ua}')
                 
-                # === STEP 3: Randomize Window Size ===
-                # Common real screen resolutions
+                # Randomize Window Size
                 window_sizes = [
-                    (1920, 1080),  # Full HD
-                    (1366, 768),   # Laptop standard
-                    (1440, 900),   # MacBook Pro
-                    (1536, 864),   # Surface Pro
-                    (1280, 720),   # HD
+                    (1920, 1080),
+                    (1366, 768),
+                    (1440, 900),
+                    (1536, 864),
+                    (1280, 720),
                 ]
                 width, height = random.choice(window_sizes)
                 options.add_argument(f'--window-size={width},{height}')
                 
-                # === STEP 4: Randomize Language ===
+                # Randomize Language
                 languages = ['en-US,en', 'en-GB,en', 'en-CA,en']
                 options.add_argument(f'--accept-lang={random.choice(languages)}')
                 
-                # === STEP 5: Anti-Detection Arguments ===
-                # These hide the fact that we're using automation
+                # Anti-Detection Arguments
                 options.add_argument('--disable-blink-features=AutomationControlled')
                 
-                # === STEP 6: Stability Arguments (keep your existing ones) ===
+                # Stability Arguments
                 options.add_argument("--disable-popup-blocking")
                 options.add_argument("--no-sandbox")
                 options.add_argument("--disable-dev-shm-usage")
@@ -469,34 +787,24 @@ class BatchWorker(QThread):
                 options.add_argument("--disable-extensions")
                 options.add_argument("--disable-notifications")
                 
-                # === STEP 7: Create Driver ===
+                # Create Driver
                 driver = uc.Chrome(options=options, version_main=144)
                 
-                # === STEP 8: Advanced Stealth (JavaScript Injection) ===
-                # This masks properties that reveal we're a bot
+                # Advanced Stealth (JavaScript Injection)
                 driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
                     'source': '''
-                        // Hide webdriver property
                         Object.defineProperty(navigator, 'webdriver', {
                             get: () => undefined
                         });
-                        
-                        // Mock plugins to look more real
                         Object.defineProperty(navigator, 'plugins', {
                             get: () => [1, 2, 3, 4, 5]
                         });
-                        
-                        // Mock languages
                         Object.defineProperty(navigator, 'languages', {
                             get: () => ['en-US', 'en']
                         });
-                        
-                        // Remove automation indicators
                         window.chrome = {
                             runtime: {}
                         };
-                        
-                        // Mock permissions
                         const originalQuery = window.navigator.permissions.query;
                         window.navigator.permissions.query = (parameters) => (
                             parameters.name === 'notifications' ?
@@ -506,7 +814,6 @@ class BatchWorker(QThread):
                     '''
                 })
                 
-                # === STEP 9: Set Timeouts ===
                 driver.set_page_load_timeout(30)
                 
                 print(f"✓ Browser started (UA: {chosen_ua[:50]}..., Size: {width}x{height})")
@@ -517,7 +824,6 @@ class BatchWorker(QThread):
                 print(f"Browser start attempt {attempt + 1} failed: {e}")
                 time.sleep(2)
         
-        # If all attempts failed
         raise Exception(f"Failed to start browser after 3 attempts: {last_err}")
 
     def stop(self):
@@ -531,6 +837,9 @@ class ScannerTab(QWidget):
     def __init__(self):
         super().__init__()
         self.worker = None
+        
+        # Initialize block tracker for UNVERIFIABLE status
+        self.block_tracker = BlockTracker(data_dir="data")
 
         layout = QVBoxLayout(self)
         layout.setContentsMargins(15, 15, 15, 15)
@@ -648,6 +957,7 @@ class ScannerTab(QWidget):
         self.table.setSortingEnabled(True)
 
     def color_status(self, item, status_txt):
+        """Apply color coding to status cells."""
         if status_txt == 'PASS':
             item.setBackground(QColor(styles.COLORS["row_pass_bg"]))
             item.setForeground(QColor(styles.COLORS["row_pass_text"]))
@@ -657,6 +967,10 @@ class ScannerTab(QWidget):
         elif status_txt == 'FAIL' or status_txt == 'ERROR':
             item.setBackground(QColor(styles.COLORS["row_fail_bg"]))
             item.setForeground(QColor(styles.COLORS["row_fail_text"]))
+        elif status_txt == 'UNVERIFIABLE':
+            # Orange for UNVERIFIABLE - distinct from other statuses
+            item.setBackground(QColor("#fd7e14"))  # Orange
+            item.setForeground(QColor("#ffffff"))  # White text
         elif status_txt == 'PENDING':
             item.setBackground(QColor(styles.COLORS["row_pending_bg"]))
             item.setForeground(QColor(styles.COLORS["row_pending_text"]))
@@ -664,7 +978,8 @@ class ScannerTab(QWidget):
             item.setBackground(QColor(styles.COLORS["row_pending_bg"]))
 
     def start_batch(self):
-        if self.worker is not None and self.worker.isRunning(): return
+        if self.worker is not None and self.worker.isRunning():
+            return
         
         self.table.setSortingEnabled(False)
 
@@ -673,8 +988,8 @@ class ScannerTab(QWidget):
             status_item = self.table.item(i, 4)
             status_text = status_item.text() if status_item else ""
             
-            # --- FILTER: ONLY SCAN PENDING ---
-            # Skips PASS, FAIL, WARN, BLOCKED, ERROR
+            # FILTER: Only scan PENDING items
+            # Skip PASS, FAIL, WARN, BLOCKED, ERROR, UNVERIFIABLE
             if status_text != "PENDING" and status_text != "":
                 continue
             
@@ -695,7 +1010,8 @@ class ScannerTab(QWidget):
             self.table.setSortingEnabled(True)
             return
 
-        self.worker = BatchWorker(data_payload)
+        # Pass block_tracker to worker for tiered scanning
+        self.worker = BatchWorker(data_payload, block_tracker=self.block_tracker)
         self.worker.progress_signal.connect(self.progress.setValue)
         self.worker.result_signal.connect(self.update_row)
         self.worker.finished_signal.connect(self.batch_finished)
@@ -714,7 +1030,23 @@ class ScannerTab(QWidget):
         self.btn_stop.setEnabled(False)
         self.btn_stop.setText(" Stop") 
         self.table.setSortingEnabled(True)
-        QMessageBox.information(self, "Done", "Batch Scan Complete!")
+        
+        # Show summary with UNVERIFIABLE count
+        unverifiable_count = sum(
+            1 for i in range(self.table.rowCount())
+            if self.table.item(i, 4) and self.table.item(i, 4).text() == 'UNVERIFIABLE'
+        )
+        
+        if unverifiable_count > 0:
+            QMessageBox.information(
+                self, 
+                "Done", 
+                f"Batch Scan Complete!\n\n"
+                f"🟠 {unverifiable_count} site(s) marked UNVERIFIABLE.\n"
+                f"These require manual verification."
+            )
+        else:
+            QMessageBox.information(self, "Done", "Batch Scan Complete!")
 
     def update_row(self, row_idx, result):
         self.table.setItem(row_idx, 2, QTableWidgetItem(result.get('vendor', 'Unknown')))
@@ -741,10 +1073,13 @@ class ScannerTab(QWidget):
 
     def run_manual_check(self):
         url = self.input_manual.text().strip()
-        if not url: return
+        if not url:
+            return
         
-        if not url.startswith("http"): full_url = "https://" + url
-        else: full_url = url
+        if not url.startswith("http"):
+            full_url = "https://" + url
+        else:
+            full_url = url
             
         display_url = full_url.replace("https://", "").replace("http://", "").rstrip("/")
         
@@ -753,7 +1088,7 @@ class ScannerTab(QWidget):
         self.table.setItem(0, 1, QTableWidgetItem(display_url)) 
         self.table.setItem(0, 4, QTableWidgetItem("CHECKING..."))
         
-        self.worker = BatchWorker([(0, "Manual", full_url, None)])
+        self.worker = BatchWorker([(0, "Manual", full_url, None)], block_tracker=self.block_tracker)
         self.worker.result_signal.connect(self.update_row)
         self.worker.start()
 
@@ -762,7 +1097,8 @@ class ScannerTab(QWidget):
         default_name = f"scan_report_{timestamp}.csv"
 
         file_path, _ = QFileDialog.getSaveFileName(self, "Save Report", default_name, "CSV Files (*.csv)")
-        if not file_path: return
+        if not file_path:
+            return
         
         try:
             with open(file_path, mode='w', newline='', encoding='utf-8') as file:
@@ -778,3 +1114,11 @@ class ScannerTab(QWidget):
             QMessageBox.information(self, "Success", f"Report saved to:\n{file_path}")
         except Exception as e:
             QMessageBox.critical(self, "Export Error", str(e))
+    
+    def reset_unverifiable_site(self, url: str):
+        """Reset a site's UNVERIFIABLE status for re-scanning."""
+        self.block_tracker.reset_site(url)
+    
+    def get_unverifiable_sites(self) -> List[str]:
+        """Get list of all domains marked as UNVERIFIABLE."""
+        return self.block_tracker.get_unverifiable_domains()

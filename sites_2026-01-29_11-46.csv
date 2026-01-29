@@ -1,0 +1,48 @@
+Client Name,URL,Provider,Config,Status,Details,Active
+865 Autos LLC,www.865autos.com,Quick HTTP,BUNDLE,PASS,Found via HTTP: idrove.it/behaviour.bundle.js,Yes
+Allen Chevrolet,www.allenchevy.com,DealerOn,STD,PASS,Perfect (DealerOn Rule of 1),Yes
+Auto Gallery Ford,www.autogalleryford.com,Dealer Inspire,STD,PASS,Perfect (Rule of 2),Yes
+Barbour Hendrick Honda,www.barbourhendrickhonda.com,Persistent Block,N/A,UNVERIFIABLE,Blocked 3x. Manual verification required.,Yes
+Bay Ridge Subaru,www.brooklynsubarudeals.com,Dealer.com,DCOM,PASS,Perfect (Rule of 1),Yes
+Beach Chevrolet,www.thebeachchevrolet.com,Sokal,STD,PASS,Perfect (Rule of 2),Yes
+Chrysler Dodge Jeep Ram of Elizabethton,www.nagcdjr.com,Quick HTTP,STD,PASS,Found via HTTP: idrove.it/behaviour.js,Yes
+East Charlotte Nissan,www.eastcharlottenissan.com,Team Velocity,NONE,FAIL,No scripts found (Saved Img),Yes
+Ford of Elizabethton,www.fordofelizabethton.com,Quick HTTP,STD,PASS,Found via HTTP: idrove.it/behaviour.js,Yes
+Hendrick Acura Charlotte,www.hendrickacura.com,Persistent Block,N/A,UNVERIFIABLE,Blocked 3x. Manual verification required.,Yes
+Hendrick Buick GMC Cary,www.hendrickbuickgmccary.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (2/3),Yes
+Hendrick CDJR of Concord,www.hendrickchryslerdodgejeepramofconcord.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),Yes
+Honda Cars of Aiken,www.hondacarsofaiken.com,ERR,ERR,ERROR,"Message: timeout: Timed out receiving message from renderer: 29.916
+  (Session info: chrome=144.0.7559.109)
+Stacktrace:
+0   undetected_chromedriver             0x00000001015aab68 undetected_chromedriver + 6712168
+1   undetected_chromedriver             0x00000001015a23ca undetected_chromedriver + 6677450
+2   undetected_chromedriver             0x0000000100fb2f25 undetected_chromedriver + 454437
+3   undetected_chromedriver             0x0000000100f9a5c7 undetected_chromedriver + 353735
+4   undetected_chromedriver             0x0000000100f9a2dd undetected_chromedriver + 352989
+5   undetected_chromedriver             0x0000000100f980a9 undetected_chromedriver + 344233
+6   undetected_chromedriver             0x0000000100f989ff undetected_chromedriver + 346623
+7   undetected_chromedriver             0x0000000100fa7bb0 undetected_chromedriver + 408496
+8   undetected_chromedriver             0x0000000100fc1c53 undetected_chromedriver + 515155
+9   undetected_chromedriver             0x0000000100fc869b undetected_chromedriver + 542363
+10  undetected_chromedriver             0x0000000100f990fd undetected_chromedriver + 348413
+11  undetected_chromedriver             0x0000000100fc18d0 undetected_chromedriver + 514256
+12  undetected_chromedriver             0x00000001010516f4 undetected_chromedriver + 1103604
+13  undetected_chromedriver             0x0000000100ff9a11 undetected_chromedriver + 743953
+14  undetected_chromedriver             0x0000000100ffa811 undetected_chromedriver + 747537
+15  undetected_chromedriver             0x0000000101563241 undetected_chromedriver + 6419009
+16  undetected_chromedriver             0x00000001015675da undetected_chromedriver + 6436314
+17  undetected_chromedriver             0x0000000101542a29 undetected_chromedriver + 6285865
+18  undetected_chromedriver             0x0000000101568038 undetected_chromedriver + 6438968
+19  undetected_chromedriver             0x0000000101530aa0 undetected_chromedriver + 6212256
+20  undetected_chromedriver             0x000000010158e668 undetected_chromedriver + 6596200
+21  undetected_chromedriver             0x000000010158e822 undetected_chromedriver + 6596642
+22  undetected_chromedriver             0x00000001015a1fd1 undetected_chromedriver + 6676433
+23  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+",Yes
+Honda Indian Trail,www.hondaofindiantrail.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),Yes
+Jeff Gordon Chevrolet,www.jeffgordonchevy.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),Yes
+Joe Cooper Lincoln of Edmond,joecooperlincoln.com,Dealer.com,SPA,WARN,Found 6 (Expected 4) (Saved Img),Yes
+Nissan of Garden City,www.nissanofgardencity.com,Other,NONE,FAIL,No scripts found (Saved Img),Yes
+Nissan of Hendersonville,www.nissanofhendersonville.com,Dealer.com,NONE,FAIL,No scripts found (Saved Img),Yes
+Rusty Wallace Kia Alcoa,www.rustywallacekiaalcoa.com,DealerOn,STD,WARN,Found 2 (DealerOn expects 1) (Saved Img),Yes

@@ -979,3 +979,70 @@ Traceback: Traceback (most recent call last):
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 NameError: name 'datetime' is not defined
 
+2026-01-29 11:31:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 11:36:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 11:41:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 11:46:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 11:51:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/manager_tab.py", line 411, in save_csv
+    self.sync_to_database()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/manager_tab.py", line 444, in sync_to_database
+    if not config.ENABLE_DATABASE:
+NameError: name 'config' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 11:56:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/manager_tab.py", line 411, in save_csv
+    self.sync_to_database()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/manager_tab.py", line 444, in sync_to_database
+    if not config.ENABLE_DATABASE:
+NameError: name 'config' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 12:01:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+

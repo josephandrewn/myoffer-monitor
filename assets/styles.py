@@ -28,7 +28,9 @@ COLORS = {
     "row_pending_bg": "#ffffff",
     "row_pending_text": "#1d1d1f",
     "row_inactive_bg": "#f0f0f0",
-    "row_inactive_text": "#86868b"
+    "row_inactive_text": "#86868b",
+    "row_unverifiable_bg": "#fd7e14",
+    "row_unverifiable_text": "#ffffff",
 }
 
 # --- GLOBAL STYLESHEET ---

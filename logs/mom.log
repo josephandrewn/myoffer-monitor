@@ -1089,3 +1089,104 @@ NameError: name 'datetime' is not defined
 2026-01-29 10:58:58 - uc - INFO - _ensure_close:848 - ensuring close
 2026-01-29 10:58:58 - uc - INFO - _ensure_close:848 - ensuring close
 2026-01-29 10:58:58 - uc - INFO - _ensure_close:848 - ensuring close
+2026-01-29 11:26:58 - logger - INFO - info:69 - Logging system initialized
+2026-01-29 11:26:59 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-29 11:28:28 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-01-29 11:29:23 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Barbour Hendrick Honda | url=https://www.barbourhendrickhonda.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-01-29 11:29:31 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-01-29 11:30:45 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=East Charlotte Nissan | url=https://www.eastcharlottenissan.com | status=FAIL | vendor=Team Velocity | config=NONE | details=No scripts found (Saved Img)
+2026-01-29 11:30:54 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-01-29 11:31:34 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Acura Charlotte | url=https://www.hendrickacura.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-01-29 11:31:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 11:32:02 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Buick GMC Cary | url=https://www.hendrickbuickgmccary.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-01-29 11:32:42 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick CDJR of Concord | url=https://www.hendrickchryslerdodgejeepramofconcord.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-01-29 11:32:51 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-01-29 11:34:29 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Honda Indian Trail | url=https://www.hondaofindiantrail.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-01-29 11:35:08 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Jeff Gordon Chevrolet | url=https://www.jeffgordonchevy.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-01-29 11:35:17 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-01-29 11:35:36 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Joe Cooper Lincoln of Edmond | url=https://joecooperlincoln.com | status=WARN | vendor=Dealer.com | config=SPA | details=Found 6 (Expected 4) (Saved Img)
+2026-01-29 11:36:16 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Nissan of Garden City | url=https://www.nissanofgardencity.com | status=FAIL | vendor=Other | config=NONE | details=No scripts found (Saved Img)
+2026-01-29 11:36:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 11:37:03 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Nissan of Hendersonville | url=https://www.nissanofhendersonville.com | status=FAIL | vendor=Dealer.com | config=NONE | details=No scripts found (Saved Img)
+2026-01-29 11:37:11 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-01-29 11:37:32 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Rusty Wallace Kia Alcoa | url=https://www.rustywallacekiaalcoa.com | status=WARN | vendor=DealerOn | config=STD | details=Found 2 (DealerOn expects 1) (Saved Img)
+2026-01-29 11:41:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 11:42:45 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-01-29 11:43:25 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Barbour Hendrick Honda | url=https://www.barbourhendrickhonda.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-01-29 11:44:03 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Acura Charlotte | url=https://www.hendrickacura.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-01-29 11:44:38 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-01-29 11:45:16 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Barbour Hendrick Honda | url=https://www.barbourhendrickhonda.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-01-29 11:45:54 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Acura Charlotte | url=https://www.hendrickacura.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-01-29 11:46:24 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Buick GMC Cary | url=https://www.hendrickbuickgmccary.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-01-29 11:46:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 11:51:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/manager_tab.py", line 411, in save_csv
+    self.sync_to_database()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/manager_tab.py", line 444, in sync_to_database
+    if not config.ENABLE_DATABASE:
+NameError: name 'config' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 11:56:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/manager_tab.py", line 411, in save_csv
+    self.sync_to_database()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/manager_tab.py", line 444, in sync_to_database
+    if not config.ENABLE_DATABASE:
+NameError: name 'config' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 12:01:59 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 12:05:18 - uc - INFO - _ensure_close:848 - ensuring close
+2026-01-29 12:05:18 - uc - INFO - _ensure_close:848 - ensuring close
+2026-01-29 12:05:18 - uc - INFO - _ensure_close:848 - ensuring close
+2026-01-29 12:05:18 - uc - INFO - _ensure_close:848 - ensuring close
+2026-01-29 12:05:18 - uc - INFO - _ensure_close:848 - ensuring close
+2026-01-29 12:05:18 - uc - INFO - _ensure_close:848 - ensuring close
+2026-01-29 12:05:18 - uc - INFO - _ensure_close:848 - ensuring close
+2026-01-29 12:05:18 - uc - INFO - _ensure_close:848 - ensuring close
