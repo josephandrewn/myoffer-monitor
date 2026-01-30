@@ -1190,3 +1190,457 @@ NameError: name 'DATA_DIR' is not defined
 2026-01-29 12:05:18 - uc - INFO - _ensure_close:848 - ensuring close
 2026-01-29 12:05:18 - uc - INFO - _ensure_close:848 - ensuring close
 2026-01-29 12:05:18 - uc - INFO - _ensure_close:848 - ensuring close
+2026-01-29 12:09:24 - logger - INFO - info:69 - Logging system initialized
+2026-01-29 12:09:25 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-29 12:10:04 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-01-29 12:12:39 - database - INFO - info:69 - Database initialized | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/data/mom_data.db
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=865 Autos LLC | url=www.865autos.com | id=3
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Allen Chevrolet | url=www.allenchevy.com | id=4
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Auto Gallery Ford | url=www.autogalleryford.com | id=5
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Barbour Hendrick Honda | url=www.barbourhendrickhonda.com | id=6
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Bay Ridge Subaru | url=www.brooklynsubarudeals.com | id=7
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Beach Chevrolet | url=www.thebeachchevrolet.com | id=8
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Chrysler Dodge Jeep Ram of Elizabethton | url=www.nagcdjr.com | id=9
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=East Charlotte Nissan | url=www.eastcharlottenissan.com | id=10
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Ford of Elizabethton | url=www.fordofelizabethton.com | id=11
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Hendrick Acura Charlotte | url=www.hendrickacura.com | id=12
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Hendrick Buick GMC Cary | url=www.hendrickbuickgmccary.com | id=13
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Hendrick CDJR of Concord | url=www.hendrickchryslerdodgejeepramofconcord.com | id=14
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Honda Cars of Aiken | url=www.hondacarsofaiken.com | id=15
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Honda Indian Trail | url=www.hondaofindiantrail.com | id=16
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Jeff Gordon Chevrolet | url=www.jeffgordonchevy.com | id=17
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Joe Cooper Lincoln of Edmond | url=joecooperlincoln.com | id=18
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Nissan of Garden City | url=www.nissanofgardencity.com | id=19
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Nissan of Hendersonville | url=www.nissanofhendersonville.com | id=20
+2026-01-29 12:12:39 - database - INFO - info:69 - Site added | client=Rusty Wallace Kia Alcoa | url=www.rustywallacekiaalcoa.com | id=21
+2026-01-29 12:12:39 - database - INFO - info:69 - Imported sites from DataFrame | count=19
+2026-01-29 12:12:39 - tabs.manager_tab - INFO - info:69 - Data synced to database | records=19
+2026-01-29 12:14:25 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 12:19:25 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 12:24:04 - uc - INFO - _ensure_close:848 - ensuring close
+2026-01-29 12:24:31 - logger - INFO - info:69 - Logging system initialized
+2026-01-29 12:24:32 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-29 12:29:32 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 12:34:32 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 12:39:32 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 12:40:00 - logger - INFO - info:69 - Logging system initialized
+2026-01-29 12:40:01 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-29 12:45:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 12:50:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 12:55:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 13:00:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 13:05:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 13:10:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 13:15:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 13:20:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 13:25:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 13:30:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 13:35:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 13:40:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 13:45:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 13:50:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 13:55:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 14:00:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 14:05:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 14:10:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 14:15:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 14:20:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 14:25:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 14:30:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 14:35:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 14:40:01 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 14:45:03 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 15:05:43 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 15:10:43 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 15:15:43 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 15:20:43 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 15:25:43 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 15:30:43 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 15:35:43 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 15:40:43 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 15:48:44 - __main__ - ERROR - error:81 - Auto-save failed
+Exception: name 'DATA_DIR' is not defined
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/main.py", line 98, in auto_save
+    auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
+NameError: name 'DATA_DIR' is not defined
+
+2026-01-29 15:50:46 - logger - INFO - info:69 - Logging system initialized
+2026-01-29 15:50:47 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-29 15:55:47 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260129_155547.csv
+2026-01-29 16:00:47 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260129_160047.csv
+2026-01-29 16:05:47 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260129_160547.csv
+2026-01-30 08:03:08 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 08:03:09 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 08:03:09 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 08:03:53 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 08:03:53 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 08:03:53 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 08:08:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_080854.csv
+2026-01-30 08:13:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_081354.csv
+2026-01-30 08:18:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_081854.csv
+2026-01-30 08:23:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_082354.csv
+2026-01-30 08:28:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_082854.csv
+2026-01-30 08:33:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_083354.csv
+2026-01-30 08:38:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_083854.csv
+2026-01-30 08:43:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_084354.csv
+2026-01-30 08:48:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_084854.csv
+2026-01-30 08:53:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_085354.csv
+2026-01-30 08:58:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_085854.csv
+2026-01-30 09:03:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_090354.csv
+2026-01-30 09:08:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_090854.csv
+2026-01-30 09:13:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_091354.csv
+2026-01-30 09:18:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_091854.csv
+2026-01-30 09:23:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_092354.csv
+2026-01-30 09:28:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_092854.csv
+2026-01-30 09:33:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_093354.csv
+2026-01-30 09:38:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_093854.csv
+2026-01-30 09:43:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_094354.csv
+2026-01-30 09:48:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_094854.csv
+2026-01-30 09:53:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_095354.csv
+2026-01-30 09:58:54 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_095854.csv
+2026-01-30 10:10:11 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 10:10:12 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 10:10:12 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 10:15:13 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_101513.csv
+2026-01-30 10:15:27 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 10:15:28 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 10:15:28 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 10:16:01 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 10:16:02 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 10:16:02 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 10:17:05 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 10:17:06 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 10:17:06 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 10:17:32 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 10:17:33 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 10:17:33 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 10:19:07 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 10:19:08 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 10:19:08 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 10:24:08 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_102408.csv
+2026-01-30 10:27:32 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 10:27:33 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 10:27:33 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 10:28:55 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 10:28:56 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 10:28:56 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 10:47:19 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 10:47:20 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 10:47:20 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 10:52:20 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_105220.csv
+2026-01-30 10:56:14 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 10:56:15 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 10:56:15 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 11:01:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_110115.csv
+2026-01-30 11:06:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_110615.csv
+2026-01-30 11:11:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_111115.csv
+2026-01-30 11:16:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_111615.csv
+2026-01-30 11:21:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_112115.csv
+2026-01-30 11:26:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_112615.csv
+2026-01-30 11:31:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_113115.csv
+2026-01-30 11:36:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_113615.csv
+2026-01-30 11:41:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_114115.csv
+2026-01-30 11:46:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_114615.csv
+2026-01-30 11:51:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_115115.csv
+2026-01-30 11:56:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_115615.csv
+2026-01-30 12:01:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_120115.csv
+2026-01-30 12:06:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_120615.csv
+2026-01-30 12:11:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_121115.csv
+2026-01-30 12:16:15 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_121615.csv
+2026-01-30 12:32:21 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_123221.csv
+2026-01-30 12:37:21 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_123721.csv
+2026-01-30 12:42:21 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_124221.csv
+2026-01-30 12:47:21 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_124721.csv
+2026-01-30 12:52:21 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_125221.csv
+2026-01-30 12:57:21 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_125721.csv
+2026-01-30 13:02:21 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_130221.csv
+2026-01-30 13:04:36 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 13:04:37 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 13:04:37 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 13:05:07 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 13:05:08 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 13:05:08 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 13:06:25 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 13:06:26 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 13:06:26 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 13:08:19 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 13:08:19 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 13:08:19 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 13:11:20 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 13:11:21 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 13:11:21 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 13:13:18 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 13:13:19 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 13:13:19 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 13:14:15 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 13:14:15 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 13:14:15 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 13:15:37 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 13:15:37 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 13:15:38 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 13:20:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_132038.csv
+2026-01-30 13:25:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_132538.csv
+2026-01-30 13:27:48 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 13:27:49 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 13:27:49 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 13:29:55 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 13:29:56 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 13:29:56 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 13:30:08 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 13:30:09 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 13:30:09 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 13:30:25 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 13:30:26 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 13:30:26 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 13:35:26 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_133526.csv
+2026-01-30 13:40:26 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_134026.csv
+2026-01-30 13:45:26 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_134526.csv
+2026-01-30 13:50:26 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_135026.csv
+2026-01-30 13:55:26 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_135526.csv
+2026-01-30 14:00:26 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_140026.csv
+2026-01-30 14:05:26 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_140526.csv
+2026-01-30 14:10:26 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_141026.csv
+2026-01-30 14:15:26 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_141526.csv
+2026-01-30 14:20:26 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_142026.csv
+2026-01-30 14:25:26 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_142526.csv
+2026-01-30 14:27:04 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 14:27:04 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 14:27:04 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 14:28:41 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 14:28:41 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 14:28:41 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 14:29:35 - logger - INFO - info:69 - Logging system initialized
+2026-01-30 14:29:36 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-01-30 14:29:36 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-01-29_12-12.csv
+2026-01-30 14:34:36 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_143436.csv
+2026-01-30 14:39:36 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_143936.csv
+2026-01-30 14:44:36 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260130_144436.csv

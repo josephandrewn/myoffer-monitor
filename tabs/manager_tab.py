@@ -12,6 +12,10 @@ from PyQt6.QtCore import Qt, pyqtSignal
 import assets.styles as styles 
 
 from config import DEFAULT_COLUMNS, app_settings
+try:
+    from config import ENABLE_DATABASE
+except ImportError:
+    ENABLE_DATABASE = False  # Default to disabled if not defined
 from logger import get_logger
 from database import get_database
 
@@ -244,12 +248,17 @@ class ManagerTab(QWidget):
         self.search_bar.textChanged.connect(self.filter_table)
         
         self.filter_combo = QComboBox()
-        self.filter_combo.addItems(["All Statuses", "PENDING", "PASS", "FAIL", "WARN", "BLOCKED", "ERROR", "ARCHIVED"])
+        self.filter_combo.addItems(["All Statuses", "PENDING", "PASS", "FAIL", "WARN", "BLOCKED", "N/A", "ERROR", "ARCHIVED"])
         self.filter_combo.currentTextChanged.connect(self.filter_table)
+        
+        # Add arrow indicator label (workaround for CSS arrow not rendering)
+        arrow_label = QLabel("▼")
+        arrow_label.setStyleSheet(f"color: {styles.COLORS['text_secondary']}; font-size: 10px; background: transparent; margin-left: -20px;")
 
         filter_layout.addWidget(self.search_bar)
         filter_layout.addWidget(QLabel("Filter by:"))
         filter_layout.addWidget(self.filter_combo)
+        filter_layout.addWidget(arrow_label)
         layout.addLayout(filter_layout)
 
         # --- Table ---
@@ -311,6 +320,9 @@ class ManagerTab(QWidget):
             elif status_text in ['FAIL', 'ERROR']:
                 bg_color = QColor(styles.COLORS["row_fail_bg"])
                 text_color = QColor(styles.COLORS["row_fail_text"])
+            elif status_text in ['UNVERIFIABLE', 'N/A']:
+                bg_color = QColor(styles.COLORS["row_unverifiable_bg"])
+                text_color = QColor(styles.COLORS["row_unverifiable_text"])
             elif status_text == 'PENDING':
                 bg_color = QColor(styles.COLORS["row_pending_bg"])
                 text_color = QColor(styles.COLORS["row_pending_text"])
@@ -431,6 +443,12 @@ class ManagerTab(QWidget):
             
             if status_filter == "ARCHIVED":
                 if item_active.text() == "Yes": status_match = False
+            elif status_filter == "N/A":
+                # N/A filter matches both "N/A" display and "UNVERIFIABLE" data
+                if item_active.text() == "No":
+                    status_match = False
+                elif item_status.text() not in ["N/A", "UNVERIFIABLE"]:
+                    status_match = False
             elif status_filter != "All Statuses":
                 if item_active.text() == "No": 
                     status_match = False 
@@ -441,7 +459,7 @@ class ManagerTab(QWidget):
 
     def sync_to_database(self):
         """Sync current table data to database"""
-        if not config.ENABLE_DATABASE:
+        if not ENABLE_DATABASE:
             return
         
         try:

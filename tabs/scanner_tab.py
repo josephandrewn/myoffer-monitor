@@ -38,8 +38,8 @@ class BlockTracker:
     Persists data to JSON so it survives app restarts.
     """
     
-    BLOCK_THRESHOLD = 2  # Consecutive blocks before UNVERIFIABLE
-    HISTORY_DAYS = 30     # Only count blocks within this window
+    BLOCK_THRESHOLD = 3  # Consecutive blocks before UNVERIFIABLE
+    HISTORY_DAYS = 7     # Only count blocks within this window
     
     def __init__(self, data_dir: str = "data"):
         self.data_dir = data_dir
@@ -263,7 +263,8 @@ def quick_http_check(url: str) -> Optional[dict]:
         return None
         
     except requests.Timeout:
-        return None  # Try browser
+        # Timeout could mean slow site or protection - try browser
+        return None
     except requests.exceptions.SSLError:
         return {
             'status': 'FAIL',
@@ -274,12 +275,29 @@ def quick_http_check(url: str) -> Optional[dict]:
         }
     except requests.exceptions.ConnectionError as e:
         error_str = str(e).lower()
+        # DNS failures and connection refused are definite FAILs
         if 'name or service not known' in error_str or 'getaddrinfo failed' in error_str:
             return {
                 'status': 'FAIL',
                 'vendor': 'DNS Error',
                 'config': 'ERR',
                 'msg': 'Domain does not resolve',
+                'method': 'http_quick'
+            }
+        if 'connection refused' in error_str:
+            return {
+                'status': 'FAIL',
+                'vendor': 'Connection Refused',
+                'config': 'ERR',
+                'msg': 'Server refused connection',
+                'method': 'http_quick'
+            }
+        if 'no route to host' in error_str or 'network is unreachable' in error_str:
+            return {
+                'status': 'FAIL',
+                'vendor': 'Network Error',
+                'config': 'ERR',
+                'msg': 'Site unreachable',
                 'method': 'http_quick'
             }
         return None  # Other connection errors - try browser
@@ -562,11 +580,40 @@ def check_url_rules(driver, url, client_name):
                 }
 
             except Exception as e:
+                error_msg = str(e).lower()
+                
+                # Check if this is a "site unreachable" type error that should be FAIL, not ERROR
+                fail_indicators = [
+                    'timeout', 'timed out',
+                    'err_connection', 'connection refused',
+                    'err_name_not_resolved', 'dns',
+                    'net::err_', 'neterror',
+                    'ssl', 'certificate',
+                    'unreachable', 'no such host',
+                ]
+                
+                is_site_issue = any(indicator in error_msg for indicator in fail_indicators)
+                
                 if attempt < MAX_ATTEMPTS:
                     error_delay = random.uniform(3, 8)
                     time.sleep(error_delay)
                     continue
-                return {'status': 'ERROR', 'msg': str(e), 'config': 'ERR', 'vendor': 'ERR'}
+                
+                # If it's a site issue, return FAIL (site problem), not ERROR (scanner problem)
+                if is_site_issue:
+                    return {
+                        'status': 'FAIL', 
+                        'msg': f'Site unreachable: {str(e)[:100]}', 
+                        'config': 'ERR', 
+                        'vendor': 'Unreachable'
+                    }
+                else:
+                    return {
+                        'status': 'ERROR', 
+                        'msg': str(e)[:100], 
+                        'config': 'ERR', 
+                        'vendor': 'ERR'
+                    }
         pass
 
 
@@ -958,6 +1005,10 @@ class ScannerTab(QWidget):
 
     def color_status(self, item, status_txt):
         """Apply color coding to status cells."""
+        # Map UNVERIFIABLE to display as "N/A" for better fit
+        display_text = "N/A" if status_txt == 'UNVERIFIABLE' else status_txt
+        item.setText(display_text)
+        
         if status_txt == 'PASS':
             item.setBackground(QColor(styles.COLORS["row_pass_bg"]))
             item.setForeground(QColor(styles.COLORS["row_pass_text"]))
@@ -968,9 +1019,8 @@ class ScannerTab(QWidget):
             item.setBackground(QColor(styles.COLORS["row_fail_bg"]))
             item.setForeground(QColor(styles.COLORS["row_fail_text"]))
         elif status_txt == 'UNVERIFIABLE':
-            # Orange for UNVERIFIABLE - distinct from other statuses
-            item.setBackground(QColor("#fd7e14"))  # Orange
-            item.setForeground(QColor("#ffffff"))  # White text
+            item.setBackground(QColor(styles.COLORS["row_unverifiable_bg"]))
+            item.setForeground(QColor(styles.COLORS["row_unverifiable_text"]))
         elif status_txt == 'PENDING':
             item.setBackground(QColor(styles.COLORS["row_pending_bg"]))
             item.setForeground(QColor(styles.COLORS["row_pending_text"]))
@@ -989,8 +1039,12 @@ class ScannerTab(QWidget):
             status_text = status_item.text() if status_item else ""
             
             # FILTER: Only scan PENDING items
-            # Skip PASS, FAIL, WARN, BLOCKED, ERROR, UNVERIFIABLE
-            if status_text != "PENDING" and status_text != "":
+            # Skip PASS, FAIL, WARN, BLOCKED, ERROR, UNVERIFIABLE (displayed as N/A)
+            if status_text != "PENDING" and status_text != "" and status_text != "N/A":
+                continue
+            
+            # Also skip N/A (UNVERIFIABLE) items
+            if status_text == "N/A":
                 continue
             
             item_name = self.table.item(i, 0)
@@ -1031,10 +1085,10 @@ class ScannerTab(QWidget):
         self.btn_stop.setText(" Stop") 
         self.table.setSortingEnabled(True)
         
-        # Show summary with UNVERIFIABLE count
+        # Show summary with UNVERIFIABLE count (displayed as N/A)
         unverifiable_count = sum(
             1 for i in range(self.table.rowCount())
-            if self.table.item(i, 4) and self.table.item(i, 4).text() == 'UNVERIFIABLE'
+            if self.table.item(i, 4) and self.table.item(i, 4).text() == 'N/A'
         )
         
         if unverifiable_count > 0:
@@ -1042,7 +1096,7 @@ class ScannerTab(QWidget):
                 self, 
                 "Done", 
                 f"Batch Scan Complete!\n\n"
-                f"🟠 {unverifiable_count} site(s) marked UNVERIFIABLE.\n"
+                f"🟠 {unverifiable_count} site(s) marked N/A (unverifiable).\n"
                 f"These require manual verification."
             )
         else:

@@ -5,8 +5,8 @@ import qtawesome as qta
 from datetime import datetime
 from pathlib import Path
 from PyQt6.QtWidgets import (QApplication, QMainWindow, QTabWidget, QMessageBox, 
-                             QVBoxLayout, QHBoxLayout, QWidget, QLabel)
-from PyQt6.QtGui import QAction, QPixmap, QIcon
+                             QVBoxLayout, QWidget, QLabel)
+from PyQt6.QtGui import QAction
 from PyQt6.QtCore import Qt, QSize, QTimer
 
 from tabs.manager_tab import ManagerTab
@@ -23,9 +23,6 @@ logger = get_logger(__name__)
 # Data directory for auto-saves and settings
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
-
-# Logo path
-LOGO_PATH = Path("assets/logo.png")
 
 # Settings file for remembering last opened file
 RECENT_FILE_PATH = DATA_DIR / "recent_project.json"
@@ -67,14 +64,10 @@ class MainApp(QMainWindow):
         self.setWindowTitle("MyOffer Monitor")
         self.resize(1400, 900)
         
-        # Set window icon (logo)
-        if LOGO_PATH.exists():
-            self.setWindowIcon(QIcon(str(LOGO_PATH)))
-        
         # Apply global theme
         self.setStyleSheet(styles.MODERN_STYLESHEET)
         
-        # --- Setup Central Widget ---
+        # --- Setup Central Widget & Tabs ---
         central_widget = QWidget()
         central_widget.setObjectName("central_widget")
         self.setCentralWidget(central_widget)
@@ -82,58 +75,11 @@ class MainApp(QMainWindow):
         main_layout = QVBoxLayout(central_widget)
         main_layout.setContentsMargins(0, 0, 0, 0)
         main_layout.setSpacing(0)
-        
-        # --- Header with Logo ---
-        header_widget = QWidget()
-        header_widget.setFixedHeight(60)
-        header_widget.setStyleSheet(f"""
-            QWidget {{
-                background-color: {styles.COLORS["bg_white"]};
-                border-bottom: none;
-                margin-bottom: 3px;
-            }}
-        """)
-        header_layout = QHBoxLayout(header_widget)
-        header_layout.setContentsMargins(20, 10, 20, 10)
-        
-        # Logo
-        if LOGO_PATH.exists():
-            logo_label = QLabel()
-            logo_pixmap = QPixmap(str(LOGO_PATH))
-            logo_label.setPixmap(logo_pixmap.scaledToHeight(40, Qt.TransformationMode.SmoothTransformation))
-            logo_label.setStyleSheet("background: transparent;border-bottom:none;")
-            header_layout.addWidget(logo_label)
-        
-        # App Title
-        title_label = QLabel("MyOffer Monitor")
-        title_label.setStyleSheet(f"""
-            font-size: 24px;
-            font-weight: 700;
-            color: {styles.COLORS["brand_dark"]};
-            background: transparent;
-            padding-left: 12px;
-            border-bottom: none;
-        """)
-        header_layout.addWidget(title_label)
-        
-        header_layout.addStretch()
-        
-        # Version label
-        version_label = QLabel("v1.0.0")
-        version_label.setStyleSheet(f"""
-            font-size: 11px;
-            color: {styles.COLORS["text_tertiary"]};
-            background: transparent;
-            border-bottom: none;
-        """)
-        header_layout.addWidget(version_label)
-        
-        main_layout.addWidget(header_widget)
 
-        # --- Tab Widget ---
+        # Create tab widget
         self.tabs = QTabWidget()
         self.tabs.setTabPosition(QTabWidget.TabPosition.North)
-        self.tabs.setDocumentMode(True)
+        self.tabs.setDocumentMode(True)  # Cleaner look
         
         # Make tabs expand to fill width (50/50 split)
         self.tabs.tabBar().setExpanding(True)
@@ -145,9 +91,9 @@ class MainApp(QMainWindow):
         self.tabs.addTab(self.manager, "  Data Manager")
         self.tabs.addTab(self.scanner, "  Site Scanner")
         
-        # Add icons to tabs (using brand color)
-        self.tabs.setTabIcon(0, qta.icon('fa5s.table', color=styles.COLORS["brand_primary"]))
-        self.tabs.setTabIcon(1, qta.icon('fa5s.robot', color=styles.COLORS["brand_primary"]))
+        # Add icons to tabs
+        self.tabs.setTabIcon(0, qta.icon('fa5s.table', color=styles.COLORS["accent"]))
+        self.tabs.setTabIcon(1, qta.icon('fa5s.robot', color=styles.COLORS["accent"]))
         
         main_layout.addWidget(self.tabs)
 
@@ -192,6 +138,7 @@ class MainApp(QMainWindow):
                 
                 filename = os.path.basename(last_file)
                 self.status_label.setText(f"Loaded: {filename}")
+                self.setWindowTitle(f"MyOffer Monitor - {filename}")
                 logger.info("Loaded last project", path=last_file)
             except Exception as e:
                 logger.warning("Could not load last project", exception=e)
@@ -228,6 +175,8 @@ class MainApp(QMainWindow):
         # Remember this file for next launch
         if self.manager.file_path:
             save_last_opened_file(self.manager.file_path)
+            filename = os.path.basename(self.manager.file_path)
+            self.setWindowTitle(f"MyOffer Monitor - {filename}")
         
         self.status_label.setText("Project Saved")
 
@@ -305,10 +254,6 @@ if __name__ == "__main__":
     # Set app-wide attributes
     app.setApplicationName("MyOffer Monitor")
     app.setApplicationVersion("1.0.0")
-    
-    # Set app icon
-    if LOGO_PATH.exists():
-        app.setWindowIcon(QIcon(str(LOGO_PATH)))
     
     window = MainApp()
     window.show()
