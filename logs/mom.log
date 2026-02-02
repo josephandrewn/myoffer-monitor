@@ -2236,3 +2236,6 @@ NameError: name 'DATA_DIR' is not defined
 2026-02-02 15:14:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_151457.csv
 2026-02-02 15:19:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_151957.csv
 2026-02-02 15:24:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_152457.csv
+2026-02-02 15:29:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_152957.csv
+2026-02-02 15:34:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_153457.csv
+2026-02-02 15:39:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_153957.csv

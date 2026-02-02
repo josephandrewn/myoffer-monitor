@@ -9,7 +9,7 @@
 
 ## Main Overview
 
-**MyOffer Monitor (MOM)** is an automated quality assurance tool that verifies the correct installation and operation of our MyOffer tracking scripts across 200+ client dealership websites. It replaces 25-50 hours of monthly manual work with 2 hours of automated, intelligent scanning.
+**MyOffer Monitor (MOM)** is an automated quality assurance tool that verifies the correct installation and operation of our MyOffer tracking scripts across 200+ client dealership websites. The goal is to minimize the amount of downtime experienced by our client base, improve client relations by being more proactive, and help stave off potential competitors by delivering better MoM/YoY metrics. Capitalize on every potential opportunity by always being available. It accomplishes this with less than an hour of automated, intelligent scanning.
 
 **Bottom Line:** We've transformed QA from a tedious manual process into a fast, reliable, automated system that catches problems before clients notice them.
 
@@ -28,7 +28,7 @@ Automatically visits each client website and verifies our tracking script is pro
 - **Session warming:** Visits homepage first for sites with strict security (only ~10-15% need this)
 - **Vendor-aware:** Knows how different platforms (Dealer.com, DealerOn, etc.) should install our scripts
 - **Retry logic:** Automatically retries failed scans (2 attempts per site)
-- **Evidence collection:** Takes screenshots of every scan for proof/troubleshooting
+- **Evidence collection:** Takes screenshots of every imperfect scan for proof/troubleshooting
 
 **Results explained:**
 - ✅ **PASS** - Script correctly installed and working perfectly
@@ -286,7 +286,7 @@ Dealer Inspire:
 ```
 → Click Scanner tab
 → Click "Run Batch Scan" button
-→ Go do other work (2 hours for 300 sites)
+→ Go do other work (up to 2 hours for 300 sites)
 → Scanner runs automatically in background
 ```
 
