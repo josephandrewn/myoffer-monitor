@@ -26,6 +26,7 @@ DATA_DIR.mkdir(exist_ok=True)
 
 # Logo path
 LOGO_PATH = Path("assets/logo.png")
+LOGO_PATH_FLAT = Path("assets/logo2.png")
 
 # Settings file for remembering last opened file
 RECENT_FILE_PATH = DATA_DIR / "recent_project.json"
@@ -99,7 +100,7 @@ class MainApp(QMainWindow):
         # Logo
         if LOGO_PATH.exists():
             logo_label = QLabel()
-            logo_pixmap = QPixmap(str(LOGO_PATH))
+            logo_pixmap = QPixmap(str(LOGO_PATH_FLAT))
             logo_label.setPixmap(logo_pixmap.scaledToHeight(40, Qt.TransformationMode.SmoothTransformation))
             logo_label.setStyleSheet("background: transparent;border-bottom:none;")
             header_layout.addWidget(logo_label)

@@ -2239,3 +2239,434 @@ NameError: name 'DATA_DIR' is not defined
 2026-02-02 15:29:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_152957.csv
 2026-02-02 15:34:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_153457.csv
 2026-02-02 15:39:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_153957.csv
+2026-02-02 15:44:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_154457.csv
+2026-02-02 15:49:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_154957.csv
+2026-02-02 15:54:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_155457.csv
+2026-02-02 15:59:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_155957.csv
+2026-02-02 16:04:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_160457.csv
+2026-02-02 16:09:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_160957.csv
+2026-02-02 16:14:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_161457.csv
+2026-02-02 16:19:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_161957.csv
+2026-02-02 16:24:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_162457.csv
+2026-02-02 16:29:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_162957.csv
+2026-02-02 16:34:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_163457.csv
+2026-02-02 16:39:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_163957.csv
+2026-02-02 16:44:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_164457.csv
+2026-02-02 16:49:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_164957.csv
+2026-02-02 16:54:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_165457.csv
+2026-02-02 16:59:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_165957.csv
+2026-02-02 17:04:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_170457.csv
+2026-02-02 17:09:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_170957.csv
+2026-02-02 17:14:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_171457.csv
+2026-02-02 17:19:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_171957.csv
+2026-02-02 17:24:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_172457.csv
+2026-02-02 17:29:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_172957.csv
+2026-02-02 17:34:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_173457.csv
+2026-02-02 17:39:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_173957.csv
+2026-02-02 17:44:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_174457.csv
+2026-02-02 17:49:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_174957.csv
+2026-02-02 17:54:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_175457.csv
+2026-02-02 17:59:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_175957.csv
+2026-02-02 18:04:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_180457.csv
+2026-02-02 18:09:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_180957.csv
+2026-02-02 18:14:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_181457.csv
+2026-02-02 18:19:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_181957.csv
+2026-02-02 18:24:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_182457.csv
+2026-02-02 18:29:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_182957.csv
+2026-02-02 18:34:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_183457.csv
+2026-02-02 18:39:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_183957.csv
+2026-02-02 18:44:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_184457.csv
+2026-02-02 18:49:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_184957.csv
+2026-02-02 18:54:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_185457.csv
+2026-02-02 18:59:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_185957.csv
+2026-02-02 19:04:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_190457.csv
+2026-02-02 19:09:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_190957.csv
+2026-02-02 19:14:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_191457.csv
+2026-02-02 19:19:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_191957.csv
+2026-02-02 19:24:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_192457.csv
+2026-02-02 19:29:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_192957.csv
+2026-02-02 19:34:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_193457.csv
+2026-02-02 19:39:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_193957.csv
+2026-02-02 19:44:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_194457.csv
+2026-02-02 19:49:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_194957.csv
+2026-02-02 19:54:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_195457.csv
+2026-02-02 19:59:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_195957.csv
+2026-02-02 20:04:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_200457.csv
+2026-02-02 20:09:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_200957.csv
+2026-02-02 20:14:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_201457.csv
+2026-02-02 20:19:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_201957.csv
+2026-02-02 20:24:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_202457.csv
+2026-02-02 20:29:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_202957.csv
+2026-02-02 20:34:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_203457.csv
+2026-02-02 20:39:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_203957.csv
+2026-02-02 20:44:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_204457.csv
+2026-02-02 20:49:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_204957.csv
+2026-02-02 20:54:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_205457.csv
+2026-02-02 20:59:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_205957.csv
+2026-02-02 21:04:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_210457.csv
+2026-02-02 21:09:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_210957.csv
+2026-02-02 21:14:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_211457.csv
+2026-02-02 21:19:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_211957.csv
+2026-02-02 21:24:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_212457.csv
+2026-02-02 21:29:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_212957.csv
+2026-02-02 21:34:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_213457.csv
+2026-02-02 21:39:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_213956.csv
+2026-02-02 21:44:56 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_214456.csv
+2026-02-02 21:49:56 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_214956.csv
+2026-02-02 21:54:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_215457.csv
+2026-02-02 21:59:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_215957.csv
+2026-02-02 22:04:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_220457.csv
+2026-02-02 22:09:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_220957.csv
+2026-02-02 22:14:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_221457.csv
+2026-02-02 22:19:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_221957.csv
+2026-02-02 22:24:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_222457.csv
+2026-02-02 22:29:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_222957.csv
+2026-02-02 22:34:57 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_223457.csv
+2026-02-02 22:54:35 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_225435.csv
+2026-02-02 22:59:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_225934.csv
+2026-02-02 23:04:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_230434.csv
+2026-02-02 23:09:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_230934.csv
+2026-02-02 23:14:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_231434.csv
+2026-02-02 23:19:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_231934.csv
+2026-02-02 23:24:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_232434.csv
+2026-02-02 23:29:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_232934.csv
+2026-02-02 23:34:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_233434.csv
+2026-02-02 23:39:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_233934.csv
+2026-02-02 23:44:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_234434.csv
+2026-02-02 23:49:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260202_234934.csv
+2026-02-03 00:06:26 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_000626.csv
+2026-02-03 00:57:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_005717.csv
+2026-02-03 01:02:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_010217.csv
+2026-02-03 01:38:02 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_013802.csv
+2026-02-03 01:43:02 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_014302.csv
+2026-02-03 02:20:24 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_022024.csv
+2026-02-03 02:27:47 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_022747.csv
+2026-02-03 02:30:24 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_023024.csv
+2026-02-03 02:35:24 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_023524.csv
+2026-02-03 02:40:24 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_024024.csv
+2026-02-03 02:45:24 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_024524.csv
+2026-02-03 02:50:24 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_025024.csv
+2026-02-03 02:55:24 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_025524.csv
+2026-02-03 03:00:24 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_030024.csv
+2026-02-03 03:05:24 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_030524.csv
+2026-02-03 03:10:24 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_031024.csv
+2026-02-03 03:15:24 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_031524.csv
+2026-02-03 03:20:24 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_032024.csv
+2026-02-03 03:25:24 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_032524.csv
+2026-02-03 04:02:02 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_040202.csv
+2026-02-03 04:17:11 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_041711.csv
+2026-02-03 04:22:10 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_042210.csv
+2026-02-03 04:42:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_044217.csv
+2026-02-03 04:47:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_044717.csv
+2026-02-03 04:52:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_045217.csv
+2026-02-03 04:57:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_045717.csv
+2026-02-03 05:02:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_050217.csv
+2026-02-03 05:07:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_050717.csv
+2026-02-03 05:12:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_051217.csv
+2026-02-03 05:17:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_051717.csv
+2026-02-03 05:22:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_052217.csv
+2026-02-03 05:27:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_052717.csv
+2026-02-03 05:32:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_053217.csv
+2026-02-03 05:37:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_053717.csv
+2026-02-03 05:55:03 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_055503.csv
+2026-02-03 06:31:10 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_063109.csv
+2026-02-03 06:36:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_063609.csv
+2026-02-03 06:41:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_064109.csv
+2026-02-03 06:46:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_064609.csv
+2026-02-03 06:51:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_065109.csv
+2026-02-03 06:56:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_065609.csv
+2026-02-03 07:01:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_070109.csv
+2026-02-03 07:06:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_070609.csv
+2026-02-03 07:11:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_071109.csv
+2026-02-03 07:16:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_071609.csv
+2026-02-03 07:21:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_072109.csv
+2026-02-03 07:26:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_072609.csv
+2026-02-03 08:02:14 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_080214.csv
+2026-02-03 08:07:14 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_080714.csv
+2026-02-03 08:50:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_085041.csv
+2026-02-03 08:55:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_085541.csv
+2026-02-03 09:00:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_090041.csv
+2026-02-03 09:05:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_090541.csv
+2026-02-03 09:10:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_091041.csv
+2026-02-03 09:15:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_091541.csv
+2026-02-03 09:20:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_092041.csv
+2026-02-03 09:25:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_092541.csv
+2026-02-03 09:30:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_093041.csv
+2026-02-03 09:35:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_093541.csv
+2026-02-03 09:40:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_094041.csv
+2026-02-03 09:45:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_094541.csv
+2026-02-03 09:50:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_095041.csv
+2026-02-03 09:55:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_095541.csv
+2026-02-03 10:00:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_100041.csv
+2026-02-03 10:05:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_100541.csv
+2026-02-03 10:10:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_101041.csv
+2026-02-03 10:15:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_101541.csv
+2026-02-03 10:20:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_102041.csv
+2026-02-03 10:25:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_102541.csv
+2026-02-03 10:30:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_103041.csv
+2026-02-03 10:35:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_103541.csv
+2026-02-03 10:40:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_104041.csv
+2026-02-03 10:45:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_104541.csv
+2026-02-03 10:50:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_105041.csv
+2026-02-03 10:55:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_105541.csv
+2026-02-03 11:00:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_110041.csv
+2026-02-03 11:05:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_110541.csv
+2026-02-03 11:10:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_111041.csv
+2026-02-03 11:15:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_111541.csv
+2026-02-03 11:20:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_112041.csv
+2026-02-03 11:25:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_112541.csv
+2026-02-03 11:30:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_113041.csv
+2026-02-03 11:35:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_113541.csv
+2026-02-03 11:40:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_114041.csv
+2026-02-03 11:45:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_114541.csv
+2026-02-03 11:50:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_115041.csv
+2026-02-03 11:55:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_115541.csv
+2026-02-03 12:00:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_120041.csv
+2026-02-03 12:05:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_120541.csv
+2026-02-03 12:10:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_121041.csv
+2026-02-03 12:15:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_121541.csv
+2026-02-03 12:20:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_122041.csv
+2026-02-03 12:25:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_122541.csv
+2026-02-03 12:30:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_123041.csv
+2026-02-03 12:35:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_123541.csv
+2026-02-03 12:40:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_124041.csv
+2026-02-03 12:45:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_124541.csv
+2026-02-03 12:50:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_125041.csv
+2026-02-03 12:55:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_125541.csv
+2026-02-03 13:00:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_130041.csv
+2026-02-03 13:05:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_130541.csv
+2026-02-03 13:10:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_131041.csv
+2026-02-03 13:15:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_131541.csv
+2026-02-03 13:20:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_132041.csv
+2026-02-03 13:25:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_132541.csv
+2026-02-03 13:30:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_133041.csv
+2026-02-03 13:35:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_133541.csv
+2026-02-03 13:40:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_134041.csv
+2026-02-03 13:45:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_134541.csv
+2026-02-03 13:50:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_135041.csv
+2026-02-03 13:55:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_135541.csv
+2026-02-03 14:00:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_140041.csv
+2026-02-03 14:05:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_140541.csv
+2026-02-03 14:10:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_141041.csv
+2026-02-03 14:15:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_141541.csv
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Daytona Infiniti | url=https://www.daytonainfiniti.com/ | id=240
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Daytona Nissan | url=https://www.daytonanissan.com/ | id=241
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Fort Mill Hyundai | url=https://www.fortmillhyundai.com/ | id=242
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Honda | url=https://www.garyyeomanshonda.com/ | id=243
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Lake Norman Hyundai | url=https://www.lakenormanhyundai.com/ | id=244
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Madison Honda | url=https://www.madisonhonda.com/ | id=245
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Mathews Honda of Paris | url=https://www.hondaofparis.net/ | id=246
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Mathews Nissan of Paris | url=https://www.parisnissan.com/ | id=247
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Toyota Knoxville | url=https://www.toyotaknoxville.com/ | id=248
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Toyota of Murfreesboro | url=https://www.toyotaofmurfreesboro.com/ | id=249
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Auto Gallery Ford | url=https://www.autogalleryford.com/ | id=250
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=BMW of McKinney | url=https://www.bmwofmckinney.com/ | id=251
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Covert Country Hutto | url=https://www.covertchevyhutto.com/ | id=252
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Covert Ford of Hutto | url=https://www.covertfordhutto.com/ | id=253
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Buick GMC | url=https://www.daleearnhardtjrbuickgmc.com/ | id=254
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Cadillac | url=https://www.daleearnhardtjrcadillac.com/ | id=255
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Chevrolet | url=https://www.daleearnhardtjrchevy.com/ | id=256
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Dave Smith CDA | url=https://www.davesmithcda.com/ | id=257
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Ford of Cookeville | url=https://www.fordlincolnofcookeville.com/ | id=258
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Freehold Ford | url=https://www.freeholdford.com/ | id=259
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Gary Yeoman's Ford Daytona Beach | url=https://www.garyyeomansford.com/ | id=260
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Gary Yeoman's Palm Bay Ford | url=https://www.palmbayford.com/ | id=261
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Frankfort | url=https://www.frankfortford.com/ | id=262
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Knoxville | url=https://www.garyyeomansfordknoxville.com/ | id=263
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Ocala | url=https://www.garyyeomansfordocala.com/ | id=264
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Villages | url=https://www.garyyeomansfordvillages.com/ | id=265
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Gary Yeomans PreOwned Supercenter | url=https://www.garyyeomansusedcars.com/ | id=266
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Gastonia Chrysler Dodge Jeep Ram | url=https://www.gastoniadodge.com/ | id=267
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Granbury Nissan | url=https://www.granburynissan.com/ | id=268
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Gwinnett Place Honda | url=https://www.gphonda.com/ | id=269
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Cadillac Monroe | url=https://www.hendrickcadillacmonroe.com/ | id=270
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Buick GMC Southpoint | url=https://www.hendrickgmsouthpoint.com/ | id=271
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Columbia | url=https://www.hendrickchevroletcolumbia.com/ | id=272
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Hoover | url=https://www.hendrickchevroletbirmingham.com/ | id=273
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Monroe | url=https://www.hendrickchevroletmonroe.com/ | id=274
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Shawnee Mission | url=https://www.chevyusa.com/ | id=275
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Chrysler Dodge Jeep Ram Hoover | url=https://www.hendrickchryslerdodgejeepram.com/ | id=276
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Chrysler Jeep Fiat Fayetteville | url=https://www.hendrickchryslerjeep.com/ | id=277
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Dodge RAM Cary | url=https://www.hendrickdodge.com/ | id=278
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick GMC Columbia | url=https://www.hendrickgmccolumbia.com/ | id=279
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Honda Easley | url=https://www.hendrickhondasc.com/ | id=280
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Honda of Charleston | url=https://www.charlestonhonda.com/ | id=281
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Honda South Blvd | url=https://www.hendrickhonda.com/ | id=282
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick KIA of Cary | url=https://www.hendrickkia.com/ | id=283
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Toyota Concord | url=https://www.hendricktoyotaconcord.com/ | id=284
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Volkswagen Frisco | url=https://www.hendrickvwfrisco.com/ | id=285
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Honda of Huntersville | url=https://www.hondahuntersville.com/ | id=286
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Honda of Newnan | url=https://www.hondaofnewnan.com/ | id=287
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hyundai of Asheville | url=https://www.hyundaiofasheville.com/ | id=288
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Keffer Mazda | url=https://www.keffermazda.com/ | id=289
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Kelly Honda | url=https://www.kelly-honda.com/ | id=290
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Kelly Infiniti | url=https://www.kellyinfiniti.com/ | id=291
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Kelly Nissan of Lynnfield | url=https://www.kellynissanoflynnfield.com/ | id=292
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Kelly Nissan of Woburn | url=https://www.kellynissanofwoburn.com/ | id=293
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Kelly Volkswagen | url=https://www.kelly-vw.com/ | id=294
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Lake Norman Chrysler Dodge Jeep Ram | url=https://www.lakenormanchrysler.com/ | id=295
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Lindsay Buick GMC | url=https://www.lindsaybuickgmctruck.com/ | id=296
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Mall of Georgia Mazda | url=https://www.mallofgamazda.com/ | id=297
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Mall of Georgia MINI | url=https://www.mallofgamini.com/ | id=298
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=McSweeney Chevrolet GMC | url=https://www.mcsweeneychevygmc.com/ | id=299
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=McSweeney Chrysler Dodge Jeep Ram - Clanton | url=https://www.mcsweeneycdjr.com/ | id=300
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=McSweeney Chrysler Dodge Jeep Ram - Pell City | url=https://www.mcsweeneychryslerdodgejeepram.com/ | id=301
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Mercedes-Benz of San Antonio | url=https://www.mbofsa.com/ | id=302
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Myrtle Beach Chrysler Jeep | url=https://www.myrtlebeachchryslerjeep.net/ | id=303
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Parks Buick GMC Greenville | url=https://www.parksbuickgmc.com/ | id=304
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Parks Buick GMC Kernersville | url=https://www.parksgmckernersville.com/ | id=305
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Parks Chevrolet Charlotte | url=https://www.parkscharlotte.com/ | id=306
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Parks Chevrolet Huntersville | url=https://www.parkschevrolethuntersville.com/ | id=307
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Parks Chevrolet Kernersville | url=https://www.parkschevy.com/ | id=308
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Parks Chevrolet Richmond | url=https://www.parksrichmond.com/ | id=309
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Parks Chevrolet Spartanburg | url=https://www.parkschevroletspartanburg.com/ | id=310
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Parks Ford Hendersonville | url=https://www.parksfordhendersonville.com/ | id=311
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Parks Motors | url=https://www.parksmotors.com/ | id=312
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Paul Miller Auto Outlet | url=https://www.paulmillerauto.com/ | id=313
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Paul Miller Ford | url=https://www.paulmillerford.com/ | id=314
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Paul Miller Mazda | url=https://www.paulmillermazda.com/ | id=315
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Reggie Jackson Airport Honda | url=https://www.reggiejacksonairporthonda.com/ | id=316
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Buick GMC Duluth | url=https://www.rickhendrickbuickgmcatlanta.com/ | id=317
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Cadillac Norfolk | url=https://www.rickhendrickcadillacnorfolk.com/ | id=318
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick CDJRF of North Charleston | url=https://www.jeephendrick.com/ | id=319
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Buick GMC Richmond | url=https://www.hendrickchevybuickgmcrichmond.com/ | id=320
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Charleston | url=https://www.rickhendrickchevy.com/ | id=321
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Duluth | url=https://www.hendrickatlanta.com/ | id=322
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Naples | url=https://www.rickhendrickchevynaples.com/ | id=323
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Norfolk | url=https://www.rickhendrickchevroletnorfolk.com/ | id=324
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet of Buford | url=https://www.hendrickbuford.com/ | id=325
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chrysler Dodge Jeep Ram Duluth | url=https://www.hendrickcdjratlanta.com/ | id=326
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick City Chevrolet | url=https://www.citychevrolet.com/ | id=327
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick DCJR Charleston | url=https://www.rickhendrickdodge.com/ | id=328
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Honda | url=https://www.rickhendrickhonda.com/ | id=329
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Toyota Sandy Springs | url=https://www.rickhendricktoyotasandysprings.com/ | id=330
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Serra Honda Brighton | url=https://www.serrahondabrighton.com/ | id=331
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Stevenson Hendrick Honda Wilmington | url=https://www.stevensonhendrickhonda.com/ | id=332
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Stevenson Hendrick Mazda | url=https://www.stevensonhendrickmazda.com/ | id=333
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Stevenson-Hendrick Honda Jacksonville | url=https://www.stevensonhendrickhondajacksonville.com/ | id=334
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Stokes Hodges Ford | url=https://www.stokeshodgesford.com/ | id=335
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Team Chevrolet GMC Salisbury | url=https://www.teamchevync.com/ | id=336
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Team Chevrolet of Goldsboro | url=https://www.teamgoldsboro.com/ | id=337
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Team Chevrolet of Swansboro | url=https://www.teamswansboro.com/ | id=338
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Team Chrysler Dodge Ram of Morganton | url=https://www.teammorganton.com/ | id=339
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Team Dodge Ram Fiat Myrtle Beach | url=https://www.teamdodgeramsc.com/ | id=340
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Ted Russell Ford | url=https://www.tedrussellford.net/ | id=341
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Terry Labonte Chevrolet | url=https://www.terrylabontechevy.com/ | id=342
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Volkswagen of Murrieta | url=https://www.vwofmurrieta.com/ | id=343
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Bay Ridge Subaru | url=https://www.brooklynsubarudeals.com/ | id=344
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Circle Jeep | url=https://www.circlejeep.com/ | id=345
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Circle Subaru | url=https://www.circlesubaru.com/ | id=346
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Crews Chevrolet | url=https://www.crewschevrolet.com/ | id=347
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Cronic Nissan | url=https://www.cronicnissan.net/ | id=348
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Daytona Mazda | url=https://www.daytonamazda.com/ | id=349
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Lincoln Daytona Beach | url=https://www.garyyeomanslincoln.com/ | id=350
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Lincoln Ocala | url=https://www.garyyeomanslincolnocala.com/ | id=351
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Gastonia Chevrolet Buick GMC Cadillac | url=https://www.gastoniachevroletbuickgmc.com/ | id=352
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Glanzmann Subaru | url=https://www.glanzmann.com/ | id=353
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Greenwood Ford | url=https://www.greenwoodford.com/ | id=354
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Greenwood Lincoln | url=https://www.greenwoodlincoln.com/ | id=355
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Honda of Bridgewater | url=https://www.hondabridgewater.com/ | id=356
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hoover Chrysler Dodge Jeep Ram Summerville | url=https://www.hooverjeepchrysler.net/ | id=357
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Jackie Cooper Infiniti | url=https://jackiecooperinfiniti.com/ | id=358
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Jackie Cooper Mercedes | url=https://jackiecoopermercedes.com/ | id=359
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Jackie Cooper Nissan | url=https://jackiecoopernissan.com/ | id=360
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Jacksonville Chrysler Dodge Jeep Ram | url=https://www.jaxcjdr.com/ | id=361
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Joe Cooper Chevrolet | url=https://joecooperchevroletcadillacgmc.com/ | id=362
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Joe Cooper Dodge Jeep Shawnee | url=https://joecooperdodgejeep.com/ | id=363
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Joe Cooper Dodge of Yukon | url=https://joecooperdodgeyukon.com/ | id=364
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Joe Cooper Ford Edmond | url=https://joecooperfordedmond.com/ | id=365
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Joe Cooper Ford of Yukon | url=https://joecooperfordyukon.com/ | id=366
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Joe Cooper Ford Shawnee | url=https://joecooperfordshawnee.com/ | id=367
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Joe Cooper Hyundai of Midwest City | url=https://joecooperhyundai.com/ | id=368
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Joe Cooper Lincoln of Edmond | url=https://joecooperlincoln.com/ | id=369
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Keith Hawthorne Hyundai of Gastonia | url=https://www.hyundaiofgastonia.com/ | id=370
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Lilliston Chrysler Dodge Jeep Ram | url=https://www.lillistonchryslerdodgejeep.com/ | id=371
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Lilliston Ford | url=https://www.lillistonford.com/ | id=372
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Mike Reichenbach Ford Lincoln | url=https://www.mikereichenbachfordflorence.com/ | id=373
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Mike Terry Chevrolet GMC | url=https://www.mterryautogroup.com/ | id=374
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Mike Terry Chevrolet Refugio | url=https://www.miketerrychevrolet.com/ | id=375
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Mike Terry Ford Mexia | url=https://www.miketerryford.com/ | id=376
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Mike Terry Hyundai of Silsbee | url=https://www.miketerryhyundai.com/ | id=377
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Nissan of Bay Shore | url=https://www.nissanofbayshore.com/ | id=378
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Nissan of Hendersonville | url=https://www.nissanofhendersonville.com/ | id=379
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=North Knoxville CDJR | url=https://www.northknoxcdjr.com/ | id=380
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Octane Buick GMC of Santa Fe | url=https://www.octanegmc.com/ | id=381
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Owen Ford Jarratt | url=https://www.owenford.com/ | id=382
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Peoria Toyota | url=https://www.peoriatoyota.com/ | id=383
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Priority Chevrolet Chesapeake | url=https://www.prioritychevrolet.com/ | id=384
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Sands Chrysler Dodge Jeep Ram | url=https://www.sandschryslerjeepdodge.net/ | id=385
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Secret City Chrysler Dodge Jeep Ram | url=https://www.secretcitycdjr.com/ | id=386
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=South Strand Chrysler Dodge Jeep Ram | url=https://www.southstrandchrysler.com/ | id=387
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Stone Mountain Honda | url=https://www.hondaofstonemountain.com/ | id=388
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Ted Russell Lincoln | url=https://www.tedrusselllincoln.net/ | id=389
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Victory Chrysler Dodge Jeep Ram | url=https://www.victoryshallotte.com/ | id=390
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Volunteer Auto Group | url=https://www.volauto.com/ | id=391
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=VW of Huntington | url=https://www.vwofhuntington.com/ | id=392
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Allen Chevrolet | url=https://www.allenchevy.com/ | id=393
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Patriot Chevrolet GMC | url=https://www.patriotchevroletgmc.com/ | id=394
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Priority Honda Hampton | url=https://www.priorityhondahampton.com/ | id=395
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Priority Infiniti Greenbrier | url=https://www.priorityinfiniti.com/ | id=396
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rusty Wallace Kia Alcoa | url=https://www.rustywallacekiaalcoa.com/ | id=397
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Terry Lambert Hyundai | url=https://www.terrylamberthyundai.com/ | id=398
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Barbour Hendrick Honda | url=https://www.barbourhendrickhonda.com/ | id=399
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Acura Charlotte | url=https://www.hendrickacura.com/ | id=400
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=George's Used Cars | url=https://www.georgesapproval.com/ | id=401
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Buick GMC Cary | url=https://www.hendrickbuickgmccary.com/ | id=402
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=865 Autos LLC | url=https://www.865autos.com/ | id=403
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Chrysler Dodge Jeep Ram of Elizabethton | url=https://www.nagcdjr.com/ | id=404
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Family Nissan | url=https://www.nissanfamily.com/ | id=405
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Ford of Elizabethton | url=https://www.fordofelizabethton.com/ | id=406
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Honda Cars of Aiken | url=https://www.hondacarsofaiken.com/ | id=407
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Kimberly Eakin Kia | url=https://www.kimberlyeakinkia.com/ | id=408
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Monroe Nissan | url=https://www.monroenissan.com/ | id=409
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Audi Northlake | url=https://www.audinorthlake.com/ | id=410
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Audi South Austin | url=https://www.audisouthaustin.com/ | id=411
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=BMW Charlotte | url=https://www.hendrickbmwcharlotte.com/ | id=412
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=BMW Northlake | url=https://www.hendrickbmwnorthlake.com/ | id=413
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=BMW of Kansas City South | url=https://www.bmwofkansascitysouth.com/ | id=414
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=BMW South Austin | url=https://www.bmwofsouthaustin.com/ | id=415
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Darrell Waltrip Buick GMC | url=https://www.darrellwaltripbuickgmc.com/ | id=416
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Darrell Waltrip Honda | url=https://www.darrellwaltriphonda.com/ | id=417
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Darrell Waltrip Subaru | url=https://www.darrellwaltripsubaru.com/ | id=418
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=East Bay BMW | url=https://www.eastbaybmw.com/ | id=419
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Acura of Pleasanton | url=https://www.acuraofpleasanton.com/ | id=420
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Acura Southpoint | url=https://www.acurasouthpoint.com/ | id=421
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick CDJR of Concord | url=https://www.hendrickchryslerdodgejeepramofconcord.com/ | id=422
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Cary | url=https://www.hendrickchevrolet.com/ | id=423
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Honda Bradenton | url=https://www.hendrickhondabradenton.com/ | id=424
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Honda Hickory | url=https://www.hendrickhondahickory.com/ | id=425
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Honda of Concord | url=https://www.hondaofconcord.com/ | id=426
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Kia of Concord | url=https://www.hendrickkiaofconcord.com/ | id=427
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick MINI Charlotte | url=https://www.hendrickmini.com/ | id=428
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Subaru Hoover | url=https://www.hendricksubaruhoover.com/ | id=429
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Subaru Southpoint | url=https://www.subarusouthpoint.com/ | id=430
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Volkswagen of Concord | url=https://www.hendrickvwofconcord.com/ | id=431
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Volvo Cars of Charleston | url=https://www.hendrickvolvocars.com/ | id=432
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Honda Cars of McKinney | url=https://www.hondacarsofmckinney.com/ | id=433
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Honda Cars of Rock Hill | url=https://www.hondacarsrockhill.com/ | id=434
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Honda Indian Trail | url=https://www.hondaofindiantrail.com/ | id=435
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Jeff Gordon Chevrolet | url=https://www.jeffgordonchevy.com/ | id=436
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chrysler Dodge Jeep Ram Fiat Wilmington | url=https://www.hendrickjeepwilmington.com/ | id=437
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Beach Chevrolet | url=https://www.thebeachchevrolet.com/ | id=438
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Toyota Apex | url=https://www.hendricktoyotaapex.com/ | id=439
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Toyota Merriam | url=https://www.hendricktoyotamerriam.com/ | id=440
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Hendrick Toyota North Charleston | url=https://www.hendricktoyotanorthcharleston.com/ | id=441
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Independence Mazda | url=https://www.independencemazda.com/ | id=442
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=JT's Chrysler Dodge Jeep Ram of Lexington | url=https://www.jtschryslerdodgejeepram.com/ | id=443
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=JT's Dodgeland of Columbia | url=https://jtscdjrofcolumbia.com/ | id=444
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=JT's Kia of Columbia | url=https://www.jtskia.com/ | id=445
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=JT's Kia of Columbia - Greystone | url=https://www.kiacolumbia.com/ | id=446
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=JTs Kia of Rock Hill | url=https://www.jtskiarockhill.com/ | id=447
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Nissan  of  Rockville  Centre | url=https://www.nissanofrockvillecentre.com/ | id=448
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Nissan of Garden City | url=https://www.nissanofgardencity.com/ | id=449
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Nissan of Huntington | url=https://www.nissanofhuntington.com/ | id=450
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Nissan of Richmond | url=https://www.nissanrva.com/ | id=451
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Toyota of Fayetteville | url=https://www.rickhendricktoyota.com/ | id=452
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Stevenson-Hendrick Toyota Jacksonville | url=https://www.stevensonhendricktoyota.com/ | id=453
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Stokes Chevrolet of Moncks Corner | url=https://www.stokeschevy.com/ | id=454
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Stokes Hodges Kia | url=https://www.stokeshodgeskia.com/ | id=455
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=Toyota of Wilmington | url=https://www.toyotaofwilmington.com/ | id=456
+2026-02-03 14:19:26 - database - INFO - info:69 - Site added | client=East Charlotte Nissan | url=https://www.eastcharlottenissan.com/ | id=457
+2026-02-03 14:19:26 - database - INFO - info:69 - Imported sites from DataFrame | count=218
+2026-02-03 14:19:26 - tabs.manager_tab - INFO - info:69 - Data synced to database | records=218
+2026-02-03 14:20:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_142041.csv
