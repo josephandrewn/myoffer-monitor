@@ -7,3 +7,4 @@ venv/
 scans/
 output/
 old_files/
+logs/
