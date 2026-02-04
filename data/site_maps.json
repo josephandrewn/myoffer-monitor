@@ -1,0 +1,331 @@
+{
+  "https://www.patriotchevroletgmc.com": {
+    "harvested_at": "2026-02-03T16:14:43.564047",
+    "provider": "DealerOn",
+    "links": {
+      "New Inventory": [
+        "https://www.patriotchevroletgmc.com/searchnew.aspx",
+        "https://www.patriotchevroletgmc.com/searchnew.aspx?Bodystyle=Regular%20Cab,Crew%20Cab&Make=Chevrolet",
+        "https://www.patriotchevroletgmc.com/searchnew.aspx?Bodystyle=Regular%20Cab,Crew%20Cab&Make=GMC"
+      ],
+      "Used Inventory": [
+        "https://www.patriotchevroletgmc.com/searchused.aspx",
+        "https://www.patriotchevroletgmc.com/searchused.aspx?BodyType=Truck%20-%20Extended%20Cab,Truck%20-%20Crew%20Cab",
+        "https://www.patriotchevroletgmc.com/searchused.aspx?pricerange=0-15000",
+        "https://www.patriotchevroletgmc.com/certified-pre-owned.html"
+      ],
+      "Certified Inventory": [],
+      "New VDP": [],
+      "Used VDP": [],
+      "Certified VDP": [],
+      "Service": [
+        "https://www.patriotchevroletgmc.com/service-parts-specials.html",
+        "https://www.patriotchevroletgmc.com/service",
+        "https://www.patriotchevroletgmc.com/schedule-service",
+        "https://www.patriotchevroletgmc.com/serviceappmt.aspx"
+      ],
+      "Finance": [],
+      "Specials": [
+        "https://www.patriotchevroletgmc.com/newspecials.html",
+        "https://www.patriotchevroletgmc.com/chevroletspecialoffers"
+      ],
+      "Trade-In": [
+        "https://www.patriotchevroletgmc.com/trade.aspx",
+        "https://www.patriotchevroletgmc.com/trade.aspx?type=Used"
+      ],
+      "Parts": [],
+      "Hours & Directions": [
+        "https://www.patriotchevroletgmc.com/hours.aspx",
+        "https://www.patriotchevroletgmc.com/sitemap.aspx"
+      ],
+      "About": [
+        "https://www.patriotchevroletgmc.com/aboutus.aspx",
+        "https://www.patriotchevroletgmc.com/staff.aspx"
+      ],
+      "Contact": [
+        "https://www.patriotchevroletgmc.com/contactus.aspx"
+      ]
+    },
+    "other": [
+      "Powerlife Included on New Cars",
+      "Model Showroom",
+      "Sell Us Your Car",
+      "GM Rewards",
+      "Interest Tax Deduction",
+      "Auto Loan Savings Program",
+      "Chevrolet Performance",
+      "GMC Tax Deductions",
+      "Low Mileage Pre-Owned Vehicles",
+      "GM Military Discount",
+      "GM Family First",
+      "Apply For Financing",
+      "Privacy Policy",
+      "What's My Buying Power?",
+      "Chevrolet Protection",
+      "GM Parts Dealer",
+      "Tire Basics",
+      "Careers",
+      "Our Blog",
+      "Our Reviews"
+    ]
+  },
+  "https://www.865autos.com": {
+    "harvested_at": "2026-02-03T16:16:37.209506",
+    "provider": "Unknown",
+    "links": {
+      "New Inventory": [],
+      "Used Inventory": [
+        "https://www.865autos.com/pre-owned-cars"
+      ],
+      "Certified Inventory": [],
+      "New VDP": [],
+      "Used VDP": [],
+      "Certified VDP": [],
+      "Service": [
+        "https://www.865autos.com/service-your-car-in-knoxville-tn"
+      ],
+      "Finance": [
+        "https://www.865autos.com/finance-your-car"
+      ],
+      "Specials": [],
+      "Trade-In": [
+        "https://www.865autos.com/sell-my-car"
+      ],
+      "Parts": [],
+      "Hours & Directions": [],
+      "About": [
+        "https://www.865autos.com/about-us"
+      ],
+      "Contact": [
+        "https://www.865autos.com/contact-us"
+      ]
+    },
+    "other": [
+      "My Account My Account",
+      "Get Pre-Qualified with Capital One"
+    ]
+  },
+  "https://www.covertchevyhutto.com": {
+    "harvested_at": "2026-02-03T16:17:08.069389",
+    "provider": "Dealer Inspire",
+    "links": {
+      "New Inventory": [],
+      "Used Inventory": [],
+      "Certified Inventory": [],
+      "New VDP": [],
+      "Used VDP": [],
+      "Certified VDP": [],
+      "Service": [],
+      "Finance": [],
+      "Specials": [],
+      "Trade-In": [],
+      "Parts": [],
+      "Hours & Directions": [],
+      "About": [],
+      "Contact": []
+    },
+    "other": []
+  },
+  "https://www.lillistonford.com": {
+    "harvested_at": "2026-02-03T16:17:46.251871",
+    "provider": "Dealer.com",
+    "links": {
+      "New Inventory": [],
+      "Used Inventory": [],
+      "Certified Inventory": [
+        "https://www.lillistonford.com/ford-certified.aspx",
+        "https://www.lillistonford.com/certified-pre-owned.html"
+      ],
+      "New VDP": [],
+      "Used VDP": [],
+      "Certified VDP": [],
+      "Service": [
+        "https://www.lillistonford.com/service.aspx",
+        "https://www.lillistonford.com/service-appointment.aspx",
+        "https://www.lillistonford.com/service--parts-specials-.html",
+        "https://www.lillistonford.com/ford-service.aspx"
+      ],
+      "Finance": [
+        "https://www.lillistonford.com/finance.aspx"
+      ],
+      "Specials": [
+        "https://www.lillistonford.com/specials-all-models.html",
+        "https://www.lillistonford.com/usedspecials.html",
+        "https://www.lillistonford.com/manufacturer-specials.aspx"
+      ],
+      "Trade-In": [
+        "https://www.lillistonford.com/value-your-trade.html"
+      ],
+      "Parts": [
+        "https://www.lillistonford.com/parts-brand.aspx",
+        "https://www.lillistonford.com/ford-accessories.html"
+      ],
+      "Hours & Directions": [
+        "https://www.lillistonford.com/hours.aspx"
+      ],
+      "About": [
+        "https://www.lillistonford.com/aboutus.aspx"
+      ],
+      "Contact": [
+        "https://www.lillistonford.com/contactus.aspx"
+      ]
+    },
+    "other": [
+      "Extras You Get At Lilliston Ford",
+      "Why Choose Lilliston Ford?",
+      "We Deliver",
+      "Shop At Home",
+      "Fill A Ford Food Drive",
+      "Black Friday Doorbuster",
+      "View New Inventory",
+      "View New SUV's",
+      "View Fuel Efficient Vehicles",
+      "View New Mustang",
+      "2025 Models",
+      "Shop Electric",
+      "View Every Used Vehicle",
+      "Vehicles under 15k",
+      "Get Pre-Approved",
+      "Full Credit Application",
+      "Payment Estimator",
+      "Road Hazard Tire & Wheel Bundle",
+      "Term Care Select",
+      "Theft Deterrent"
+    ]
+  },
+  "https://www.paulmillerford.com": {
+    "harvested_at": "2026-02-03T22:37:25.119391",
+    "provider": "Dealer Inspire",
+    "links": {
+      "New Inventory": [
+        "https://www.paulmillerford.com/new-vehicles/new-vehicle-specials/",
+        "https://www.paulmillerford.com/new-vehicles/",
+        "https://www.paulmillerford.com/new-vehicles/moke-america-lexington/",
+        "https://www.paulmillerford.com/new-vehicles/hybrids-evs/",
+        "https://www.paulmillerford.com/new-vehicles/mustang-mach-e/",
+        "https://www.paulmillerford.com/new-vehicles/escape-hybrid/",
+        "https://www.paulmillerford.com/new-vehicles/escape-plug-in-hybrid/",
+        "https://www.paulmillerford.com/new-vehicles/explorer-hybrid/",
+        "https://www.paulmillerford.com/new-vehicles/f-150-lightning/",
+        "https://www.paulmillerford.com/new-vehicles/fusion-hybrid/",
+        "https://www.paulmillerford.com/new-vehicles/fusion-plug-in-hybrid/",
+        "https://www.paulmillerford.com/new-vehicles/trucks-vans/",
+        "https://www.paulmillerford.com/new-vehicles/f-150/",
+        "https://www.paulmillerford.com/new-vehicles/super-duty/",
+        "https://www.paulmillerford.com/new-vehicles/transit/",
+        "https://www.paulmillerford.com/new-vehicles/ranger/",
+        "https://www.paulmillerford.com/new-vehicles/transit-connect/",
+        "https://www.paulmillerford.com/new-vehicles/maverick/",
+        "https://www.paulmillerford.com/new-vehicles/suvs-crossovers/",
+        "https://www.paulmillerford.com/new-vehicles/expedition/",
+        "https://www.paulmillerford.com/new-vehicles/explorer/",
+        "https://www.paulmillerford.com/new-vehicles/edge/",
+        "https://www.paulmillerford.com/new-vehicles/bronco/",
+        "https://www.paulmillerford.com/new-vehicles/bronco-sport/",
+        "https://www.paulmillerford.com/new-vehicles/escapes/",
+        "https://www.paulmillerford.com/new-vehicles/escape/",
+        "https://www.paulmillerford.com/new-vehicles/cars/",
+        "https://www.paulmillerford.com/new-vehicles/mustang/",
+        "https://www.paulmillerford.com/new-vehicles/fusion/",
+        "https://www.paulmillerford.com/new-vehicles/e-series-cutaway/",
+        "https://www.paulmillerford.com/new-vehicles/chassis-cab/",
+        "https://www.paulmillerford.com/new-vehicles/transit-cc-ca/",
+        "https://www.paulmillerford.com/new-vehicles/f-650-f-750/",
+        "https://www.paulmillerford.com/new-vehicles/e-series-stripped-chassis/",
+        "https://www.paulmillerford.com/new-vehicles/e-transit/"
+      ],
+      "Used Inventory": [
+        "https://www.paulmillerford.com/used-vehicles/pre-owned-vehicle-specials/",
+        "https://www.paulmillerford.com/used-vehicles/",
+        "https://www.paulmillerford.com/used-vehicles/priced-under-20k/"
+      ],
+      "Certified Inventory": [
+        "https://www.paulmillerford.com/used-vehicles/certified-pre-owned-vehicles/",
+        "https://www.paulmillerford.com/?page_id=310"
+      ],
+      "New VDP": [],
+      "Used VDP": [],
+      "Certified VDP": [],
+      "Service": [
+        "https://www.paulmillerford.com/service/service-offers/",
+        "https://www.paulmillerford.com/service/",
+        "https://www.paulmillerford.com/service-appointment/",
+        "https://www.paulmillerford.com/ford-pro-elite-commercial-service-center/"
+      ],
+      "Finance": [
+        "https://www.paulmillerford.com/finance/",
+        "https://www.paulmillerford.com/finance/apply-for-financing/",
+        "https://www.paulmillerford.com/get-pre-qualified/",
+        "https://www.paulmillerford.com/special-financing/"
+      ],
+      "Specials": [
+        "https://www.paulmillerford.com/specials-all-models/",
+        "https://www.paulmillerford.com/lease-special/",
+        "https://www.paulmillerford.com/f150-special/",
+        "https://www.paulmillerford.com/explorer-special/",
+        "https://www.paulmillerford.com/bronco-special/",
+        "https://www.paulmillerford.com/bronco-sport-2/"
+      ],
+      "Trade-In": [
+        "https://www.paulmillerford.com/value-your-trade/"
+      ],
+      "Parts": [
+        "https://www.paulmillerford.com/parts/",
+        "https://www.paulmillerford.com/parts/order-parts/"
+      ],
+      "Hours & Directions": [],
+      "About": [
+        "https://www.paulmillerford.com/",
+        "https://www.paulmillerford.com/about-us/",
+        "https://www.paulmillerford.com/about-us/staff/",
+        "https://www.paulmillerford.com/about-us/reviews/"
+      ],
+      "Contact": [
+        "https://www.paulmillerford.com/contact-us/"
+      ]
+    },
+    "other": [
+      "Extras You Get at Paul Miller Ford",
+      "The Paul Miller Promise",
+      "Shop At Home",
+      "Manager Picks",
+      "Custom Factory Order",
+      "2025 Ford F-150",
+      "2025 Ford Maverick",
+      "2025 Ford Explorer",
+      "2025 Ford Bronco Sport® Technology",
+      "Save With Premier Loaner Vehicles",
+      "Commercial Collision",
+      "Quick Lane®",
+      "Shop Ford Parts",
+      "Pickup and Delivery Services",
+      "Mobile Service",
+      "ROUSH Performance",
+      "Ford App",
+      "Tire Details",
+      "Review Paul Miller Ford",
+      "Sponsorship Request"
+    ]
+  },
+  "https://www.teamgoldsboro.com": {
+    "harvested_at": "2026-02-03T18:30:54.738220",
+    "provider": "Dealer Inspire",
+    "links": {
+      "New Inventory": [],
+      "Used Inventory": [],
+      "Certified Inventory": [],
+      "New VDP": [],
+      "Used VDP": [],
+      "Certified VDP": [],
+      "Service": [],
+      "Finance": [],
+      "Specials": [],
+      "Trade-In": [],
+      "Parts": [],
+      "Hours & Directions": [],
+      "About": [],
+      "Contact": []
+    },
+    "other": []
+  }
+}

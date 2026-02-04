@@ -280,9 +280,9 @@ class BatchWorker(QThread):
                 options.add_argument("--no-sandbox")
                 options.add_argument("--disable-dev-shm-usage")
 
-                # 2. Launch with FIXED VERSION (Updated to 144)
-                # version_main=144 ensures it matches your updated Chrome 144 install
-                driver = uc.Chrome(options=options, use_subprocess=True, version_main=144)
+                # 2. Launch with FIXED VERSION (Updated to 145)
+                # version_main=145 ensures it matches your updated Chrome 145 install
+                driver = uc.Chrome(options=options, use_subprocess=True, version_main=145)
                 return driver
             
             except Exception as e: 

@@ -2744,3 +2744,302 @@ NameError: name 'DATA_DIR' is not defined
 2026-02-03 14:37:40 - uc - INFO - _ensure_close:848 - ensuring close
 2026-02-03 14:37:40 - uc - INFO - _ensure_close:848 - ensuring close
 2026-02-03 14:37:40 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-03 15:10:28 - logger - INFO - info:69 - Logging system initialized
+2026-02-03 15:10:29 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-03 15:10:29 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-03_14-192.csv
+2026-02-03 15:11:08 - tabs.manager_tab - INFO - info:69 - Mapped legacy 'Provider' column to 'Expected Provider'
+2026-02-03 15:13:50 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 15:13:53 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.patriotchevroletgmc.com
+Exception: Message: session not created: cannot connect to chrome at 127.0.0.1:56469
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.110
+Stacktrace:
+0   undetected_chromedriver             0x0000000102722b98 undetected_chromedriver + 6732696
+1   undetected_chromedriver             0x000000010271a41a undetected_chromedriver + 6698010
+2   undetected_chromedriver             0x0000000102125ce5 undetected_chromedriver + 453861
+3   undetected_chromedriver             0x00000001021695e9 undetected_chromedriver + 730601
+4   undetected_chromedriver             0x0000000102168401 undetected_chromedriver + 726017
+5   undetected_chromedriver             0x000000010215d059 undetected_chromedriver + 680025
+6   undetected_chromedriver             0x00000001021afd7a undetected_chromedriver + 1019258
+7   undetected_chromedriver             0x00000001021af43c undetected_chromedriver + 1016892
+8   undetected_chromedriver             0x000000010216c724 undetected_chromedriver + 743204
+9   undetected_chromedriver             0x000000010216d4d1 undetected_chromedriver + 746705
+10  undetected_chromedriver             0x00000001026dbdd1 undetected_chromedriver + 6442449
+11  undetected_chromedriver             0x00000001026e01aa undetected_chromedriver + 6459818
+12  undetected_chromedriver             0x00000001026bba59 undetected_chromedriver + 6310489
+13  undetected_chromedriver             0x00000001026e0c08 undetected_chromedriver + 6462472
+14  undetected_chromedriver             0x00000001026aa3d0 undetected_chromedriver + 6239184
+15  undetected_chromedriver             0x0000000102706d18 undetected_chromedriver + 6618392
+16  undetected_chromedriver             0x0000000102706ed2 undetected_chromedriver + 6618834
+17  undetected_chromedriver             0x000000010271a026 undetected_chromedriver + 6696998
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1287, in run
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:56469
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.110
+Stacktrace:
+0   undetected_chromedriver             0x0000000102722b98 undetected_chromedriver + 6732696
+1   undetected_chromedriver             0x000000010271a41a undetected_chromedriver + 6698010
+2   undetected_chromedriver             0x0000000102125ce5 undetected_chromedriver + 453861
+3   undetected_chromedriver             0x00000001021695e9 undetected_chromedriver + 730601
+4   undetected_chromedriver             0x0000000102168401 undetected_chromedriver + 726017
+5   undetected_chromedriver             0x000000010215d059 undetected_chromedriver + 680025
+6   undetected_chromedriver             0x00000001021afd7a undetected_chromedriver + 1019258
+7   undetected_chromedriver             0x00000001021af43c undetected_chromedriver + 1016892
+8   undetected_chromedriver             0x000000010216c724 undetected_chromedriver + 743204
+9   undetected_chromedriver             0x000000010216d4d1 undetected_chromedriver + 746705
+10  undetected_chromedriver             0x00000001026dbdd1 undetected_chromedriver + 6442449
+11  undetected_chromedriver             0x00000001026e01aa undetected_chromedriver + 6459818
+12  undetected_chromedriver             0x00000001026bba59 undetected_chromedriver + 6310489
+13  undetected_chromedriver             0x00000001026e0c08 undetected_chromedriver + 6462472
+14  undetected_chromedriver             0x00000001026aa3d0 undetected_chromedriver + 6239184
+15  undetected_chromedriver             0x0000000102706d18 undetected_chromedriver + 6618392
+16  undetected_chromedriver             0x0000000102706ed2 undetected_chromedriver + 6618834
+17  undetected_chromedriver             0x000000010271a026 undetected_chromedriver + 6696998
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+2026-02-03 15:15:13 - logger - INFO - info:69 - Logging system initialized
+2026-02-03 15:15:14 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-03 15:15:14 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-03_14-192.csv
+2026-02-03 15:15:48 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 15:15:50 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.patriotchevroletgmc.com
+Exception: Message: session not created: cannot connect to chrome at 127.0.0.1:56565
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.110
+Stacktrace:
+0   undetected_chromedriver             0x0000000103635b98 undetected_chromedriver + 6732696
+1   undetected_chromedriver             0x000000010362d41a undetected_chromedriver + 6698010
+2   undetected_chromedriver             0x0000000103038ce5 undetected_chromedriver + 453861
+3   undetected_chromedriver             0x000000010307c5e9 undetected_chromedriver + 730601
+4   undetected_chromedriver             0x000000010307b401 undetected_chromedriver + 726017
+5   undetected_chromedriver             0x0000000103070059 undetected_chromedriver + 680025
+6   undetected_chromedriver             0x00000001030c2d7a undetected_chromedriver + 1019258
+7   undetected_chromedriver             0x00000001030c243c undetected_chromedriver + 1016892
+8   undetected_chromedriver             0x000000010307f724 undetected_chromedriver + 743204
+9   undetected_chromedriver             0x00000001030804d1 undetected_chromedriver + 746705
+10  undetected_chromedriver             0x00000001035eedd1 undetected_chromedriver + 6442449
+11  undetected_chromedriver             0x00000001035f31aa undetected_chromedriver + 6459818
+12  undetected_chromedriver             0x00000001035cea59 undetected_chromedriver + 6310489
+13  undetected_chromedriver             0x00000001035f3c08 undetected_chromedriver + 6462472
+14  undetected_chromedriver             0x00000001035bd3d0 undetected_chromedriver + 6239184
+15  undetected_chromedriver             0x0000000103619d18 undetected_chromedriver + 6618392
+16  undetected_chromedriver             0x0000000103619ed2 undetected_chromedriver + 6618834
+17  undetected_chromedriver             0x000000010362d026 undetected_chromedriver + 6696998
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1287, in run
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:56565
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.110
+Stacktrace:
+0   undetected_chromedriver             0x0000000103635b98 undetected_chromedriver + 6732696
+1   undetected_chromedriver             0x000000010362d41a undetected_chromedriver + 6698010
+2   undetected_chromedriver             0x0000000103038ce5 undetected_chromedriver + 453861
+3   undetected_chromedriver             0x000000010307c5e9 undetected_chromedriver + 730601
+4   undetected_chromedriver             0x000000010307b401 undetected_chromedriver + 726017
+5   undetected_chromedriver             0x0000000103070059 undetected_chromedriver + 680025
+6   undetected_chromedriver             0x00000001030c2d7a undetected_chromedriver + 1019258
+7   undetected_chromedriver             0x00000001030c243c undetected_chromedriver + 1016892
+8   undetected_chromedriver             0x000000010307f724 undetected_chromedriver + 743204
+9   undetected_chromedriver             0x00000001030804d1 undetected_chromedriver + 746705
+10  undetected_chromedriver             0x00000001035eedd1 undetected_chromedriver + 6442449
+11  undetected_chromedriver             0x00000001035f31aa undetected_chromedriver + 6459818
+12  undetected_chromedriver             0x00000001035cea59 undetected_chromedriver + 6310489
+13  undetected_chromedriver             0x00000001035f3c08 undetected_chromedriver + 6462472
+14  undetected_chromedriver             0x00000001035bd3d0 undetected_chromedriver + 6239184
+15  undetected_chromedriver             0x0000000103619d18 undetected_chromedriver + 6618392
+16  undetected_chromedriver             0x0000000103619ed2 undetected_chromedriver + 6618834
+17  undetected_chromedriver             0x000000010362d026 undetected_chromedriver + 6696998
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+2026-02-03 15:20:03 - logger - INFO - info:69 - Logging system initialized
+2026-02-03 15:20:04 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-03 15:20:04 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-03_14-192.csv
+2026-02-03 15:20:21 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 15:20:24 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-03 15:20:31 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.patriotchevroletgmc.com
+Exception: 'tuple' object has no attribute 'lower'
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1300, in run
+    if rule.lower() in page_source:
+AttributeError: 'tuple' object has no attribute 'lower'
+
+2026-02-03 15:25:04 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_152504.csv
+2026-02-03 15:30:04 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_153004.csv
+2026-02-03 15:35:04 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_153504.csv
+2026-02-03 15:40:04 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_154004.csv
+2026-02-03 15:45:04 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_154504.csv
+2026-02-03 15:50:04 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_155004.csv
+2026-02-03 15:55:04 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_155504.csv
+2026-02-03 16:00:04 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_160004.csv
+2026-02-03 16:05:04 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_160504.csv
+2026-02-03 16:10:04 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_161004.csv
+2026-02-03 16:14:16 - logger - INFO - info:69 - Logging system initialized
+2026-02-03 16:14:17 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-03 16:14:17 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-03_14-192.csv
+2026-02-03 16:14:33 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 16:14:36 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-03 16:16:29 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 16:16:32 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-03 16:17:01 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 16:17:04 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-03 16:17:38 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 16:17:40 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-03 16:19:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_161917.csv
+2026-02-03 16:24:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_162417.csv
+2026-02-03 16:29:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_162917.csv
+2026-02-03 16:34:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_163417.csv
+2026-02-03 16:39:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_163917.csv
+2026-02-03 16:44:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_164417.csv
+2026-02-03 16:49:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_164917.csv
+2026-02-03 16:54:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_165417.csv
+2026-02-03 16:59:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_165917.csv
+2026-02-03 17:04:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_170417.csv
+2026-02-03 17:09:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_170917.csv
+2026-02-03 17:14:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_171417.csv
+2026-02-03 17:19:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_171917.csv
+2026-02-03 17:24:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_172417.csv
+2026-02-03 17:29:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_172917.csv
+2026-02-03 17:34:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_173417.csv
+2026-02-03 17:39:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_173917.csv
+2026-02-03 17:44:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_174417.csv
+2026-02-03 17:45:35 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 17:45:41 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-03 17:47:06 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 17:49:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_174917.csv
+2026-02-03 17:51:29 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 17:51:31 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-03 17:51:42 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 17:54:09 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 17:54:12 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-03 17:54:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_175417.csv
+2026-02-03 17:55:48 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 17:55:50 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-03 17:59:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_175917.csv
+2026-02-03 18:04:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_180417.csv
+2026-02-03 18:09:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_180917.csv
+2026-02-03 18:14:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_181417.csv
+2026-02-03 18:19:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_181917.csv
+2026-02-03 18:20:02 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-03 18:20:02 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-03 18:20:02 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-03 18:20:02 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-03 18:20:02 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-03 18:20:02 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-03 18:20:02 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-03 18:20:02 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-03 18:20:02 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-03 18:20:02 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-03 18:20:38 - logger - INFO - info:69 - Logging system initialized
+2026-02-03 18:20:39 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-03 18:20:39 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-03_14-192.csv
+2026-02-03 18:20:59 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 18:21:02 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-03 18:26:50 - logger - INFO - info:69 - Logging system initialized
+2026-02-03 18:26:50 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-03 18:26:50 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-03_14-192.csv
+2026-02-03 18:27:11 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 18:27:13 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-03 18:30:33 - logger - INFO - info:69 - Logging system initialized
+2026-02-03 18:30:34 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-03 18:30:34 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-03_14-192.csv
+2026-02-03 18:30:45 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 18:30:48 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-03 18:35:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_183534.csv
+2026-02-03 18:40:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_184034.csv
+2026-02-03 18:45:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_184534.csv
+2026-02-03 18:50:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_185034.csv
+2026-02-03 18:55:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_185534.csv
+2026-02-03 19:00:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_190034.csv
+2026-02-03 19:05:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_190534.csv
+2026-02-03 19:10:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_191034.csv
+2026-02-03 19:15:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_191534.csv
+2026-02-03 19:20:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_192034.csv
+2026-02-03 19:25:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_192534.csv
+2026-02-03 19:30:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_193034.csv
+2026-02-03 19:35:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_193534.csv
+2026-02-03 19:40:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_194034.csv
+2026-02-03 19:45:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_194534.csv
+2026-02-03 19:50:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_195034.csv
+2026-02-03 19:55:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_195534.csv
+2026-02-03 20:00:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_200034.csv
+2026-02-03 20:05:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_200534.csv
+2026-02-03 20:10:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_201034.csv
+2026-02-03 20:15:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_201534.csv
+2026-02-03 20:20:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_202034.csv
+2026-02-03 20:25:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_202534.csv
+2026-02-03 20:30:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_203034.csv
+2026-02-03 20:35:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_203534.csv
+2026-02-03 20:40:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_204034.csv
+2026-02-03 20:45:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_204534.csv
+2026-02-03 20:50:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_205034.csv
+2026-02-03 20:55:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_205534.csv
+2026-02-03 21:00:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_210034.csv
+2026-02-03 21:05:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_210534.csv
+2026-02-03 21:10:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_211034.csv
+2026-02-03 21:15:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_211534.csv
+2026-02-03 21:20:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_212034.csv
+2026-02-03 21:25:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_212534.csv
+2026-02-03 21:30:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_213034.csv
+2026-02-03 21:35:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_213534.csv
+2026-02-03 21:40:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_214034.csv
+2026-02-03 21:45:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_214534.csv
+2026-02-03 21:50:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_215034.csv
+2026-02-03 21:55:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_215534.csv
+2026-02-03 22:00:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_220034.csv
+2026-02-03 22:05:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_220534.csv
+2026-02-03 22:10:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_221034.csv
+2026-02-03 22:15:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_221534.csv
+2026-02-03 22:20:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_222034.csv
+2026-02-03 22:25:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_222534.csv
+2026-02-03 22:30:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_223034.csv
+2026-02-03 22:35:34 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_223534.csv
+2026-02-03 22:36:54 - logger - INFO - info:69 - Logging system initialized
+2026-02-03 22:36:55 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-03 22:36:55 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-03_14-192.csv
+2026-02-03 22:37:09 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-03 22:37:11 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-03 22:41:55 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260203_224155.csv

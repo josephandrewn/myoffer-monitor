@@ -1319,3 +1319,152 @@ Traceback: Traceback (most recent call last):
     auto_save_path = DATA_DIR / f"autosave_{timestamp}.csv"
 NameError: name 'DATA_DIR' is not defined
 
+2026-02-03 15:13:53 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.patriotchevroletgmc.com
+Exception: Message: session not created: cannot connect to chrome at 127.0.0.1:56469
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.110
+Stacktrace:
+0   undetected_chromedriver             0x0000000102722b98 undetected_chromedriver + 6732696
+1   undetected_chromedriver             0x000000010271a41a undetected_chromedriver + 6698010
+2   undetected_chromedriver             0x0000000102125ce5 undetected_chromedriver + 453861
+3   undetected_chromedriver             0x00000001021695e9 undetected_chromedriver + 730601
+4   undetected_chromedriver             0x0000000102168401 undetected_chromedriver + 726017
+5   undetected_chromedriver             0x000000010215d059 undetected_chromedriver + 680025
+6   undetected_chromedriver             0x00000001021afd7a undetected_chromedriver + 1019258
+7   undetected_chromedriver             0x00000001021af43c undetected_chromedriver + 1016892
+8   undetected_chromedriver             0x000000010216c724 undetected_chromedriver + 743204
+9   undetected_chromedriver             0x000000010216d4d1 undetected_chromedriver + 746705
+10  undetected_chromedriver             0x00000001026dbdd1 undetected_chromedriver + 6442449
+11  undetected_chromedriver             0x00000001026e01aa undetected_chromedriver + 6459818
+12  undetected_chromedriver             0x00000001026bba59 undetected_chromedriver + 6310489
+13  undetected_chromedriver             0x00000001026e0c08 undetected_chromedriver + 6462472
+14  undetected_chromedriver             0x00000001026aa3d0 undetected_chromedriver + 6239184
+15  undetected_chromedriver             0x0000000102706d18 undetected_chromedriver + 6618392
+16  undetected_chromedriver             0x0000000102706ed2 undetected_chromedriver + 6618834
+17  undetected_chromedriver             0x000000010271a026 undetected_chromedriver + 6696998
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1287, in run
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:56469
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.110
+Stacktrace:
+0   undetected_chromedriver             0x0000000102722b98 undetected_chromedriver + 6732696
+1   undetected_chromedriver             0x000000010271a41a undetected_chromedriver + 6698010
+2   undetected_chromedriver             0x0000000102125ce5 undetected_chromedriver + 453861
+3   undetected_chromedriver             0x00000001021695e9 undetected_chromedriver + 730601
+4   undetected_chromedriver             0x0000000102168401 undetected_chromedriver + 726017
+5   undetected_chromedriver             0x000000010215d059 undetected_chromedriver + 680025
+6   undetected_chromedriver             0x00000001021afd7a undetected_chromedriver + 1019258
+7   undetected_chromedriver             0x00000001021af43c undetected_chromedriver + 1016892
+8   undetected_chromedriver             0x000000010216c724 undetected_chromedriver + 743204
+9   undetected_chromedriver             0x000000010216d4d1 undetected_chromedriver + 746705
+10  undetected_chromedriver             0x00000001026dbdd1 undetected_chromedriver + 6442449
+11  undetected_chromedriver             0x00000001026e01aa undetected_chromedriver + 6459818
+12  undetected_chromedriver             0x00000001026bba59 undetected_chromedriver + 6310489
+13  undetected_chromedriver             0x00000001026e0c08 undetected_chromedriver + 6462472
+14  undetected_chromedriver             0x00000001026aa3d0 undetected_chromedriver + 6239184
+15  undetected_chromedriver             0x0000000102706d18 undetected_chromedriver + 6618392
+16  undetected_chromedriver             0x0000000102706ed2 undetected_chromedriver + 6618834
+17  undetected_chromedriver             0x000000010271a026 undetected_chromedriver + 6696998
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+2026-02-03 15:15:50 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.patriotchevroletgmc.com
+Exception: Message: session not created: cannot connect to chrome at 127.0.0.1:56565
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.110
+Stacktrace:
+0   undetected_chromedriver             0x0000000103635b98 undetected_chromedriver + 6732696
+1   undetected_chromedriver             0x000000010362d41a undetected_chromedriver + 6698010
+2   undetected_chromedriver             0x0000000103038ce5 undetected_chromedriver + 453861
+3   undetected_chromedriver             0x000000010307c5e9 undetected_chromedriver + 730601
+4   undetected_chromedriver             0x000000010307b401 undetected_chromedriver + 726017
+5   undetected_chromedriver             0x0000000103070059 undetected_chromedriver + 680025
+6   undetected_chromedriver             0x00000001030c2d7a undetected_chromedriver + 1019258
+7   undetected_chromedriver             0x00000001030c243c undetected_chromedriver + 1016892
+8   undetected_chromedriver             0x000000010307f724 undetected_chromedriver + 743204
+9   undetected_chromedriver             0x00000001030804d1 undetected_chromedriver + 746705
+10  undetected_chromedriver             0x00000001035eedd1 undetected_chromedriver + 6442449
+11  undetected_chromedriver             0x00000001035f31aa undetected_chromedriver + 6459818
+12  undetected_chromedriver             0x00000001035cea59 undetected_chromedriver + 6310489
+13  undetected_chromedriver             0x00000001035f3c08 undetected_chromedriver + 6462472
+14  undetected_chromedriver             0x00000001035bd3d0 undetected_chromedriver + 6239184
+15  undetected_chromedriver             0x0000000103619d18 undetected_chromedriver + 6618392
+16  undetected_chromedriver             0x0000000103619ed2 undetected_chromedriver + 6618834
+17  undetected_chromedriver             0x000000010362d026 undetected_chromedriver + 6696998
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1287, in run
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:56565
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.110
+Stacktrace:
+0   undetected_chromedriver             0x0000000103635b98 undetected_chromedriver + 6732696
+1   undetected_chromedriver             0x000000010362d41a undetected_chromedriver + 6698010
+2   undetected_chromedriver             0x0000000103038ce5 undetected_chromedriver + 453861
+3   undetected_chromedriver             0x000000010307c5e9 undetected_chromedriver + 730601
+4   undetected_chromedriver             0x000000010307b401 undetected_chromedriver + 726017
+5   undetected_chromedriver             0x0000000103070059 undetected_chromedriver + 680025
+6   undetected_chromedriver             0x00000001030c2d7a undetected_chromedriver + 1019258
+7   undetected_chromedriver             0x00000001030c243c undetected_chromedriver + 1016892
+8   undetected_chromedriver             0x000000010307f724 undetected_chromedriver + 743204
+9   undetected_chromedriver             0x00000001030804d1 undetected_chromedriver + 746705
+10  undetected_chromedriver             0x00000001035eedd1 undetected_chromedriver + 6442449
+11  undetected_chromedriver             0x00000001035f31aa undetected_chromedriver + 6459818
+12  undetected_chromedriver             0x00000001035cea59 undetected_chromedriver + 6310489
+13  undetected_chromedriver             0x00000001035f3c08 undetected_chromedriver + 6462472
+14  undetected_chromedriver             0x00000001035bd3d0 undetected_chromedriver + 6239184
+15  undetected_chromedriver             0x0000000103619d18 undetected_chromedriver + 6618392
+16  undetected_chromedriver             0x0000000103619ed2 undetected_chromedriver + 6618834
+17  undetected_chromedriver             0x000000010362d026 undetected_chromedriver + 6696998
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+2026-02-03 15:20:31 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.patriotchevroletgmc.com
+Exception: 'tuple' object has no attribute 'lower'
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1300, in run
+    if rule.lower() in page_source:
+AttributeError: 'tuple' object has no attribute 'lower'
+

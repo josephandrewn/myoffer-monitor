@@ -108,7 +108,7 @@ class MainApp(QMainWindow):
         # App Title
         title_label = QLabel("MyOffer Monitor")
         title_label.setStyleSheet(f"""
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 700;
             color: {styles.COLORS["brand_dark"]};
             background: transparent;
@@ -252,23 +252,23 @@ class MainApp(QMainWindow):
     def update_master_record(self, original_idx, status, msg, vendor, config):
         """Update the Manager table when Scanner finds a result."""
         try:
-            # Update Provider
-            provider_item = self.manager.table.item(original_idx, 2)
+            # Update Detected Provider (column 3)
+            provider_item = self.manager.table.item(original_idx, 3)
             if provider_item:
-                provider_item.setText(vendor if vendor else "Other")
+                provider_item.setText(vendor if vendor else "")
                 
-            # Update Config
-            config_item = self.manager.table.item(original_idx, 3)
+            # Update Config (column 4)
+            config_item = self.manager.table.item(original_idx, 4)
             if config_item and config:
                 config_item.setText(config)
 
-            # Update Status
-            status_item = self.manager.table.item(original_idx, 4)
+            # Update Status (column 5)
+            status_item = self.manager.table.item(original_idx, 5)
             if status_item:
                 status_item.setText(status)
             
-            # Update Details
-            details_item = self.manager.table.item(original_idx, 5)
+            # Update Details (column 6)
+            details_item = self.manager.table.item(original_idx, 6)
             if details_item:
                 details_item.setText(msg)
             

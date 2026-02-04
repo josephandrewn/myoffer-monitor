@@ -15,7 +15,7 @@ import qtawesome as qta
 from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QPushButton, 
                              QFileDialog, QTableWidget, QTableWidgetItem, 
                              QHeaderView, QLabel, QProgressBar, QLineEdit, 
-                             QMessageBox, QFrame)
+                             QMessageBox, QFrame, QDialog, QScrollArea)
 from PyQt6.QtCore import QThread, pyqtSignal, Qt
 from PyQt6.QtGui import QColor, QFont
 
@@ -23,6 +23,7 @@ import assets.styles as styles
 
 from config import scanner_config, VENDOR_DETECTION_RULES, BLOCK_DETECTION_PHRASES
 from logger import get_logger, LogExecutionTime
+import harvester
 
 logger = get_logger(__name__)
 
@@ -933,27 +934,36 @@ class ScannerTab(QWidget):
         self.btn_manual.setIcon(qta.icon('fa5s.search', color='white'))
         self.btn_manual.clicked.connect(self.run_manual_check)
         
+        self.btn_sitemap = QPushButton(" Check Site Map")
+        self.btn_sitemap.setIcon(qta.icon('fa5s.sitemap', color='#555'))
+        self.btn_sitemap.clicked.connect(self.check_site_map)
+        
         manual_layout.addWidget(self.input_manual)
         manual_layout.addWidget(self.btn_manual)
+        manual_layout.addWidget(self.btn_sitemap)
         layout.addLayout(manual_layout)
 
         # Progress Bar
         self.progress = QProgressBar()
         layout.addWidget(self.progress)
 
-        # Data Table
+        # Data Table - Updated to match new column structure
         self.table = QTableWidget()
-        self.table.setColumnCount(7) 
-        self.table.setHorizontalHeaderLabels(["Client Name", "URL", "Provider", "Config", "Status", "Details", "Active"])
+        self.table.setColumnCount(8) 
+        self.table.setHorizontalHeaderLabels([
+            "Client Name", "URL", "Expected Provider", "Detected Provider", 
+            "Config", "Status", "Details", "Active"
+        ])
         
         header = self.table.horizontalHeader()
         header.setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
         header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch) 
         
-        self.table.setColumnWidth(0, 180)
-        self.table.setColumnWidth(2, 130)
-        self.table.setColumnWidth(3, 80)
-        self.table.setColumnWidth(4, 100)
+        self.table.setColumnWidth(0, 180)   # Client Name
+        self.table.setColumnWidth(2, 110)   # Expected Provider
+        self.table.setColumnWidth(3, 110)   # Detected Provider
+        self.table.setColumnWidth(4, 80)    # Config
+        self.table.setColumnWidth(5, 80)    # Status
         self.table.setSortingEnabled(True) 
         
         layout.addWidget(self.table)
@@ -983,18 +993,19 @@ class ScannerTab(QWidget):
             
             self.table.setItem(row_count, 0, item_name)
             self.table.setItem(row_count, 1, QTableWidgetItem(display_url)) 
-            self.table.setItem(row_count, 2, QTableWidgetItem(str(row.get('Provider', '')))) 
-            self.table.setItem(row_count, 3, QTableWidgetItem(str(row.get('Config', '')))) 
+            self.table.setItem(row_count, 2, QTableWidgetItem(str(row.get('Expected Provider', '')))) 
+            self.table.setItem(row_count, 3, QTableWidgetItem(str(row.get('Detected Provider', '')))) 
+            self.table.setItem(row_count, 4, QTableWidgetItem(str(row.get('Config', '')))) 
             
             status_txt = str(row.get('Status', 'PENDING'))
             status_item = QTableWidgetItem(status_txt)
             status_item.setFont(QFont("Arial", 10, QFont.Weight.Bold))
             status_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
             self.color_status(status_item, status_txt)
-            self.table.setItem(row_count, 4, status_item)
+            self.table.setItem(row_count, 5, status_item)
             
-            self.table.setItem(row_count, 5, QTableWidgetItem(str(row.get('Details', ''))))
-            self.table.setItem(row_count, 6, QTableWidgetItem(active_val))
+            self.table.setItem(row_count, 6, QTableWidgetItem(str(row.get('Details', ''))))
+            self.table.setItem(row_count, 7, QTableWidgetItem(active_val))
             
             row_count += 1
             
@@ -1035,7 +1046,8 @@ class ScannerTab(QWidget):
 
         data_payload = []
         for i in range(self.table.rowCount()):
-            status_item = self.table.item(i, 4)
+            # Status column is now 5
+            status_item = self.table.item(i, 5)
             status_text = status_item.text() if status_item else ""
             
             # FILTER: Only scan PENDING items
@@ -1057,7 +1069,11 @@ class ScannerTab(QWidget):
                 url = raw_url
 
             client = item_name.text()
-            data_payload.append((i, client, url, original_idx))
+            
+            # Get Expected Provider for harvesting (column 2)
+            expected_provider = self.table.item(i, 2).text() if self.table.item(i, 2) else ""
+            
+            data_payload.append((i, client, url, original_idx, expected_provider))
 
         if not data_payload:
             QMessageBox.information(self, "Info", "No PENDING items to scan.")
@@ -1085,10 +1101,10 @@ class ScannerTab(QWidget):
         self.btn_stop.setText(" Stop") 
         self.table.setSortingEnabled(True)
         
-        # Show summary with UNVERIFIABLE count (displayed as N/A)
+        # Show summary with UNVERIFIABLE count (displayed as N/A) - Status column is now 5
         unverifiable_count = sum(
             1 for i in range(self.table.rowCount())
-            if self.table.item(i, 4) and self.table.item(i, 4).text() == 'N/A'
+            if self.table.item(i, 5) and self.table.item(i, 5).text() == 'N/A'
         )
         
         if unverifiable_count > 0:
@@ -1103,16 +1119,20 @@ class ScannerTab(QWidget):
             QMessageBox.information(self, "Done", "Batch Scan Complete!")
 
     def update_row(self, row_idx, result):
-        self.table.setItem(row_idx, 2, QTableWidgetItem(result.get('vendor', 'Unknown')))
-        self.table.setItem(row_idx, 3, QTableWidgetItem(result['config']))
+        # Detected Provider column is now 3
+        self.table.setItem(row_idx, 3, QTableWidgetItem(result.get('vendor', 'Unknown')))
+        # Config column is now 4
+        self.table.setItem(row_idx, 4, QTableWidgetItem(result['config']))
         
         status_item = QTableWidgetItem(result['status'])
         status_item.setFont(QFont("Arial", 10, QFont.Weight.Bold))
         status_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
         self.color_status(status_item, result['status'])
         
-        self.table.setItem(row_idx, 4, status_item)
-        self.table.setItem(row_idx, 5, QTableWidgetItem(result['msg']))
+        # Status column is now 5
+        self.table.setItem(row_idx, 5, status_item)
+        # Details column is now 6
+        self.table.setItem(row_idx, 6, QTableWidgetItem(result['msg']))
         self.table.scrollToItem(status_item)
 
         original_idx = result.get('original_index')
@@ -1176,3 +1196,336 @@ class ScannerTab(QWidget):
     def get_unverifiable_sites(self) -> List[str]:
         """Get list of all domains marked as UNVERIFIABLE."""
         return self.block_tracker.get_unverifiable_domains()
+
+    def check_site_map(self):
+        """Check/harvest site map for a URL - opens browser and extracts nav links."""
+        url = self.input_manual.text().strip()
+        provider = ""
+        client_name = "Manual Check"
+        
+        if not url:
+            # If no URL in input, try to use selected row
+            selected = self.table.selectedItems()
+            if selected:
+                row = selected[0].row()
+                url = self.table.item(row, 1).text() if self.table.item(row, 1) else ""
+                provider = self.table.item(row, 2).text() if self.table.item(row, 2) else ""
+                client_name = self.table.item(row, 0).text() if self.table.item(row, 0) else "Selected Site"
+            else:
+                QMessageBox.information(
+                    self, 
+                    "No URL", 
+                    "Enter a URL in the input field or select a row from the table."
+                )
+                return
+        
+        if not url:
+            return
+            
+        # Ensure URL has protocol
+        if not url.lower().startswith(("http://", "https://")):
+            url = "https://" + url
+        
+        # Show progress
+        self.progress.setMaximum(0)  # Indeterminate progress
+        self.btn_sitemap.setEnabled(False)
+        self.btn_sitemap.setText(" Harvesting...")
+        
+        # Run harvest in thread
+        self.sitemap_worker = SiteMapWorker(url, provider)
+        self.sitemap_worker.finished_signal.connect(
+            lambda result: self.on_sitemap_harvested(result, client_name, url, provider)
+        )
+        self.sitemap_worker.start()
+    
+    def on_sitemap_harvested(self, result: dict, client_name: str, url: str, provider: str):
+        """Handle completed site map harvest."""
+        self.progress.setMaximum(100)
+        self.progress.setValue(0)
+        self.btn_sitemap.setEnabled(True)
+        self.btn_sitemap.setText(" Check Site Map")
+        
+        if result.get("error"):
+            QMessageBox.warning(
+                self, 
+                "Harvest Error", 
+                f"Could not harvest site map:\n{result['error']}"
+            )
+            return
+        
+        # Save the harvested data
+        harvester.save_harvested_site_map(url, provider or result.get("detected_provider", ""), result)
+        
+        # Get the saved summary and show dialog
+        site_map = harvester.get_site_map_summary(url)
+        dialog = ScannerSiteMapDialog(self, client_name, url, provider, site_map)
+        dialog.exec()
+
+
+class SiteMapWorker(QThread):
+    """Worker thread for harvesting site map."""
+    finished_signal = pyqtSignal(dict)
+    
+    def __init__(self, url: str, provider: str):
+        super().__init__()
+        self.url = url
+        self.provider = provider
+    
+    def run(self):
+        result = {"links": {}, "other": [], "error": None}
+        driver = None
+        
+        try:
+            # Create browser with anti-detection settings
+            options = uc.ChromeOptions()
+            options.add_argument('--headless=new')
+            options.add_argument('--disable-gpu')
+            options.add_argument('--no-sandbox')
+            options.add_argument('--disable-dev-shm-usage')
+            options.add_argument('--window-size=1920,1080')
+            
+            # Anti-detection arguments
+            options.add_argument('--disable-blink-features=AutomationControlled')
+            options.add_argument('--disable-infobars')
+            options.add_argument('--disable-extensions')
+            options.add_argument('--disable-popup-blocking')
+            options.add_argument('--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+            
+            driver = uc.Chrome(options=options, use_subprocess=True)
+            driver.set_page_load_timeout(45)
+            
+            # Execute CDP commands to mask automation
+            try:
+                driver.execute_cdp_cmd('Network.setUserAgentOverride', {
+                    "userAgent": 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                })
+                driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
+                    'source': '''
+                        Object.defineProperty(navigator, 'webdriver', {
+                            get: () => undefined
+                        });
+                        Object.defineProperty(navigator, 'plugins', {
+                            get: () => [1, 2, 3, 4, 5]
+                        });
+                        Object.defineProperty(navigator, 'languages', {
+                            get: () => ['en-US', 'en']
+                        });
+                        window.chrome = { runtime: {} };
+                    '''
+                })
+            except:
+                pass  # CDP commands are best-effort
+            
+            # Load page
+            driver.get(self.url)
+            
+            # Wait for JS to render
+            time.sleep(4)
+            
+            # Scroll to trigger lazy loading
+            try:
+                driver.execute_script("window.scrollTo(0, 300);")
+                time.sleep(1)
+                driver.execute_script("window.scrollTo(0, 0);")
+                time.sleep(1)
+            except:
+                pass
+            
+            # Try to dismiss cookie banners
+            try:
+                driver.execute_script("""
+                    const dismissSelectors = [
+                        '[data-complyauto-dismiss]',
+                        '.complyauto-banner button',
+                        '#complyauto-accept',
+                        '#onetrust-accept-btn-handler',
+                        '.onetrust-close-btn-handler',
+                        '[class*="cookie"] button[class*="accept"]',
+                        '[class*="cookie"] button[class*="close"]',
+                        '[class*="consent"] button[class*="accept"]',
+                        '[id*="cookie"] button',
+                        'button[class*="cookie-accept"]',
+                        '.cookie-banner button',
+                        '.cookie-notice button',
+                        '#cookie-accept',
+                        '#accept-cookies',
+                    ];
+                    
+                    for (const selector of dismissSelectors) {
+                        try {
+                            const btn = document.querySelector(selector);
+                            if (btn && btn.offsetParent !== null) {
+                                btn.click();
+                                break;
+                            }
+                        } catch (e) {}
+                    }
+                """)
+            except:
+                pass
+            
+            # Extra wait for JS-heavy sites
+            if self.provider and "inspire" in self.provider.lower():
+                time.sleep(3)
+            else:
+                time.sleep(2)
+            
+            # Detect provider if not specified
+            detected_provider = self.provider
+            if not detected_provider:
+                page_source = driver.page_source.lower()
+                for vendor, rules in VENDOR_DETECTION_RULES.items():
+                    for rule in rules:
+                        # Rules are tuples: (type, pattern) e.g., ("html", "sokal.com")
+                        if isinstance(rule, tuple) and len(rule) >= 2:
+                            pattern = rule[1].lower()
+                        else:
+                            pattern = str(rule).lower()
+                        
+                        if pattern in page_source:
+                            detected_provider = vendor
+                            break
+                    if detected_provider:
+                        break
+            
+            result["detected_provider"] = detected_provider
+            
+            # Extra wait if we detected Dealer Inspire
+            if detected_provider and "inspire" in detected_provider.lower():
+                time.sleep(2)
+            
+            # Harvest links
+            harvest_result = harvester.harvest_from_browser(driver, self.url, detected_provider or self.provider)
+            result["links"] = harvest_result.get("links", {})
+            result["other"] = harvest_result.get("other", [])
+            
+        except Exception as e:
+            result["error"] = str(e)
+            logger.error("Site map harvest failed", exception=e, url=self.url)
+        finally:
+            if driver:
+                try:
+                    driver.quit()
+                except:
+                    pass
+        
+        self.finished_signal.emit(result)
+
+
+class ScannerSiteMapDialog(QDialog):
+    """Dialog for displaying site map data from scanner tab."""
+    
+    def __init__(self, parent, client_name: str, url: str, provider: str, site_map: dict = None):
+        super().__init__(parent)
+        self.url = url
+        self.provider = provider
+        
+        self.setWindowTitle(f"Site Map: {client_name}")
+        self.setMinimumSize(550, 600)
+        self.resize(550, 700)
+        
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(20, 20, 20, 20)
+        layout.setSpacing(15)
+        
+        # Header
+        header_label = QLabel(f"<b style='font-size: 16px;'>{client_name}</b>")
+        header_label.setStyleSheet("background: transparent;")
+        layout.addWidget(header_label)
+        
+        # Metadata
+        if site_map:
+            harvested_at = site_map.get("harvested_at", "Unknown")
+            if harvested_at and harvested_at != "Unknown":
+                try:
+                    dt = datetime.fromisoformat(harvested_at)
+                    harvested_at = dt.strftime("%b %d, %Y at %I:%M %p")
+                except:
+                    pass
+            detected_provider = site_map.get("provider", "Unknown")
+            meta_text = f"Provider: {detected_provider} | Harvested: {harvested_at}"
+        else:
+            meta_text = "No site map data available"
+        
+        meta_label = QLabel(meta_text)
+        meta_label.setStyleSheet(f"color: {styles.COLORS['text_secondary']}; background: transparent;")
+        layout.addWidget(meta_label)
+        
+        # URL display
+        url_label = QLabel(url)
+        url_label.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
+        url_label.setStyleSheet(f"color: {styles.COLORS['brand_primary']}; background: transparent; font-size: 11px;")
+        layout.addWidget(url_label)
+        
+        # Separator
+        separator = QFrame()
+        separator.setFrameShape(QFrame.Shape.HLine)
+        separator.setStyleSheet(f"background-color: {styles.COLORS['border']};")
+        separator.setFixedHeight(1)
+        layout.addWidget(separator)
+        
+        # Content area (scrollable)
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        scroll.setStyleSheet(f"QScrollArea {{ border: none; background-color: {styles.COLORS['bg_white']}; }}")
+        
+        content_widget = QWidget()
+        content_layout = QVBoxLayout(content_widget)
+        content_layout.setContentsMargins(10, 10, 10, 10)
+        content_layout.setSpacing(8)
+        
+        if site_map and site_map.get("links"):
+            links = site_map.get("links", {})
+            
+            for category in harvester.CATEGORY_ORDER:
+                urls = links.get(category, [])
+                
+                cat_label = QLabel(f"<b>{category}</b>")
+                cat_label.setStyleSheet("background: transparent; margin-top: 8px;")
+                content_layout.addWidget(cat_label)
+                
+                if urls:
+                    for url_item in urls:
+                        url_display = QLabel(url_item)
+                        url_display.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
+                        url_display.setWordWrap(True)
+                        url_display.setStyleSheet(f"color: {styles.COLORS['brand_primary']}; background: transparent; padding-left: 10px;")
+                        content_layout.addWidget(url_display)
+                else:
+                    not_found = QLabel("Not found")
+                    not_found.setStyleSheet(f"color: {styles.COLORS['text_tertiary']}; font-style: italic; background: transparent; padding-left: 10px;")
+                    content_layout.addWidget(not_found)
+            
+            # Other links section
+            other = site_map.get("other", [])
+            if other:
+                sep2 = QFrame()
+                sep2.setFrameShape(QFrame.Shape.HLine)
+                sep2.setStyleSheet(f"background-color: {styles.COLORS['border']};")
+                sep2.setFixedHeight(1)
+                content_layout.addWidget(sep2)
+                
+                other_label = QLabel(f"<b>Other:</b> {', '.join(other[:15])}")
+                other_label.setWordWrap(True)
+                other_label.setStyleSheet(f"color: {styles.COLORS['text_secondary']}; background: transparent; margin-top: 5px;")
+                content_layout.addWidget(other_label)
+        else:
+            no_data = QLabel("Site map harvested but no categorized links found.\nTry refreshing or check the site manually.")
+            no_data.setStyleSheet(f"color: {styles.COLORS['text_secondary']}; background: transparent; padding: 20px;")
+            no_data.setAlignment(Qt.AlignmentFlag.AlignCenter)
+            content_layout.addWidget(no_data)
+        
+        content_layout.addStretch()
+        scroll.setWidget(content_widget)
+        layout.addWidget(scroll)
+        
+        # Buttons
+        button_layout = QHBoxLayout()
+        button_layout.addStretch()
+        
+        close_btn = QPushButton("Close")
+        close_btn.setObjectName("btn_primary")
+        close_btn.clicked.connect(self.accept)
+        button_layout.addWidget(close_btn)
+        
+        layout.addLayout(button_layout)

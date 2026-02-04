@@ -5,7 +5,8 @@ from datetime import datetime
 from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QPushButton, 
                              QTableWidget, QTableWidgetItem, QHeaderView, 
                              QMessageBox, QFileDialog, QLineEdit, QAbstractItemView, 
-                             QFrame, QComboBox, QLabel)
+                             QFrame, QComboBox, QLabel, QDialog, QTextEdit,
+                             QDialogButtonBox, QScrollArea)
 from PyQt6.QtGui import (QColor, QFont, QUndoStack, QUndoCommand)
 from PyQt6.QtCore import Qt, pyqtSignal
 
@@ -18,6 +19,7 @@ except ImportError:
     ENABLE_DATABASE = False  # Default to disabled if not defined
 from logger import get_logger
 from database import get_database
+import harvester
 
 logger = get_logger(__name__)
 
@@ -174,12 +176,15 @@ class CommandResetStatus(QUndoCommand):
 class ManagerTab(QWidget):
     data_modified = pyqtSignal()
     
+    # List of known providers for dropdown
+    PROVIDER_OPTIONS = ["", "DealerOn", "Dealer.com", "Dealer Inspire", "DealerSocket", "Sokal", "Other"]
+    
     def __init__(self):
         super().__init__()
         
         self.file_path = None
         self.columns = [
-            "Client Name", "URL", "Provider", "Config", "Status", "Details", "Active"
+            "Client Name", "URL", "Expected Provider", "Detected Provider", "Config", "Status", "Details", "Active"
         ]
         self.df = pd.DataFrame(columns=self.columns)
         self.undo_stack = QUndoStack(self)
@@ -227,6 +232,10 @@ class ManagerTab(QWidget):
         self.btn_del.setObjectName("btn_danger")
         self.btn_del.setIcon(qta.icon('fa5s.trash-alt', color='white'))
         self.btn_del.clicked.connect(self.delete_row)
+        
+        self.btn_sitemap = QPushButton(" View Site Map")
+        self.btn_sitemap.setIcon(qta.icon('fa5s.sitemap', color='#555'))
+        self.btn_sitemap.clicked.connect(self.view_site_map)
 
         self.undo_stack.indexChanged.connect(self.emit_change)
 
@@ -234,6 +243,7 @@ class ManagerTab(QWidget):
         top_layout.addWidget(self.btn_load)
         top_layout.addWidget(self.btn_save)
         top_layout.addWidget(self.btn_undo)
+        top_layout.addWidget(self.btn_sitemap)
         top_layout.addStretch()
         top_layout.addWidget(self.btn_add)
         top_layout.addWidget(self.btn_reset) 
@@ -271,8 +281,12 @@ class ManagerTab(QWidget):
         header.setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
         header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
         
-        self.table.setColumnWidth(0, 180)
-        self.table.setColumnWidth(2, 130)
+        self.table.setColumnWidth(0, 180)   # Client Name
+        self.table.setColumnWidth(2, 120)   # Expected Provider
+        self.table.setColumnWidth(3, 120)   # Detected Provider
+        self.table.setColumnWidth(4, 80)    # Config
+        self.table.setColumnWidth(5, 90)    # Status
+        self.table.setColumnWidth(7, 60)    # Active
         self.table.setColumnWidth(3, 80)
         self.table.setColumnWidth(4, 100)
         self.table.setColumnWidth(6, 60) 
@@ -298,10 +312,12 @@ class ManagerTab(QWidget):
     def update_row_style(self, row):
         if row >= self.table.rowCount(): return
 
-        active_item = self.table.item(row, 6)
+        # Active column is now index 7
+        active_item = self.table.item(row, 7)
         is_active = active_item.text() == "Yes" if active_item else True
         
-        status_item = self.table.item(row, 4)
+        # Status column is now index 5
+        status_item = self.table.item(row, 5)
         status_text = status_item.text() if status_item else ""
         
         bg_color = QColor(styles.COLORS["row_pending_bg"])
@@ -333,7 +349,8 @@ class ManagerTab(QWidget):
                 item.setBackground(bg_color)
                 item.setForeground(text_color)
                 
-                if col in [4, 6]: 
+                # Status (5) and Active (7) columns get centered bold text
+                if col in [5, 7]: 
                     item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
                     item.setFont(QFont("Arial", 10, QFont.Weight.Bold))
 
@@ -343,6 +360,13 @@ class ManagerTab(QWidget):
             self.file_path = path
             try:
                 self.df = pd.read_csv(path)
+                
+                # Handle legacy CSV files with single "Provider" column
+                # Map it to "Expected Provider" and leave "Detected Provider" empty
+                if "Provider" in self.df.columns and "Expected Provider" not in self.df.columns:
+                    self.df = self.df.rename(columns={"Provider": "Expected Provider"})
+                    logger.info("Mapped legacy 'Provider' column to 'Expected Provider'")
+                
                 self.df = self.df.reindex(columns=self.columns, fill_value="")
                 
                 self.df['Status'] = self.df['Status'].replace("", "PENDING").fillna('PENDING')
@@ -438,8 +462,8 @@ class ManagerTab(QWidget):
                 text_match = True
             
             status_match = True
-            item_status = self.table.item(r, 4)
-            item_active = self.table.item(r, 6)
+            item_status = self.table.item(r, 5)   # Status column is now 5
+            item_active = self.table.item(r, 7)   # Active column is now 7
             
             if status_filter == "ARCHIVED":
                 if item_active.text() == "Yes": status_match = False
@@ -471,3 +495,174 @@ class ManagerTab(QWidget):
             logger.error("Failed to sync to database", exception=e)
             QMessageBox.warning(self, "Database Sync Error", 
                             f"Could not sync to database: {str(e)}")
+
+    def view_site_map(self):
+        """Show site map dialog for selected row."""
+        selected = self.table.selectedItems()
+        if not selected:
+            QMessageBox.information(self, "No Selection", "Please select a row to view its site map.")
+            return
+        
+        row = selected[0].row()
+        client_name = self.table.item(row, 0).text() if self.table.item(row, 0) else "Unknown"
+        url = self.table.item(row, 1).text() if self.table.item(row, 1) else ""
+        provider = self.table.item(row, 2).text() if self.table.item(row, 2) else ""  # Expected Provider
+        
+        if not url:
+            QMessageBox.warning(self, "No URL", "Selected row has no URL.")
+            return
+        
+        # Get site map data
+        site_map = harvester.get_site_map_summary(url)
+        
+        # Show dialog
+        dialog = SiteMapDialog(self, client_name, url, provider, site_map)
+        dialog.exec()
+
+
+class SiteMapDialog(QDialog):
+    """Dialog for displaying site map data."""
+    
+    def __init__(self, parent, client_name: str, url: str, provider: str, site_map: dict = None):
+        super().__init__(parent)
+        self.url = url
+        self.provider = provider
+        
+        self.setWindowTitle(f"Site Map: {client_name}")
+        self.setMinimumSize(550, 600)
+        self.resize(550, 700)
+        
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(20, 20, 20, 20)
+        layout.setSpacing(15)
+        
+        # Header
+        header_label = QLabel(f"<b style='font-size: 16px;'>{client_name}</b>")
+        header_label.setStyleSheet("background: transparent;")
+        layout.addWidget(header_label)
+        
+        # Metadata
+        if site_map:
+            harvested_at = site_map.get("harvested_at", "Unknown")
+            if harvested_at and harvested_at != "Unknown":
+                try:
+                    dt = datetime.fromisoformat(harvested_at)
+                    harvested_at = dt.strftime("%b %d, %Y at %I:%M %p")
+                except:
+                    pass
+            detected_provider = site_map.get("provider", "Unknown")
+            meta_text = f"Provider: {detected_provider} | Harvested: {harvested_at}"
+        else:
+            meta_text = "No site map data available"
+        
+        meta_label = QLabel(meta_text)
+        meta_label.setStyleSheet(f"color: {styles.COLORS['text_secondary']}; background: transparent;")
+        layout.addWidget(meta_label)
+        
+        # Separator
+        separator = QFrame()
+        separator.setFrameShape(QFrame.Shape.HLine)
+        separator.setStyleSheet(f"background-color: {styles.COLORS['border']};")
+        separator.setFixedHeight(1)
+        layout.addWidget(separator)
+        
+        # Content area (scrollable)
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        scroll.setStyleSheet(f"""
+            QScrollArea {{
+                border: none;
+                background-color: {styles.COLORS['bg_white']};
+            }}
+        """)
+        
+        content_widget = QWidget()
+        content_layout = QVBoxLayout(content_widget)
+        content_layout.setContentsMargins(10, 10, 10, 10)
+        content_layout.setSpacing(8)
+        
+        if site_map and site_map.get("links"):
+            links = site_map.get("links", {})
+            
+            for category in harvester.CATEGORY_ORDER:
+                urls = links.get(category, [])
+                
+                # Category label (bold)
+                cat_label = QLabel(f"<b>{category}</b>")
+                cat_label.setStyleSheet("background: transparent; margin-top: 8px;")
+                content_layout.addWidget(cat_label)
+                
+                if urls:
+                    for url_item in urls:
+                        url_label = QLabel(url_item)
+                        url_label.setTextInteractionFlags(Qt.TextInteractionFlag.TextSelectableByMouse)
+                        url_label.setWordWrap(True)
+                        url_label.setStyleSheet(f"""
+                            color: {styles.COLORS['brand_primary']}; 
+                            background: transparent;
+                            padding-left: 10px;
+                        """)
+                        content_layout.addWidget(url_label)
+                else:
+                    not_found = QLabel("Not found")
+                    not_found.setStyleSheet(f"""
+                        color: {styles.COLORS['text_tertiary']}; 
+                        font-style: italic;
+                        background: transparent;
+                        padding-left: 10px;
+                    """)
+                    content_layout.addWidget(not_found)
+            
+            # Other links section
+            other = site_map.get("other", [])
+            if other:
+                sep2 = QFrame()
+                sep2.setFrameShape(QFrame.Shape.HLine)
+                sep2.setStyleSheet(f"background-color: {styles.COLORS['border']}; margin-top: 10px;")
+                sep2.setFixedHeight(1)
+                content_layout.addWidget(sep2)
+                
+                other_label = QLabel(f"<b>Other:</b> {', '.join(other[:15])}")
+                other_label.setWordWrap(True)
+                other_label.setStyleSheet(f"color: {styles.COLORS['text_secondary']}; background: transparent; margin-top: 5px;")
+                content_layout.addWidget(other_label)
+        else:
+            # No data message
+            no_data = QLabel(
+                "No site map data has been harvested for this site yet.\n\n"
+                "Site maps are automatically collected during scans,\n"
+                "or you can use 'Check Site Map' in the Scanner tab."
+            )
+            no_data.setStyleSheet(f"color: {styles.COLORS['text_secondary']}; background: transparent; padding: 20px;")
+            no_data.setAlignment(Qt.AlignmentFlag.AlignCenter)
+            content_layout.addWidget(no_data)
+        
+        content_layout.addStretch()
+        scroll.setWidget(content_widget)
+        layout.addWidget(scroll)
+        
+        # Buttons
+        button_layout = QHBoxLayout()
+        button_layout.addStretch()
+        
+        refresh_btn = QPushButton("Refresh")
+        refresh_btn.clicked.connect(self.refresh_site_map)
+        refresh_btn.setEnabled(False)  # TODO: Implement refresh (requires browser)
+        refresh_btn.setToolTip("Refresh requires running from Scanner tab")
+        button_layout.addWidget(refresh_btn)
+        
+        close_btn = QPushButton("Close")
+        close_btn.setObjectName("btn_primary")
+        close_btn.clicked.connect(self.accept)
+        button_layout.addWidget(close_btn)
+        
+        layout.addLayout(button_layout)
+    
+    def refresh_site_map(self):
+        """Refresh site map - placeholder for future implementation."""
+        QMessageBox.information(
+            self, 
+            "Refresh", 
+            "To refresh the site map, use 'Check Site Map' in the Scanner tab.\n"
+            "This will re-harvest the navigation links from the website."
+        )

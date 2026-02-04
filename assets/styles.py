@@ -124,7 +124,7 @@ MODERN_STYLESHEET = f"""
         border-bottom: none;
         padding: 14px 24px;
         font-weight: 600;
-        font-size: 18px;
+        font-size: 14px;
         color: {COLORS["text_secondary"]};
         min-width: 150px;
         border-top-left-radius: 10px;
