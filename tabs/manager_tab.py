@@ -148,7 +148,7 @@ class CommandResetStatus(QUndoCommand):
         for row in self.row_indices:
             # Save state for undo
             self.previous_data[row] = {}
-            for col in [4, 5, 6, 8]: # Config, Status, Details, Active (skip Site Map)
+            for col in [4, 5, 6, 9]: # Config, Status, Details, Active (skip Site Map and Offer)
                 item = self.table.item(row, col)
                 self.previous_data[row][col] = item.text() if item else ""
             
@@ -156,7 +156,7 @@ class CommandResetStatus(QUndoCommand):
             self.table.item(row, 4).setText("")          # Config -> Empty
             self.table.item(row, 5).setText("PENDING")   # Status -> PENDING
             self.table.item(row, 6).setText("")          # Details -> Empty
-            self.table.item(row, 8).setText("Yes")       # Active -> Yes
+            self.table.item(row, 9).setText("Yes")       # Active -> Yes
             
             self.manager.update_row_style(row)
         self.table.blockSignals(False)
@@ -185,7 +185,7 @@ class ManagerTab(QWidget):
         self.file_path = None
         self.columns = [
             "Client Name", "URL", "Expected Provider", "Detected Provider", 
-            "Config", "Status", "Details", "Site Map", "Active"
+            "Config", "Status", "Details", "Site Map", "Offer", "Active"
         ]
         self.df = pd.DataFrame(columns=self.columns)
         self.undo_stack = QUndoStack(self)
@@ -217,6 +217,11 @@ class ManagerTab(QWidget):
         self.btn_undo.setEnabled(False)
         self.undo_stack.canUndoChanged.connect(self.btn_undo.setEnabled)
         
+        self.btn_import_offers = QPushButton(" Import Offers")
+        self.btn_import_offers.setObjectName("btn_brand")
+        self.btn_import_offers.setIcon(qta.icon('fa5s.file-import', color='white'))
+        self.btn_import_offers.clicked.connect(self.import_offers)
+        
         self.btn_add = QPushButton(" Add Manual")
         self.btn_add.setIcon(qta.icon('fa5s.plus-circle', color='#555'))
         self.btn_add.clicked.connect(self.add_row)
@@ -244,6 +249,7 @@ class ManagerTab(QWidget):
         top_layout.addWidget(self.btn_load)
         top_layout.addWidget(self.btn_save)
         top_layout.addWidget(self.btn_undo)
+        top_layout.addWidget(self.btn_import_offers)
         top_layout.addWidget(self.btn_sitemap)
         top_layout.addStretch()
         top_layout.addWidget(self.btn_add)
@@ -282,9 +288,9 @@ class ManagerTab(QWidget):
         header.setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
         header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)  # URL
         
-        # Column widths - 9 columns now
+        # Column widths - 10 columns
         # 0: Client Name, 1: URL (stretch), 2: Expected Provider, 3: Detected Provider
-        # 4: Config, 5: Status, 6: Details, 7: Site Map, 8: Active
+        # 4: Config, 5: Status, 6: Details, 7: Site Map, 8: Offer, 9: Active
         self.table.setColumnWidth(0, 300)   # Client Name
         self.table.setColumnWidth(2, 150)   # Expected Provider
         self.table.setColumnWidth(3, 150)   # Detected Provider
@@ -292,7 +298,8 @@ class ManagerTab(QWidget):
         self.table.setColumnWidth(5, 110)   # Status
         self.table.setColumnWidth(6, 120)   # Details
         self.table.setColumnWidth(7, 80)    # Site Map
-        self.table.setColumnWidth(8, 65)    # Active
+        self.table.setColumnWidth(8, 180)   # Offer
+        self.table.setColumnWidth(9, 65)    # Active
         
         self.table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
         self.table.itemChanged.connect(self.on_item_changed)
@@ -315,8 +322,8 @@ class ManagerTab(QWidget):
     def update_row_style(self, row):
         if row >= self.table.rowCount(): return
 
-        # Active column is now index 8
-        active_item = self.table.item(row, 8)
+        # Active column is now index 9
+        active_item = self.table.item(row, 9)
         is_active = active_item.text() == "Yes" if active_item else True
         
         # Status column is index 5
@@ -357,8 +364,8 @@ class ManagerTab(QWidget):
                 item.setBackground(bg_color)
                 item.setForeground(text_color)
                 
-                # Status (5), Site Map (7), and Active (8) columns get centered bold text
-                if col in [5, 7, 8]: 
+                # Status (5), Site Map (7), and Active (9) columns get centered bold text
+                if col in [5, 7, 9]: 
                     item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
                     item.setFont(QFont("Arial", 10, QFont.Weight.Bold))
 
@@ -485,7 +492,86 @@ class ManagerTab(QWidget):
             self.sync_to_database()
         except Exception as e:
             QMessageBox.critical(self, "Error Saving", str(e))
+
+    def import_offers(self):
+        """Import offers from a CSV file with Client Name and Offer columns."""
+        path, _ = QFileDialog.getOpenFileName(
+            self, 
+            "Import Offers CSV", 
+            "", 
+            "CSV Files (*.csv)"
+        )
+        if not path:
+            return
+        
+        try:
+            import_df = pd.read_csv(path)
             
+            # Validate required columns
+            if 'Client Name' not in import_df.columns:
+                QMessageBox.warning(
+                    self, 
+                    "Invalid CSV", 
+                    "CSV must contain a 'Client Name' column."
+                )
+                return
+            
+            if 'Offer' not in import_df.columns:
+                QMessageBox.warning(
+                    self, 
+                    "Invalid CSV", 
+                    "CSV must contain an 'Offer' column."
+                )
+                return
+            
+            # Build lookup from current table (Client Name -> row index)
+            client_to_row = {}
+            for row in range(self.table.rowCount()):
+                client_item = self.table.item(row, 0)
+                if client_item:
+                    client_name = client_item.text().strip()
+                    client_to_row[client_name] = row
+            
+            # Process imports
+            updated = 0
+            not_found = []
+            
+            self.table.blockSignals(True)
+            
+            for _, import_row in import_df.iterrows():
+                client_name = str(import_row['Client Name']).strip()
+                offer_value = str(import_row['Offer']).strip() if pd.notna(import_row['Offer']) else ""
+                
+                if client_name in client_to_row:
+                    row_idx = client_to_row[client_name]
+                    # Update Offer column (index 8)
+                    offer_item = self.table.item(row_idx, 8)
+                    if offer_item:
+                        offer_item.setText(offer_value)
+                    else:
+                        self.table.setItem(row_idx, 8, QTableWidgetItem(offer_value))
+                    updated += 1
+                else:
+                    not_found.append(client_name)
+            
+            self.table.blockSignals(False)
+            self.emit_change()
+            
+            # Show summary
+            message = f"Updated {updated} offer(s)."
+            
+            if not_found:
+                message += f"\n\n⚠️ {len(not_found)} client(s) not found:\n"
+                # Show first 10 not found
+                for name in not_found[:10]:
+                    message += f"  • {name}\n"
+                if len(not_found) > 10:
+                    message += f"  ... and {len(not_found) - 10} more"
+            
+            QMessageBox.information(self, "Import Complete", message)
+            
+        except Exception as e:
+            QMessageBox.critical(self, "Import Error", f"Error importing offers:\n{str(e)}")
 
     def filter_table(self):
         search_text = self.search_bar.text().lower()
@@ -500,8 +586,8 @@ class ManagerTab(QWidget):
                 text_match = True
             
             status_match = True
-            item_status = self.table.item(r, 5)   # Status column is now 5
-            item_active = self.table.item(r, 7)   # Active column is now 7
+            item_status = self.table.item(r, 5)   # Status column is 5
+            item_active = self.table.item(r, 9)   # Active column is now 9
             
             if status_filter == "ARCHIVED":
                 if item_active.text() == "Yes": status_match = False

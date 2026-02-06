@@ -1017,27 +1017,28 @@ class ScannerTab(QWidget):
         self.progress = QProgressBar()
         layout.addWidget(self.progress)
 
-        # Data Table - 9 columns with Site Map
+        # Data Table - 10 columns with Offer
         self.table = QTableWidget()
-        self.table.setColumnCount(9) 
+        self.table.setColumnCount(10) 
         self.table.setHorizontalHeaderLabels([
             "Client Name", "URL", "Expected Provider", "Detected Provider", 
-            "Config", "Status", "Details", "Site Map", "Active"
+            "Config", "Status", "Details", "Site Map", "Offer", "Active"
         ])
         
         header = self.table.horizontalHeader()
         header.setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
         header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)  # URL
         
-        # Column widths - 9 columns
+        # Column widths - 10 columns
         self.table.setColumnWidth(0, 300)   # Client Name
         self.table.setColumnWidth(2, 150)   # Expected Provider
         self.table.setColumnWidth(3, 150)   # Detected Provider
         self.table.setColumnWidth(4, 70)    # Config
-        self.table.setColumnWidth(5, 100)   # Status
+        self.table.setColumnWidth(5, 110)   # Status
         self.table.setColumnWidth(6, 120)   # Details
         self.table.setColumnWidth(7, 80)    # Site Map
-        self.table.setColumnWidth(8, 65)    # Active
+        self.table.setColumnWidth(8, 180)   # Offer
+        self.table.setColumnWidth(9, 65)    # Active
         self.table.setSortingEnabled(True) 
         
         layout.addWidget(self.table)
@@ -1095,7 +1096,11 @@ class ScannerTab(QWidget):
             sitemap_item.setFont(QFont("Arial", 10, QFont.Weight.Bold))
             self.table.setItem(row_count, 7, sitemap_item)
             
-            self.table.setItem(row_count, 8, QTableWidgetItem(active_val))
+            # Offer column
+            self.table.setItem(row_count, 8, QTableWidgetItem(str(row.get('Offer', ''))))
+            
+            # Active column
+            self.table.setItem(row_count, 9, QTableWidgetItem(active_val))
             
             row_count += 1
             

@@ -219,6 +219,20 @@ MODERN_STYLESHEET = f"""
         background-color: {COLORS["danger_hover"]};
     }}
 
+    /* Brand Button - MyOffer blue */
+    QPushButton#btn_brand {{
+        background-color: {COLORS["brand_primary"]};
+        color: {COLORS["text_inverse"]};
+        border: none;
+        padding: 8px 20px;
+    }}
+    QPushButton#btn_brand:hover {{
+        background-color: {COLORS["accent_hover"]};
+    }}
+    QPushButton#btn_brand:pressed {{
+        background-color: {COLORS["brand_dark"]};
+    }}
+
     /* ============================================
        TABLE - Clean with brand accents
        ============================================ */

@@ -5773,3 +5773,6 @@ Stacktrace:
 2026-02-06 08:17:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_081718.csv
 2026-02-06 08:22:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_082218.csv
 2026-02-06 08:27:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_082718.csv
+2026-02-06 08:33:22 - logger - INFO - info:69 - Logging system initialized
+2026-02-06 08:33:23 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-06 08:33:23 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-05_12-21-new.csv
