@@ -62,10 +62,10 @@ class CommandToggleActive(QUndoCommand):
     def redo(self):
         self.table.blockSignals(True)
         for row in self.row_indices:
-            item = self.table.item(row, 6)
+            item = self.table.item(row, 9)  # Active column is now index 9
             if not item:
                 item = QTableWidgetItem("Yes")
-                self.table.setItem(row, 6, item)
+                self.table.setItem(row, 9, item)
             current_val = item.text()
             self.previous_states[row] = current_val
             new_val = "No" if current_val == "Yes" else "Yes"
@@ -77,7 +77,7 @@ class CommandToggleActive(QUndoCommand):
     def undo(self):
         self.table.blockSignals(True)
         for row, old_val in self.previous_states.items():
-            self.table.item(row, 6).setText(old_val)
+            self.table.item(row, 9).setText(old_val)  # Active column is now index 9
             self.manager.update_row_style(row)
         self.table.blockSignals(False)
         self.manager.emit_change()
@@ -93,14 +93,17 @@ class CommandAddRow(QUndoCommand):
         self.table.blockSignals(True)
         self.table.insertRow(self.row_idx)
         
-        # Default Empty Row
-        self.table.setItem(self.row_idx, 0, QTableWidgetItem("New Client"))
-        self.table.setItem(self.row_idx, 1, QTableWidgetItem("https://"))
-        self.table.setItem(self.row_idx, 2, QTableWidgetItem("")) 
-        self.table.setItem(self.row_idx, 3, QTableWidgetItem("")) 
-        self.table.setItem(self.row_idx, 4, QTableWidgetItem("PENDING"))
-        self.table.setItem(self.row_idx, 5, QTableWidgetItem("")) 
-        self.table.setItem(self.row_idx, 6, QTableWidgetItem("Yes"))
+        # Default Empty Row - 10 columns
+        self.table.setItem(self.row_idx, 0, QTableWidgetItem("New Client"))  # Client Name
+        self.table.setItem(self.row_idx, 1, QTableWidgetItem("https://"))    # URL
+        self.table.setItem(self.row_idx, 2, QTableWidgetItem(""))            # Expected Provider
+        self.table.setItem(self.row_idx, 3, QTableWidgetItem(""))            # Detected Provider
+        self.table.setItem(self.row_idx, 4, QTableWidgetItem(""))            # Config
+        self.table.setItem(self.row_idx, 5, QTableWidgetItem("PENDING"))     # Status
+        self.table.setItem(self.row_idx, 6, QTableWidgetItem(""))            # Details
+        self.table.setItem(self.row_idx, 7, QTableWidgetItem(""))            # Site Map
+        self.table.setItem(self.row_idx, 8, QTableWidgetItem(""))            # Offer
+        self.table.setItem(self.row_idx, 9, QTableWidgetItem("Yes"))         # Active
 
         self.manager.update_row_style(self.row_idx)
         self.table.blockSignals(False)
