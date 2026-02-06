@@ -5778,3 +5778,4 @@ Stacktrace:
 2026-02-06 08:33:23 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-05_12-21-new.csv
 2026-02-06 08:38:22 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_083822.csv
 2026-02-06 08:43:22 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_084322.csv
+2026-02-06 08:48:22 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_084822.csv

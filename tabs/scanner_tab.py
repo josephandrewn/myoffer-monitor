@@ -1289,7 +1289,7 @@ class ScannerTab(QWidget):
             row_idx = 0
             self.table.insertRow(0)
             
-            # Fill all 8 columns properly
+            # Fill all 10 columns properly
             self.table.setItem(0, 0, QTableWidgetItem("Manual Check"))    # Client Name
             self.table.setItem(0, 1, QTableWidgetItem(display_url))       # URL
             self.table.setItem(0, 2, QTableWidgetItem(""))                # Expected Provider
@@ -1299,7 +1299,9 @@ class ScannerTab(QWidget):
             status_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
             self.table.setItem(0, 5, status_item)                         # Status
             self.table.setItem(0, 6, QTableWidgetItem(""))                # Details
-            self.table.setItem(0, 7, QTableWidgetItem("Yes"))             # Active
+            self.table.setItem(0, 7, QTableWidgetItem(""))                # Site Map
+            self.table.setItem(0, 8, QTableWidgetItem(""))                # Offer
+            self.table.setItem(0, 9, QTableWidgetItem("Yes"))             # Active
             
             original_idx = None
             client_name = "Manual Check"
