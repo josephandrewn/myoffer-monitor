@@ -66,7 +66,9 @@ class MainApp(QMainWindow):
             QApplication.setAttribute(Qt.AA_EnableHighDpiScaling, True)
 
         self.setWindowTitle("MyOffer Monitor")
-        self.resize(1400, 900)
+        
+        # Start maximized to full screen width
+        self.showMaximized()
         
         # Set window icon (logo)
         if LOGO_PATH.exists():
@@ -184,6 +186,21 @@ class MainApp(QMainWindow):
             try:
                 import pandas as pd
                 self.manager.df = pd.read_csv(last_file)
+                
+                # Handle legacy CSV files with single "Provider" column
+                # Map it to "Expected Provider" and leave "Detected Provider" empty
+                if "Provider" in self.manager.df.columns and "Expected Provider" not in self.manager.df.columns:
+                    self.manager.df = self.manager.df.rename(columns={"Provider": "Expected Provider"})
+                    logger.info("Mapped legacy 'Provider' column to 'Expected Provider'")
+                
+                # Also handle case where Provider column exists alongside new columns
+                if "Provider" in self.manager.df.columns and "Expected Provider" in self.manager.df.columns:
+                    # If Expected Provider is empty but Provider has data, copy it over
+                    mask = (self.manager.df["Expected Provider"].isna() | (self.manager.df["Expected Provider"] == "")) & \
+                           (self.manager.df["Provider"].notna() & (self.manager.df["Provider"] != ""))
+                    self.manager.df.loc[mask, "Expected Provider"] = self.manager.df.loc[mask, "Provider"]
+                    logger.info("Copied Provider data to empty Expected Provider fields")
+                
                 self.manager.df = self.manager.df.reindex(columns=self.manager.columns, fill_value="")
                 self.manager.df['Status'] = self.manager.df['Status'].replace("", "PENDING").fillna('PENDING')
                 self.manager.df['Active'] = self.manager.df['Active'].replace("", "Yes").fillna('Yes')

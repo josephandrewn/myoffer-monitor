@@ -1468,3 +1468,972 @@ Traceback: Traceback (most recent call last):
     if rule.lower() in page_source:
 AttributeError: 'tuple' object has no attribute 'lower'
 
+2026-02-03 22:52:20 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.hondacarsofaiken.com
+Exception: Message: timeout: Timed out receiving message from renderer: 44.643
+  (Session info: chrome=144.0.7559.132)
+Stacktrace:
+0   undetected_chromedriver             0x0000000101177328 undetected_chromedriver + 6722344
+1   undetected_chromedriver             0x000000010116eb8a undetected_chromedriver + 6687626
+2   undetected_chromedriver             0x0000000100b7cec5 undetected_chromedriver + 454341
+3   undetected_chromedriver             0x0000000100b64524 undetected_chromedriver + 353572
+4   undetected_chromedriver             0x0000000100b6425d undetected_chromedriver + 352861
+5   undetected_chromedriver             0x0000000100b6202f undetected_chromedriver + 344111
+6   undetected_chromedriver             0x0000000100b6297f undetected_chromedriver + 346495
+7   undetected_chromedriver             0x0000000100b71b40 undetected_chromedriver + 408384
+8   undetected_chromedriver             0x0000000100b8bc13 undetected_chromedriver + 515091
+9   undetected_chromedriver             0x0000000100b9264b undetected_chromedriver + 542283
+10  undetected_chromedriver             0x0000000100b6307d undetected_chromedriver + 348285
+11  undetected_chromedriver             0x0000000100b8b890 undetected_chromedriver + 514192
+12  undetected_chromedriver             0x0000000100c1b6a6 undetected_chromedriver + 1103526
+13  undetected_chromedriver             0x0000000100bc39e1 undetected_chromedriver + 743905
+14  undetected_chromedriver             0x0000000100bc47e1 undetected_chromedriver + 747489
+15  undetected_chromedriver             0x000000010112fbe1 undetected_chromedriver + 6429665
+16  undetected_chromedriver             0x0000000101133f8e undetected_chromedriver + 6446990
+17  undetected_chromedriver             0x000000010110f369 undetected_chromedriver + 6296425
+18  undetected_chromedriver             0x00000001011349f8 undetected_chromedriver + 6449656
+19  undetected_chromedriver             0x00000001010fda50 undetected_chromedriver + 6224464
+20  undetected_chromedriver             0x000000010115af88 undetected_chromedriver + 6606728
+21  undetected_chromedriver             0x000000010115b142 undetected_chromedriver + 6607170
+22  undetected_chromedriver             0x000000010116e791 undetected_chromedriver + 6686609
+23  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1325, in run
+    # Scroll to trigger lazy loading
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 629, in get_wrapped
+    return orig_get(*args, **kwargs)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 665, in get
+    return super().get(url)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 393, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 44.643
+  (Session info: chrome=144.0.7559.132)
+Stacktrace:
+0   undetected_chromedriver             0x0000000101177328 undetected_chromedriver + 6722344
+1   undetected_chromedriver             0x000000010116eb8a undetected_chromedriver + 6687626
+2   undetected_chromedriver             0x0000000100b7cec5 undetected_chromedriver + 454341
+3   undetected_chromedriver             0x0000000100b64524 undetected_chromedriver + 353572
+4   undetected_chromedriver             0x0000000100b6425d undetected_chromedriver + 352861
+5   undetected_chromedriver             0x0000000100b6202f undetected_chromedriver + 344111
+6   undetected_chromedriver             0x0000000100b6297f undetected_chromedriver + 346495
+7   undetected_chromedriver             0x0000000100b71b40 undetected_chromedriver + 408384
+8   undetected_chromedriver             0x0000000100b8bc13 undetected_chromedriver + 515091
+9   undetected_chromedriver             0x0000000100b9264b undetected_chromedriver + 542283
+10  undetected_chromedriver             0x0000000100b6307d undetected_chromedriver + 348285
+11  undetected_chromedriver             0x0000000100b8b890 undetected_chromedriver + 514192
+12  undetected_chromedriver             0x0000000100c1b6a6 undetected_chromedriver + 1103526
+13  undetected_chromedriver             0x0000000100bc39e1 undetected_chromedriver + 743905
+14  undetected_chromedriver             0x0000000100bc47e1 undetected_chromedriver + 747489
+15  undetected_chromedriver             0x000000010112fbe1 undetected_chromedriver + 6429665
+16  undetected_chromedriver             0x0000000101133f8e undetected_chromedriver + 6446990
+17  undetected_chromedriver             0x000000010110f369 undetected_chromedriver + 6296425
+18  undetected_chromedriver             0x00000001011349f8 undetected_chromedriver + 6449656
+19  undetected_chromedriver             0x00000001010fda50 undetected_chromedriver + 6224464
+20  undetected_chromedriver             0x000000010115af88 undetected_chromedriver + 6606728
+21  undetected_chromedriver             0x000000010115b142 undetected_chromedriver + 6607170
+22  undetected_chromedriver             0x000000010116e791 undetected_chromedriver + 6686609
+23  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+2026-02-04 08:48:18 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.hondacarsofaiken.com
+Exception: Message: timeout: Timed out receiving message from renderer: 44.652
+  (Session info: chrome=144.0.7559.132)
+Stacktrace:
+0   undetected_chromedriver             0x000000010074c328 undetected_chromedriver + 6722344
+1   undetected_chromedriver             0x0000000100743b8a undetected_chromedriver + 6687626
+2   undetected_chromedriver             0x0000000100151ec5 undetected_chromedriver + 454341
+3   undetected_chromedriver             0x0000000100139524 undetected_chromedriver + 353572
+4   undetected_chromedriver             0x000000010013925d undetected_chromedriver + 352861
+5   undetected_chromedriver             0x000000010013702f undetected_chromedriver + 344111
+6   undetected_chromedriver             0x000000010013797f undetected_chromedriver + 346495
+7   undetected_chromedriver             0x0000000100146b40 undetected_chromedriver + 408384
+8   undetected_chromedriver             0x0000000100160c13 undetected_chromedriver + 515091
+9   undetected_chromedriver             0x000000010016764b undetected_chromedriver + 542283
+10  undetected_chromedriver             0x000000010013807d undetected_chromedriver + 348285
+11  undetected_chromedriver             0x0000000100160890 undetected_chromedriver + 514192
+12  undetected_chromedriver             0x00000001001f06a6 undetected_chromedriver + 1103526
+13  undetected_chromedriver             0x00000001001989e1 undetected_chromedriver + 743905
+14  undetected_chromedriver             0x00000001001997e1 undetected_chromedriver + 747489
+15  undetected_chromedriver             0x0000000100704be1 undetected_chromedriver + 6429665
+16  undetected_chromedriver             0x0000000100708f8e undetected_chromedriver + 6446990
+17  undetected_chromedriver             0x00000001006e4369 undetected_chromedriver + 6296425
+18  undetected_chromedriver             0x00000001007099f8 undetected_chromedriver + 6449656
+19  undetected_chromedriver             0x00000001006d2a50 undetected_chromedriver + 6224464
+20  undetected_chromedriver             0x000000010072ff88 undetected_chromedriver + 6606728
+21  undetected_chromedriver             0x0000000100730142 undetected_chromedriver + 6607170
+22  undetected_chromedriver             0x0000000100743791 undetected_chromedriver + 6686609
+23  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1361, in run
+    driver.get(self.url)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 629, in get_wrapped
+    return orig_get(*args, **kwargs)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 665, in get
+    return super().get(url)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 393, in get
+    self.execute(Command.GET, {"url": url})
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 44.652
+  (Session info: chrome=144.0.7559.132)
+Stacktrace:
+0   undetected_chromedriver             0x000000010074c328 undetected_chromedriver + 6722344
+1   undetected_chromedriver             0x0000000100743b8a undetected_chromedriver + 6687626
+2   undetected_chromedriver             0x0000000100151ec5 undetected_chromedriver + 454341
+3   undetected_chromedriver             0x0000000100139524 undetected_chromedriver + 353572
+4   undetected_chromedriver             0x000000010013925d undetected_chromedriver + 352861
+5   undetected_chromedriver             0x000000010013702f undetected_chromedriver + 344111
+6   undetected_chromedriver             0x000000010013797f undetected_chromedriver + 346495
+7   undetected_chromedriver             0x0000000100146b40 undetected_chromedriver + 408384
+8   undetected_chromedriver             0x0000000100160c13 undetected_chromedriver + 515091
+9   undetected_chromedriver             0x000000010016764b undetected_chromedriver + 542283
+10  undetected_chromedriver             0x000000010013807d undetected_chromedriver + 348285
+11  undetected_chromedriver             0x0000000100160890 undetected_chromedriver + 514192
+12  undetected_chromedriver             0x00000001001f06a6 undetected_chromedriver + 1103526
+13  undetected_chromedriver             0x00000001001989e1 undetected_chromedriver + 743905
+14  undetected_chromedriver             0x00000001001997e1 undetected_chromedriver + 747489
+15  undetected_chromedriver             0x0000000100704be1 undetected_chromedriver + 6429665
+16  undetected_chromedriver             0x0000000100708f8e undetected_chromedriver + 6446990
+17  undetected_chromedriver             0x00000001006e4369 undetected_chromedriver + 6296425
+18  undetected_chromedriver             0x00000001007099f8 undetected_chromedriver + 6449656
+19  undetected_chromedriver             0x00000001006d2a50 undetected_chromedriver + 6224464
+20  undetected_chromedriver             0x000000010072ff88 undetected_chromedriver + 6606728
+21  undetected_chromedriver             0x0000000100730142 undetected_chromedriver + 6607170
+22  undetected_chromedriver             0x0000000100743791 undetected_chromedriver + 6686609
+23  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+2026-02-04 16:44:05 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.covertchevyhutto.com
+Exception: Message: session not created: cannot connect to chrome at 127.0.0.1:50109
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x00000001049153b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x000000010490cbea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000104318cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x000000010435c639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x000000010435b451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001043500a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x00000001043a2dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x00000001043a248c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x000000010435f774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x0000000104360521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x00000001048ce481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x00000001048d285a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x00000001048ae139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x00000001048d32b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x000000010489caa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x00000001048f9498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x00000001048f9652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x000000010490c7f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1357, in run
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:50109
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x00000001049153b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x000000010490cbea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000104318cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x000000010435c639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x000000010435b451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001043500a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x00000001043a2dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x00000001043a248c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x000000010435f774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x0000000104360521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x00000001048ce481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x00000001048d285a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x00000001048ae139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x00000001048d32b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x000000010489caa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x00000001048f9498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x00000001048f9652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x000000010490c7f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+2026-02-04 16:44:30 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.covertchevyhutto.com
+Exception: Message: session not created: cannot connect to chrome at 127.0.0.1:50149
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x0000000102af23b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x0000000102ae9bea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x00000001024f5cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x0000000102539639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x0000000102538451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x000000010252d0a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x000000010257fdca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x000000010257f48c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x000000010253c774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x000000010253d521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x0000000102aab481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x0000000102aaf85a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x0000000102a8b139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x0000000102ab02b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x0000000102a79aa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x0000000102ad6498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x0000000102ad6652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x0000000102ae97f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1357, in run
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:50149
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x0000000102af23b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x0000000102ae9bea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x00000001024f5cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x0000000102539639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x0000000102538451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x000000010252d0a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x000000010257fdca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x000000010257f48c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x000000010253c774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x000000010253d521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x0000000102aab481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x0000000102aaf85a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x0000000102a8b139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x0000000102ab02b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x0000000102a79aa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x0000000102ad6498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x0000000102ad6652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x0000000102ae97f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+2026-02-04 16:45:40 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.covertchevyhutto.com
+Exception: Message: session not created: cannot connect to chrome at 127.0.0.1:50224
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x00000001007c33b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x00000001007babea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x00000001001c6cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x000000010020a639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x0000000100209451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001001fe0a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x0000000100250dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x000000010025048c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x000000010020d774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x000000010020e521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x000000010077c481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x000000010078085a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x000000010075c139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x00000001007812b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x000000010074aaa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x00000001007a7498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x00000001007a7652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x00000001007ba7f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1357, in run
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:50224
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x00000001007c33b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x00000001007babea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x00000001001c6cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x000000010020a639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x0000000100209451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001001fe0a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x0000000100250dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x000000010025048c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x000000010020d774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x000000010020e521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x000000010077c481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x000000010078085a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x000000010075c139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x00000001007812b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x000000010074aaa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x00000001007a7498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x00000001007a7652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x00000001007ba7f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+2026-02-04 16:49:04 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.covertchevyhutto.com
+Exception: Message: session not created: cannot connect to chrome at 127.0.0.1:50351
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x0000000100a943b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x0000000100a8bbea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000100497cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x00000001004db639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x00000001004da451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001004cf0a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x0000000100521dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x000000010052148c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x00000001004de774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x00000001004df521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x0000000100a4d481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x0000000100a5185a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x0000000100a2d139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x0000000100a522b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x0000000100a1baa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x0000000100a78498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x0000000100a78652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x0000000100a8b7f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1437, in run
+    driver = self.create_driver()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1403, in create_driver
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:50310
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x0000000102eae3b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x0000000102ea5bea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x00000001028b1cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x00000001028f5639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x00000001028f4451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001028e90a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x000000010293bdca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x000000010293b48c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x00000001028f8774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x00000001028f9521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x0000000102e67481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x0000000102e6b85a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x0000000102e47139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x0000000102e6c2b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x0000000102e35aa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x0000000102e92498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x0000000102e92652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x0000000102ea57f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1445, in run
+    driver = self.create_driver()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1403, in create_driver
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:50351
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x0000000100a943b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x0000000100a8bbea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000100497cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x00000001004db639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x00000001004da451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001004cf0a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x0000000100521dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x000000010052148c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x00000001004de774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x00000001004df521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x0000000100a4d481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x0000000100a5185a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x0000000100a2d139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x0000000100a522b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x0000000100a1baa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x0000000100a78498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x0000000100a78652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x0000000100a8b7f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+2026-02-04 16:51:04 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.covertchevyhutto.com
+Exception: Message: session not created: cannot connect to chrome at 127.0.0.1:50581
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x00000001055063b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x00000001054fdbea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000104f09cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x0000000104f4d639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x0000000104f4c451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x0000000104f410a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x0000000104f93dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x0000000104f9348c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x0000000104f50774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x0000000104f51521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x00000001054bf481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x00000001054c385a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x000000010549f139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x00000001054c42b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x000000010548daa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x00000001054ea498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x00000001054ea652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x00000001054fd7f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1437, in run
+    driver = self.create_driver()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1403, in create_driver
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:50540
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x0000000100a963b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x0000000100a8dbea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000100499cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x00000001004dd639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x00000001004dc451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001004d10a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x0000000100523dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x000000010052348c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x00000001004e0774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x00000001004e1521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x0000000100a4f481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x0000000100a5385a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x0000000100a2f139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x0000000100a542b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x0000000100a1daa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x0000000100a7a498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x0000000100a7a652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x0000000100a8d7f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1445, in run
+    driver = self.create_driver()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1403, in create_driver
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:50581
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x00000001055063b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x00000001054fdbea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000104f09cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x0000000104f4d639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x0000000104f4c451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x0000000104f410a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x0000000104f93dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x0000000104f9348c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x0000000104f50774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x0000000104f51521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x00000001054bf481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x00000001054c385a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x000000010549f139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x00000001054c42b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x000000010548daa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x00000001054ea498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x00000001054ea652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x00000001054fd7f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+2026-02-04 16:52:06 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.covertchevyhutto.com
+Exception: Message: session not created: cannot connect to chrome at 127.0.0.1:50676
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x0000000102cc73b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x0000000102cbebea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x00000001026cacf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x000000010270e639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x000000010270d451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001027020a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x0000000102754dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x000000010275448c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x0000000102711774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x0000000102712521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x0000000102c80481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x0000000102c8485a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x0000000102c60139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x0000000102c852b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x0000000102c4eaa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x0000000102cab498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x0000000102cab652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x0000000102cbe7f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1437, in run
+    driver = self.create_driver()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1403, in create_driver
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:50637
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x0000000104a503b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x0000000104a47bea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000104453cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x0000000104497639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x0000000104496451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x000000010448b0a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x00000001044dddca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x00000001044dd48c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x000000010449a774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x000000010449b521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x0000000104a09481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x0000000104a0d85a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x00000001049e9139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x0000000104a0e2b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x00000001049d7aa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x0000000104a34498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x0000000104a34652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x0000000104a477f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1445, in run
+    driver = self.create_driver()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1403, in create_driver
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:50676
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x0000000102cc73b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x0000000102cbebea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x00000001026cacf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x000000010270e639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x000000010270d451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001027020a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x0000000102754dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x000000010275448c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x0000000102711774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x0000000102712521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x0000000102c80481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x0000000102c8485a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x0000000102c60139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x0000000102c852b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x0000000102c4eaa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x0000000102cab498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x0000000102cab652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x0000000102cbe7f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+2026-02-04 16:53:47 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.covertchevyhutto.com
+Exception: Message: session not created: cannot connect to chrome at 127.0.0.1:50790
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x00000001048833b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x000000010487abea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000104286cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x00000001042ca639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x00000001042c9451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001042be0a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x0000000104310dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x000000010431048c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x00000001042cd774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x00000001042ce521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x000000010483c481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x000000010484085a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x000000010481c139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x00000001048412b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x000000010480aaa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x0000000104867498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x0000000104867652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x000000010487a7f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1444, in run
+    driver = self.create_driver()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1410, in create_driver
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:50747
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x0000000104c713b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x0000000104c68bea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000104674cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x00000001046b8639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x00000001046b7451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001046ac0a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x00000001046fedca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x00000001046fe48c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x00000001046bb774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x00000001046bc521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x0000000104c2a481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x0000000104c2e85a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x0000000104c0a139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x0000000104c2f2b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x0000000104bf8aa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x0000000104c55498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x0000000104c55652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x0000000104c687f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1461, in run
+    driver = self.create_driver()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1410, in create_driver
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:50790
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x00000001048833b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x000000010487abea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000104286cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x00000001042ca639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x00000001042c9451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001042be0a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x0000000104310dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x000000010431048c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x00000001042cd774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x00000001042ce521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x000000010483c481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x000000010484085a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x000000010481c139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x00000001048412b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x000000010480aaa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x0000000104867498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x0000000104867652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x000000010487a7f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+2026-02-04 16:57:08 - tabs.scanner_tab - ERROR - error:81 - Site map harvest failed | url=https://www.covertchevyhutto.com
+Exception: Message: session not created: cannot connect to chrome at 127.0.0.1:50888
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x00000001014f93b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x00000001014f0bea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000100efccf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x0000000100f40639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x0000000100f3f451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x0000000100f340a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x0000000100f86dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x0000000100f8648c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x0000000100f43774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x0000000100f44521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x00000001014b2481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x00000001014b685a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x0000000101492139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x00000001014b72b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x0000000101480aa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x00000001014dd498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x00000001014dd652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x00000001014f07f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+Traceback: Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1444, in run
+    driver = self.create_driver()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1410, in create_driver
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:50846
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x000000010084e3b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x0000000100845bea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000100251cf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x0000000100295639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x0000000100294451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x00000001002890a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x00000001002dbdca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x00000001002db48c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x0000000100298774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x0000000100299521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x0000000100807481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x000000010080b85a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x00000001007e7139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x000000010080c2b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x00000001007d5aa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x0000000100832498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x0000000100832652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x00000001008457f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1461, in run
+    driver = self.create_driver()
+  File "/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/tabs/scanner_tab.py", line 1410, in create_driver
+    driver = uc.Chrome(options=options, use_subprocess=True)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/Users/josephneely/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:50888
+from session not created: This version of ChromeDriver only supports Chrome version 145
+Current browser version is 144.0.7559.132
+Stacktrace:
+0   undetected_chromedriver             0x00000001014f93b8 undetected_chromedriver + 6730680
+1   undetected_chromedriver             0x00000001014f0bea undetected_chromedriver + 6695914
+2   undetected_chromedriver             0x0000000100efccf5 undetected_chromedriver + 453877
+3   undetected_chromedriver             0x0000000100f40639 undetected_chromedriver + 730681
+4   undetected_chromedriver             0x0000000100f3f451 undetected_chromedriver + 726097
+5   undetected_chromedriver             0x0000000100f340a9 undetected_chromedriver + 680105
+6   undetected_chromedriver             0x0000000100f86dca undetected_chromedriver + 1019338
+7   undetected_chromedriver             0x0000000100f8648c undetected_chromedriver + 1016972
+8   undetected_chromedriver             0x0000000100f43774 undetected_chromedriver + 743284
+9   undetected_chromedriver             0x0000000100f44521 undetected_chromedriver + 746785
+10  undetected_chromedriver             0x00000001014b2481 undetected_chromedriver + 6440065
+11  undetected_chromedriver             0x00000001014b685a undetected_chromedriver + 6457434
+12  undetected_chromedriver             0x0000000101492139 undetected_chromedriver + 6308153
+13  undetected_chromedriver             0x00000001014b72b8 undetected_chromedriver + 6460088
+14  undetected_chromedriver             0x0000000101480aa0 undetected_chromedriver + 6236832
+15  undetected_chromedriver             0x00000001014dd498 undetected_chromedriver + 6616216
+16  undetected_chromedriver             0x00000001014dd652 undetected_chromedriver + 6616658
+17  undetected_chromedriver             0x00000001014f07f6 undetected_chromedriver + 6694902
+18  libsystem_pthread.dylib             0x00007ff808a494e1 _pthread_start + 125
+19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
+
+

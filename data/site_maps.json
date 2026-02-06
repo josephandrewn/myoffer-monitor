@@ -106,25 +106,114 @@
     ]
   },
   "https://www.covertchevyhutto.com": {
-    "harvested_at": "2026-02-03T16:17:08.069389",
+    "harvested_at": "2026-02-04T17:01:43.296470",
     "provider": "Dealer Inspire",
     "links": {
-      "New Inventory": [],
-      "Used Inventory": [],
-      "Certified Inventory": [],
+      "New Inventory": [
+        "https://www.covertchevyhutto.com/new-vehicles/",
+        "https://www.covertchevyhutto.com/new-vehicles/chevrolet/",
+        "https://www.covertchevyhutto.com/new-vehicles/malibu/",
+        "https://www.covertchevyhutto.com/new-vehicles/corvette/",
+        "https://www.covertchevyhutto.com/new-vehicles/corvette-eray/",
+        "https://www.covertchevyhutto.com/new-vehicles/corvette-zr1/",
+        "https://www.covertchevyhutto.com/new-vehicles/blazer-ev/",
+        "https://www.covertchevyhutto.com/new-vehicles/equinox-ev/",
+        "https://www.covertchevyhutto.com/new-vehicles/silverado-ev/",
+        "https://www.covertchevyhutto.com/new-vehicles/trax/",
+        "https://www.covertchevyhutto.com/new-vehicles/equinox/",
+        "https://www.covertchevyhutto.com/new-vehicles/blazer/",
+        "https://www.covertchevyhutto.com/new-vehicles/trailblazer/",
+        "https://www.covertchevyhutto.com/new-vehicles/traverse/",
+        "https://www.covertchevyhutto.com/new-vehicles/tahoe/",
+        "https://www.covertchevyhutto.com/new-vehicles/suburban/",
+        "https://www.covertchevyhutto.com/new-vehicles/colorado/",
+        "https://www.covertchevyhutto.com/new-vehicles/silverado-1500/",
+        "https://www.covertchevyhutto.com/new-vehicles/silverado-2500/",
+        "https://www.covertchevyhutto.com/new-vehicles/silverado-hd/",
+        "https://www.covertchevyhutto.com/new-vehicles/silverado-3500/",
+        "https://www.covertchevyhutto.com/new-vehicles/silverado-3500-chassis-cab/",
+        "https://www.covertchevyhutto.com/new-vehicles/express-cutaway/",
+        "https://www.covertchevyhutto.com/new-vehicles/express-cargo/",
+        "https://www.covertchevyhutto.com/new-vehicles/express-passenger/",
+        "https://www.covertchevyhutto.com/new-vehicles/low-cab-forward/",
+        "https://www.covertchevyhutto.com/new-vehicles/silverado-4500-hd/",
+        "https://www.covertchevyhutto.com/new-vehicles/silverado-5500-hd/",
+        "https://www.covertchevyhutto.com/new-vehicles/silverado-6500-hd/",
+        "https://www.covertchevyhutto.com/new-vehicles/chevrolet-commercial/",
+        "https://www.covertchevyhutto.com/new-vehicles/brightdrop/",
+        "https://www.covertchevyhutto.com/new-vehicles/lifted-trucks/",
+        "https://www.covertchevyhutto.com/new-vehicles/new-vehicle-specials/"
+      ],
+      "Used Inventory": [
+        "https://www.covertchevyhutto.com/used-vehicles/",
+        "https://www.covertchevyhutto.com/used-vehicles-under-35k/",
+        "https://www.covertchevyhutto.com/used-vehicles-under-15k/",
+        "https://www.covertchevyhutto.com/used-vehicles-under-60k-miles/",
+        "https://www.covertchevyhutto.com/used-vehicles/pre-owned-vehicle-specials/",
+        "https://www.covertchevyhutto.com/used-vehicles/priced-under-25k/"
+      ],
+      "Certified Inventory": [
+        "https://www.covertchevyhutto.com/certified-service-battery/",
+        "https://www.covertchevyhutto.com/certified-service-brakes/",
+        "https://www.covertchevyhutto.com/certified-service-oil-change/"
+      ],
       "New VDP": [],
       "Used VDP": [],
       "Certified VDP": [],
-      "Service": [],
-      "Finance": [],
-      "Specials": [],
-      "Trade-In": [],
-      "Parts": [],
+      "Service": [
+        "https://www.covertchevyhutto.com/service/serviceandpartsspecials/",
+        "https://www.covertchevyhutto.com/service/",
+        "https://www.covertchevyhutto.com/service/serviceapptform/"
+      ],
+      "Finance": [
+        "https://www.covertchevyhutto.com/finance/",
+        "https://www.covertchevyhutto.com/finance/apply-for-financing/",
+        "https://www.covertchevyhutto.com/payment-calculator/",
+        "https://www.covertchevyhutto.com/get-pre-qualified-with-capital-one-2/"
+      ],
+      "Specials": [
+        "https://www.covertchevyhutto.com/lease-specials/",
+        "https://www.covertchevyhutto.com/chevroletspecialoffers/"
+      ],
+      "Trade-In": [
+        "https://www.covertchevyhutto.com/value-your-trade/"
+      ],
+      "Parts": [
+        "https://www.covertchevyhutto.com/parts/",
+        "https://www.covertchevyhutto.com/parts/partsorderform/"
+      ],
       "Hours & Directions": [],
-      "About": [],
-      "Contact": []
+      "About": [
+        "https://www.covertchevyhutto.com/about-us/",
+        "https://www.covertchevyhutto.com/about-us/staff/",
+        "https://www.covertchevyhutto.com/about-us/reviews/"
+      ],
+      "Contact": [
+        "https://www.covertchevyhutto.com/contactusform/"
+      ]
     },
-    "other": []
+    "other": [
+      "Home",
+      "Test Drive Chevy EV",
+      "Chevrolet Model Showroom",
+      "Shop Click Drive",
+      "Interest Tax Deduction",
+      "View All Hutto Used Vehicles",
+      "Used Trucks For Sale",
+      "Used SUVs & Crossovers",
+      "Used Sedans & Coupes",
+      "Under Vehicles Under 30k Miles",
+      "Used Electric & Hybrid Vehicles",
+      "OnStar & Connected Services",
+      "Schedule Quick Service",
+      "Tires",
+      "Tire Finder",
+      "Hutto New Chevrolet Blazer Overview",
+      "Hutto New Chevy Camaro Overview",
+      "Hutto New Chevy Malibu Overview",
+      "Hutto New Chevrolet Silverado 1500 Overview",
+      "Hutto New Chevrolet Silverado 2500 HD Overview"
+    ]
   },
   "https://www.lillistonford.com": {
     "harvested_at": "2026-02-03T16:17:46.251871",
@@ -308,24 +397,241 @@
     ]
   },
   "https://www.teamgoldsboro.com": {
-    "harvested_at": "2026-02-03T18:30:54.738220",
+    "harvested_at": "2026-02-03T22:44:05.899797",
     "provider": "Dealer Inspire",
     "links": {
-      "New Inventory": [],
-      "Used Inventory": [],
-      "Certified Inventory": [],
+      "New Inventory": [
+        "https://www.teamgoldsboro.com/new-vehicles/",
+        "https://www.teamgoldsboro.com/new-vehicles/chevrolet/",
+        "https://www.teamgoldsboro.com/new-vehicles/colorado/",
+        "https://www.teamgoldsboro.com/new-vehicles/silverado-1500/",
+        "https://www.teamgoldsboro.com/new-vehicles/silverado-2500/",
+        "https://www.teamgoldsboro.com/new-vehicles/silverado-hd/",
+        "https://www.teamgoldsboro.com/new-vehicles/trax/",
+        "https://www.teamgoldsboro.com/new-vehicles/equinox/",
+        "https://www.teamgoldsboro.com/new-vehicles/blazer/",
+        "https://www.teamgoldsboro.com/new-vehicles/trailblazer/",
+        "https://www.teamgoldsboro.com/new-vehicles/traverse/",
+        "https://www.teamgoldsboro.com/new-vehicles/tahoe/",
+        "https://www.teamgoldsboro.com/new-vehicles/suburban/",
+        "https://www.teamgoldsboro.com/new-vehicles/corvette/",
+        "https://www.teamgoldsboro.com/new-vehicles/corvette-eray/",
+        "https://www.teamgoldsboro.com/new-vehicles/corvette-zr1/",
+        "https://www.teamgoldsboro.com/new-vehicles/brightdrop/",
+        "https://www.teamgoldsboro.com/new-vehicles/new-vehicle-specials/",
+        "https://www.teamgoldsboro.com/new-vehicles/manager-specials/"
+      ],
+      "Used Inventory": [
+        "https://www.teamgoldsboro.com/used-vehicles/",
+        "https://www.teamgoldsboro.com/used-vehicles/priced-under-20k/",
+        "https://www.teamgoldsboro.com/used-vehicles/pre-owned-vehicle-specials/"
+      ],
+      "Certified Inventory": [
+        "https://www.teamgoldsboro.com/used-vehicles/certified-pre-owned-vehicles/",
+        "https://www.teamgoldsboro.com/certified-service-brakes/",
+        "https://www.teamgoldsboro.com/certified-service-oil-change/",
+        "https://www.teamgoldsboro.com/certified-service-battery/",
+        "https://www.teamgoldsboro.com/certifiedvehicles/"
+      ],
       "New VDP": [],
       "Used VDP": [],
       "Certified VDP": [],
-      "Service": [],
-      "Finance": [],
-      "Specials": [],
-      "Trade-In": [],
-      "Parts": [],
+      "Service": [
+        "https://www.teamgoldsboro.com/service/",
+        "https://www.teamgoldsboro.com/service/serviceapptform/",
+        "https://www.teamgoldsboro.com/service/serviceandpartsspecials/",
+        "https://www.teamgoldsboro.com/service-now-pay-over-time/"
+      ],
+      "Finance": [
+        "https://www.teamgoldsboro.com/finance/",
+        "https://www.teamgoldsboro.com/finance/apply-for-financing/",
+        "https://www.teamgoldsboro.com/payment-calculator/"
+      ],
+      "Specials": [
+        "https://www.teamgoldsboro.com/chevroletspecialoffers/"
+      ],
+      "Trade-In": [
+        "https://www.teamgoldsboro.com/value-your-trade/"
+      ],
+      "Parts": [
+        "https://www.teamgoldsboro.com/parts/",
+        "https://www.teamgoldsboro.com/parts/partsorderform/"
+      ],
       "Hours & Directions": [],
-      "About": [],
-      "Contact": []
+      "About": [
+        "https://www.teamgoldsboro.com/about-us/",
+        "https://www.teamgoldsboro.com/about-us/reviews/"
+      ],
+      "Contact": [
+        "https://www.teamgoldsboro.com/contactusform/"
+      ]
     },
-    "other": []
+    "other": [
+      "Homepage",
+      "Chevrolet Model Showroom",
+      "Build and Price",
+      "OnStar & Connected Services",
+      "Interest Tax Deduction",
+      "Tires",
+      "Tire Finder",
+      "Collision & Body Shop",
+      "Careers",
+      "Chevy Accessibility",
+      "Privacy Policy",
+      "Sitemap",
+      "Terms of Use",
+      "Consumer Request Portal",
+      "Skip to main content",
+      "Skip to Action Bar"
+    ]
+  },
+  "https://www.hondabridgewater.com": {
+    "harvested_at": "2026-02-04T09:18:56.527652",
+    "provider": "Dealer.com",
+    "links": {
+      "New Inventory": [
+        "https://www.hondabridgewater.com/new-inventory/index.htm",
+        "https://www.hondabridgewater.com/new-inventory/suvs-bridgewater-nj.htm",
+        "https://www.hondabridgewater.com/new-inventory/sedans-bridgewater-nj.htm",
+        "https://www.hondabridgewater.com/new-honda/honda-ev-bridgewater-nj.htm"
+      ],
+      "Used Inventory": [
+        "https://www.hondabridgewater.com/used-inventory/index.htm",
+        "https://www.hondabridgewater.com/used-inventory/suvs-bridgewater-nj.htm",
+        "https://www.hondabridgewater.com/used-inventory/used-trucks-bridgewater-nj.htm",
+        "https://www.hondabridgewater.com/used-inventory/sedans-bridgewater-nj.htm",
+        "https://www.hondabridgewater.com/used-cars/used-electric-vehicles-for-sale-nj.htm"
+      ],
+      "Certified Inventory": [
+        "https://www.hondabridgewater.com/certified-inventory/index.htm",
+        "https://www.hondabridgewater.com/honda-certified-preowned-information.htm"
+      ],
+      "New VDP": [],
+      "Used VDP": [],
+      "Certified VDP": [],
+      "Service": [
+        "https://www.hondabridgewater.com/service/schedule-service.htm",
+        "https://www.hondabridgewater.com/service/center.htm"
+      ],
+      "Finance": [
+        "https://www.hondabridgewater.com/financing/application.htm",
+        "https://www.hondabridgewater.com/financing/index.htm",
+        "https://www.hondabridgewater.com/finance/car-buying-tips/buying-vs-leasing.htm",
+        "https://www.hondabridgewater.com/co/prequalification.htm"
+      ],
+      "Specials": [
+        "https://www.hondabridgewater.com/promotions/new/index.htm",
+        "https://www.hondabridgewater.com/global-incentives/index.htm"
+      ],
+      "Trade-In": [
+        "https://www.hondabridgewater.com/trade-in-form.htm",
+        "https://www.hondabridgewater.com/tools/tradepending/whats-my-buying-power.htm"
+      ],
+      "Parts": [
+        "https://www.hondabridgewater.com/parts/center.htm",
+        "https://www.hondabridgewater.com/parts.htm"
+      ],
+      "Hours & Directions": [
+        "https://www.hondabridgewater.com/dealership/directions.htm"
+      ],
+      "About": [
+        "https://www.hondabridgewater.com/dealership/about.htm"
+      ],
+      "Contact": [
+        "https://www.hondabridgewater.com/contact.htm"
+      ]
+    },
+    "other": [
+      "Home",
+      "Prologue",
+      "Passport",
+      "CR-V",
+      "Accord",
+      "Pilot",
+      "Civic",
+      "HR-V",
+      "Ridgeline",
+      "Odyssey",
+      "Honda EV Education",
+      "EV Charging Stations",
+      "Why Shop at Honda of Bridgewater",
+      "Our Blog"
+    ]
+  },
+  "https://www.fortmillhyundai.com": {
+    "harvested_at": "2026-02-04T11:39:46.326436",
+    "provider": "Dealer eProcess",
+    "links": {
+      "New Inventory": [
+        "https://www.fortmillhyundai.com/new-hyundai-electric-vehicle-lineup-fort-mill-sc/"
+      ],
+      "Used Inventory": [
+        "https://www.fortmillhyundai.com/search/used-fort-mill-sc/?cy=29708&la=our_inventory&tp=used"
+      ],
+      "Certified Inventory": [
+        "https://www.fortmillhyundai.com/search/certified-hyundai/?mk=25&tp=hyundai_select_used_vehicles"
+      ],
+      "New VDP": [],
+      "Used VDP": [],
+      "Certified VDP": [],
+      "Service": [
+        "https://www.fortmillhyundai.com/service-department/",
+        "https://www.fortmillhyundai.com/service-loaner-benefits-in-south-carolina/",
+        "https://www.fortmillhyundai.com/hyundai-service-specials-fort-mill-sc/",
+        "https://www.fortmillhyundai.com/service-appointment/",
+        "https://www.fortmillhyundai.com/complimentary-maintenance/",
+        "https://www.fortmillhyundai.com/hyundai-maintenance/"
+      ],
+      "Finance": [
+        "https://www.fortmillhyundai.com/search/?cy=29708&q=custom1_Loaner",
+        "https://www.fortmillhyundai.com/auto-finance-and-loan-center/",
+        "https://www.fortmillhyundai.com/finance-application/",
+        "https://www.fortmillhyundai.com/payment-calculator/"
+      ],
+      "Specials": [
+        "https://www.fortmillhyundai.com/new-hyundai-specials-fort-mill-sc/",
+        "https://www.fortmillhyundai.com/search/special-used-fort-mill-sc/?cy=29708&tp=special&tp=used",
+        "https://www.fortmillhyundai.com/incentives/",
+        "https://www.fortmillhyundai.com/instant-cash-offer/"
+      ],
+      "Trade-In": [],
+      "Parts": [
+        "https://www.fortmillhyundai.com/order-parts/"
+      ],
+      "Hours & Directions": [
+        "https://www.fortmillhyundai.com/directions/",
+        "https://www.fortmillhyundai.com/hours/",
+        "https://www.fortmillhyundai.com/sitemap/"
+      ],
+      "About": [
+        "https://www.fortmillhyundai.com/about-us/",
+        "https://www.fortmillhyundai.com/meet-our-staff/"
+      ],
+      "Contact": [
+        "https://www.fortmillhyundai.com/contact-us/"
+      ]
+    },
+    "other": [
+      "New▼",
+      "Electrified Vehicles▼",
+      "Buy Your Car Online",
+      "All Pre-Owned Vehicles",
+      "Used Hyundai Inventory",
+      "Hyundai IONIQ 5",
+      "Hyundai IONIQ 6",
+      "College Grad Program",
+      "First Responders Program",
+      "Military Program",
+      "Mobility Program",
+      "Vehicle Protection Plans",
+      "Ask a Tech",
+      "Vehicle Recall Info",
+      "Oil Change",
+      "Batteries",
+      "Brakes",
+      "Blue Link",
+      "America's Best Warranty",
+      "Owners Assurance"
+    ]
   }
 }

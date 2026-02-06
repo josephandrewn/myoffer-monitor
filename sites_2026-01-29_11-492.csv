@@ -4,7 +4,7 @@ Allen Chevrolet,www.allenchevy.com,DealerOn,STD,PASS,Perfect (DealerOn Rule of 1
 Auto Gallery Ford,www.autogalleryford.com,Dealer Inspire,STD,PASS,Perfect (Rule of 2),Yes
 Barbour Hendrick Honda,www.barbourhendrickhonda.com,Persistent Block,N/A,UNVERIFIABLE,Blocked 3x. Manual verification required.,Yes
 Bay Ridge Subaru,www.brooklynsubarudeals.com,Dealer.com,DCOM,PASS,Perfect (Rule of 1),Yes
-Beach Chevrolet,www.thebeachchevrolet.com,Sokal,STD,PASS,Perfect (Rule of 2),Yes
+Beach Chevrolet,www.thebeachchevrolet.com,SOKAL,STD,PASS,Perfect (Rule of 2),Yes
 Chrysler Dodge Jeep Ram of Elizabethton,www.nagcdjr.com,Quick HTTP,STD,PASS,Found via HTTP: idrove.it/behaviour.js,Yes
 East Charlotte Nissan,www.eastcharlottenissan.com,Team Velocity,NONE,FAIL,No scripts found (Saved Img),Yes
 Ford of Elizabethton,www.fordofelizabethton.com,Quick HTTP,STD,PASS,Found via HTTP: idrove.it/behaviour.js,Yes

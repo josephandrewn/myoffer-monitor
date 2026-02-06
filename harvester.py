@@ -100,7 +100,7 @@ PROVIDER_PATTERNS = {
         "About": [r"about", r"dealership"],
         "Contact": [r"contact"],
     },
-    "Sokal": {
+    "SOKAL": {
         "New Inventory": [r"/new", r"new-inventory", r"new-vehicles"],
         "Used Inventory": [r"/used", r"used-inventory", r"pre-owned"],
         "Certified Inventory": [r"/certified", r"cpo"],

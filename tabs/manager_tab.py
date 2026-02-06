@@ -148,15 +148,15 @@ class CommandResetStatus(QUndoCommand):
         for row in self.row_indices:
             # Save state for undo
             self.previous_data[row] = {}
-            for col in [3, 4, 5, 6]: # Config, Status, Details, Active
+            for col in [4, 5, 6, 8]: # Config, Status, Details, Active (skip Site Map)
                 item = self.table.item(row, col)
                 self.previous_data[row][col] = item.text() if item else ""
             
             # Reset values
-            self.table.item(row, 3).setText("")          # Config -> Empty
-            self.table.item(row, 4).setText("PENDING")   # Status -> PENDING
-            self.table.item(row, 5).setText("")          # Details -> Empty
-            self.table.item(row, 6).setText("Yes")       # Active -> Yes
+            self.table.item(row, 4).setText("")          # Config -> Empty
+            self.table.item(row, 5).setText("PENDING")   # Status -> PENDING
+            self.table.item(row, 6).setText("")          # Details -> Empty
+            self.table.item(row, 8).setText("Yes")       # Active -> Yes
             
             self.manager.update_row_style(row)
         self.table.blockSignals(False)
@@ -184,7 +184,8 @@ class ManagerTab(QWidget):
         
         self.file_path = None
         self.columns = [
-            "Client Name", "URL", "Expected Provider", "Detected Provider", "Config", "Status", "Details", "Active"
+            "Client Name", "URL", "Expected Provider", "Detected Provider", 
+            "Config", "Status", "Details", "Site Map", "Active"
         ]
         self.df = pd.DataFrame(columns=self.columns)
         self.undo_stack = QUndoStack(self)
@@ -279,17 +280,19 @@ class ManagerTab(QWidget):
         
         header = self.table.horizontalHeader()
         header.setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
-        header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
+        header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)  # URL
         
-        self.table.setColumnWidth(0, 180)   # Client Name
-        self.table.setColumnWidth(2, 120)   # Expected Provider
-        self.table.setColumnWidth(3, 120)   # Detected Provider
-        self.table.setColumnWidth(4, 80)    # Config
-        self.table.setColumnWidth(5, 90)    # Status
-        self.table.setColumnWidth(7, 60)    # Active
-        self.table.setColumnWidth(3, 80)
-        self.table.setColumnWidth(4, 100)
-        self.table.setColumnWidth(6, 60) 
+        # Column widths - 9 columns now
+        # 0: Client Name, 1: URL (stretch), 2: Expected Provider, 3: Detected Provider
+        # 4: Config, 5: Status, 6: Details, 7: Site Map, 8: Active
+        self.table.setColumnWidth(0, 300)   # Client Name
+        self.table.setColumnWidth(2, 150)   # Expected Provider
+        self.table.setColumnWidth(3, 150)   # Detected Provider
+        self.table.setColumnWidth(4, 70)    # Config
+        self.table.setColumnWidth(5, 110)   # Status
+        self.table.setColumnWidth(6, 120)   # Details
+        self.table.setColumnWidth(7, 80)    # Site Map
+        self.table.setColumnWidth(8, 65)    # Active
         
         self.table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
         self.table.itemChanged.connect(self.on_item_changed)
@@ -312,13 +315,18 @@ class ManagerTab(QWidget):
     def update_row_style(self, row):
         if row >= self.table.rowCount(): return
 
-        # Active column is now index 7
-        active_item = self.table.item(row, 7)
+        # Active column is now index 8
+        active_item = self.table.item(row, 8)
         is_active = active_item.text() == "Yes" if active_item else True
         
-        # Status column is now index 5
+        # Status column is index 5
         status_item = self.table.item(row, 5)
-        status_text = status_item.text() if status_item else ""
+        if status_item:
+            status_text = status_item.data(Qt.ItemDataRole.UserRole)
+            if status_text is None:
+                status_text = status_item.text().replace("📋", "").strip()
+        else:
+            status_text = ""
         
         bg_color = QColor(styles.COLORS["row_pending_bg"])
         text_color = QColor(styles.COLORS["row_pending_text"])
@@ -349,8 +357,8 @@ class ManagerTab(QWidget):
                 item.setBackground(bg_color)
                 item.setForeground(text_color)
                 
-                # Status (5) and Active (7) columns get centered bold text
-                if col in [5, 7]: 
+                # Status (5), Site Map (7), and Active (8) columns get centered bold text
+                if col in [5, 7, 8]: 
                     item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
                     item.setFont(QFont("Arial", 10, QFont.Weight.Bold))
 
@@ -366,6 +374,15 @@ class ManagerTab(QWidget):
                 if "Provider" in self.df.columns and "Expected Provider" not in self.df.columns:
                     self.df = self.df.rename(columns={"Provider": "Expected Provider"})
                     logger.info("Mapped legacy 'Provider' column to 'Expected Provider'")
+                
+                # Also handle case where Provider column exists alongside new columns
+                # (in case of partial migration)
+                if "Provider" in self.df.columns and "Expected Provider" in self.df.columns:
+                    # If Expected Provider is empty but Provider has data, copy it over
+                    mask = (self.df["Expected Provider"].isna() | (self.df["Expected Provider"] == "")) & \
+                           (self.df["Provider"].notna() & (self.df["Provider"] != ""))
+                    self.df.loc[mask, "Expected Provider"] = self.df.loc[mask, "Provider"]
+                    logger.info("Copied Provider data to empty Expected Provider fields")
                 
                 self.df = self.df.reindex(columns=self.columns, fill_value="")
                 
@@ -385,9 +402,30 @@ class ManagerTab(QWidget):
         
         for i, row in self.df.iterrows():
             self.table.insertRow(i)
+            
+            # Get URL for site map check
+            url = str(row.get('URL', '')) if pd.notna(row.get('URL', '')) else ""
+            check_url = url if url.startswith('http') else f"https://{url}"
+            has_sitemap = url and harvester.has_site_map(check_url)
+            
             for c, col_name in enumerate(self.columns):
                 val = str(row[col_name]) if pd.notna(row[col_name]) else ""
-                self.table.setItem(i, c, QTableWidgetItem(val))
+                
+                # For Status column, clean any legacy icons
+                if c == 5:  # Status column
+                    val = val.replace('📋', '').strip()
+                
+                # For Site Map column, set based on whether site map exists
+                if c == 7:  # Site Map column
+                    val = "Yes" if has_sitemap else ""
+                
+                item = QTableWidgetItem(val)
+                
+                # Store actual status in UserRole for Status column
+                if c == 5:
+                    item.setData(Qt.ItemDataRole.UserRole, val)
+                
+                self.table.setItem(i, c, item)
 
             self.update_row_style(i)
             

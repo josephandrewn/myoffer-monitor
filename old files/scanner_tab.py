@@ -48,10 +48,10 @@ def detect_provider(soup):
     html_str = str(soup).lower()
     
     # --- SOKAL ---
-    if "sokal.com" in html_str: return "Sokal"
-    if "go-sokal" in html_str: return "Sokal"
-    if "powered by sokal" in text_content: return "Sokal"
-    if "sokal_assets" in html_str: return "Sokal"
+    if "sokal.com" in html_str: return "SOKAL"
+    if "go-sokal" in html_str: return "SOKAL"
+    if "powered by sokal" in text_content: return "SOKAL"
+    if "sokal_assets" in html_str: return "SOKAL"
 
     # --- MAJOR PROVIDERS ---
     if "dealerinspire.com" in html_str or "assets.dealerinspire" in html_str or "di-uploads" in html_str or 'id="di-root"' in html_str: return "Dealer Inspire"

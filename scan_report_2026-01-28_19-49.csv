@@ -4,7 +4,7 @@ Allen Chevrolet,www.allenchevy.com,DealerOn,STD,PASS,Perfect (DealerOn Rule of 1
 Auto Gallery Ford,www.autogalleryford.com,Dealer Inspire,STD,PASS,Perfect (Rule of 2),Yes
 Barbour Hendrick Honda,www.barbourhendrickhonda.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
 Bay Ridge Subaru,www.brooklynsubarudeals.com,Dealer.com,DCOM,PASS,Perfect (Rule of 1),Yes
-Beach Chevrolet,www.thebeachchevrolet.com,Sokal,STD,PASS,Perfect (Rule of 2),Yes
+Beach Chevrolet,www.thebeachchevrolet.com,SOKAL,STD,PASS,Perfect (Rule of 2),Yes
 Chrysler Dodge Jeep Ram of Elizabethton,www.nagcdjr.com,Dealer.com,STD,WARN,Found 2 (Dealer.com expects 1) (Saved Img),Yes
 East Charlotte Nissan,www.eastcharlottenissan.com,Team Velocity,NONE,FAIL,No scripts found (Saved Img),Yes
 Ford of Elizabethton,www.fordofelizabethton.com,Dealer.com,STD,WARN,Found 4 (Dealer.com expects 1) (Saved Img),Yes
@@ -57,7 +57,7 @@ Honda Cars of Rock Hill,www.hondacarsrockhill.com,Security Block,ERR,BLOCKED,Bot
 Honda Indian Trail,www.hondaofindiantrail.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
 Jeff Gordon Chevrolet,www.jeffgordonchevy.com,Security Block,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img),Yes
 Joe Cooper Lincoln of Edmond,joecooperlincoln.com,Dealer.com,SPA,WARN,Found 6 (Expected 4) (Saved Img),Yes
-Nissan of Garden City,www.nissanofgardencity.com,Sokal,STD,WARN,Found 4 (Expected 2) (Saved Img),Yes
+Nissan of Garden City,www.nissanofgardencity.com,SOKAL,STD,WARN,Found 4 (Expected 2) (Saved Img),Yes
 Nissan of Hendersonville,www.nissanofhendersonville.com,Dealer.com,NONE,FAIL,No scripts found (Saved Img),Yes
 Rusty Wallace Kia Alcoa,www.rustywallacekiaalcoa.com,ERR,ERR,ERROR,"Message: timeout: Timed out receiving message from renderer: 29.940
   (Session info: chrome=144.0.7559.109)

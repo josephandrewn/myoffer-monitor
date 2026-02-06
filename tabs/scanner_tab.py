@@ -789,7 +789,54 @@ class BatchWorker(QThread):
         
         self.finished_signal.emit()
 
-    def start_driver(self):
+    def clear_chromedriver_cache(self):
+        """Clear cached ChromeDriver to force re-download of matching version."""
+        import shutil
+        from pathlib import Path
+        
+        cache_paths = [
+            Path.home() / ".local" / "share" / "undetected_chromedriver",
+            Path.home() / "Library" / "Application Support" / "undetected_chromedriver",
+            Path.home() / "AppData" / "Roaming" / "undetected_chromedriver",
+        ]
+        
+        for cache_path in cache_paths:
+            if cache_path.exists():
+                try:
+                    shutil.rmtree(cache_path)
+                    print(f"Cleared ChromeDriver cache: {cache_path}")
+                except Exception as e:
+                    print(f"Could not clear cache {cache_path}: {e}")
+    
+    def get_chrome_version(self):
+        """Detect installed Chrome version."""
+        import subprocess
+        import re
+        
+        commands = [
+            ['/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', '--version'],
+            ['google-chrome', '--version'],
+            ['google-chrome-stable', '--version'],
+            ['chromium-browser', '--version'],
+            ['reg', 'query', 'HKEY_CURRENT_USER\\Software\\Google\\Chrome\\BLBeacon', '/v', 'version'],
+        ]
+        
+        for cmd in commands:
+            try:
+                result = subprocess.run(cmd, capture_output=True, text=True, timeout=5)
+                if result.returncode == 0:
+                    match = re.search(r'(\d+)\.', result.stdout)
+                    if match:
+                        version = int(match.group(1))
+                        print(f"Detected Chrome version: {version}")
+                        return version
+            except:
+                continue
+        
+        print("Could not detect Chrome version")
+        return None
+
+    def start_driver(self, version_main=None):
         """Creates a stealthy browser instance with randomized fingerprints."""
         last_err = None
         
@@ -835,8 +882,12 @@ class BatchWorker(QThread):
                 options.add_argument("--disable-extensions")
                 options.add_argument("--disable-notifications")
                 
-                # Create Driver
-                driver = uc.Chrome(options=options, version_main=144)
+                # Create Driver with specific version if provided
+                if version_main:
+                    print(f"Creating driver with version_main={version_main}")
+                    driver = uc.Chrome(options=options, use_subprocess=True, version_main=version_main)
+                else:
+                    driver = uc.Chrome(options=options, use_subprocess=True)
                 
                 # Advanced Stealth (JavaScript Injection)
                 driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
@@ -869,7 +920,26 @@ class BatchWorker(QThread):
                 
             except Exception as e:
                 last_err = e
+                error_msg = str(e).lower()
                 print(f"Browser start attempt {attempt + 1} failed: {e}")
+                
+                # Check for ChromeDriver version mismatch - multiple patterns
+                version_mismatch = any([
+                    "chromedriver" in error_msg and "version" in error_msg,
+                    "chrome version" in error_msg,
+                    "only supports chrome version" in error_msg,
+                    "session not created" in error_msg and "version" in error_msg,
+                ])
+                
+                if version_mismatch and version_main is None:
+                    print("ChromeDriver version mismatch detected!")
+                    self.clear_chromedriver_cache()
+                    # Detect Chrome version and retry with it
+                    detected_version = self.get_chrome_version()
+                    if detected_version:
+                        time.sleep(2)
+                        return self.start_driver(version_main=detected_version)
+                
                 time.sleep(2)
         
         raise Exception(f"Failed to start browser after 3 attempts: {last_err}")
@@ -947,23 +1017,27 @@ class ScannerTab(QWidget):
         self.progress = QProgressBar()
         layout.addWidget(self.progress)
 
-        # Data Table - Updated to match new column structure
+        # Data Table - 9 columns with Site Map
         self.table = QTableWidget()
-        self.table.setColumnCount(8) 
+        self.table.setColumnCount(9) 
         self.table.setHorizontalHeaderLabels([
             "Client Name", "URL", "Expected Provider", "Detected Provider", 
-            "Config", "Status", "Details", "Active"
+            "Config", "Status", "Details", "Site Map", "Active"
         ])
         
         header = self.table.horizontalHeader()
         header.setSectionResizeMode(QHeaderView.ResizeMode.Interactive)
-        header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch) 
+        header.setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)  # URL
         
-        self.table.setColumnWidth(0, 180)   # Client Name
-        self.table.setColumnWidth(2, 110)   # Expected Provider
-        self.table.setColumnWidth(3, 110)   # Detected Provider
-        self.table.setColumnWidth(4, 80)    # Config
-        self.table.setColumnWidth(5, 80)    # Status
+        # Column widths - 9 columns
+        self.table.setColumnWidth(0, 300)   # Client Name
+        self.table.setColumnWidth(2, 150)   # Expected Provider
+        self.table.setColumnWidth(3, 150)   # Detected Provider
+        self.table.setColumnWidth(4, 70)    # Config
+        self.table.setColumnWidth(5, 100)   # Status
+        self.table.setColumnWidth(6, 120)   # Details
+        self.table.setColumnWidth(7, 80)    # Site Map
+        self.table.setColumnWidth(8, 65)    # Active
         self.table.setSortingEnabled(True) 
         
         layout.addWidget(self.table)
@@ -988,6 +1062,10 @@ class ScannerTab(QWidget):
             full_url = str(row.get('URL', ''))
             display_url = full_url.replace("https://", "").replace("http://", "").rstrip("/")
             
+            # Check if site map exists
+            check_url = full_url if full_url.startswith('http') else f"https://{full_url}"
+            has_sitemap = full_url and harvester.has_site_map(check_url)
+            
             item_name = QTableWidgetItem(str(row.get('Client Name', '')))
             item_name.setData(Qt.ItemDataRole.UserRole, original_idx)
             
@@ -997,15 +1075,27 @@ class ScannerTab(QWidget):
             self.table.setItem(row_count, 3, QTableWidgetItem(str(row.get('Detected Provider', '')))) 
             self.table.setItem(row_count, 4, QTableWidgetItem(str(row.get('Config', '')))) 
             
+            # Get status and strip any legacy icons
             status_txt = str(row.get('Status', 'PENDING'))
-            status_item = QTableWidgetItem(status_txt)
+            clean_status = status_txt.replace('📋', '').strip()
+            actual_status = 'UNVERIFIABLE' if clean_status == 'N/A' else clean_status
+            
+            status_item = QTableWidgetItem(clean_status)
+            status_item.setData(Qt.ItemDataRole.UserRole, actual_status)
             status_item.setFont(QFont("Arial", 10, QFont.Weight.Bold))
             status_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
-            self.color_status(status_item, status_txt)
+            self.color_status(status_item, actual_status)
             self.table.setItem(row_count, 5, status_item)
             
             self.table.setItem(row_count, 6, QTableWidgetItem(str(row.get('Details', ''))))
-            self.table.setItem(row_count, 7, QTableWidgetItem(active_val))
+            
+            # Site Map column
+            sitemap_item = QTableWidgetItem("Yes" if has_sitemap else "")
+            sitemap_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
+            sitemap_item.setFont(QFont("Arial", 10, QFont.Weight.Bold))
+            self.table.setItem(row_count, 7, sitemap_item)
+            
+            self.table.setItem(row_count, 8, QTableWidgetItem(active_val))
             
             row_count += 1
             
@@ -1046,17 +1136,19 @@ class ScannerTab(QWidget):
 
         data_payload = []
         for i in range(self.table.rowCount()):
-            # Status column is now 5
+            # Status column is now 5 - use UserRole for actual status (without icon)
             status_item = self.table.item(i, 5)
-            status_text = status_item.text() if status_item else ""
+            if status_item:
+                status_text = status_item.data(Qt.ItemDataRole.UserRole)
+                if status_text is None:
+                    # Fallback: strip icon from displayed text
+                    status_text = status_item.text().replace("📋 ", "").replace("N/A", "UNVERIFIABLE").strip()
+            else:
+                status_text = ""
             
             # FILTER: Only scan PENDING items
-            # Skip PASS, FAIL, WARN, BLOCKED, ERROR, UNVERIFIABLE (displayed as N/A)
-            if status_text != "PENDING" and status_text != "" and status_text != "N/A":
-                continue
-            
-            # Also skip N/A (UNVERIFIABLE) items
-            if status_text == "N/A":
+            # Skip PASS, FAIL, WARN, BLOCKED, ERROR, UNVERIFIABLE
+            if status_text not in ["PENDING", ""]:
                 continue
             
             item_name = self.table.item(i, 0)
@@ -1101,11 +1193,16 @@ class ScannerTab(QWidget):
         self.btn_stop.setText(" Stop") 
         self.table.setSortingEnabled(True)
         
-        # Show summary with UNVERIFIABLE count (displayed as N/A) - Status column is now 5
-        unverifiable_count = sum(
-            1 for i in range(self.table.rowCount())
-            if self.table.item(i, 5) and self.table.item(i, 5).text() == 'N/A'
-        )
+        # Show summary with UNVERIFIABLE count - use UserRole for actual status
+        unverifiable_count = 0
+        for i in range(self.table.rowCount()):
+            status_item = self.table.item(i, 5)
+            if status_item:
+                status = status_item.data(Qt.ItemDataRole.UserRole)
+                if status is None:
+                    status = status_item.text().replace("📋 ", "").strip()
+                if status in ['N/A', 'UNVERIFIABLE']:
+                    unverifiable_count += 1
         
         if unverifiable_count > 0:
             QMessageBox.information(
@@ -1157,12 +1254,53 @@ class ScannerTab(QWidget):
             
         display_url = full_url.replace("https://", "").replace("http://", "").rstrip("/")
         
-        self.table.insertRow(0)
-        self.table.setItem(0, 0, QTableWidgetItem("Manual Check"))
-        self.table.setItem(0, 1, QTableWidgetItem(display_url)) 
-        self.table.setItem(0, 4, QTableWidgetItem("CHECKING..."))
+        # Check if URL already exists in the table
+        existing_row = None
+        for row in range(self.table.rowCount()):
+            row_url_item = self.table.item(row, 1)
+            if row_url_item:
+                row_url = row_url_item.text().lower().rstrip('/')
+                check_url = display_url.lower().rstrip('/')
+                # Also check without www
+                if row_url == check_url or \
+                   row_url.replace("www.", "") == check_url.replace("www.", ""):
+                    existing_row = row
+                    break
         
-        self.worker = BatchWorker([(0, "Manual", full_url, None)], block_tracker=self.block_tracker)
+        if existing_row is not None:
+            # Update existing row
+            row_idx = existing_row
+            # Update status to show it's being checked
+            status_item = QTableWidgetItem("CHECKING...")
+            status_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
+            self.table.setItem(row_idx, 5, status_item)  # Status is column 5
+            
+            # Get the original index if it exists
+            name_item = self.table.item(row_idx, 0)
+            original_idx = name_item.data(Qt.ItemDataRole.UserRole) if name_item else None
+            client_name = name_item.text() if name_item else "Manual Check"
+        else:
+            # Insert new row at the top
+            row_idx = 0
+            self.table.insertRow(0)
+            
+            # Fill all 8 columns properly
+            self.table.setItem(0, 0, QTableWidgetItem("Manual Check"))    # Client Name
+            self.table.setItem(0, 1, QTableWidgetItem(display_url))       # URL
+            self.table.setItem(0, 2, QTableWidgetItem(""))                # Expected Provider
+            self.table.setItem(0, 3, QTableWidgetItem(""))                # Detected Provider
+            self.table.setItem(0, 4, QTableWidgetItem(""))                # Config
+            status_item = QTableWidgetItem("CHECKING...")
+            status_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
+            self.table.setItem(0, 5, status_item)                         # Status
+            self.table.setItem(0, 6, QTableWidgetItem(""))                # Details
+            self.table.setItem(0, 7, QTableWidgetItem("Yes"))             # Active
+            
+            original_idx = None
+            client_name = "Manual Check"
+        
+        # Run the scan - pass the correct row index
+        self.worker = BatchWorker([(row_idx, client_name, full_url, original_idx)], block_tracker=self.block_tracker)
         self.worker.result_signal.connect(self.update_row)
         self.worker.start()
 
@@ -1271,50 +1409,144 @@ class SiteMapWorker(QThread):
         self.url = url
         self.provider = provider
     
+    def clear_chromedriver_cache(self):
+        """Clear cached ChromeDriver to force re-download of matching version."""
+        import shutil
+        from pathlib import Path
+        
+        # Common cache locations for undetected_chromedriver
+        cache_paths = [
+            Path.home() / ".local" / "share" / "undetected_chromedriver",
+            Path.home() / "Library" / "Application Support" / "undetected_chromedriver",
+            Path.home() / "AppData" / "Roaming" / "undetected_chromedriver",
+        ]
+        
+        cleared = False
+        for cache_path in cache_paths:
+            if cache_path.exists():
+                try:
+                    shutil.rmtree(cache_path)
+                    print(f"Cleared ChromeDriver cache: {cache_path}")
+                    cleared = True
+                except Exception as e:
+                    print(f"Could not clear cache {cache_path}: {e}")
+        
+        if not cleared:
+            print("No ChromeDriver cache found to clear")
+        
+        return cleared
+    
+    def get_chrome_version(self):
+        """Detect installed Chrome version."""
+        import subprocess
+        import re
+        
+        # Try different methods to get Chrome version
+        commands = [
+            # macOS
+            ['/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', '--version'],
+            # Linux
+            ['google-chrome', '--version'],
+            ['google-chrome-stable', '--version'],
+            ['chromium-browser', '--version'],
+            # Windows
+            ['reg', 'query', 'HKEY_CURRENT_USER\\Software\\Google\\Chrome\\BLBeacon', '/v', 'version'],
+        ]
+        
+        for cmd in commands:
+            try:
+                result = subprocess.run(cmd, capture_output=True, text=True, timeout=5)
+                if result.returncode == 0:
+                    # Extract version number (e.g., "144" from "Google Chrome 144.0.7559.0")
+                    match = re.search(r'(\d+)\.', result.stdout)
+                    if match:
+                        version = int(match.group(1))
+                        print(f"Detected Chrome version: {version}")
+                        return version
+            except:
+                continue
+        
+        print("Could not detect Chrome version")
+        return None
+    
+    def create_driver(self, version_main=None):
+        """Create Chrome driver with anti-detection settings."""
+        options = uc.ChromeOptions()
+        options.add_argument('--headless=new')
+        options.add_argument('--disable-gpu')
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--window-size=1920,1080')
+        
+        # Anti-detection arguments
+        options.add_argument('--disable-blink-features=AutomationControlled')
+        options.add_argument('--disable-infobars')
+        options.add_argument('--disable-extensions')
+        options.add_argument('--disable-popup-blocking')
+        options.add_argument('--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+        
+        # Create driver with specific version if provided
+        if version_main:
+            print(f"Creating driver with version_main={version_main}")
+            driver = uc.Chrome(options=options, use_subprocess=True, version_main=version_main)
+        else:
+            driver = uc.Chrome(options=options, use_subprocess=True)
+        
+        driver.set_page_load_timeout(45)
+        
+        # Execute CDP commands to mask automation
+        try:
+            driver.execute_cdp_cmd('Network.setUserAgentOverride', {
+                "userAgent": 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+            })
+            driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
+                'source': '''
+                    Object.defineProperty(navigator, 'webdriver', {
+                        get: () => undefined
+                    });
+                    Object.defineProperty(navigator, 'plugins', {
+                        get: () => [1, 2, 3, 4, 5]
+                    });
+                    Object.defineProperty(navigator, 'languages', {
+                        get: () => ['en-US', 'en']
+                    });
+                    window.chrome = { runtime: {} };
+                '''
+            })
+        except:
+            pass  # CDP commands are best-effort
+        
+        return driver
+    
     def run(self):
         result = {"links": {}, "other": [], "error": None}
         driver = None
         
         try:
-            # Create browser with anti-detection settings
-            options = uc.ChromeOptions()
-            options.add_argument('--headless=new')
-            options.add_argument('--disable-gpu')
-            options.add_argument('--no-sandbox')
-            options.add_argument('--disable-dev-shm-usage')
-            options.add_argument('--window-size=1920,1080')
-            
-            # Anti-detection arguments
-            options.add_argument('--disable-blink-features=AutomationControlled')
-            options.add_argument('--disable-infobars')
-            options.add_argument('--disable-extensions')
-            options.add_argument('--disable-popup-blocking')
-            options.add_argument('--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-            
-            driver = uc.Chrome(options=options, use_subprocess=True)
-            driver.set_page_load_timeout(45)
-            
-            # Execute CDP commands to mask automation
+            # Try to create driver, with auto-retry on version mismatch
             try:
-                driver.execute_cdp_cmd('Network.setUserAgentOverride', {
-                    "userAgent": 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-                })
-                driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {
-                    'source': '''
-                        Object.defineProperty(navigator, 'webdriver', {
-                            get: () => undefined
-                        });
-                        Object.defineProperty(navigator, 'plugins', {
-                            get: () => [1, 2, 3, 4, 5]
-                        });
-                        Object.defineProperty(navigator, 'languages', {
-                            get: () => ['en-US', 'en']
-                        });
-                        window.chrome = { runtime: {} };
-                    '''
-                })
-            except:
-                pass  # CDP commands are best-effort
+                driver = self.create_driver()
+            except Exception as e:
+                error_msg = str(e).lower()
+                # Check for ChromeDriver version mismatch - multiple patterns
+                version_mismatch = any([
+                    "chromedriver" in error_msg and "version" in error_msg,
+                    "chrome version" in error_msg,
+                    "only supports chrome version" in error_msg,
+                    "session not created" in error_msg and "version" in error_msg,
+                ])
+                
+                if version_mismatch:
+                    print("ChromeDriver version mismatch detected!")
+                    print("Clearing cache and detecting Chrome version...")
+                    self.clear_chromedriver_cache()
+                    time.sleep(2)  # Give filesystem time to settle
+                    
+                    # Detect actual Chrome version and retry with it
+                    chrome_version = self.get_chrome_version()
+                    driver = self.create_driver(version_main=chrome_version)
+                else:
+                    raise  # Re-raise if it's a different error
             
             # Load page
             driver.get(self.url)
@@ -1398,9 +1630,43 @@ class SiteMapWorker(QThread):
             harvest_result = harvester.harvest_from_browser(driver, self.url, detected_provider or self.provider)
             result["links"] = harvest_result.get("links", {})
             result["other"] = harvest_result.get("other", [])
-            
+        
         except Exception as e:
-            result["error"] = str(e)
+            # Provide friendly error messages based on error type
+            error_msg = str(e).lower()
+            
+            if "timeout" in error_msg or "timed out" in error_msg:
+                result["error"] = (
+                    "Site took too long to respond.\n\n"
+                    "This may be due to:\n"
+                    "• Bot/automation detection\n"
+                    "• Slow server response\n"
+                    "• Heavy JavaScript loading\n\n"
+                    "Some providers (like DealerAlchemist) have strong bot protection "
+                    "that prevents automated harvesting."
+                )
+            elif "connection" in error_msg or "refused" in error_msg or "unreachable" in error_msg:
+                result["error"] = (
+                    "Could not connect to site.\n\n"
+                    "Please check:\n"
+                    "• The URL is correct\n"
+                    "• The site is online\n"
+                    "• Your internet connection"
+                )
+            elif "ssl" in error_msg or "certificate" in error_msg:
+                result["error"] = (
+                    "SSL/Security certificate error.\n\n"
+                    "The site may have an invalid or expired certificate."
+                )
+            elif "chrome" in error_msg and ("not found" in error_msg or "cannot find" in error_msg):
+                result["error"] = (
+                    "Chrome browser not found.\n\n"
+                    "Please ensure Google Chrome is installed."
+                )
+            else:
+                # Generic error with original message
+                result["error"] = f"Could not harvest site map.\n\nError: {str(e)[:200]}"
+            
             logger.error("Site map harvest failed", exception=e, url=self.url)
         finally:
             if driver:

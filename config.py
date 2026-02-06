@@ -185,7 +185,7 @@ LOGGING_CONFIG = {
 # ============================================================================
 
 VENDOR_DETECTION_RULES = {
-    "Sokal": [
+    "SOKAL": [
         ("html", "sokal.com"),
         ("html", "go-sokal"),
         ("text", "powered by sokal"),
