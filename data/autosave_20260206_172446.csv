@@ -1,0 +1,220 @@
+Client Name,URL,Expected Provider,Detected Provider,Config,Status,Details,Site Map,Offer,Active
+865 Autos LLC,https://www.865autos.com/,Quick HTTP,,BUNDLE,PASS,Found via HTTP: idrove.it/behaviour.bundle.js,Yes,$500 Trade Assist,Yes
+Allen Chevrolet,https://www.allenchevy.com/,DealerOn,,STD,PASS,Perfect (DealerOn Rule of 1),,$500 Your Way,Yes
+Audi Northlake,https://www.audinorthlake.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$1000 Off Any New,Yes
+Audi South Austin,https://www.audisouthaustin.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (2/3),,$1000 Off New/$500 Off Used,Yes
+Auto Gallery Ford,https://www.autogalleryford.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Barbour Hendrick Honda,https://www.barbourhendrickhonda.com/,Manual Required,,,UNVERIFIABLE,Site blocks automation. Manual check required.,,$500 Off New/$500 Off Used,Yes
+Bay Ridge Subaru,https://www.brooklynsubarudeals.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Your Way,Yes
+Beach Chevrolet,https://www.thebeachchevrolet.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$1000 Trade Assist,Yes
+BMW Charlotte,https://www.hendrickbmwcharlotte.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Incentive,Yes
+BMW Northlake,https://www.hendrickbmwnorthlake.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Incentive,Yes
+BMW of Kansas City South,https://www.bmwofkansascitysouth.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Incentive,Yes
+BMW of McKinney,https://www.bmwofmckinney.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Incentive,Yes
+BMW South Austin,https://www.bmwofsouthaustin.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Incentive,Yes
+BMW Southpoint,https://www.bmwsouthpoint.com/,Dealer Inspire,Dealer Inspire,STD,PASS,Perfect (Rule of 2),Yes,$500 Incentive,Yes
+Chrysler Dodge Jeep Ram of Elizabethton,https://www.nagcdjr.com/,Quick HTTP,,STD,PASS,Found via HTTP: idrove.it/behaviour.js,,$500 Off Any Used,Yes
+Circle Jeep,https://www.circlejeep.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Your Way,Yes
+Circle Subaru,https://www.circlesubaru.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Trade Assist,Yes
+Covert Country Hutto,https://www.covertchevyhutto.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),Yes,$500 Off Any New,Yes
+Covert Ford of Hutto,https://www.covertfordhutto.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any New,Yes
+Crews Chevrolet,https://www.crewschevrolet.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Cronic Nissan,https://www.cronicnissan.net/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Dale Earnhardt Jr. Buick GMC,https://www.daleearnhardtjrbuickgmc.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Dale Earnhardt Jr. Cadillac,https://www.daleearnhardtjrcadillac.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off New/$500 Off Used,Yes
+Dale Earnhardt Jr. Chevrolet,https://www.daleearnhardtjrchevy.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Darrell Waltrip Buick GMC,https://www.darrellwaltripbuickgmc.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Off Select,Yes
+Darrell Waltrip Honda,https://www.darrellwaltriphonda.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Off New/$500 Off Used,Yes
+Darrell Waltrip Subaru,https://www.darrellwaltripsubaru.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Off Select,Yes
+Dave Smith CDA,https://www.davesmithcda.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Daytona Infiniti,https://www.daytonainfiniti.com/,Dealer eProcess,,STD,PASS,Perfect (Rule of 2),,$1250 Trade Assist,Yes
+Daytona Mazda,https://www.daytonamazda.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Daytona Nissan,https://www.daytonanissan.com/,Dealer eProcess,,STD,PASS,Perfect (Rule of 2),,$1250 Trade Assist,Yes
+East Bay BMW,https://www.eastbaybmw.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Incentive,Yes
+East Charlotte Nissan,https://www.eastcharlottenissan.com/,Team Velocity,,NONE,FAIL,No scripts found (Saved Img),,Test2,Yes
+Family Nissan,https://www.nissanfamily.com/,Quick HTTP,,BUNDLE,PASS,Found via HTTP: idrove.it/behaviour.bundle.js,,$750 Off Any New,Yes
+Ford of Cookeville,https://www.fordlincolnofcookeville.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Trade Assist,Yes
+Ford of Elizabethton,https://www.fordofelizabethton.com/,Quick HTTP,,STD,PASS,Found via HTTP: idrove.it/behaviour.js,,$500 Off Any,Yes
+Fort Mill Hyundai,https://www.fortmillhyundai.com/,Dealer eProcess,,STD,PASS,Perfect (Rule of 2),Yes,$500 Off Any New,Yes
+Freehold Ford,https://www.freeholdford.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Your Way,Yes
+Gary Yeoman's Ford Daytona Beach,https://www.garyyeomansford.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$750 Trade Assist,Yes
+Gary Yeoman's Palm Bay Ford,https://www.palmbayford.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$750 Trade Assist,Yes
+Gary Yeomans Ford Frankfort,https://www.frankfortford.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Gary Yeomans Ford Knoxville,https://www.garyyeomansfordknoxville.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Gary Yeomans Ford Ocala,https://www.garyyeomansfordocala.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Gary Yeomans Ford Villages,https://www.garyyeomansfordvillages.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Gary Yeomans Honda,https://www.garyyeomanshonda.com/,Dealer eProcess,,STD,PASS,Perfect (Rule of 2),,$1250 Trade Assist,Yes
+Gary Yeomans Lincoln Daytona Beach,https://www.garyyeomanslincoln.com/,Dealer.com,,STD,PASS,Perfect (Dealer.com Rule of 1),,$750 Trade Assist,Yes
+Gary Yeomans Lincoln Ocala,https://www.garyyeomanslincolnocala.com/,Dealer.com,,STD,PASS,Perfect (Dealer.com Rule of 1),,$500 Off Any,Yes
+Gary Yeomans PreOwned Supercenter,https://www.garyyeomansusedcars.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Gastonia Chevrolet Buick GMC Cadillac,https://www.gastoniachevroletbuickgmc.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any New,Yes
+Gastonia Chrysler Dodge Jeep Ram,https://www.gastoniadodge.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+George's Used Cars,https://www.georgesapproval.com/,Other,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Glanzmann Subaru,https://www.glanzmann.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$250 Trade Assist,Yes
+Granbury Nissan,https://www.granburynissan.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any New,Yes
+Greenwood Ford,https://www.greenwoodford.com/,Dealer.com,,STD,PASS,Perfect (Dealer.com Rule of 1),,$500 Your Way,Yes
+Greenwood Lincoln,https://www.greenwoodlincoln.com/,Dealer.com,,STD,PASS,Perfect (Dealer.com Rule of 1),,$500 Your Way,Yes
+Gwinnett Place Honda,https://www.gphonda.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off New/$500 Off Used,Yes
+Hendrick Acura Charlotte,https://www.hendrickacura.com/,Manual Required,,,UNVERIFIABLE,Site blocks automation. Manual check required.,,$500 Off Service Contract,Yes
+Hendrick Acura of Pleasanton,https://www.acuraofpleasanton.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,Maintenance Package,Yes
+Hendrick Acura Southpoint,https://www.acurasouthpoint.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,Maintenance Package,Yes
+Hendrick Buick GMC Cary,https://www.hendrickbuickgmccary.com/,Persistent Block,,,UNVERIFIABLE,Blocked 3x. Manual verification required.,,$500 Off Any,Yes
+Hendrick Cadillac Monroe,https://www.hendrickcadillacmonroe.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$750 Off Any,Yes
+Hendrick CDJR of Concord,https://www.hendrickchryslerdodgejeepramofconcord.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (2/3),,$500 Off Any,Yes
+Hendrick Chevrolet Buick GMC Southpoint,https://www.hendrickgmsouthpoint.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Hendrick Chevrolet Cary,https://www.hendrickchevrolet.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Off Any,Yes
+Hendrick Chevrolet Columbia,https://www.hendrickchevroletcolumbia.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Hendrick Chevrolet Hoover,https://www.hendrickchevroletbirmingham.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off New/$1000 Off Used,Yes
+Hendrick Chevrolet Monroe,https://www.hendrickchevroletmonroe.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$750 Off Any,Yes
+Hendrick Chevrolet Shawnee Mission,https://www.chevyusa.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any Used,Yes
+Hendrick Chrysler Dodge Jeep Ram Hoover,https://www.hendrickchryslerdodgejeepram.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any Used,Yes
+Hendrick Chrysler Jeep Fiat Fayetteville,https://www.hendrickchryslerjeep.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Hendrick Dodge RAM Cary,https://www.hendrickdodge.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any,Yes
+Hendrick GMC Columbia,https://www.hendrickgmccolumbia.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Hendrick Honda Bradenton,https://www.hendrickhondabradenton.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Off New/$500 Off Used,Yes
+Hendrick Honda Easley,https://www.hendrickhondasc.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off New/$500 Off Used,Yes
+Hendrick Honda Hickory,https://www.hendrickhondahickory.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Off New/$500 Off Used,Yes
+Hendrick Honda of Charleston,https://www.charlestonhonda.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off New/$500 Off Used,Yes
+Hendrick Honda of Concord,https://www.hondaofconcord.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Off New/$500 Off Used,Yes
+Hendrick Honda South Blvd,https://www.hendrickhonda.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off New/$500 Off Used,Yes
+Hendrick KIA of Cary,https://www.hendrickkia.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Hendrick Kia of Concord,https://www.hendrickkiaofconcord.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Off Any,Yes
+Hendrick MINI Charlotte,https://www.hendrickmini.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Incentive,Yes
+Hendrick Subaru Hoover,https://www.hendricksubaruhoover.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Off New/$500 Off Used,Yes
+Hendrick Subaru Southpoint,https://www.subarusouthpoint.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Off Any,Yes
+Hendrick Toyota Apex,https://www.hendricktoyotaapex.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Hendrick Toyota Concord,https://www.hendricktoyotaconcord.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Hendrick Toyota Merriam,https://www.hendricktoyotamerriam.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Hendrick Toyota North Charleston,https://www.hendricktoyotanorthcharleston.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Hendrick Volkswagen Frisco,https://www.hendrickvwfrisco.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any New,Yes
+Hendrick Volkswagen of Concord,https://www.hendrickvwofconcord.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$1000 Off Select New,Yes
+Hendrick Volvo Cars of Charleston,https://www.hendrickvolvocars.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Off Select New/$500 Off Select Used,Yes
+Honda Cars of Aiken,https://www.hondacarsofaiken.com/,Quick HTTP,,STD,PASS,Found via HTTP: idrove.it/behaviour.js,,$100 Off Any Vehicle,Yes
+Honda Cars of McKinney,https://www.hondacarsofmckinney.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$1000 Off New/$500 Off Used,Yes
+Honda Cars of Rock Hill,https://www.hondacarsrockhill.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Off Any New,Yes
+Honda Indian Trail,https://www.hondaofindiantrail.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (2/3),,,No
+Honda of Bridgewater,https://www.hondabridgewater.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),Yes,$500 Off Any,Yes
+Honda of Huntersville,https://www.hondahuntersville.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off List or $500 Trade Assist,Yes
+Honda of Newnan,https://www.hondaofnewnan.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off New/$500 Off Used,Yes
+Hoover Chrysler Dodge Jeep Ram Summerville,https://www.hooverjeepchrysler.net/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Hyundai of Asheville,https://www.hyundaiofasheville.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Independence Mazda,https://www.independencemazda.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any PLUS $2000 Trade Assist,Yes
+Jackie Cooper Infiniti,https://jackiecooperinfiniti.com/,Dealer.com,,SPA,PASS,Perfect (Rule of 4),,$500 Off Any,Yes
+Jackie Cooper Mercedes,https://jackiecoopermercedes.com/,Dealer.com,,SPA,PASS,Perfect (Rule of 4),,$500 Off Any,Yes
+Jackie Cooper Nissan,https://jackiecoopernissan.com/,Dealer.com,,SPA,PASS,Perfect (Rule of 4),,$1000 Trade Assist,Yes
+Jacksonville Chrysler Dodge Jeep Ram,https://www.jaxcjdr.com/,Dealer.com,,STD,PASS,Perfect (Dealer.com Rule of 1),,$500 Off Any,Yes
+Jeff Gordon Chevrolet,https://www.jeffgordonchevy.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (2/3),,$500 Off Any,Yes
+Joe Cooper Chevrolet,https://joecooperchevroletcadillacgmc.com/,Dealer.com,,SPA,PASS,Perfect (Rule of 4),,$500 Off Any,Yes
+Joe Cooper Dodge Jeep Shawnee,https://joecooperdodgejeep.com/,Dealer.com,,SPA,PASS,Perfect (Rule of 4),,$1000 Off Any,Yes
+Joe Cooper Dodge of Yukon,https://joecooperdodgeyukon.com/,Dealer.com,,SPA,PASS,Perfect (Rule of 4),,$500 Off Any,Yes
+Joe Cooper Ford Edmond,https://joecooperfordedmond.com/,Dealer.com,,SPA,PASS,Perfect (Rule of 4),,$1000 Off Any,Yes
+Joe Cooper Ford of Yukon,https://joecooperfordyukon.com/,Dealer.com,,SPA,PASS,Perfect (Rule of 4),,$500 Off Any,Yes
+Joe Cooper Ford Shawnee,https://joecooperfordshawnee.com/,Dealer.com,,SPA,PASS,Perfect (Rule of 4),,$1000 Off Any,Yes
+Joe Cooper Hyundai of Midwest City,https://joecooperhyundai.com/,Dealer.com,,SPA,PASS,Perfect (Rule of 4),,$500 Off Any,Yes
+Joe Cooper Lincoln of Edmond,https://joecooperlincoln.com/,Dealer.com,,SPA,WARN,Found 6 (Expected 4) (Saved Img),,$500 Off Any,Yes
+JT's Chrysler Dodge Jeep Ram of Lexington,https://www.jtschryslerdodgejeepram.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any New,Yes
+JT's Dodgeland of Columbia,https://jtscdjrofcolumbia.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any New,Yes
+JT's Kia of Columbia,https://www.jtskia.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+JT's Kia of Columbia - Greystone,https://www.kiacolumbia.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+JTs Kia of Rock Hill,https://www.jtskiarockhill.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any New,Yes
+Keffer Mazda,https://www.keffermazda.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any,Yes
+Keith Hawthorne Hyundai of Gastonia,https://www.hyundaiofgastonia.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Kelly Honda,https://www.kelly-honda.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$250 Off Any New,Yes
+Kelly Infiniti,https://www.kellyinfiniti.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$250 Off Any Used,Yes
+Kelly Nissan of Lynnfield,https://www.kellynissanoflynnfield.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$250 Off Any New,Yes
+Kelly Nissan of Woburn,https://www.kellynissanofwoburn.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$250 Off Any New,Yes
+Kelly Volkswagen,https://www.kelly-vw.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$250 Off Any,Yes
+Kimberly Eakin Kia,https://www.kimberlyeakinkia.com/,Quick HTTP,,BUNDLE,PASS,Found via HTTP: idrove.it/behaviour.bundle.js,,$500 Off Any OR $1000 Trade Assist,Yes
+Lake Norman Chrysler Dodge Jeep Ram,https://www.lakenormanchrysler.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off New/$500 Off New,Yes
+Lake Norman Hyundai,https://www.lakenormanhyundai.com/,Dealer eProcess,,STD,PASS,Perfect (Rule of 2),,$500 Your Way,Yes
+Lilliston Chrysler Dodge Jeep Ram,https://www.lillistonchryslerdodgejeep.com/,Dealer.com,,STD,PASS,Perfect (Dealer.com Rule of 1),,$500 Your Way,Yes
+Lilliston Ford,https://www.lillistonford.com/,Dealer.com,,STD,PASS,Perfect (Dealer.com Rule of 1),Yes,$500 Your Way,Yes
+Lindsay Buick GMC,https://www.lindsaybuickgmctruck.com/,Dealer Inspire,Dealer Inspire,STD,PASS,Perfect (Rule of 2),Yes,$500 Off Any,Yes
+Madison Honda,https://www.madisonhonda.com/,Dealer eProcess,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Mall of Georgia Mazda,https://www.mallofgamazda.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off New/$500 Off New,Yes
+Mall of Georgia MINI,https://www.mallofgamini.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off New/$500 Off New,Yes
+Mathews Honda of Paris,https://www.hondaofparis.net/,Dealer eProcess,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Mathews Nissan of Paris,https://www.parisnissan.com/,Dealer eProcess,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+McSweeney Chevrolet GMC,https://www.mcsweeneychevygmc.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any PLUS $1000 Trade Assist,Yes
+McSweeney Chrysler Dodge Jeep Ram - Clanton,https://www.mcsweeneycdjr.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any PLUS $1000 Trade Assist,Yes
+McSweeney Chrysler Dodge Jeep Ram - Pell City,https://www.mcsweeneychryslerdodgejeepram.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any PLUS $1000 Trade Assist,Yes
+Mercedes-Benz of San Antonio,https://www.mbofsa.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Trade Assist,Yes
+Mike Reichenbach Ford Lincoln,https://www.mikereichenbachfordflorence.com/,Dealer.com,,STD,PASS,Perfect (Dealer.com Rule of 1),,$500 Off Any,Yes
+Mike Terry Chevrolet GMC,https://www.mterryautogroup.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$750 Off Any,Yes
+Mike Terry Chevrolet Refugio,https://www.miketerrychevrolet.com/,Dealer.com,,STD,PASS,Perfect (Dealer.com Rule of 1),,$500 Off Any,Yes
+Mike Terry Ford Mexia,https://www.miketerryford.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Mike Terry Hyundai of Silsbee,https://www.miketerryhyundai.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Monroe Nissan,https://www.monroenissan.com/,Quick HTTP,,BUNDLE,PASS,Found via HTTP: idrove.it/behaviour.bundle.js,,$500 Off Any,Yes
+Myrtle Beach Chrysler Jeep,https://www.myrtlebeachchryslerjeep.net/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,,No
+Nissan  of  Rockville  Centre,https://www.nissanofrockvillecentre.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$500 Off Any New,Yes
+Nissan of Bay Shore,https://www.nissanofbayshore.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Nissan of Garden City,https://www.nissanofgardencity.com/,SOKAL,,STD,WARN,Found 4 (Expected 2) (Saved Img),,$500 Off Any,Yes
+Nissan of Hendersonville,https://www.nissanofhendersonville.com/,Dealer.com,,NONE,FAIL,No scripts found (Saved Img),,,No
+Nissan of Huntington,https://www.nissanofhuntington.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$500 Off Any OR $500 Trade Assist,Yes
+Nissan of Richmond,https://www.nissanrva.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$500 Your Way,Yes
+North Knoxville CDJR,https://www.northknoxcdjr.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Octane Buick GMC of Santa Fe,https://www.octanegmc.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$750 Off Any,Yes
+Owen Ford Jarratt,https://www.owenford.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Parks Buick GMC Greenville,https://www.parksbuickgmc.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off New/$250 Off Used,Yes
+Parks Buick GMC Kernersville,https://www.parksgmckernersville.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Parks Chevrolet Charlotte,https://www.parkscharlotte.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Your Way,Yes
+Parks Chevrolet Huntersville,https://www.parkschevrolethuntersville.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any New OR $500 Off Any Used,Yes
+Parks Chevrolet Kernersville,https://www.parkschevy.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Parks Chevrolet Richmond,https://www.parksrichmond.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Your Way,Yes
+Parks Chevrolet Spartanburg,https://www.parkschevroletspartanburg.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Parks Ford Hendersonville,https://www.parksfordhendersonville.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Parks Motors,https://www.parksmotors.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any,Yes
+Patriot Chevrolet GMC,https://www.patriotchevroletgmc.com/,DealerOn,,STD,PASS,Perfect (DealerOn Rule of 1),Yes,$500 Off Any,Yes
+Paul Miller Auto Outlet,https://www.paulmillerauto.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Your Way,Yes
+Paul Miller Ford,https://www.paulmillerford.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),Yes,$500 Your Way,Yes
+Paul Miller Mazda,https://www.paulmillermazda.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Your Way,Yes
+Peoria Toyota,https://www.peoriatoyota.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,,No
+Priority Chevrolet Chesapeake,https://www.prioritychevrolet.com/,Dealer.com,,STD,PASS,Perfect (Dealer.com Rule of 1),,$500 Off Any,Yes
+Priority Honda Hampton,https://www.priorityhondahampton.com/,DealerOn,,STD,PASS,Perfect (DealerOn Rule of 1),,$1000 Trade Assist,Yes
+Priority Infiniti Greenbrier,https://www.priorityinfiniti.com/,DealerOn,,STD,PASS,Perfect (DealerOn Rule of 1),,$250 Off Used,Yes
+Reggie Jackson Airport Honda,https://www.reggiejacksonairporthonda.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off New/$500 Off Used,Yes
+Rick Hendrick Buick GMC Duluth,https://www.rickhendrickbuickgmcatlanta.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Rick Hendrick Cadillac Norfolk,https://www.rickhendrickcadillacnorfolk.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Select,Yes
+Rick Hendrick CDJRF of North Charleston,https://www.jeephendrick.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Rick Hendrick Chevrolet Buick GMC Richmond,https://www.hendrickchevybuickgmcrichmond.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Rick Hendrick Chevrolet Charleston,https://www.rickhendrickchevy.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Rick Hendrick Chevrolet Duluth,https://www.hendrickatlanta.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off New/$1000 Off Used,Yes
+Rick Hendrick Chevrolet Naples,https://www.rickhendrickchevynaples.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any,Yes
+Rick Hendrick Chevrolet Norfolk,https://www.rickhendrickchevroletnorfolk.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Rick Hendrick Chevrolet of Buford,https://www.hendrickbuford.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off New/$1000 Off Used,Yes
+Rick Hendrick Chrysler Dodge Jeep Ram Duluth,https://www.hendrickcdjratlanta.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off New/$500 Off Used,Yes
+Rick Hendrick Chrysler Dodge Jeep Ram Fiat Wilmington,https://www.hendrickjeepwilmington.com/,Security Block,,ERR,BLOCKED,Bot Detection / CAPTCHA (Saved Img) (1/3),,$500 Off Any,Yes
+Rick Hendrick City Chevrolet,https://www.citychevrolet.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$750 Off Any,Yes
+Rick Hendrick DCJR Charleston,https://www.rickhendrickdodge.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Rick Hendrick Honda,https://www.rickhendrickhonda.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off New/$500 Off Used,Yes
+Rick Hendrick Toyota of Fayetteville,https://www.rickhendricktoyota.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Rick Hendrick Toyota Sandy Springs,https://www.rickhendricktoyotasandysprings.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Rusty Wallace Kia Alcoa,https://www.rustywallacekiaalcoa.com/,DealerOn,,STD,WARN,Found 2 (DealerOn expects 1) (Saved Img),,$500 Trade Assist,Yes
+Sands Chrysler Dodge Jeep Ram,https://www.sandschryslerjeepdodge.net/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Your Way,Yes
+Secret City Chrysler Dodge Jeep Ram,https://www.secretcitycdjr.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Serra Honda Brighton,https://www.serrahondabrighton.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$750 Off Any,Yes
+South Strand Chrysler Dodge Jeep Ram,https://www.southstrandchrysler.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$1000 Trade Assist,Yes
+Stevenson Hendrick Honda Wilmington,https://www.stevensonhendrickhonda.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,Maintenance Package,Yes
+Stevenson Hendrick Mazda,https://www.stevensonhendrickmazda.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Stevenson-Hendrick Honda Jacksonville,https://www.stevensonhendrickhondajacksonville.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off New/$500 Off Used,Yes
+Stevenson-Hendrick Toyota Jacksonville,https://www.stevensonhendricktoyota.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any,Yes
+Stokes Chevrolet of Moncks Corner,https://www.stokeschevy.com/,SOKAL,,DCOM,PASS,Perfect (Rule of 1),,$750 Off Any New,Yes
+Stokes Hodges Ford,https://www.stokeshodgesford.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Stokes Hodges Kia,https://www.stokeshodgeskia.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$500 Off New/$300 Off Used,Yes
+Stone Mountain Honda,https://www.hondaofstonemountain.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Team Chevrolet GMC Salisbury,https://www.teamchevync.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any New OR $500 Trade Assist,Yes
+Team Chevrolet of Goldsboro,https://www.teamgoldsboro.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),Yes,$1000 Off Any New OR $1000 Trade Assist,Yes
+Team Chevrolet of Swansboro,https://www.teamswansboro.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any New OR $1000 Trade Assist,Yes
+Team Chrysler Dodge Ram of Morganton,https://www.teammorganton.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any New OR $1000 Trade Assist,Yes
+Team Dodge Ram Fiat Myrtle Beach,https://www.teamdodgeramsc.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$1000 Off Any New OR $1000 Trade Assist,Yes
+Ted Russell Ford,https://www.tedrussellford.net/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Ted Russell Lincoln,https://www.tedrusselllincoln.net/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Terry Labonte Chevrolet,https://www.terrylabontechevy.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Terry Lambert Hyundai,https://www.terrylamberthyundai.com/,DealerOn,,STD,PASS,Perfect (DealerOn Rule of 1),,$500 Off Any PLUS $500 Trade Assist,Yes
+Toyota Knoxville,https://www.toyotaknoxville.com/,Dealer eProcess,,STD,PASS,Perfect (Rule of 2),,$500 Off Select,Yes
+Toyota of Murfreesboro,https://www.toyotaofmurfreesboro.com/,Dealer eProcess,,STD,PASS,Perfect (Rule of 2),,$500 Off Select,Yes
+Toyota of Wilmington,https://www.toyotaofwilmington.com/,SOKAL,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Victory Chrysler Dodge Jeep Ram,https://www.victoryshallotte.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+Volkswagen of Murrieta,https://www.vwofmurrieta.com/,Dealer Inspire,,STD,PASS,Perfect (Rule of 2),,$500 Off Any,Yes
+Volunteer Auto Group,https://www.volauto.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes
+VW of Huntington,https://www.vwofhuntington.com/,Dealer.com,,DCOM,PASS,Perfect (Rule of 1),,$500 Off Any,Yes

@@ -5779,3 +5779,829 @@ Stacktrace:
 2026-02-06 08:38:22 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_083822.csv
 2026-02-06 08:43:22 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_084322.csv
 2026-02-06 08:48:22 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_084822.csv
+2026-02-06 08:53:22 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_085322.csv
+2026-02-06 08:56:08 - logger - INFO - info:69 - Logging system initialized
+2026-02-06 08:56:09 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-06 08:56:09 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-05_12-21-new.csv
+2026-02-06 09:01:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_090109.csv
+2026-02-06 09:06:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_090609.csv
+2026-02-06 09:11:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_091109.csv
+2026-02-06 09:16:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_091609.csv
+2026-02-06 09:21:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_092109.csv
+2026-02-06 09:26:09 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_092609.csv
+2026-02-06 09:29:53 - logger - INFO - info:69 - Logging system initialized
+2026-02-06 09:29:54 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-06 09:29:54 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-05_12-21-new.csv
+2026-02-06 09:34:53 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_093453.csv
+2026-02-06 09:37:17 - logger - INFO - info:69 - Logging system initialized
+2026-02-06 09:37:18 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-06 09:37:18 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260206_093453.csv
+2026-02-06 09:37:18 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260206_093453.csv
+2026-02-06 09:42:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_094218.csv
+2026-02-06 09:47:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_094718.csv
+2026-02-06 09:52:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_095218.csv
+2026-02-06 09:57:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_095718.csv
+2026-02-06 10:02:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_100218.csv
+2026-02-06 10:07:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_100718.csv
+2026-02-06 10:11:39 - UncaughtException - CRITICAL - critical:89 - Uncaught exception
+Exception: too many values to unpack (expected 4)
+Traceback: NoneType: None
+
+2026-02-06 10:12:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_101218.csv
+2026-02-06 10:17:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_101718.csv
+2026-02-06 10:22:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_102218.csv
+2026-02-06 10:27:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_102718.csv
+2026-02-06 10:32:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_103218.csv
+2026-02-06 10:37:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_103718.csv
+2026-02-06 10:42:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_104218.csv
+2026-02-06 10:47:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_104718.csv
+2026-02-06 10:52:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_105218.csv
+2026-02-06 10:57:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_105718.csv
+2026-02-06 11:02:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_110218.csv
+2026-02-06 11:07:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_110718.csv
+2026-02-06 11:12:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_111218.csv
+2026-02-06 11:17:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_111718.csv
+2026-02-06 11:22:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_112218.csv
+2026-02-06 11:27:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_112718.csv
+2026-02-06 11:32:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_113218.csv
+2026-02-06 11:37:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_113718.csv
+2026-02-06 11:42:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_114218.csv
+2026-02-06 11:47:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_114718.csv
+2026-02-06 11:52:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_115218.csv
+2026-02-06 11:57:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_115718.csv
+2026-02-06 12:02:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_120218.csv
+2026-02-06 12:07:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_120718.csv
+2026-02-06 12:12:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_121218.csv
+2026-02-06 12:17:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_121718.csv
+2026-02-06 12:22:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_122218.csv
+2026-02-06 12:27:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_122718.csv
+2026-02-06 12:32:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_123218.csv
+2026-02-06 12:37:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_123718.csv
+2026-02-06 12:42:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_124218.csv
+2026-02-06 12:47:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_124718.csv
+2026-02-06 12:52:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_125218.csv
+2026-02-06 12:57:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_125718.csv
+2026-02-06 13:02:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_130218.csv
+2026-02-06 13:07:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_130718.csv
+2026-02-06 13:12:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_131218.csv
+2026-02-06 13:17:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_131718.csv
+2026-02-06 13:22:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_132218.csv
+2026-02-06 13:27:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_132718.csv
+2026-02-06 13:32:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_133218.csv
+2026-02-06 13:37:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_133718.csv
+2026-02-06 13:42:18 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_134218.csv
+2026-02-06 13:42:50 - logger - INFO - info:69 - Logging system initialized
+2026-02-06 13:42:51 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-06 13:42:51 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260206_134218.csv
+2026-02-06 13:42:51 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260206_134218.csv
+2026-02-06 13:43:49 - logger - INFO - info:69 - Logging system initialized
+2026-02-06 13:43:50 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-06 13:43:50 - __main__ - INFO - info:69 - Loading last manual save | path=data/autosave_20260206_134218.csv
+2026-02-06 13:43:50 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260206_134218.csv
+2026-02-06 13:43:58 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-06 13:44:04 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-06 13:48:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_134850.csv
+2026-02-06 13:53:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_135350.csv
+2026-02-06 13:58:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_135850.csv
+2026-02-06 14:03:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_140350.csv
+2026-02-06 14:08:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_140850.csv
+2026-02-06 14:13:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_141350.csv
+2026-02-06 14:18:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_141850.csv
+2026-02-06 14:23:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_142350.csv
+2026-02-06 14:28:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_142850.csv
+2026-02-06 14:33:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_143350.csv
+2026-02-06 14:38:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_143850.csv
+2026-02-06 14:43:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_144350.csv
+2026-02-06 14:48:41 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-06 14:48:47 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-06 14:48:49 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-06 14:48:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_144850.csv
+2026-02-06 14:53:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_145350.csv
+2026-02-06 14:58:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_145850.csv
+2026-02-06 15:03:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_150350.csv
+2026-02-06 15:08:50 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_150850.csv
+2026-02-06 15:10:17 - database - INFO - info:69 - Database initialized | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/data/mom_data.db
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=BMW Southpoint | url=https://www.bmwsouthpoint.com/ | id=1548
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Honda Indian Trail | url=https://www.hondaofindiantrail.com/ | id=1549
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Nissan of Hendersonville | url=https://www.nissanofhendersonville.com/ | id=1550
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Peoria Toyota | url=https://www.peoriatoyota.com/ | id=1551
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Lindsay Buick GMC | url=https://www.lindsaybuickgmctruck.com/ | id=1552
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Myrtle Beach Chrysler Jeep | url=https://www.myrtlebeachchryslerjeep.net/ | id=1553
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Honda Cars of Aiken | url=https://www.hondacarsofaiken.com/ | id=1554
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Stevenson-Hendrick Toyota Jacksonville | url=https://www.stevensonhendricktoyota.com/ | id=1555
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Dodge RAM Cary | url=https://www.hendrickdodge.com/ | id=1556
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Keffer Mazda | url=https://www.keffermazda.com/ | id=1557
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Parks Motors | url=https://www.parksmotors.com/ | id=1558
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Naples | url=https://www.rickhendrickchevynaples.com/ | id=1559
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Joe Cooper Dodge Jeep Shawnee | url=https://joecooperdodgejeep.com/ | id=1560
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Joe Cooper Ford Edmond | url=https://joecooperfordedmond.com/ | id=1561
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Joe Cooper Ford Shawnee | url=https://joecooperfordshawnee.com/ | id=1562
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Audi Northlake | url=https://www.audinorthlake.com/ | id=1563
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=JT's Chrysler Dodge Jeep Ram of Lexington | url=https://www.jtschryslerdodgejeepram.com/ | id=1564
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=JT's Dodgeland of Columbia | url=https://jtscdjrofcolumbia.com/ | id=1565
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=JTs Kia of Rock Hill | url=https://www.jtskiarockhill.com/ | id=1566
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Team Chevrolet of Goldsboro | url=https://www.teamgoldsboro.com/ | id=1567
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Team Chevrolet of Swansboro | url=https://www.teamswansboro.com/ | id=1568
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Team Chrysler Dodge Ram of Morganton | url=https://www.teammorganton.com/ | id=1569
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Team Dodge Ram Fiat Myrtle Beach | url=https://www.teamdodgeramsc.com/ | id=1570
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Parks Chevrolet Huntersville | url=https://www.parkschevrolethuntersville.com/ | id=1571
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=McSweeney Chevrolet GMC | url=https://www.mcsweeneychevygmc.com/ | id=1572
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=McSweeney Chrysler Dodge Jeep Ram - Clanton | url=https://www.mcsweeneycdjr.com/ | id=1573
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=McSweeney Chrysler Dodge Jeep Ram - Pell City | url=https://www.mcsweeneychryslerdodgejeepram.com/ | id=1574
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Independence Mazda | url=https://www.independencemazda.com/ | id=1575
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Shawnee Mission | url=https://www.chevyusa.com/ | id=1576
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Chrysler Dodge Jeep Ram Hoover | url=https://www.hendrickchryslerdodgejeepram.com/ | id=1577
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Hoover | url=https://www.hendrickchevroletbirmingham.com/ | id=1578
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Duluth | url=https://www.hendrickatlanta.com/ | id=1579
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet of Buford | url=https://www.hendrickbuford.com/ | id=1580
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Lake Norman Chrysler Dodge Jeep Ram | url=https://www.lakenormanchrysler.com/ | id=1581
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Mall of Georgia Mazda | url=https://www.mallofgamazda.com/ | id=1582
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Mall of Georgia MINI | url=https://www.mallofgamini.com/ | id=1583
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Honda Cars of McKinney | url=https://www.hondacarsofmckinney.com/ | id=1584
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Audi South Austin | url=https://www.audisouthaustin.com/ | id=1585
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Gwinnett Place Honda | url=https://www.gphonda.com/ | id=1586
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Honda South Blvd | url=https://www.hendrickhonda.com/ | id=1587
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick Chrysler Dodge Jeep Ram Duluth | url=https://www.hendrickcdjratlanta.com/ | id=1588
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Volkswagen of Concord | url=https://www.hendrickvwofconcord.com/ | id=1589
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Priority Honda Hampton | url=https://www.priorityhondahampton.com/ | id=1590
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=South Strand Chrysler Dodge Jeep Ram | url=https://www.southstrandchrysler.com/ | id=1591
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Beach Chevrolet | url=https://www.thebeachchevrolet.com/ | id=1592
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Jackie Cooper Nissan | url=https://jackiecoopernissan.com/ | id=1593
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Daytona Infiniti | url=https://www.daytonainfiniti.com/ | id=1594
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Daytona Nissan | url=https://www.daytonanissan.com/ | id=1595
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Gary Yeomans Honda | url=https://www.garyyeomanshonda.com/ | id=1596
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Kelly Volkswagen | url=https://www.kelly-vw.com/ | id=1597
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Kelly Honda | url=https://www.kelly-honda.com/ | id=1598
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Kelly Nissan of Lynnfield | url=https://www.kellynissanoflynnfield.com/ | id=1599
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Kelly Nissan of Woburn | url=https://www.kellynissanofwoburn.com/ | id=1600
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Kelly Infiniti | url=https://www.kellyinfiniti.com/ | id=1601
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Priority Infiniti Greenbrier | url=https://www.priorityinfiniti.com/ | id=1602
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Glanzmann Subaru | url=https://www.glanzmann.com/ | id=1603
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=BMW Charlotte | url=https://www.hendrickbmwcharlotte.com/ | id=1604
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=BMW Northlake | url=https://www.hendrickbmwnorthlake.com/ | id=1605
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=BMW of Kansas City South | url=https://www.bmwofkansascitysouth.com/ | id=1606
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=BMW South Austin | url=https://www.bmwofsouthaustin.com/ | id=1607
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=East Bay BMW | url=https://www.eastbaybmw.com/ | id=1608
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick MINI Charlotte | url=https://www.hendrickmini.com/ | id=1609
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=BMW of McKinney | url=https://www.bmwofmckinney.com/ | id=1610
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Patriot Chevrolet GMC | url=https://www.patriotchevroletgmc.com/ | id=1611
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Honda of Bridgewater | url=https://www.hondabridgewater.com/ | id=1612
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Cary | url=https://www.hendrickchevrolet.com/ | id=1613
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Kia of Concord | url=https://www.hendrickkiaofconcord.com/ | id=1614
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Subaru Southpoint | url=https://www.subarusouthpoint.com/ | id=1615
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick Chrysler Dodge Jeep Ram Fiat Wilmington | url=https://www.hendrickjeepwilmington.com/ | id=1616
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick CDJR of Concord | url=https://www.hendrickchryslerdodgejeepramofconcord.com/ | id=1617
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Jeff Gordon Chevrolet | url=https://www.jeffgordonchevy.com/ | id=1618
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Monroe Nissan | url=https://www.monroenissan.com/ | id=1619
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Ford of Elizabethton | url=https://www.fordofelizabethton.com/ | id=1620
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Gary Yeomans Lincoln Ocala | url=https://www.garyyeomanslincolnocala.com/ | id=1621
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Jacksonville Chrysler Dodge Jeep Ram | url=https://www.jaxcjdr.com/ | id=1622
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Mike Reichenbach Ford Lincoln | url=https://www.mikereichenbachfordflorence.com/ | id=1623
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Mike Terry Chevrolet Refugio | url=https://www.miketerrychevrolet.com/ | id=1624
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Priority Chevrolet Chesapeake | url=https://www.prioritychevrolet.com/ | id=1625
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Crews Chevrolet | url=https://www.crewschevrolet.com/ | id=1626
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Cronic Nissan | url=https://www.cronicnissan.net/ | id=1627
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Daytona Mazda | url=https://www.daytonamazda.com/ | id=1628
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hoover Chrysler Dodge Jeep Ram Summerville | url=https://www.hooverjeepchrysler.net/ | id=1629
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Keith Hawthorne Hyundai of Gastonia | url=https://www.hyundaiofgastonia.com/ | id=1630
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Mike Terry Ford Mexia | url=https://www.miketerryford.com/ | id=1631
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Mike Terry Hyundai of Silsbee | url=https://www.miketerryhyundai.com/ | id=1632
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Nissan of Bay Shore | url=https://www.nissanofbayshore.com/ | id=1633
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=North Knoxville CDJR | url=https://www.northknoxcdjr.com/ | id=1634
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Owen Ford Jarratt | url=https://www.owenford.com/ | id=1635
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Secret City Chrysler Dodge Jeep Ram | url=https://www.secretcitycdjr.com/ | id=1636
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Stone Mountain Honda | url=https://www.hondaofstonemountain.com/ | id=1637
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Ted Russell Lincoln | url=https://www.tedrusselllincoln.net/ | id=1638
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Victory Chrysler Dodge Jeep Ram | url=https://www.victoryshallotte.com/ | id=1639
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Volunteer Auto Group | url=https://www.volauto.com/ | id=1640
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=VW of Huntington | url=https://www.vwofhuntington.com/ | id=1641
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Toyota Apex | url=https://www.hendricktoyotaapex.com/ | id=1642
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Toyota Merriam | url=https://www.hendricktoyotamerriam.com/ | id=1643
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Toyota North Charleston | url=https://www.hendricktoyotanorthcharleston.com/ | id=1644
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=JT's Kia of Columbia | url=https://www.jtskia.com/ | id=1645
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=JT's Kia of Columbia - Greystone | url=https://www.kiacolumbia.com/ | id=1646
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick Toyota of Fayetteville | url=https://www.rickhendricktoyota.com/ | id=1647
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Toyota of Wilmington | url=https://www.toyotaofwilmington.com/ | id=1648
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=George's Used Cars | url=https://www.georgesapproval.com/ | id=1649
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Auto Gallery Ford | url=https://www.autogalleryford.com/ | id=1650
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Buick GMC | url=https://www.daleearnhardtjrbuickgmc.com/ | id=1651
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Chevrolet | url=https://www.daleearnhardtjrchevy.com/ | id=1652
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Dave Smith CDA | url=https://www.davesmithcda.com/ | id=1653
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Frankfort | url=https://www.frankfortford.com/ | id=1654
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Knoxville | url=https://www.garyyeomansfordknoxville.com/ | id=1655
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Ocala | url=https://www.garyyeomansfordocala.com/ | id=1656
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Villages | url=https://www.garyyeomansfordvillages.com/ | id=1657
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Gary Yeomans PreOwned Supercenter | url=https://www.garyyeomansusedcars.com/ | id=1658
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Gastonia Chrysler Dodge Jeep Ram | url=https://www.gastoniadodge.com/ | id=1659
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Buick GMC Southpoint | url=https://www.hendrickgmsouthpoint.com/ | id=1660
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Columbia | url=https://www.hendrickchevroletcolumbia.com/ | id=1661
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Chrysler Jeep Fiat Fayetteville | url=https://www.hendrickchryslerjeep.com/ | id=1662
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick GMC Columbia | url=https://www.hendrickgmccolumbia.com/ | id=1663
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick KIA of Cary | url=https://www.hendrickkia.com/ | id=1664
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Toyota Concord | url=https://www.hendricktoyotaconcord.com/ | id=1665
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hyundai of Asheville | url=https://www.hyundaiofasheville.com/ | id=1666
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Parks Buick GMC Kernersville | url=https://www.parksgmckernersville.com/ | id=1667
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Parks Chevrolet Kernersville | url=https://www.parkschevy.com/ | id=1668
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Parks Chevrolet Spartanburg | url=https://www.parkschevroletspartanburg.com/ | id=1669
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Parks Ford Hendersonville | url=https://www.parksfordhendersonville.com/ | id=1670
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick Buick GMC Duluth | url=https://www.rickhendrickbuickgmcatlanta.com/ | id=1671
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick CDJRF of North Charleston | url=https://www.jeephendrick.com/ | id=1672
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Buick GMC Richmond | url=https://www.hendrickchevybuickgmcrichmond.com/ | id=1673
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Charleston | url=https://www.rickhendrickchevy.com/ | id=1674
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Norfolk | url=https://www.rickhendrickchevroletnorfolk.com/ | id=1675
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick DCJR Charleston | url=https://www.rickhendrickdodge.com/ | id=1676
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick Toyota Sandy Springs | url=https://www.rickhendricktoyotasandysprings.com/ | id=1677
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Stevenson Hendrick Mazda | url=https://www.stevensonhendrickmazda.com/ | id=1678
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Stokes Hodges Ford | url=https://www.stokeshodgesford.com/ | id=1679
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Ted Russell Ford | url=https://www.tedrussellford.net/ | id=1680
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Terry Labonte Chevrolet | url=https://www.terrylabontechevy.com/ | id=1681
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Volkswagen of Murrieta | url=https://www.vwofmurrieta.com/ | id=1682
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Madison Honda | url=https://www.madisonhonda.com/ | id=1683
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Mathews Honda of Paris | url=https://www.hondaofparis.net/ | id=1684
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Mathews Nissan of Paris | url=https://www.parisnissan.com/ | id=1685
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Jackie Cooper Infiniti | url=https://jackiecooperinfiniti.com/ | id=1686
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Jackie Cooper Mercedes | url=https://jackiecoopermercedes.com/ | id=1687
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Joe Cooper Chevrolet | url=https://joecooperchevroletcadillacgmc.com/ | id=1688
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Joe Cooper Dodge of Yukon | url=https://joecooperdodgeyukon.com/ | id=1689
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Joe Cooper Ford of Yukon | url=https://joecooperfordyukon.com/ | id=1690
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Joe Cooper Hyundai of Midwest City | url=https://joecooperhyundai.com/ | id=1691
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Buick GMC Cary | url=https://www.hendrickbuickgmccary.com/ | id=1692
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Nissan of Garden City | url=https://www.nissanofgardencity.com/ | id=1693
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Joe Cooper Lincoln of Edmond | url=https://joecooperlincoln.com/ | id=1694
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Covert Country Hutto | url=https://www.covertchevyhutto.com/ | id=1695
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Fort Mill Hyundai | url=https://www.fortmillhyundai.com/ | id=1696
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Honda Cars of Rock Hill | url=https://www.hondacarsrockhill.com/ | id=1697
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Gastonia Chevrolet Buick GMC Cadillac | url=https://www.gastoniachevroletbuickgmc.com/ | id=1698
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Nissan  of  Rockville  Centre | url=https://www.nissanofrockvillecentre.com/ | id=1699
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Covert Ford of Hutto | url=https://www.covertfordhutto.com/ | id=1700
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Granbury Nissan | url=https://www.granburynissan.com/ | id=1701
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Volkswagen Frisco | url=https://www.hendrickvwfrisco.com/ | id=1702
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Team Chevrolet GMC Salisbury | url=https://www.teamchevync.com/ | id=1703
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Kimberly Eakin Kia | url=https://www.kimberlyeakinkia.com/ | id=1704
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Nissan of Huntington | url=https://www.nissanofhuntington.com/ | id=1705
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Terry Lambert Hyundai | url=https://www.terrylamberthyundai.com/ | id=1706
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Chrysler Dodge Jeep Ram of Elizabethton | url=https://www.nagcdjr.com/ | id=1707
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Honda of Huntersville | url=https://www.hondahuntersville.com/ | id=1708
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Parks Buick GMC Greenville | url=https://www.parksbuickgmc.com/ | id=1709
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Stokes Hodges Kia | url=https://www.stokeshodgeskia.com/ | id=1710
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Darrell Waltrip Honda | url=https://www.darrellwaltriphonda.com/ | id=1711
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Honda Bradenton | url=https://www.hendrickhondabradenton.com/ | id=1712
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Honda Hickory | url=https://www.hendrickhondahickory.com/ | id=1713
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Honda of Concord | url=https://www.hondaofconcord.com/ | id=1714
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Subaru Hoover | url=https://www.hendricksubaruhoover.com/ | id=1715
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Cadillac | url=https://www.daleearnhardtjrcadillac.com/ | id=1716
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Honda Easley | url=https://www.hendrickhondasc.com/ | id=1717
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Honda of Charleston | url=https://www.charlestonhonda.com/ | id=1718
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Honda of Newnan | url=https://www.hondaofnewnan.com/ | id=1719
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Reggie Jackson Airport Honda | url=https://www.reggiejacksonairporthonda.com/ | id=1720
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick Honda | url=https://www.rickhendrickhonda.com/ | id=1721
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Stevenson-Hendrick Honda Jacksonville | url=https://www.stevensonhendrickhondajacksonville.com/ | id=1722
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Barbour Hendrick Honda | url=https://www.barbourhendrickhonda.com/ | id=1723
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Darrell Waltrip Buick GMC | url=https://www.darrellwaltripbuickgmc.com/ | id=1724
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Darrell Waltrip Subaru | url=https://www.darrellwaltripsubaru.com/ | id=1725
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick Cadillac Norfolk | url=https://www.rickhendrickcadillacnorfolk.com/ | id=1726
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Toyota Knoxville | url=https://www.toyotaknoxville.com/ | id=1727
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Toyota of Murfreesboro | url=https://www.toyotaofmurfreesboro.com/ | id=1728
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Volvo Cars of Charleston | url=https://www.hendrickvolvocars.com/ | id=1729
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Acura Charlotte | url=https://www.hendrickacura.com/ | id=1730
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=865 Autos LLC | url=https://www.865autos.com/ | id=1731
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Circle Subaru | url=https://www.circlesubaru.com/ | id=1732
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Ford of Cookeville | url=https://www.fordlincolnofcookeville.com/ | id=1733
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Mercedes-Benz of San Antonio | url=https://www.mbofsa.com/ | id=1734
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rusty Wallace Kia Alcoa | url=https://www.rustywallacekiaalcoa.com/ | id=1735
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Lilliston Ford | url=https://www.lillistonford.com/ | id=1736
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Paul Miller Ford | url=https://www.paulmillerford.com/ | id=1737
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Greenwood Ford | url=https://www.greenwoodford.com/ | id=1738
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Greenwood Lincoln | url=https://www.greenwoodlincoln.com/ | id=1739
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Lilliston Chrysler Dodge Jeep Ram | url=https://www.lillistonchryslerdodgejeep.com/ | id=1740
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Allen Chevrolet | url=https://www.allenchevy.com/ | id=1741
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Bay Ridge Subaru | url=https://www.brooklynsubarudeals.com/ | id=1742
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Circle Jeep | url=https://www.circlejeep.com/ | id=1743
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Sands Chrysler Dodge Jeep Ram | url=https://www.sandschryslerjeepdodge.net/ | id=1744
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Nissan of Richmond | url=https://www.nissanrva.com/ | id=1745
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Freehold Ford | url=https://www.freeholdford.com/ | id=1746
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Parks Chevrolet Charlotte | url=https://www.parkscharlotte.com/ | id=1747
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Parks Chevrolet Richmond | url=https://www.parksrichmond.com/ | id=1748
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Paul Miller Auto Outlet | url=https://www.paulmillerauto.com/ | id=1749
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Paul Miller Mazda | url=https://www.paulmillermazda.com/ | id=1750
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Lake Norman Hyundai | url=https://www.lakenormanhyundai.com/ | id=1751
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Mike Terry Chevrolet GMC | url=https://www.mterryautogroup.com/ | id=1752
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Octane Buick GMC of Santa Fe | url=https://www.octanegmc.com/ | id=1753
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Cadillac Monroe | url=https://www.hendrickcadillacmonroe.com/ | id=1754
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Monroe | url=https://www.hendrickchevroletmonroe.com/ | id=1755
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Rick Hendrick City Chevrolet | url=https://www.citychevrolet.com/ | id=1756
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Serra Honda Brighton | url=https://www.serrahondabrighton.com/ | id=1757
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Family Nissan | url=https://www.nissanfamily.com/ | id=1758
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Stokes Chevrolet of Moncks Corner | url=https://www.stokeschevy.com/ | id=1759
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Gary Yeomans Lincoln Daytona Beach | url=https://www.garyyeomanslincoln.com/ | id=1760
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Gary Yeoman's Ford Daytona Beach | url=https://www.garyyeomansford.com/ | id=1761
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Gary Yeoman's Palm Bay Ford | url=https://www.palmbayford.com/ | id=1762
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Acura of Pleasanton | url=https://www.acuraofpleasanton.com/ | id=1763
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Hendrick Acura Southpoint | url=https://www.acurasouthpoint.com/ | id=1764
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=Stevenson Hendrick Honda Wilmington | url=https://www.stevensonhendrickhonda.com/ | id=1765
+2026-02-06 15:10:17 - database - INFO - info:69 - Site added | client=East Charlotte Nissan | url=https://www.eastcharlottenissan.com/ | id=1766
+2026-02-06 15:10:17 - database - INFO - info:69 - Imported sites from DataFrame | count=219
+2026-02-06 15:10:17 - tabs.manager_tab - INFO - info:69 - Data synced to database | records=219
+2026-02-06 15:10:21 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-06 15:10:21 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-06 15:10:21 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-06 15:10:21 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-06 15:10:31 - logger - INFO - info:69 - Logging system initialized
+2026-02-06 15:10:31 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-06 15:10:31 - __main__ - INFO - info:69 - Loading last manual save | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-06_15-10-test.csv
+2026-02-06 15:10:31 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-06_15-10-test.csv
+2026-02-06 15:15:31 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_151531.csv
+2026-02-06 15:20:31 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_152031.csv
+2026-02-06 15:25:31 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_152531.csv
+2026-02-06 15:30:31 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_153031.csv
+2026-02-06 15:35:31 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_153531.csv
+2026-02-06 15:40:31 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_154031.csv
+2026-02-06 15:45:31 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_154531.csv
+2026-02-06 15:50:31 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_155031.csv
+2026-02-06 15:55:31 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_155531.csv
+2026-02-06 16:00:31 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_160031.csv
+2026-02-06 16:02:36 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-06 16:02:41 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-06 16:03:10 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-06 16:03:16 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-06 16:03:18 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-06 16:04:53 - database - INFO - info:69 - Database initialized | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/data/mom_data.db
+2026-02-06 16:04:53 - database - INFO - info:69 - Site added | client=BMW Southpoint | url=https://www.bmwsouthpoint.com/ | id=1767
+2026-02-06 16:04:53 - database - INFO - info:69 - Site added | client=Lindsay Buick GMC | url=https://www.lindsaybuickgmctruck.com/ | id=1768
+2026-02-06 16:04:53 - database - INFO - info:69 - Site added | client=Team Chevrolet of Goldsboro | url=https://www.teamgoldsboro.com/ | id=1769
+2026-02-06 16:04:53 - database - INFO - info:69 - Site added | client=Patriot Chevrolet GMC | url=https://www.patriotchevroletgmc.com/ | id=1770
+2026-02-06 16:04:53 - database - INFO - info:69 - Site added | client=Honda of Bridgewater | url=https://www.hondabridgewater.com/ | id=1771
+2026-02-06 16:04:53 - database - INFO - info:69 - Site added | client=Covert Country Hutto | url=https://www.covertchevyhutto.com/ | id=1772
+2026-02-06 16:04:53 - database - INFO - info:69 - Site added | client=Fort Mill Hyundai | url=https://www.fortmillhyundai.com/ | id=1773
+2026-02-06 16:04:53 - database - INFO - info:69 - Site added | client=865 Autos LLC | url=https://www.865autos.com/ | id=1774
+2026-02-06 16:04:53 - database - INFO - info:69 - Site added | client=Lilliston Ford | url=https://www.lillistonford.com/ | id=1775
+2026-02-06 16:04:53 - database - INFO - info:69 - Site added | client=Paul Miller Ford | url=https://www.paulmillerford.com/ | id=1776
+2026-02-06 16:04:53 - database - INFO - info:69 - Site added | client=Honda Indian Trail | url=https://www.hondaofindiantrail.com/ | id=1777
+2026-02-06 16:04:53 - database - INFO - info:69 - Site added | client=Nissan of Hendersonville | url=https://www.nissanofhendersonville.com/ | id=1778
+2026-02-06 16:04:53 - database - INFO - info:69 - Site added | client=Peoria Toyota | url=https://www.peoriatoyota.com/ | id=1779
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Myrtle Beach Chrysler Jeep | url=https://www.myrtlebeachchryslerjeep.net/ | id=1780
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Honda Cars of Aiken | url=https://www.hondacarsofaiken.com/ | id=1781
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Stevenson-Hendrick Toyota Jacksonville | url=https://www.stevensonhendricktoyota.com/ | id=1782
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Dodge RAM Cary | url=https://www.hendrickdodge.com/ | id=1783
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Keffer Mazda | url=https://www.keffermazda.com/ | id=1784
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Parks Motors | url=https://www.parksmotors.com/ | id=1785
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Naples | url=https://www.rickhendrickchevynaples.com/ | id=1786
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Joe Cooper Dodge Jeep Shawnee | url=https://joecooperdodgejeep.com/ | id=1787
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Joe Cooper Ford Edmond | url=https://joecooperfordedmond.com/ | id=1788
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Joe Cooper Ford Shawnee | url=https://joecooperfordshawnee.com/ | id=1789
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Audi Northlake | url=https://www.audinorthlake.com/ | id=1790
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=JT's Chrysler Dodge Jeep Ram of Lexington | url=https://www.jtschryslerdodgejeepram.com/ | id=1791
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=JT's Dodgeland of Columbia | url=https://jtscdjrofcolumbia.com/ | id=1792
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=JTs Kia of Rock Hill | url=https://www.jtskiarockhill.com/ | id=1793
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Team Chevrolet of Swansboro | url=https://www.teamswansboro.com/ | id=1794
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Team Chrysler Dodge Ram of Morganton | url=https://www.teammorganton.com/ | id=1795
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Team Dodge Ram Fiat Myrtle Beach | url=https://www.teamdodgeramsc.com/ | id=1796
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Parks Chevrolet Huntersville | url=https://www.parkschevrolethuntersville.com/ | id=1797
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=McSweeney Chevrolet GMC | url=https://www.mcsweeneychevygmc.com/ | id=1798
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=McSweeney Chrysler Dodge Jeep Ram - Clanton | url=https://www.mcsweeneycdjr.com/ | id=1799
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=McSweeney Chrysler Dodge Jeep Ram - Pell City | url=https://www.mcsweeneychryslerdodgejeepram.com/ | id=1800
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Independence Mazda | url=https://www.independencemazda.com/ | id=1801
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Shawnee Mission | url=https://www.chevyusa.com/ | id=1802
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Chrysler Dodge Jeep Ram Hoover | url=https://www.hendrickchryslerdodgejeepram.com/ | id=1803
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Hoover | url=https://www.hendrickchevroletbirmingham.com/ | id=1804
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Duluth | url=https://www.hendrickatlanta.com/ | id=1805
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet of Buford | url=https://www.hendrickbuford.com/ | id=1806
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Lake Norman Chrysler Dodge Jeep Ram | url=https://www.lakenormanchrysler.com/ | id=1807
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Mall of Georgia Mazda | url=https://www.mallofgamazda.com/ | id=1808
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Mall of Georgia MINI | url=https://www.mallofgamini.com/ | id=1809
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Honda Cars of McKinney | url=https://www.hondacarsofmckinney.com/ | id=1810
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Audi South Austin | url=https://www.audisouthaustin.com/ | id=1811
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Gwinnett Place Honda | url=https://www.gphonda.com/ | id=1812
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Honda South Blvd | url=https://www.hendrickhonda.com/ | id=1813
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick Chrysler Dodge Jeep Ram Duluth | url=https://www.hendrickcdjratlanta.com/ | id=1814
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Volkswagen of Concord | url=https://www.hendrickvwofconcord.com/ | id=1815
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Priority Honda Hampton | url=https://www.priorityhondahampton.com/ | id=1816
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=South Strand Chrysler Dodge Jeep Ram | url=https://www.southstrandchrysler.com/ | id=1817
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Beach Chevrolet | url=https://www.thebeachchevrolet.com/ | id=1818
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Jackie Cooper Nissan | url=https://jackiecoopernissan.com/ | id=1819
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Daytona Infiniti | url=https://www.daytonainfiniti.com/ | id=1820
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Daytona Nissan | url=https://www.daytonanissan.com/ | id=1821
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Gary Yeomans Honda | url=https://www.garyyeomanshonda.com/ | id=1822
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Kelly Volkswagen | url=https://www.kelly-vw.com/ | id=1823
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Kelly Honda | url=https://www.kelly-honda.com/ | id=1824
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Kelly Nissan of Lynnfield | url=https://www.kellynissanoflynnfield.com/ | id=1825
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Kelly Nissan of Woburn | url=https://www.kellynissanofwoburn.com/ | id=1826
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Kelly Infiniti | url=https://www.kellyinfiniti.com/ | id=1827
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Priority Infiniti Greenbrier | url=https://www.priorityinfiniti.com/ | id=1828
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Glanzmann Subaru | url=https://www.glanzmann.com/ | id=1829
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=BMW Charlotte | url=https://www.hendrickbmwcharlotte.com/ | id=1830
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=BMW Northlake | url=https://www.hendrickbmwnorthlake.com/ | id=1831
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=BMW of Kansas City South | url=https://www.bmwofkansascitysouth.com/ | id=1832
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=BMW South Austin | url=https://www.bmwofsouthaustin.com/ | id=1833
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=East Bay BMW | url=https://www.eastbaybmw.com/ | id=1834
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick MINI Charlotte | url=https://www.hendrickmini.com/ | id=1835
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=BMW of McKinney | url=https://www.bmwofmckinney.com/ | id=1836
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Cary | url=https://www.hendrickchevrolet.com/ | id=1837
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Kia of Concord | url=https://www.hendrickkiaofconcord.com/ | id=1838
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Subaru Southpoint | url=https://www.subarusouthpoint.com/ | id=1839
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick Chrysler Dodge Jeep Ram Fiat Wilmington | url=https://www.hendrickjeepwilmington.com/ | id=1840
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick CDJR of Concord | url=https://www.hendrickchryslerdodgejeepramofconcord.com/ | id=1841
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Jeff Gordon Chevrolet | url=https://www.jeffgordonchevy.com/ | id=1842
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Monroe Nissan | url=https://www.monroenissan.com/ | id=1843
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Ford of Elizabethton | url=https://www.fordofelizabethton.com/ | id=1844
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Gary Yeomans Lincoln Ocala | url=https://www.garyyeomanslincolnocala.com/ | id=1845
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Jacksonville Chrysler Dodge Jeep Ram | url=https://www.jaxcjdr.com/ | id=1846
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Mike Reichenbach Ford Lincoln | url=https://www.mikereichenbachfordflorence.com/ | id=1847
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Mike Terry Chevrolet Refugio | url=https://www.miketerrychevrolet.com/ | id=1848
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Priority Chevrolet Chesapeake | url=https://www.prioritychevrolet.com/ | id=1849
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Crews Chevrolet | url=https://www.crewschevrolet.com/ | id=1850
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Cronic Nissan | url=https://www.cronicnissan.net/ | id=1851
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Daytona Mazda | url=https://www.daytonamazda.com/ | id=1852
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hoover Chrysler Dodge Jeep Ram Summerville | url=https://www.hooverjeepchrysler.net/ | id=1853
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Keith Hawthorne Hyundai of Gastonia | url=https://www.hyundaiofgastonia.com/ | id=1854
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Mike Terry Ford Mexia | url=https://www.miketerryford.com/ | id=1855
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Mike Terry Hyundai of Silsbee | url=https://www.miketerryhyundai.com/ | id=1856
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Nissan of Bay Shore | url=https://www.nissanofbayshore.com/ | id=1857
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=North Knoxville CDJR | url=https://www.northknoxcdjr.com/ | id=1858
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Owen Ford Jarratt | url=https://www.owenford.com/ | id=1859
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Secret City Chrysler Dodge Jeep Ram | url=https://www.secretcitycdjr.com/ | id=1860
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Stone Mountain Honda | url=https://www.hondaofstonemountain.com/ | id=1861
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Ted Russell Lincoln | url=https://www.tedrusselllincoln.net/ | id=1862
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Victory Chrysler Dodge Jeep Ram | url=https://www.victoryshallotte.com/ | id=1863
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Volunteer Auto Group | url=https://www.volauto.com/ | id=1864
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=VW of Huntington | url=https://www.vwofhuntington.com/ | id=1865
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Toyota Apex | url=https://www.hendricktoyotaapex.com/ | id=1866
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Toyota Merriam | url=https://www.hendricktoyotamerriam.com/ | id=1867
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Toyota North Charleston | url=https://www.hendricktoyotanorthcharleston.com/ | id=1868
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=JT's Kia of Columbia | url=https://www.jtskia.com/ | id=1869
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=JT's Kia of Columbia - Greystone | url=https://www.kiacolumbia.com/ | id=1870
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick Toyota of Fayetteville | url=https://www.rickhendricktoyota.com/ | id=1871
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Toyota of Wilmington | url=https://www.toyotaofwilmington.com/ | id=1872
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=George's Used Cars | url=https://www.georgesapproval.com/ | id=1873
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Auto Gallery Ford | url=https://www.autogalleryford.com/ | id=1874
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Buick GMC | url=https://www.daleearnhardtjrbuickgmc.com/ | id=1875
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Chevrolet | url=https://www.daleearnhardtjrchevy.com/ | id=1876
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Dave Smith CDA | url=https://www.davesmithcda.com/ | id=1877
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Frankfort | url=https://www.frankfortford.com/ | id=1878
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Knoxville | url=https://www.garyyeomansfordknoxville.com/ | id=1879
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Ocala | url=https://www.garyyeomansfordocala.com/ | id=1880
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Villages | url=https://www.garyyeomansfordvillages.com/ | id=1881
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Gary Yeomans PreOwned Supercenter | url=https://www.garyyeomansusedcars.com/ | id=1882
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Gastonia Chrysler Dodge Jeep Ram | url=https://www.gastoniadodge.com/ | id=1883
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Buick GMC Southpoint | url=https://www.hendrickgmsouthpoint.com/ | id=1884
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Columbia | url=https://www.hendrickchevroletcolumbia.com/ | id=1885
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Chrysler Jeep Fiat Fayetteville | url=https://www.hendrickchryslerjeep.com/ | id=1886
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick GMC Columbia | url=https://www.hendrickgmccolumbia.com/ | id=1887
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick KIA of Cary | url=https://www.hendrickkia.com/ | id=1888
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Toyota Concord | url=https://www.hendricktoyotaconcord.com/ | id=1889
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hyundai of Asheville | url=https://www.hyundaiofasheville.com/ | id=1890
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Parks Buick GMC Kernersville | url=https://www.parksgmckernersville.com/ | id=1891
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Parks Chevrolet Kernersville | url=https://www.parkschevy.com/ | id=1892
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Parks Chevrolet Spartanburg | url=https://www.parkschevroletspartanburg.com/ | id=1893
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Parks Ford Hendersonville | url=https://www.parksfordhendersonville.com/ | id=1894
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick Buick GMC Duluth | url=https://www.rickhendrickbuickgmcatlanta.com/ | id=1895
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick CDJRF of North Charleston | url=https://www.jeephendrick.com/ | id=1896
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Buick GMC Richmond | url=https://www.hendrickchevybuickgmcrichmond.com/ | id=1897
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Charleston | url=https://www.rickhendrickchevy.com/ | id=1898
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Norfolk | url=https://www.rickhendrickchevroletnorfolk.com/ | id=1899
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick DCJR Charleston | url=https://www.rickhendrickdodge.com/ | id=1900
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick Toyota Sandy Springs | url=https://www.rickhendricktoyotasandysprings.com/ | id=1901
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Stevenson Hendrick Mazda | url=https://www.stevensonhendrickmazda.com/ | id=1902
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Stokes Hodges Ford | url=https://www.stokeshodgesford.com/ | id=1903
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Ted Russell Ford | url=https://www.tedrussellford.net/ | id=1904
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Terry Labonte Chevrolet | url=https://www.terrylabontechevy.com/ | id=1905
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Volkswagen of Murrieta | url=https://www.vwofmurrieta.com/ | id=1906
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Madison Honda | url=https://www.madisonhonda.com/ | id=1907
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Mathews Honda of Paris | url=https://www.hondaofparis.net/ | id=1908
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Mathews Nissan of Paris | url=https://www.parisnissan.com/ | id=1909
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Jackie Cooper Infiniti | url=https://jackiecooperinfiniti.com/ | id=1910
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Jackie Cooper Mercedes | url=https://jackiecoopermercedes.com/ | id=1911
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Joe Cooper Chevrolet | url=https://joecooperchevroletcadillacgmc.com/ | id=1912
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Joe Cooper Dodge of Yukon | url=https://joecooperdodgeyukon.com/ | id=1913
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Joe Cooper Ford of Yukon | url=https://joecooperfordyukon.com/ | id=1914
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Joe Cooper Hyundai of Midwest City | url=https://joecooperhyundai.com/ | id=1915
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Buick GMC Cary | url=https://www.hendrickbuickgmccary.com/ | id=1916
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Nissan of Garden City | url=https://www.nissanofgardencity.com/ | id=1917
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Joe Cooper Lincoln of Edmond | url=https://joecooperlincoln.com/ | id=1918
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Honda Cars of Rock Hill | url=https://www.hondacarsrockhill.com/ | id=1919
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Gastonia Chevrolet Buick GMC Cadillac | url=https://www.gastoniachevroletbuickgmc.com/ | id=1920
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Nissan  of  Rockville  Centre | url=https://www.nissanofrockvillecentre.com/ | id=1921
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Covert Ford of Hutto | url=https://www.covertfordhutto.com/ | id=1922
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Granbury Nissan | url=https://www.granburynissan.com/ | id=1923
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Volkswagen Frisco | url=https://www.hendrickvwfrisco.com/ | id=1924
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Team Chevrolet GMC Salisbury | url=https://www.teamchevync.com/ | id=1925
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Kimberly Eakin Kia | url=https://www.kimberlyeakinkia.com/ | id=1926
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Nissan of Huntington | url=https://www.nissanofhuntington.com/ | id=1927
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Terry Lambert Hyundai | url=https://www.terrylamberthyundai.com/ | id=1928
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Chrysler Dodge Jeep Ram of Elizabethton | url=https://www.nagcdjr.com/ | id=1929
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Honda of Huntersville | url=https://www.hondahuntersville.com/ | id=1930
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Parks Buick GMC Greenville | url=https://www.parksbuickgmc.com/ | id=1931
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Stokes Hodges Kia | url=https://www.stokeshodgeskia.com/ | id=1932
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Darrell Waltrip Honda | url=https://www.darrellwaltriphonda.com/ | id=1933
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Honda Bradenton | url=https://www.hendrickhondabradenton.com/ | id=1934
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Honda Hickory | url=https://www.hendrickhondahickory.com/ | id=1935
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Honda of Concord | url=https://www.hondaofconcord.com/ | id=1936
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Subaru Hoover | url=https://www.hendricksubaruhoover.com/ | id=1937
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Cadillac | url=https://www.daleearnhardtjrcadillac.com/ | id=1938
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Honda Easley | url=https://www.hendrickhondasc.com/ | id=1939
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Honda of Charleston | url=https://www.charlestonhonda.com/ | id=1940
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Honda of Newnan | url=https://www.hondaofnewnan.com/ | id=1941
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Reggie Jackson Airport Honda | url=https://www.reggiejacksonairporthonda.com/ | id=1942
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick Honda | url=https://www.rickhendrickhonda.com/ | id=1943
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Stevenson-Hendrick Honda Jacksonville | url=https://www.stevensonhendrickhondajacksonville.com/ | id=1944
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Barbour Hendrick Honda | url=https://www.barbourhendrickhonda.com/ | id=1945
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Darrell Waltrip Buick GMC | url=https://www.darrellwaltripbuickgmc.com/ | id=1946
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Darrell Waltrip Subaru | url=https://www.darrellwaltripsubaru.com/ | id=1947
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick Cadillac Norfolk | url=https://www.rickhendrickcadillacnorfolk.com/ | id=1948
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Toyota Knoxville | url=https://www.toyotaknoxville.com/ | id=1949
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Toyota of Murfreesboro | url=https://www.toyotaofmurfreesboro.com/ | id=1950
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Volvo Cars of Charleston | url=https://www.hendrickvolvocars.com/ | id=1951
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Acura Charlotte | url=https://www.hendrickacura.com/ | id=1952
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Circle Subaru | url=https://www.circlesubaru.com/ | id=1953
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Ford of Cookeville | url=https://www.fordlincolnofcookeville.com/ | id=1954
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Mercedes-Benz of San Antonio | url=https://www.mbofsa.com/ | id=1955
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rusty Wallace Kia Alcoa | url=https://www.rustywallacekiaalcoa.com/ | id=1956
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Greenwood Ford | url=https://www.greenwoodford.com/ | id=1957
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Greenwood Lincoln | url=https://www.greenwoodlincoln.com/ | id=1958
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Lilliston Chrysler Dodge Jeep Ram | url=https://www.lillistonchryslerdodgejeep.com/ | id=1959
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Allen Chevrolet | url=https://www.allenchevy.com/ | id=1960
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Bay Ridge Subaru | url=https://www.brooklynsubarudeals.com/ | id=1961
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Circle Jeep | url=https://www.circlejeep.com/ | id=1962
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Sands Chrysler Dodge Jeep Ram | url=https://www.sandschryslerjeepdodge.net/ | id=1963
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Nissan of Richmond | url=https://www.nissanrva.com/ | id=1964
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Freehold Ford | url=https://www.freeholdford.com/ | id=1965
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Parks Chevrolet Charlotte | url=https://www.parkscharlotte.com/ | id=1966
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Parks Chevrolet Richmond | url=https://www.parksrichmond.com/ | id=1967
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Paul Miller Auto Outlet | url=https://www.paulmillerauto.com/ | id=1968
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Paul Miller Mazda | url=https://www.paulmillermazda.com/ | id=1969
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Lake Norman Hyundai | url=https://www.lakenormanhyundai.com/ | id=1970
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Mike Terry Chevrolet GMC | url=https://www.mterryautogroup.com/ | id=1971
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Octane Buick GMC of Santa Fe | url=https://www.octanegmc.com/ | id=1972
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Cadillac Monroe | url=https://www.hendrickcadillacmonroe.com/ | id=1973
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Monroe | url=https://www.hendrickchevroletmonroe.com/ | id=1974
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Rick Hendrick City Chevrolet | url=https://www.citychevrolet.com/ | id=1975
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Serra Honda Brighton | url=https://www.serrahondabrighton.com/ | id=1976
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Family Nissan | url=https://www.nissanfamily.com/ | id=1977
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Stokes Chevrolet of Moncks Corner | url=https://www.stokeschevy.com/ | id=1978
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Gary Yeomans Lincoln Daytona Beach | url=https://www.garyyeomanslincoln.com/ | id=1979
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Gary Yeoman's Ford Daytona Beach | url=https://www.garyyeomansford.com/ | id=1980
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Gary Yeoman's Palm Bay Ford | url=https://www.palmbayford.com/ | id=1981
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Acura of Pleasanton | url=https://www.acuraofpleasanton.com/ | id=1982
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Hendrick Acura Southpoint | url=https://www.acurasouthpoint.com/ | id=1983
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=Stevenson Hendrick Honda Wilmington | url=https://www.stevensonhendrickhonda.com/ | id=1984
+2026-02-06 16:04:54 - database - INFO - info:69 - Site added | client=East Charlotte Nissan | url=https://www.eastcharlottenissan.com/ | id=1985
+2026-02-06 16:04:54 - database - INFO - info:69 - Imported sites from DataFrame | count=219
+2026-02-06 16:04:54 - tabs.manager_tab - INFO - info:69 - Data synced to database | records=219
+2026-02-06 16:04:56 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-06 16:04:56 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-06 16:04:56 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-06 16:04:56 - uc - INFO - _ensure_close:848 - ensuring close
+2026-02-06 16:05:26 - logger - INFO - info:69 - Logging system initialized
+2026-02-06 16:05:27 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-06 16:05:27 - __main__ - INFO - info:69 - Loading last manual save | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-06_16-04-test2.csv
+2026-02-06 16:05:28 - __main__ - INFO - info:69 - Loaded last project | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/sites_2026-02-06_16-04-test2.csv
+2026-02-06 16:10:27 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_161027.csv
+2026-02-06 16:15:27 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_161527.csv
+2026-02-06 16:20:27 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_162027.csv
+2026-02-06 16:24:46 - logger - INFO - info:69 - Logging system initialized
+2026-02-06 16:24:47 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-06 16:24:47 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260206_162027.csv
+2026-02-06 16:24:47 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260206_162027.csv
+2026-02-06 16:29:46 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_162946.csv
+2026-02-06 16:34:46 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_163446.csv
+2026-02-06 16:39:46 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_163946.csv
+2026-02-06 16:44:46 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_164446.csv
+2026-02-06 16:49:46 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_164946.csv
+2026-02-06 16:54:46 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_165446.csv
+2026-02-06 16:59:46 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_165946.csv
+2026-02-06 17:04:46 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_170446.csv
+2026-02-06 17:09:46 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_170946.csv
+2026-02-06 17:14:46 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_171446.csv
+2026-02-06 17:19:46 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_171946.csv
+2026-02-06 17:24:46 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_172446.csv
+2026-02-06 17:29:46 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260206_172946.csv
+2026-02-06 17:33:09 - database - INFO - info:69 - Database initialized | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/data/mom_data.db
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Team Chevrolet of Goldsboro | url=https://www.teamgoldsboro.com/ | id=1986
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=BMW Southpoint | url=https://www.bmwsouthpoint.com/ | id=1987
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Honda of Bridgewater | url=https://www.hondabridgewater.com/ | id=1988
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Lindsay Buick GMC | url=https://www.lindsaybuickgmctruck.com/ | id=1989
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Patriot Chevrolet GMC | url=https://www.patriotchevroletgmc.com/ | id=1990
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Covert Country Hutto | url=https://www.covertchevyhutto.com/ | id=1991
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Fort Mill Hyundai | url=https://www.fortmillhyundai.com/ | id=1992
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=865 Autos LLC | url=https://www.865autos.com/ | id=1993
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Lilliston Ford | url=https://www.lillistonford.com/ | id=1994
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Paul Miller Ford | url=https://www.paulmillerford.com/ | id=1995
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Honda Indian Trail | url=https://www.hondaofindiantrail.com/ | id=1996
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Myrtle Beach Chrysler Jeep | url=https://www.myrtlebeachchryslerjeep.net/ | id=1997
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Nissan of Hendersonville | url=https://www.nissanofhendersonville.com/ | id=1998
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Peoria Toyota | url=https://www.peoriatoyota.com/ | id=1999
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Honda Cars of Aiken | url=https://www.hondacarsofaiken.com/ | id=2000
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Dodge RAM Cary | url=https://www.hendrickdodge.com/ | id=2001
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Joe Cooper Dodge Jeep Shawnee | url=https://joecooperdodgejeep.com/ | id=2002
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Joe Cooper Ford Edmond | url=https://joecooperfordedmond.com/ | id=2003
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Joe Cooper Ford Shawnee | url=https://joecooperfordshawnee.com/ | id=2004
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Keffer Mazda | url=https://www.keffermazda.com/ | id=2005
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Parks Motors | url=https://www.parksmotors.com/ | id=2006
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Naples | url=https://www.rickhendrickchevynaples.com/ | id=2007
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Stevenson-Hendrick Toyota Jacksonville | url=https://www.stevensonhendricktoyota.com/ | id=2008
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Audi Northlake | url=https://www.audinorthlake.com/ | id=2009
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=JT's Chrysler Dodge Jeep Ram of Lexington | url=https://www.jtschryslerdodgejeepram.com/ | id=2010
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=JT's Dodgeland of Columbia | url=https://jtscdjrofcolumbia.com/ | id=2011
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=JTs Kia of Rock Hill | url=https://www.jtskiarockhill.com/ | id=2012
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Team Chevrolet of Swansboro | url=https://www.teamswansboro.com/ | id=2013
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Team Chrysler Dodge Ram of Morganton | url=https://www.teammorganton.com/ | id=2014
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Team Dodge Ram Fiat Myrtle Beach | url=https://www.teamdodgeramsc.com/ | id=2015
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Parks Chevrolet Huntersville | url=https://www.parkschevrolethuntersville.com/ | id=2016
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=McSweeney Chevrolet GMC | url=https://www.mcsweeneychevygmc.com/ | id=2017
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=McSweeney Chrysler Dodge Jeep Ram - Clanton | url=https://www.mcsweeneycdjr.com/ | id=2018
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=McSweeney Chrysler Dodge Jeep Ram - Pell City | url=https://www.mcsweeneychryslerdodgejeepram.com/ | id=2019
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Independence Mazda | url=https://www.independencemazda.com/ | id=2020
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Shawnee Mission | url=https://www.chevyusa.com/ | id=2021
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Chrysler Dodge Jeep Ram Hoover | url=https://www.hendrickchryslerdodgejeepram.com/ | id=2022
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Hoover | url=https://www.hendrickchevroletbirmingham.com/ | id=2023
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Duluth | url=https://www.hendrickatlanta.com/ | id=2024
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet of Buford | url=https://www.hendrickbuford.com/ | id=2025
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Lake Norman Chrysler Dodge Jeep Ram | url=https://www.lakenormanchrysler.com/ | id=2026
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Mall of Georgia Mazda | url=https://www.mallofgamazda.com/ | id=2027
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Mall of Georgia MINI | url=https://www.mallofgamini.com/ | id=2028
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Audi South Austin | url=https://www.audisouthaustin.com/ | id=2029
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Gwinnett Place Honda | url=https://www.gphonda.com/ | id=2030
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Honda South Blvd | url=https://www.hendrickhonda.com/ | id=2031
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Honda Cars of McKinney | url=https://www.hondacarsofmckinney.com/ | id=2032
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick Chrysler Dodge Jeep Ram Duluth | url=https://www.hendrickcdjratlanta.com/ | id=2033
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Volkswagen of Concord | url=https://www.hendrickvwofconcord.com/ | id=2034
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Beach Chevrolet | url=https://www.thebeachchevrolet.com/ | id=2035
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Jackie Cooper Nissan | url=https://jackiecoopernissan.com/ | id=2036
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Priority Honda Hampton | url=https://www.priorityhondahampton.com/ | id=2037
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=South Strand Chrysler Dodge Jeep Ram | url=https://www.southstrandchrysler.com/ | id=2038
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Daytona Infiniti | url=https://www.daytonainfiniti.com/ | id=2039
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Daytona Nissan | url=https://www.daytonanissan.com/ | id=2040
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Gary Yeomans Honda | url=https://www.garyyeomanshonda.com/ | id=2041
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Kelly Volkswagen | url=https://www.kelly-vw.com/ | id=2042
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Kelly Honda | url=https://www.kelly-honda.com/ | id=2043
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Kelly Nissan of Lynnfield | url=https://www.kellynissanoflynnfield.com/ | id=2044
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Kelly Nissan of Woburn | url=https://www.kellynissanofwoburn.com/ | id=2045
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Kelly Infiniti | url=https://www.kellyinfiniti.com/ | id=2046
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Priority Infiniti Greenbrier | url=https://www.priorityinfiniti.com/ | id=2047
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Glanzmann Subaru | url=https://www.glanzmann.com/ | id=2048
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=BMW Charlotte | url=https://www.hendrickbmwcharlotte.com/ | id=2049
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=BMW Northlake | url=https://www.hendrickbmwnorthlake.com/ | id=2050
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=BMW of Kansas City South | url=https://www.bmwofkansascitysouth.com/ | id=2051
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=BMW of McKinney | url=https://www.bmwofmckinney.com/ | id=2052
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=BMW South Austin | url=https://www.bmwofsouthaustin.com/ | id=2053
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=East Bay BMW | url=https://www.eastbaybmw.com/ | id=2054
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick MINI Charlotte | url=https://www.hendrickmini.com/ | id=2055
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Auto Gallery Ford | url=https://www.autogalleryford.com/ | id=2056
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Crews Chevrolet | url=https://www.crewschevrolet.com/ | id=2057
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Cronic Nissan | url=https://www.cronicnissan.net/ | id=2058
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Buick GMC | url=https://www.daleearnhardtjrbuickgmc.com/ | id=2059
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Chevrolet | url=https://www.daleearnhardtjrchevy.com/ | id=2060
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Dave Smith CDA | url=https://www.davesmithcda.com/ | id=2061
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Daytona Mazda | url=https://www.daytonamazda.com/ | id=2062
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Ford of Elizabethton | url=https://www.fordofelizabethton.com/ | id=2063
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Frankfort | url=https://www.frankfortford.com/ | id=2064
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Knoxville | url=https://www.garyyeomansfordknoxville.com/ | id=2065
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Ocala | url=https://www.garyyeomansfordocala.com/ | id=2066
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Villages | url=https://www.garyyeomansfordvillages.com/ | id=2067
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Gary Yeomans Lincoln Ocala | url=https://www.garyyeomanslincolnocala.com/ | id=2068
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Gary Yeomans PreOwned Supercenter | url=https://www.garyyeomansusedcars.com/ | id=2069
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Gastonia Chrysler Dodge Jeep Ram | url=https://www.gastoniadodge.com/ | id=2070
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=George's Used Cars | url=https://www.georgesapproval.com/ | id=2071
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Buick GMC Cary | url=https://www.hendrickbuickgmccary.com/ | id=2072
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick CDJR of Concord | url=https://www.hendrickchryslerdodgejeepramofconcord.com/ | id=2073
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Buick GMC Southpoint | url=https://www.hendrickgmsouthpoint.com/ | id=2074
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Cary | url=https://www.hendrickchevrolet.com/ | id=2075
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Columbia | url=https://www.hendrickchevroletcolumbia.com/ | id=2076
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Chrysler Jeep Fiat Fayetteville | url=https://www.hendrickchryslerjeep.com/ | id=2077
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick GMC Columbia | url=https://www.hendrickgmccolumbia.com/ | id=2078
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick KIA of Cary | url=https://www.hendrickkia.com/ | id=2079
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Kia of Concord | url=https://www.hendrickkiaofconcord.com/ | id=2080
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Subaru Southpoint | url=https://www.subarusouthpoint.com/ | id=2081
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Toyota Apex | url=https://www.hendricktoyotaapex.com/ | id=2082
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Toyota Concord | url=https://www.hendricktoyotaconcord.com/ | id=2083
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Toyota Merriam | url=https://www.hendricktoyotamerriam.com/ | id=2084
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Toyota North Charleston | url=https://www.hendricktoyotanorthcharleston.com/ | id=2085
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hoover Chrysler Dodge Jeep Ram Summerville | url=https://www.hooverjeepchrysler.net/ | id=2086
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hyundai of Asheville | url=https://www.hyundaiofasheville.com/ | id=2087
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Jackie Cooper Infiniti | url=https://jackiecooperinfiniti.com/ | id=2088
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Jackie Cooper Mercedes | url=https://jackiecoopermercedes.com/ | id=2089
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Jacksonville Chrysler Dodge Jeep Ram | url=https://www.jaxcjdr.com/ | id=2090
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Jeff Gordon Chevrolet | url=https://www.jeffgordonchevy.com/ | id=2091
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Joe Cooper Chevrolet | url=https://joecooperchevroletcadillacgmc.com/ | id=2092
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Joe Cooper Dodge of Yukon | url=https://joecooperdodgeyukon.com/ | id=2093
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Joe Cooper Ford of Yukon | url=https://joecooperfordyukon.com/ | id=2094
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Joe Cooper Hyundai of Midwest City | url=https://joecooperhyundai.com/ | id=2095
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Joe Cooper Lincoln of Edmond | url=https://joecooperlincoln.com/ | id=2096
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=JT's Kia of Columbia | url=https://www.jtskia.com/ | id=2097
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=JT's Kia of Columbia - Greystone | url=https://www.kiacolumbia.com/ | id=2098
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Keith Hawthorne Hyundai of Gastonia | url=https://www.hyundaiofgastonia.com/ | id=2099
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Madison Honda | url=https://www.madisonhonda.com/ | id=2100
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Mathews Honda of Paris | url=https://www.hondaofparis.net/ | id=2101
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Mathews Nissan of Paris | url=https://www.parisnissan.com/ | id=2102
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Mike Reichenbach Ford Lincoln | url=https://www.mikereichenbachfordflorence.com/ | id=2103
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Mike Terry Chevrolet Refugio | url=https://www.miketerrychevrolet.com/ | id=2104
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Mike Terry Ford Mexia | url=https://www.miketerryford.com/ | id=2105
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Mike Terry Hyundai of Silsbee | url=https://www.miketerryhyundai.com/ | id=2106
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Monroe Nissan | url=https://www.monroenissan.com/ | id=2107
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Nissan of Bay Shore | url=https://www.nissanofbayshore.com/ | id=2108
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Nissan of Garden City | url=https://www.nissanofgardencity.com/ | id=2109
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=North Knoxville CDJR | url=https://www.northknoxcdjr.com/ | id=2110
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Owen Ford Jarratt | url=https://www.owenford.com/ | id=2111
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Parks Buick GMC Kernersville | url=https://www.parksgmckernersville.com/ | id=2112
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Parks Chevrolet Kernersville | url=https://www.parkschevy.com/ | id=2113
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Parks Chevrolet Spartanburg | url=https://www.parkschevroletspartanburg.com/ | id=2114
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Parks Ford Hendersonville | url=https://www.parksfordhendersonville.com/ | id=2115
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Priority Chevrolet Chesapeake | url=https://www.prioritychevrolet.com/ | id=2116
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick Buick GMC Duluth | url=https://www.rickhendrickbuickgmcatlanta.com/ | id=2117
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick CDJRF of North Charleston | url=https://www.jeephendrick.com/ | id=2118
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Buick GMC Richmond | url=https://www.hendrickchevybuickgmcrichmond.com/ | id=2119
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Charleston | url=https://www.rickhendrickchevy.com/ | id=2120
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Norfolk | url=https://www.rickhendrickchevroletnorfolk.com/ | id=2121
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick Chrysler Dodge Jeep Ram Fiat Wilmington | url=https://www.hendrickjeepwilmington.com/ | id=2122
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick DCJR Charleston | url=https://www.rickhendrickdodge.com/ | id=2123
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick Toyota of Fayetteville | url=https://www.rickhendricktoyota.com/ | id=2124
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick Toyota Sandy Springs | url=https://www.rickhendricktoyotasandysprings.com/ | id=2125
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Secret City Chrysler Dodge Jeep Ram | url=https://www.secretcitycdjr.com/ | id=2126
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Stevenson Hendrick Mazda | url=https://www.stevensonhendrickmazda.com/ | id=2127
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Stokes Hodges Ford | url=https://www.stokeshodgesford.com/ | id=2128
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Stone Mountain Honda | url=https://www.hondaofstonemountain.com/ | id=2129
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Ted Russell Ford | url=https://www.tedrussellford.net/ | id=2130
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Ted Russell Lincoln | url=https://www.tedrusselllincoln.net/ | id=2131
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Terry Labonte Chevrolet | url=https://www.terrylabontechevy.com/ | id=2132
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Toyota of Wilmington | url=https://www.toyotaofwilmington.com/ | id=2133
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Victory Chrysler Dodge Jeep Ram | url=https://www.victoryshallotte.com/ | id=2134
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Volkswagen of Murrieta | url=https://www.vwofmurrieta.com/ | id=2135
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Volunteer Auto Group | url=https://www.volauto.com/ | id=2136
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=VW of Huntington | url=https://www.vwofhuntington.com/ | id=2137
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Covert Ford of Hutto | url=https://www.covertfordhutto.com/ | id=2138
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Gastonia Chevrolet Buick GMC Cadillac | url=https://www.gastoniachevroletbuickgmc.com/ | id=2139
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Granbury Nissan | url=https://www.granburynissan.com/ | id=2140
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Volkswagen Frisco | url=https://www.hendrickvwfrisco.com/ | id=2141
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Honda Cars of Rock Hill | url=https://www.hondacarsrockhill.com/ | id=2142
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Nissan  of  Rockville  Centre | url=https://www.nissanofrockvillecentre.com/ | id=2143
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Team Chevrolet GMC Salisbury | url=https://www.teamchevync.com/ | id=2144
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Kimberly Eakin Kia | url=https://www.kimberlyeakinkia.com/ | id=2145
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Nissan of Huntington | url=https://www.nissanofhuntington.com/ | id=2146
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Terry Lambert Hyundai | url=https://www.terrylamberthyundai.com/ | id=2147
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Chrysler Dodge Jeep Ram of Elizabethton | url=https://www.nagcdjr.com/ | id=2148
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Honda of Huntersville | url=https://www.hondahuntersville.com/ | id=2149
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Parks Buick GMC Greenville | url=https://www.parksbuickgmc.com/ | id=2150
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Stokes Hodges Kia | url=https://www.stokeshodgeskia.com/ | id=2151
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Barbour Hendrick Honda | url=https://www.barbourhendrickhonda.com/ | id=2152
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Cadillac | url=https://www.daleearnhardtjrcadillac.com/ | id=2153
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Darrell Waltrip Honda | url=https://www.darrellwaltriphonda.com/ | id=2154
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Honda Bradenton | url=https://www.hendrickhondabradenton.com/ | id=2155
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Honda Easley | url=https://www.hendrickhondasc.com/ | id=2156
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Honda Hickory | url=https://www.hendrickhondahickory.com/ | id=2157
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Honda of Charleston | url=https://www.charlestonhonda.com/ | id=2158
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Honda of Concord | url=https://www.hondaofconcord.com/ | id=2159
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Subaru Hoover | url=https://www.hendricksubaruhoover.com/ | id=2160
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Honda of Newnan | url=https://www.hondaofnewnan.com/ | id=2161
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Reggie Jackson Airport Honda | url=https://www.reggiejacksonairporthonda.com/ | id=2162
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick Honda | url=https://www.rickhendrickhonda.com/ | id=2163
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Stevenson-Hendrick Honda Jacksonville | url=https://www.stevensonhendrickhondajacksonville.com/ | id=2164
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Darrell Waltrip Buick GMC | url=https://www.darrellwaltripbuickgmc.com/ | id=2165
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Darrell Waltrip Subaru | url=https://www.darrellwaltripsubaru.com/ | id=2166
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick Cadillac Norfolk | url=https://www.rickhendrickcadillacnorfolk.com/ | id=2167
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Toyota Knoxville | url=https://www.toyotaknoxville.com/ | id=2168
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Toyota of Murfreesboro | url=https://www.toyotaofmurfreesboro.com/ | id=2169
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Volvo Cars of Charleston | url=https://www.hendrickvolvocars.com/ | id=2170
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Acura Charlotte | url=https://www.hendrickacura.com/ | id=2171
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Circle Subaru | url=https://www.circlesubaru.com/ | id=2172
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Ford of Cookeville | url=https://www.fordlincolnofcookeville.com/ | id=2173
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Mercedes-Benz of San Antonio | url=https://www.mbofsa.com/ | id=2174
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rusty Wallace Kia Alcoa | url=https://www.rustywallacekiaalcoa.com/ | id=2175
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Allen Chevrolet | url=https://www.allenchevy.com/ | id=2176
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Bay Ridge Subaru | url=https://www.brooklynsubarudeals.com/ | id=2177
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Circle Jeep | url=https://www.circlejeep.com/ | id=2178
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Freehold Ford | url=https://www.freeholdford.com/ | id=2179
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Greenwood Ford | url=https://www.greenwoodford.com/ | id=2180
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Greenwood Lincoln | url=https://www.greenwoodlincoln.com/ | id=2181
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Lake Norman Hyundai | url=https://www.lakenormanhyundai.com/ | id=2182
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Lilliston Chrysler Dodge Jeep Ram | url=https://www.lillistonchryslerdodgejeep.com/ | id=2183
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Nissan of Richmond | url=https://www.nissanrva.com/ | id=2184
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Parks Chevrolet Charlotte | url=https://www.parkscharlotte.com/ | id=2185
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Parks Chevrolet Richmond | url=https://www.parksrichmond.com/ | id=2186
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Paul Miller Auto Outlet | url=https://www.paulmillerauto.com/ | id=2187
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Paul Miller Mazda | url=https://www.paulmillermazda.com/ | id=2188
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Sands Chrysler Dodge Jeep Ram | url=https://www.sandschryslerjeepdodge.net/ | id=2189
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Cadillac Monroe | url=https://www.hendrickcadillacmonroe.com/ | id=2190
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Monroe | url=https://www.hendrickchevroletmonroe.com/ | id=2191
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Mike Terry Chevrolet GMC | url=https://www.mterryautogroup.com/ | id=2192
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Octane Buick GMC of Santa Fe | url=https://www.octanegmc.com/ | id=2193
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Rick Hendrick City Chevrolet | url=https://www.citychevrolet.com/ | id=2194
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Serra Honda Brighton | url=https://www.serrahondabrighton.com/ | id=2195
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Family Nissan | url=https://www.nissanfamily.com/ | id=2196
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Stokes Chevrolet of Moncks Corner | url=https://www.stokeschevy.com/ | id=2197
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Gary Yeoman's Ford Daytona Beach | url=https://www.garyyeomansford.com/ | id=2198
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Gary Yeoman's Palm Bay Ford | url=https://www.palmbayford.com/ | id=2199
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Gary Yeomans Lincoln Daytona Beach | url=https://www.garyyeomanslincoln.com/ | id=2200
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Acura of Pleasanton | url=https://www.acuraofpleasanton.com/ | id=2201
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Hendrick Acura Southpoint | url=https://www.acurasouthpoint.com/ | id=2202
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=Stevenson Hendrick Honda Wilmington | url=https://www.stevensonhendrickhonda.com/ | id=2203
+2026-02-06 17:33:09 - database - INFO - info:69 - Site added | client=East Charlotte Nissan | url=https://www.eastcharlottenissan.com/ | id=2204
+2026-02-06 17:33:09 - database - INFO - info:69 - Imported sites from DataFrame | count=219
+2026-02-06 17:33:09 - tabs.manager_tab - INFO - info:69 - Data synced to database | records=219
+2026-02-06 17:33:25 - logger - INFO - info:69 - Logging system initialized
+2026-02-06 17:33:26 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-06 17:33:26 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260206_172946.csv
+2026-02-06 17:33:27 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260206_172946.csv
+2026-02-06 17:34:40 - logger - INFO - info:69 - Logging system initialized
+2026-02-06 17:34:41 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-06 17:34:41 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260206_172946.csv
+2026-02-06 17:34:42 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260206_172946.csv

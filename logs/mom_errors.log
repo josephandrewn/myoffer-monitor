@@ -2437,3 +2437,7 @@ Stacktrace:
 19  libsystem_pthread.dylib             0x00007ff808a44f6b thread_start + 15
 
 
+2026-02-06 10:11:39 - UncaughtException - CRITICAL - critical:89 - Uncaught exception
+Exception: too many values to unpack (expected 4)
+Traceback: NoneType: None
+

@@ -671,7 +671,7 @@ class BatchWorker(QThread):
             if not self.is_running:
                 break
             
-            row_idx, client, url, original_idx = item
+            row_idx, client, url, original_idx, expected_provider = item
             
             # Check if UNVERIFIABLE (skip entirely)
             if self.block_tracker and self.block_tracker.is_unverifiable(url):
@@ -722,7 +722,7 @@ class BatchWorker(QThread):
                 if not self.is_running:
                     break
                 
-                row_idx, client, url, original_idx = item
+                row_idx, client, url, original_idx, expected_provider = item
                 
                 # Restart browser periodically
                 if browser_count > 0 and browser_count % RESTART_EVERY == 0:
@@ -971,11 +971,19 @@ class ScannerTab(QWidget):
         top_layout.setContentsMargins(15, 15, 15, 15)
         top_layout.setSpacing(12)
         
-        self.btn_run = QPushButton(" Run Batch")
+        self.btn_run = QPushButton(" Scan Pending")
         self.btn_run.setObjectName("btn_primary") 
         self.btn_run.setIcon(qta.icon('fa5s.play', color='white'))
         self.btn_run.setEnabled(False)
+        self.btn_run.setToolTip("Scan only PENDING items")
         self.btn_run.clicked.connect(self.start_batch)
+        
+        self.btn_full_scan = QPushButton(" Scan All")
+        self.btn_full_scan.setObjectName("btn_brand") 
+        self.btn_full_scan.setIcon(qta.icon('fa5s.sync', color='white'))
+        self.btn_full_scan.setEnabled(False)
+        self.btn_full_scan.setToolTip("Re-scan ALL active items (daily health check)")
+        self.btn_full_scan.clicked.connect(self.start_full_scan)
 
         self.btn_stop = QPushButton(" Stop")
         self.btn_stop.setObjectName("btn_danger")
@@ -990,6 +998,7 @@ class ScannerTab(QWidget):
         self.btn_export.clicked.connect(self.export_report)
         
         top_layout.addWidget(self.btn_run)
+        top_layout.addWidget(self.btn_full_scan)
         top_layout.addWidget(self.btn_stop)
         top_layout.addWidget(self.btn_export)
         layout.addWidget(top_frame)
@@ -1067,14 +1076,20 @@ class ScannerTab(QWidget):
             check_url = full_url if full_url.startswith('http') else f"https://{full_url}"
             has_sitemap = full_url and harvester.has_site_map(check_url)
             
+            # Helper to create read-only items
+            def make_readonly(item):
+                item.setFlags(item.flags() & ~Qt.ItemFlag.ItemIsEditable)
+                return item
+            
             item_name = QTableWidgetItem(str(row.get('Client Name', '')))
             item_name.setData(Qt.ItemDataRole.UserRole, original_idx)
+            make_readonly(item_name)
             
             self.table.setItem(row_count, 0, item_name)
-            self.table.setItem(row_count, 1, QTableWidgetItem(display_url)) 
-            self.table.setItem(row_count, 2, QTableWidgetItem(str(row.get('Expected Provider', '')))) 
-            self.table.setItem(row_count, 3, QTableWidgetItem(str(row.get('Detected Provider', '')))) 
-            self.table.setItem(row_count, 4, QTableWidgetItem(str(row.get('Config', '')))) 
+            self.table.setItem(row_count, 1, make_readonly(QTableWidgetItem(display_url)))
+            self.table.setItem(row_count, 2, make_readonly(QTableWidgetItem(str(row.get('Expected Provider', '')))))
+            self.table.setItem(row_count, 3, make_readonly(QTableWidgetItem(str(row.get('Detected Provider', '')))))
+            self.table.setItem(row_count, 4, make_readonly(QTableWidgetItem(str(row.get('Config', '')))))
             
             # Get status and strip any legacy icons
             status_txt = str(row.get('Status', 'PENDING'))
@@ -1086,25 +1101,28 @@ class ScannerTab(QWidget):
             status_item.setFont(QFont("Arial", 10, QFont.Weight.Bold))
             status_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
             self.color_status(status_item, actual_status)
+            make_readonly(status_item)
             self.table.setItem(row_count, 5, status_item)
             
-            self.table.setItem(row_count, 6, QTableWidgetItem(str(row.get('Details', ''))))
+            self.table.setItem(row_count, 6, make_readonly(QTableWidgetItem(str(row.get('Details', '')))))
             
             # Site Map column
             sitemap_item = QTableWidgetItem("Yes" if has_sitemap else "")
             sitemap_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
             sitemap_item.setFont(QFont("Arial", 10, QFont.Weight.Bold))
+            make_readonly(sitemap_item)
             self.table.setItem(row_count, 7, sitemap_item)
             
             # Offer column
-            self.table.setItem(row_count, 8, QTableWidgetItem(str(row.get('Offer', ''))))
+            self.table.setItem(row_count, 8, make_readonly(QTableWidgetItem(str(row.get('Offer', '')))))
             
             # Active column
-            self.table.setItem(row_count, 9, QTableWidgetItem(active_val))
+            self.table.setItem(row_count, 9, make_readonly(QTableWidgetItem(active_val)))
             
             row_count += 1
             
         self.btn_run.setEnabled(True)
+        self.btn_full_scan.setEnabled(True)
         self.btn_export.setEnabled(True)
         self.progress.setValue(0)
         self.table.setSortingEnabled(True)
@@ -1134,6 +1152,7 @@ class ScannerTab(QWidget):
             item.setBackground(QColor(styles.COLORS["row_pending_bg"]))
 
     def start_batch(self):
+        """Scan only PENDING items."""
         if self.worker is not None and self.worker.isRunning():
             return
         
@@ -1184,6 +1203,65 @@ class ScannerTab(QWidget):
         self.worker.finished_signal.connect(self.batch_finished)
         
         self.btn_run.setEnabled(False)
+        self.btn_full_scan.setEnabled(False)
+        self.btn_stop.setEnabled(True)
+        self.worker.start()
+
+    def start_full_scan(self):
+        """Scan ALL active items regardless of current status (daily health check)."""
+        if self.worker is not None and self.worker.isRunning():
+            return
+        
+        # Confirm with user since this scans everything
+        row_count = self.table.rowCount()
+        reply = QMessageBox.question(
+            self,
+            "Full Scan",
+            f"This will re-scan all {row_count} active sites.\n\n"
+            "This is useful for daily health checks to catch\n"
+            "sites that may have changed since last scan.\n\n"
+            "Continue?",
+            QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No,
+            QMessageBox.StandardButton.Yes
+        )
+        
+        if reply != QMessageBox.StandardButton.Yes:
+            return
+        
+        self.table.setSortingEnabled(False)
+
+        data_payload = []
+        for i in range(self.table.rowCount()):
+            # Include ALL rows (no status filter)
+            item_name = self.table.item(i, 0)
+            original_idx = item_name.data(Qt.ItemDataRole.UserRole)
+
+            raw_url = self.table.item(i, 1).text().strip()
+            if not raw_url.lower().startswith(("http://", "https://")):
+                url = "https://" + raw_url
+            else:
+                url = raw_url
+
+            client = item_name.text()
+            
+            # Get Expected Provider for harvesting (column 2)
+            expected_provider = self.table.item(i, 2).text() if self.table.item(i, 2) else ""
+            
+            data_payload.append((i, client, url, original_idx, expected_provider))
+
+        if not data_payload:
+            QMessageBox.information(self, "Info", "No items to scan.")
+            self.table.setSortingEnabled(True)
+            return
+
+        # Pass block_tracker to worker for tiered scanning
+        self.worker = BatchWorker(data_payload, block_tracker=self.block_tracker)
+        self.worker.progress_signal.connect(self.progress.setValue)
+        self.worker.result_signal.connect(self.update_row)
+        self.worker.finished_signal.connect(self.batch_finished)
+        
+        self.btn_run.setEnabled(False)
+        self.btn_full_scan.setEnabled(False)
         self.btn_stop.setEnabled(True)
         self.worker.start()
 
@@ -1194,6 +1272,7 @@ class ScannerTab(QWidget):
 
     def batch_finished(self):
         self.btn_run.setEnabled(True)
+        self.btn_full_scan.setEnabled(True)
         self.btn_stop.setEnabled(False)
         self.btn_stop.setText(" Stop") 
         self.table.setSortingEnabled(True)
@@ -1289,25 +1368,31 @@ class ScannerTab(QWidget):
             row_idx = 0
             self.table.insertRow(0)
             
-            # Fill all 10 columns properly
-            self.table.setItem(0, 0, QTableWidgetItem("Manual Check"))    # Client Name
-            self.table.setItem(0, 1, QTableWidgetItem(display_url))       # URL
-            self.table.setItem(0, 2, QTableWidgetItem(""))                # Expected Provider
-            self.table.setItem(0, 3, QTableWidgetItem(""))                # Detected Provider
-            self.table.setItem(0, 4, QTableWidgetItem(""))                # Config
+            # Helper to create read-only items
+            def make_readonly(item):
+                item.setFlags(item.flags() & ~Qt.ItemFlag.ItemIsEditable)
+                return item
+            
+            # Fill all 10 columns properly (read-only)
+            self.table.setItem(0, 0, make_readonly(QTableWidgetItem("Manual Check")))  # Client Name
+            self.table.setItem(0, 1, make_readonly(QTableWidgetItem(display_url)))     # URL
+            self.table.setItem(0, 2, make_readonly(QTableWidgetItem("")))              # Expected Provider
+            self.table.setItem(0, 3, make_readonly(QTableWidgetItem("")))              # Detected Provider
+            self.table.setItem(0, 4, make_readonly(QTableWidgetItem("")))              # Config
             status_item = QTableWidgetItem("CHECKING...")
             status_item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
-            self.table.setItem(0, 5, status_item)                         # Status
-            self.table.setItem(0, 6, QTableWidgetItem(""))                # Details
-            self.table.setItem(0, 7, QTableWidgetItem(""))                # Site Map
-            self.table.setItem(0, 8, QTableWidgetItem(""))                # Offer
-            self.table.setItem(0, 9, QTableWidgetItem("Yes"))             # Active
+            make_readonly(status_item)
+            self.table.setItem(0, 5, status_item)                                      # Status
+            self.table.setItem(0, 6, make_readonly(QTableWidgetItem("")))              # Details
+            self.table.setItem(0, 7, make_readonly(QTableWidgetItem("")))              # Site Map
+            self.table.setItem(0, 8, make_readonly(QTableWidgetItem("")))              # Offer
+            self.table.setItem(0, 9, make_readonly(QTableWidgetItem("Yes")))           # Active
             
             original_idx = None
             client_name = "Manual Check"
         
-        # Run the scan - pass the correct row index
-        self.worker = BatchWorker([(row_idx, client_name, full_url, original_idx)], block_tracker=self.block_tracker)
+        # Run the scan - pass the correct row index (5 values: row_idx, client, url, original_idx, expected_provider)
+        self.worker = BatchWorker([(row_idx, client_name, full_url, original_idx, "")], block_tracker=self.block_tracker)
         self.worker.result_signal.connect(self.update_row)
         self.worker.start()
 

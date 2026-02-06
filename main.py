@@ -100,7 +100,7 @@ class MainApp(QMainWindow):
         header_layout.setContentsMargins(20, 10, 20, 10)
         
         # Logo
-        if LOGO_PATH.exists():
+        if LOGO_PATH_FLAT.exists():
             logo_label = QLabel()
             logo_pixmap = QPixmap(str(LOGO_PATH_FLAT))
             logo_label.setPixmap(logo_pixmap.scaledToHeight(40, Qt.TransformationMode.SmoothTransformation))
@@ -157,6 +157,14 @@ class MainApp(QMainWindow):
         # --- Status Bar ---
         self.status_label = QLabel("Ready")
         self.statusBar().addWidget(self.status_label)
+        
+        # Add stretch to push count to the right
+        self.statusBar().addWidget(QLabel(), 1)  # Spacer
+        
+        # Active clients count (right side)
+        self.client_count_label = QLabel("Active Clients: 0")
+        self.client_count_label.setStyleSheet(f"color: {styles.COLORS['text_secondary']};")
+        self.statusBar().addWidget(self.client_count_label)
 
         # --- Signal Connections ---
         self.manager.data_modified.connect(self.sync_data)
@@ -180,8 +188,33 @@ class MainApp(QMainWindow):
         self.load_last_project()
 
     def load_last_project(self):
-        """Automatically load the last opened project file."""
-        last_file = get_last_opened_file()
+        """Automatically load the most recent project file (manual save or autosave)."""
+        import os
+        
+        # Get the manually saved file (if any)
+        manual_file = get_last_opened_file()
+        manual_time = 0
+        if manual_file and os.path.exists(manual_file):
+            manual_time = os.path.getmtime(manual_file)
+        
+        # Get the most recent autosave (if any)
+        autosave_file = None
+        autosave_time = 0
+        autosaves = sorted(DATA_DIR.glob("autosave_*.csv"), reverse=True)
+        if autosaves:
+            autosave_file = str(autosaves[0])
+            autosave_time = os.path.getmtime(autosave_file)
+        
+        # Pick the most recent one
+        if autosave_time > manual_time:
+            last_file = autosave_file
+            logger.info("Loading most recent autosave (newer than manual save)", path=last_file)
+        elif manual_file:
+            last_file = manual_file
+            logger.info("Loading last manual save", path=last_file)
+        else:
+            last_file = None
+        
         if last_file:
             try:
                 import pandas as pd
@@ -254,10 +287,10 @@ class MainApp(QMainWindow):
         if index == 1:  # Scanner tab
             self.manager.table.setSortingEnabled(False)
             self.sync_data()
-            self.status_label.setText("Scanner Mode: Ready to scan")
+            self.status_label.setText(" Scanner Mode: Ready to scan")
         else:  # Manager tab
             self.manager.table.setSortingEnabled(True)
-            self.status_label.setText("Manager Mode: Edit your client list")
+            self.status_label.setText(" Manager Mode: Edit your client list")
 
     def sync_data(self):
         """Sync data from Manager to Scanner."""
@@ -265,6 +298,16 @@ class MainApp(QMainWindow):
         self.scanner.load_from_dataframe(df)
         count = len(df) if df is not None else 0
         self.status_label.setText(f"Synced {count} records")
+        self.update_client_count()
+
+    def update_client_count(self):
+        """Update the active clients count in the status bar."""
+        active_count = 0
+        for row in range(self.manager.table.rowCount()):
+            active_item = self.manager.table.item(row, 9)  # Active column
+            if active_item and active_item.text() == "Yes":
+                active_count += 1
+        self.client_count_label.setText(f"Active Clients: {active_count} ")
 
     def update_master_record(self, original_idx, status, msg, vendor, config):
         """Update the Manager table when Scanner finds a result."""

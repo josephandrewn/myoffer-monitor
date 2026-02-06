@@ -633,5 +633,229 @@
       "America's Best Warranty",
       "Owners Assurance"
     ]
+  },
+  "https://www.bmwsouthpoint.com": {
+    "harvested_at": "2026-02-06T14:49:04.181957",
+    "provider": "Dealer Inspire",
+    "links": {
+      "New Inventory": [
+        "https://www.bmwsouthpoint.com/new-vehicles/",
+        "https://www.bmwsouthpoint.com/new-vehicles/x1/",
+        "https://www.bmwsouthpoint.com/new-vehicles/x2/",
+        "https://www.bmwsouthpoint.com/new-vehicles/x3/",
+        "https://www.bmwsouthpoint.com/new-vehicles/x4/",
+        "https://www.bmwsouthpoint.com/new-vehicles/x5/",
+        "https://www.bmwsouthpoint.com/new-vehicles/x6/",
+        "https://www.bmwsouthpoint.com/new-vehicles/x7/",
+        "https://www.bmwsouthpoint.com/new-vehicles/2-series/",
+        "https://www.bmwsouthpoint.com/new-vehicles/3-series/",
+        "https://www.bmwsouthpoint.com/new-vehicles/4-series/",
+        "https://www.bmwsouthpoint.com/new-vehicles/5-series/",
+        "https://www.bmwsouthpoint.com/new-vehicles/7-series/",
+        "https://www.bmwsouthpoint.com/new-vehicles/8-series/",
+        "https://www.bmwsouthpoint.com/new-vehicles/z4/",
+        "https://www.bmwsouthpoint.com/new-vehicles/ix/",
+        "https://www.bmwsouthpoint.com/new-vehicles/i4/",
+        "https://www.bmwsouthpoint.com/new-vehicles/i5/",
+        "https://www.bmwsouthpoint.com/new-vehicles/i7/",
+        "https://www.bmwsouthpoint.com/new-vehicles/xm/",
+        "https://www.bmwsouthpoint.com/new-vehicles/suvs/",
+        "https://www.bmwsouthpoint.com/new-vehicles/sedans/",
+        "https://www.bmwsouthpoint.com/new-vehicles/2-series-sedan/",
+        "https://www.bmwsouthpoint.com/new-vehicles/4-series-sedan/",
+        "https://www.bmwsouthpoint.com/new-vehicles/8-series-sedan/",
+        "https://www.bmwsouthpoint.com/new-vehicles/coupes/",
+        "https://www.bmwsouthpoint.com/new-vehicles/2-series-coupe/",
+        "https://www.bmwsouthpoint.com/new-vehicles/4-series-coupe/",
+        "https://www.bmwsouthpoint.com/new-vehicles/8-series-coupe/",
+        "https://www.bmwsouthpoint.com/new-vehicles/convertibles/",
+        "https://www.bmwsouthpoint.com/new-vehicles/4-series-convertible/",
+        "https://www.bmwsouthpoint.com/new-vehicles/8-series-convertible/",
+        "https://www.bmwsouthpoint.com/new-vehicles/electrified/",
+        "https://www.bmwsouthpoint.com/new-vehicles/x5-xdrive50e/",
+        "https://www.bmwsouthpoint.com/new-vehicles/330e/",
+        "https://www.bmwsouthpoint.com/new-vehicles/750e-xdrive/",
+        "https://www.bmwsouthpoint.com/new-vehicles/bmw-m/",
+        "https://www.bmwsouthpoint.com/new-vehicles/m2/",
+        "https://www.bmwsouthpoint.com/new-vehicles/m3/",
+        "https://www.bmwsouthpoint.com/new-vehicles/m4-coupe/",
+        "https://www.bmwsouthpoint.com/new-vehicles/m4-convertible/",
+        "https://www.bmwsouthpoint.com/new-vehicles/m5/",
+        "https://www.bmwsouthpoint.com/new-vehicles/m8-coupe/",
+        "https://www.bmwsouthpoint.com/new-vehicles/m8-convertible/",
+        "https://www.bmwsouthpoint.com/new-vehicles/m8-sedan/",
+        "https://www.bmwsouthpoint.com/new-vehicles/x3-m/",
+        "https://www.bmwsouthpoint.com/new-vehicles/x4-m/",
+        "https://www.bmwsouthpoint.com/new-vehicles/x5-m/",
+        "https://www.bmwsouthpoint.com/new-vehicles/x6-m/",
+        "https://www.bmwsouthpoint.com/new-vehicles/shop-new-electric/",
+        "https://www.bmwsouthpoint.com/new-vehicles/new-vehicle-specials/"
+      ],
+      "Used Inventory": [
+        "https://www.bmwsouthpoint.com/used-vehicles/",
+        "https://www.bmwsouthpoint.com/used-vehicles/priced-under-25k/",
+        "https://www.bmwsouthpoint.com/used-vehicles/pre-owned-vehicle-specials/",
+        "https://www.bmwsouthpoint.com/used-vehicles/bmwcertified/"
+      ],
+      "Certified Inventory": [
+        "https://www.bmwsouthpoint.com/used-vehicles/certified-pre-owned-vehicles/",
+        "https://www.bmwsouthpoint.com/m-certified-center/"
+      ],
+      "New VDP": [],
+      "Used VDP": [],
+      "Certified VDP": [],
+      "Service": [
+        "https://www.bmwsouthpoint.com/service/",
+        "https://www.bmwsouthpoint.com/service/schedule-service/",
+        "https://www.bmwsouthpoint.com/service-offers/",
+        "https://www.bmwsouthpoint.com/service-financing/",
+        "https://www.bmwsouthpoint.com/service/service-specials/"
+      ],
+      "Finance": [
+        "https://www.bmwsouthpoint.com/finance/",
+        "https://www.bmwsouthpoint.com/finance/apply-for-financing/",
+        "https://www.bmwsouthpoint.com/bmwfinancialservices/"
+      ],
+      "Specials": [
+        "https://www.bmwsouthpoint.com/lease-and-finance-offers/"
+      ],
+      "Trade-In": [
+        "https://www.bmwsouthpoint.com/value-your-trade/"
+      ],
+      "Parts": [
+        "https://www.bmwsouthpoint.com/parts/",
+        "https://www.bmwsouthpoint.com/parts/order-parts/"
+      ],
+      "Hours & Directions": [],
+      "About": [
+        "https://www.bmwsouthpoint.com/about-us-2/",
+        "https://www.bmwsouthpoint.com/about-us/staff/",
+        "https://www.bmwsouthpoint.com/about-us/reviews/",
+        "https://www.bmwsouthpoint.com/about-us/customer-testimonials/"
+      ],
+      "Contact": [
+        "https://www.bmwsouthpoint.com/contact-us/"
+      ]
+    },
+    "other": [
+      "Homepage",
+      "The Xchange Upgrade Program",
+      "The BMW M5 Touring",
+      "My BMW App",
+      "BMW EV Charging & Benefits",
+      "BMW PHEV Models",
+      "The BMW iX",
+      "BMW Electric",
+      "Schedule Value Service",
+      "Authorized Dinan Dealer",
+      "Check Vehicle For Recalls",
+      "3-Year Oil Change Plan",
+      "The BMW College Graduate Program",
+      "Buy vs Lease",
+      "Benefits of Leasing",
+      "Blog",
+      "Community Events",
+      "Sitemap",
+      "Sitemap XML",
+      "Privacy Policy"
+    ]
+  },
+  "https://www.lindsaybuickgmctruck.com": {
+    "harvested_at": "2026-02-06T16:03:32.239925",
+    "provider": "Dealer Inspire",
+    "links": {
+      "New Inventory": [
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/new-buick-stock/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/encore-gx/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/envision/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/enclave/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/envista/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/new-gmc-stock/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/terrain/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/acadia/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/yukon/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/yukon-xl/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/hummer-ev-suv/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/canyon/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/sierra-1500/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/sierra-hd/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/sierra-ev/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/hummer-ev-pickup/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/savana/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/savana-passenger/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/savana-cargo/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/savana-cutaway/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/gmc-commercial/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/buick/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/gmc/",
+        "https://www.lindsaybuickgmctruck.com/new-vehicles/new-vehicle-specials/"
+      ],
+      "Used Inventory": [
+        "https://www.lindsaybuickgmctruck.com/used-vehicles/",
+        "https://www.lindsaybuickgmctruck.com/used-vehicles/?_dFR%5Btype%5D%5B0%5D=CarBravo",
+        "https://www.lindsaybuickgmctruck.com/used-vehicles/pre-owned-vehicle-specials/",
+        "https://www.lindsaybuickgmctruck.com/used-vehicles/priced-under-12k/"
+      ],
+      "Certified Inventory": [],
+      "New VDP": [],
+      "Used VDP": [],
+      "Certified VDP": [],
+      "Service": [
+        "https://www.lindsaybuickgmctruck.com/service/",
+        "https://www.lindsaybuickgmctruck.com/schedule-service/",
+        "https://www.lindsaybuickgmctruck.com/service/serviceandpartsspecials/",
+        "https://www.lindsaybuickgmctruck.com/service-parts-financing/",
+        "https://www.lindsaybuickgmctruck.com/service-now-pay-over-time/",
+        "https://www.lindsaybuickgmctruck.com/service/serviceapptform/"
+      ],
+      "Finance": [
+        "https://www.lindsaybuickgmctruck.com/pre-qualify-instantly/",
+        "https://www.lindsaybuickgmctruck.com/finance/",
+        "https://www.lindsaybuickgmctruck.com/finance/apply-for-financing/",
+        "https://www.lindsaybuickgmctruck.com/payment-calculator/",
+        "https://www.lindsaybuickgmctruck.com/finance/car-buying-tips/"
+      ],
+      "Specials": [
+        "https://www.lindsaybuickgmctruck.com/lease-specials-2/",
+        "https://www.lindsaybuickgmctruck.com/gmc-drives-american-ingenuity/"
+      ],
+      "Trade-In": [
+        "https://www.lindsaybuickgmctruck.com/value-your-trade/"
+      ],
+      "Parts": [
+        "https://www.lindsaybuickgmctruck.com/parts/",
+        "https://www.lindsaybuickgmctruck.com/parts/partsorderform/"
+      ],
+      "Hours & Directions": [],
+      "About": [
+        "https://www.lindsaybuickgmctruck.com/about-us/",
+        "https://www.lindsaybuickgmctruck.com/about-us/staff/",
+        "https://www.lindsaybuickgmctruck.com/about-us/buick-gmc-research/",
+        "https://www.lindsaybuickgmctruck.com/about-us/customer-testimonials/",
+        "https://www.lindsaybuickgmctruck.com/about-us/reviews/"
+      ],
+      "Contact": [
+        "https://www.lindsaybuickgmctruck.com/contactusform/"
+      ]
+    },
+    "other": [
+      "Home",
+      "Sierra EV vs Cybertruck",
+      "Sierra EV vs Ford Lightning",
+      "Sierra EV vs Rivian",
+      "HUMMER EV vs Cybertruck",
+      "GMC Compare Competitors",
+      "Priced Under 25k",
+      "Priced Under 20k",
+      "Warranty Forms",
+      "Collision and Body Shop",
+      "The Lindsay Difference",
+      "Privacy Policy",
+      "Sitemap",
+      "Terms of Use",
+      "Skip to main content",
+      "Skip to Action Bar"
+    ]
   }
 }
