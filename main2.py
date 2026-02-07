@@ -285,9 +285,11 @@ class MainApp(QMainWindow):
     def on_tab_changed(self, index):
         """Handle tab switching."""
         if index == 1:  # Scanner tab
+            self.manager.table.setSortingEnabled(False)
             self.sync_data()
             self.status_label.setText(" Scanner Mode: Ready to scan")
         else:  # Manager tab
+            self.manager.table.setSortingEnabled(True)
             self.status_label.setText(" Manager Mode: Edit your client list")
 
     def sync_data(self):
@@ -300,27 +302,38 @@ class MainApp(QMainWindow):
 
     def update_client_count(self):
         """Update the active clients count in the status bar."""
-        active_count = sum(
-            1 for row in self.manager._data 
-            if row.get("Active", "Yes") == "Yes"
-        )
+        active_count = 0
+        for row in range(self.manager.table.rowCount()):
+            active_item = self.manager.table.item(row, 9)  # Active column
+            if active_item and active_item.text() == "Yes":
+                active_count += 1
         self.client_count_label.setText(f"Active Clients: {active_count} ")
 
     def update_master_record(self, original_idx, status, msg, vendor, config):
-        """Update the Manager data when Scanner finds a result."""
+        """Update the Manager table when Scanner finds a result."""
         try:
-            if original_idx < len(self.manager._data):
-                row = self.manager._data[original_idx]
-                if vendor:
-                    row["Detected Provider"] = vendor
-                if config:
-                    row["Config"] = config
-                row["Status"] = status
-                row["Details"] = msg
+            # Update Detected Provider (column 3)
+            provider_item = self.manager.table.item(original_idx, 3)
+            if provider_item:
+                provider_item.setText(vendor if vendor else "")
                 
-                # Sync hidden table and refresh cards
-                self.manager._sync_hidden_table()
-                self.manager.refresh_cards()
+            # Update Config (column 4)
+            config_item = self.manager.table.item(original_idx, 4)
+            if config_item and config:
+                config_item.setText(config)
+
+            # Update Status (column 5)
+            status_item = self.manager.table.item(original_idx, 5)
+            if status_item:
+                status_item.setText(status)
+            
+            # Update Details (column 6)
+            details_item = self.manager.table.item(original_idx, 6)
+            if details_item:
+                details_item.setText(msg)
+            
+            # Refresh row styling
+            self.manager.update_row_style(original_idx)
             
             self.status_label.setText(f"Updated: {status}")
         except Exception as e:
