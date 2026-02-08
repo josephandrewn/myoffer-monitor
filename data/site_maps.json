@@ -857,5 +857,116 @@
       "Skip to main content",
       "Skip to Action Bar"
     ]
+  },
+  "https://www.autogalleryford.com": {
+    "harvested_at": "2026-02-07T16:12:33.262323",
+    "provider": "Dealer Inspire",
+    "links": {
+      "New Inventory": [
+        "https://www.autogalleryford.com/new-vehicles/",
+        "https://www.autogalleryford.com/new-vehicles/new-vehicles-priced-under-40k/",
+        "https://www.autogalleryford.com/new-vehicles/hybrids-evs/",
+        "https://www.autogalleryford.com/new-vehicles/escape-plug-in-hybrid/",
+        "https://www.autogalleryford.com/new-vehicles/escape-hybrid/",
+        "https://www.autogalleryford.com/new-vehicles/mustang-mach-e/",
+        "https://www.autogalleryford.com/new-vehicles/explorer-hybrid/",
+        "https://www.autogalleryford.com/new-vehicles/f-150-lightning/",
+        "https://www.autogalleryford.com/new-vehicles/trucks-vans/",
+        "https://www.autogalleryford.com/new-vehicles/transit/",
+        "https://www.autogalleryford.com/new-vehicles/transit-connect/",
+        "https://www.autogalleryford.com/new-vehicles/f-150/",
+        "https://www.autogalleryford.com/new-vehicles/super-duty/",
+        "https://www.autogalleryford.com/new-vehicles/maverick/",
+        "https://www.autogalleryford.com/new-vehicles/ranger/",
+        "https://www.autogalleryford.com/new-vehicles/suvs-crossovers/",
+        "https://www.autogalleryford.com/new-vehicles/explorer/",
+        "https://www.autogalleryford.com/new-vehicles/expedition/",
+        "https://www.autogalleryford.com/new-vehicles/edge/",
+        "https://www.autogalleryford.com/new-vehicles/bronco/",
+        "https://www.autogalleryford.com/new-vehicles/bronco-sport/",
+        "https://www.autogalleryford.com/new-vehicles/escape/",
+        "https://www.autogalleryford.com/new-vehicles/cars/",
+        "https://www.autogalleryford.com/new-vehicles/mustang/",
+        "https://www.autogalleryford.com/new-vehicles/e-series-cutaway/",
+        "https://www.autogalleryford.com/new-vehicles/chassis-cab/",
+        "https://www.autogalleryford.com/new-vehicles/transit-cc-ca/",
+        "https://www.autogalleryford.com/new-vehicles/f-650-f-750/",
+        "https://www.autogalleryford.com/new-vehicles/e-series-stripped-chassis/",
+        "https://www.autogalleryford.com/new-vehicles/e-transit/",
+        "https://www.autogalleryford.com/new-vehicles/new-vehicle-specials/"
+      ],
+      "Used Inventory": [
+        "https://www.autogalleryford.com/used-vehicles/",
+        "https://www.autogalleryford.com/used-vehicles/under-85k-miles/",
+        "https://www.autogalleryford.com/used-vehicles/used-cars-under-350-per-month/",
+        "https://www.autogalleryford.com/used-vehicles/pre-owned-vehicle-specials/"
+      ],
+      "Certified Inventory": [
+        "https://www.autogalleryford.com/used-vehicles/certified-pre-owned-vehicles/"
+      ],
+      "New VDP": [],
+      "Used VDP": [],
+      "Certified VDP": [],
+      "Service": [
+        "https://www.autogalleryford.com/service-specials-gaffney-sc/",
+        "https://www.autogalleryford.com/service/",
+        "https://www.autogalleryford.com/service-appointment/",
+        "https://www.autogalleryford.com/service-now-pay-over-time/",
+        "https://www.autogalleryford.com/service/service-specials/"
+      ],
+      "Finance": [
+        "https://www.autogalleryford.com/finance/",
+        "https://www.autogalleryford.com/payment-calculator/",
+        "https://www.autogalleryford.com/finance/apply-for-financing/"
+      ],
+      "Specials": [
+        "https://www.autogalleryford.com/dealer-specials/",
+        "https://www.autogalleryford.com/brakes-specials-gaffney-sc/",
+        "https://www.autogalleryford.com/battery-specials-gaffney-sc/",
+        "https://www.autogalleryford.com/tires-specials-gaffney-sc/",
+        "https://www.autogalleryford.com/oil-specials-gaffney-sc/"
+      ],
+      "Trade-In": [
+        "https://www.autogalleryford.com/value-your-trade/",
+        "https://www.autogalleryford.com/trade-in/"
+      ],
+      "Parts": [
+        "https://www.autogalleryford.com/parts/",
+        "https://www.autogalleryford.com/parts/order-parts/"
+      ],
+      "Hours & Directions": [
+        "https://www.autogalleryford.com/hours-directions/"
+      ],
+      "About": [
+        "https://www.autogalleryford.com/about-us/",
+        "https://www.autogalleryford.com/about-us/staff/",
+        "https://www.autogalleryford.com/about-us/reviews/"
+      ],
+      "Contact": [
+        "https://www.autogalleryford.com/contact-us/"
+      ]
+    },
+    "other": [
+      "Homepage",
+      "Reserve Your 2024 Ford",
+      "Research New Ford Cars",
+      "Model Showroom",
+      "Sell Us Your Car",
+      "Commercial",
+      "Research Used Ford Cars",
+      "Priced Under 25k",
+      "Price Under 10k",
+      "Referral",
+      "Mobile Service",
+      "Ford App",
+      "Battery Details",
+      "Brake Details",
+      "General Maintenance",
+      "Oil Change Details",
+      "Tire Details",
+      "What’s My Buying Power",
+      "Blog",
+      "Careers"
+    ]
   }
 }

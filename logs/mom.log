@@ -6605,3 +6605,664 @@ Traceback: NoneType: None
 2026-02-06 17:34:41 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
 2026-02-06 17:34:41 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260206_172946.csv
 2026-02-06 17:34:42 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260206_172946.csv
+2026-02-07 15:05:28 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 15:05:28 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 15:05:28 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_150035.csv
+2026-02-07 15:05:29 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_150035.csv
+2026-02-07 15:10:28 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_151028.csv
+2026-02-07 15:15:28 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_151528.csv
+2026-02-07 15:17:23 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 15:17:24 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 15:17:24 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_151528.csv
+2026-02-07 15:17:24 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_151528.csv
+2026-02-07 15:24:42 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 15:24:43 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 15:24:43 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_151528.csv
+2026-02-07 15:24:43 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_151528.csv
+2026-02-07 15:28:40 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 15:28:41 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 15:28:41 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_151528.csv
+2026-02-07 15:28:41 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_151528.csv
+2026-02-07 15:32:44 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 15:32:45 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 15:32:45 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_151528.csv
+2026-02-07 15:32:45 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_151528.csv
+2026-02-07 15:37:17 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 15:37:17 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 15:37:17 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_151528.csv
+2026-02-07 15:37:18 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_151528.csv
+2026-02-07 15:42:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_154217.csv
+2026-02-07 15:47:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_154717.csv
+2026-02-07 15:52:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_155217.csv
+2026-02-07 15:52:22 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 15:52:23 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 15:52:23 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_155217.csv
+2026-02-07 15:52:23 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_155217.csv
+2026-02-07 15:57:23 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_155723.csv
+2026-02-07 16:02:23 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_160223.csv
+2026-02-07 16:07:23 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_160723.csv
+2026-02-07 16:10:40 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 16:10:41 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 16:10:41 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_160723.csv
+2026-02-07 16:10:41 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_160723.csv
+2026-02-07 16:12:11 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 16:12:16 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 16:12:19 - uc - INFO - _configure_headless:493 - setting properties for headless
+2026-02-07 16:15:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_161541.csv
+2026-02-07 16:20:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_162041.csv
+2026-02-07 16:25:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_162541.csv
+2026-02-07 16:30:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_163041.csv
+2026-02-07 16:35:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_163541.csv
+2026-02-07 16:40:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_164041.csv
+2026-02-07 16:45:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_164541.csv
+2026-02-07 16:50:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_165041.csv
+2026-02-07 16:52:07 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 16:52:12 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 16:53:11 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Audi Northlake | url=https://www.audinorthlake.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 16:54:02 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Audi South Austin | url=https://www.audisouthaustin.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 16:54:17 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 16:54:22 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 16:55:19 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 16:55:24 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 16:55:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_165541.csv
+2026-02-07 16:56:01 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=BMW Charlotte | url=https://www.hendrickbmwcharlotte.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 16:56:39 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=BMW Northlake | url=https://www.hendrickbmwnorthlake.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 16:57:30 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=BMW of Kansas City South | url=https://www.bmwofkansascitysouth.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 16:57:39 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 16:57:44 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 16:58:33 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=BMW South Austin | url=https://www.bmwofsouthaustin.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 16:58:50 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 16:58:55 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 16:59:38 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 16:59:43 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:00:16 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:00:21 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:00:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_170041.csv
+2026-02-07 17:01:07 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:01:12 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:01:48 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Darrell Waltrip Buick GMC | url=https://www.darrellwaltripbuickgmc.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:02:30 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Darrell Waltrip Honda | url=https://www.darrellwaltriphonda.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:03:10 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Darrell Waltrip Subaru | url=https://www.darrellwaltripsubaru.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:03:17 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:03:22 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:03:52 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:03:57 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:04:46 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=East Bay BMW | url=https://www.eastbaybmw.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:05:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_170541.csv
+2026-02-07 17:05:50 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:05:55 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:06:39 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:06:44 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:07:16 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:07:21 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:07:54 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:07:59 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:08:37 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:08:42 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:09:18 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:09:23 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:09:56 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:10:01 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:10:39 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:10:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_171041.csv
+2026-02-07 17:10:44 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:11:21 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Acura of Pleasanton | url=https://www.acuraofpleasanton.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:12:01 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Acura Southpoint | url=https://www.acurasouthpoint.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:12:29 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:12:38 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:13:18 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick CDJR of Concord | url=https://www.hendrickchryslerdodgejeepramofconcord.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:14:17 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Chevrolet Cary | url=https://www.hendrickchevrolet.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:14:26 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:14:34 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:15:29 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:15:37 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:15:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_171541.csv
+2026-02-07 17:16:38 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:16:46 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:18:02 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Honda Bradenton | url=https://www.hendrickhondabradenton.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:18:14 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:18:22 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:19:28 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Honda Hickory | url=https://www.hendrickhondahickory.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:19:53 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:20:00 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:20:41 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Honda of Concord | url=https://www.hondaofconcord.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:20:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_172041.csv
+2026-02-07 17:21:35 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:21:43 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:22:23 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Kia of Concord | url=https://www.hendrickkiaofconcord.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:23:02 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick MINI Charlotte | url=https://www.hendrickmini.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:23:43 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Subaru Hoover | url=https://www.hendricksubaruhoover.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:23:55 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:24:03 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:24:41 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Subaru Southpoint | url=https://www.subarusouthpoint.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:25:27 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:25:32 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:25:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_172541.csv
+2026-02-07 17:26:56 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:27:01 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:27:40 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Volkswagen of Concord | url=https://www.hendrickvwofconcord.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:28:19 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Hendrick Volvo Cars of Charleston | url=https://www.hendrickvolvocars.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:29:00 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Honda Cars of McKinney | url=https://www.hondacarsofmckinney.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:29:08 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:29:13 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:29:53 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Honda Cars of Rock Hill | url=https://www.hondacarsrockhill.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:30:18 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:30:23 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:30:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_173041.csv
+2026-02-07 17:30:58 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:31:03 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:32:03 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:32:08 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:33:14 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Jeff Gordon Chevrolet | url=https://www.jeffgordonchevy.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:33:31 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:33:36 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:34:04 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:34:10 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:34:43 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:34:48 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:35:18 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Joe Cooper Lincoln of Edmond | url=https://joecooperlincoln.com | status=WARN | vendor=Dealer.com | config=SPA | details=Found 6 (Expected 4) (Saved Img)
+2026-02-07 17:35:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_173541.csv
+2026-02-07 17:36:05 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:36:10 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:37:38 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:37:43 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:38:26 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:38:31 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:39:04 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:39:09 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:39:42 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:39:47 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:40:25 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:40:30 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:40:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_174041.csv
+2026-02-07 17:41:07 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:41:12 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:41:55 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:42:01 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:42:38 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:42:43 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:43:22 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:43:27 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:44:12 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:44:17 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:45:01 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Nissan of Garden City | url=https://www.nissanofgardencity.com | status=WARN | vendor=Sokal | config=STD | details=Found 4 (Expected 2) (Saved Img)
+2026-02-07 17:45:13 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:45:18 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:45:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_174541.csv
+2026-02-07 17:46:33 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:46:38 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:47:12 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:47:17 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:47:49 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:47:54 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:48:35 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:48:40 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:49:13 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:49:19 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:49:52 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:49:57 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:50:35 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:50:40 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:50:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_175041.csv
+2026-02-07 17:51:12 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:51:17 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:52:00 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:52:05 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:52:39 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:52:44 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:53:44 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Rick Hendrick Chrysler Dodge Jeep Ram Fiat Wilmington | url=https://www.hendrickjeepwilmington.com | status=BLOCKED | vendor=Security Block | config=ERR | details=Bot Detection / CAPTCHA (Saved Img)
+2026-02-07 17:53:52 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:53:57 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:54:28 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:54:33 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:55:15 - tabs.scanner_tab - INFO - info:69 - Scan complete | client=Rusty Wallace Kia Alcoa | url=https://www.rustywallacekiaalcoa.com | status=WARN | vendor=DealerOn | config=STD | details=Found 2 (DealerOn expects 1) (Saved Img)
+2026-02-07 17:55:25 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:55:30 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:55:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_175541.csv
+2026-02-07 17:56:11 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:56:17 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:56:53 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:56:58 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:57:54 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:57:59 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:59:08 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:59:13 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:59:45 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 17:59:50 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 18:00:37 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 18:00:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_180041.csv
+2026-02-07 18:00:42 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 18:01:21 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 18:01:26 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 18:02:24 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 18:02:29 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 18:03:06 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 18:03:11 - undetected_chromedriver.patcher - INFO - patch_exe:346 - patching driver executable /Users/josephneely/Library/Application Support/undetected_chromedriver/undetected_chromedriver
+2026-02-07 18:05:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_180541.csv
+2026-02-07 18:10:26 - database - INFO - info:69 - Database initialized | path=/Users/josephneely/Documents/PYTHON/MOM/myoffer-monitor/data/mom_data.db
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=865 Autos LLC | url=https://www.865autos.com/ | id=2205
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Allen Chevrolet | url=https://www.allenchevy.com/ | id=2206
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Audi Northlake | url=https://www.audinorthlake.com/ | id=2207
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Audi South Austin | url=https://www.audisouthaustin.com/ | id=2208
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Auto Gallery Ford | url=https://www.autogalleryford.com/ | id=2209
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Barbour Hendrick Honda | url=https://www.barbourhendrickhonda.com/ | id=2210
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Bay Ridge Subaru | url=https://www.brooklynsubarudeals.com/ | id=2211
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Beach Chevrolet | url=https://www.thebeachchevrolet.com/ | id=2212
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=BMW Charlotte | url=https://www.hendrickbmwcharlotte.com/ | id=2213
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=BMW Northlake | url=https://www.hendrickbmwnorthlake.com/ | id=2214
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=BMW of Kansas City South | url=https://www.bmwofkansascitysouth.com/ | id=2215
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=BMW of McKinney | url=https://www.bmwofmckinney.com/ | id=2216
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=BMW South Austin | url=https://www.bmwofsouthaustin.com/ | id=2217
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=BMW Southpoint | url=https://www.bmwsouthpoint.com/ | id=2218
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Chrysler Dodge Jeep Ram of Elizabethton | url=https://www.nagcdjr.com/ | id=2219
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Circle Jeep | url=https://www.circlejeep.com/ | id=2220
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Circle Subaru | url=https://www.circlesubaru.com/ | id=2221
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Covert Country Hutto | url=https://www.covertchevyhutto.com/ | id=2222
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Covert Ford of Hutto | url=https://www.covertfordhutto.com/ | id=2223
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Crews Chevrolet | url=https://www.crewschevrolet.com/ | id=2224
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Cronic Nissan | url=https://www.cronicnissan.net/ | id=2225
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Buick GMC | url=https://www.daleearnhardtjrbuickgmc.com/ | id=2226
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Cadillac | url=https://www.daleearnhardtjrcadillac.com/ | id=2227
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Dale Earnhardt Jr. Chevrolet | url=https://www.daleearnhardtjrchevy.com/ | id=2228
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Darrell Waltrip Buick GMC | url=https://www.darrellwaltripbuickgmc.com/ | id=2229
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Darrell Waltrip Honda | url=https://www.darrellwaltriphonda.com/ | id=2230
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Darrell Waltrip Subaru | url=https://www.darrellwaltripsubaru.com/ | id=2231
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Dave Smith CDA | url=https://www.davesmithcda.com/ | id=2232
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Daytona Infiniti | url=https://www.daytonainfiniti.com/ | id=2233
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Daytona Mazda | url=https://www.daytonamazda.com/ | id=2234
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Daytona Nissan | url=https://www.daytonanissan.com/ | id=2235
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=East Bay BMW | url=https://www.eastbaybmw.com/ | id=2236
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=East Charlotte Nissan | url=https://www.eastcharlottenissan.com/ | id=2237
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Family Nissan | url=https://www.nissanfamily.com/ | id=2238
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Ford of Cookeville | url=https://www.fordlincolnofcookeville.com/ | id=2239
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Ford of Elizabethton | url=https://www.fordofelizabethton.com/ | id=2240
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Fort Mill Hyundai | url=https://www.fortmillhyundai.com/ | id=2241
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Freehold Ford | url=https://www.freeholdford.com/ | id=2242
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Gary Yeoman's Ford Daytona Beach | url=https://www.garyyeomansford.com/ | id=2243
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Gary Yeoman's Palm Bay Ford | url=https://www.palmbayford.com/ | id=2244
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Frankfort | url=https://www.frankfortford.com/ | id=2245
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Knoxville | url=https://www.garyyeomansfordknoxville.com/ | id=2246
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Ocala | url=https://www.garyyeomansfordocala.com/ | id=2247
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Ford Villages | url=https://www.garyyeomansfordvillages.com/ | id=2248
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Honda | url=https://www.garyyeomanshonda.com/ | id=2249
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Lincoln Daytona Beach | url=https://www.garyyeomanslincoln.com/ | id=2250
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Gary Yeomans Lincoln Ocala | url=https://www.garyyeomanslincolnocala.com/ | id=2251
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Gary Yeomans PreOwned Supercenter | url=https://www.garyyeomansusedcars.com/ | id=2252
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Gastonia Chevrolet Buick GMC Cadillac | url=https://www.gastoniachevroletbuickgmc.com/ | id=2253
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Gastonia Chrysler Dodge Jeep Ram | url=https://www.gastoniadodge.com/ | id=2254
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=George's Used Cars | url=https://www.georgesapproval.com/ | id=2255
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Glanzmann Subaru | url=https://www.glanzmann.com/ | id=2256
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Granbury Nissan | url=https://www.granburynissan.com/ | id=2257
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Greenwood Ford | url=https://www.greenwoodford.com/ | id=2258
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Greenwood Lincoln | url=https://www.greenwoodlincoln.com/ | id=2259
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Gwinnett Place Honda | url=https://www.gphonda.com/ | id=2260
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Acura Charlotte | url=https://www.hendrickacura.com/ | id=2261
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Acura of Pleasanton | url=https://www.acuraofpleasanton.com/ | id=2262
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Acura Southpoint | url=https://www.acurasouthpoint.com/ | id=2263
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Buick GMC Cary | url=https://www.hendrickbuickgmccary.com/ | id=2264
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Cadillac Monroe | url=https://www.hendrickcadillacmonroe.com/ | id=2265
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick CDJR of Concord | url=https://www.hendrickchryslerdodgejeepramofconcord.com/ | id=2266
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Buick GMC Southpoint | url=https://www.hendrickgmsouthpoint.com/ | id=2267
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Cary | url=https://www.hendrickchevrolet.com/ | id=2268
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Columbia | url=https://www.hendrickchevroletcolumbia.com/ | id=2269
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Hoover | url=https://www.hendrickchevroletbirmingham.com/ | id=2270
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Monroe | url=https://www.hendrickchevroletmonroe.com/ | id=2271
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Chevrolet Shawnee Mission | url=https://www.chevyusa.com/ | id=2272
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Chrysler Dodge Jeep Ram Hoover | url=https://www.hendrickchryslerdodgejeepram.com/ | id=2273
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Chrysler Jeep Fiat Fayetteville | url=https://www.hendrickchryslerjeep.com/ | id=2274
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Dodge RAM Cary | url=https://www.hendrickdodge.com/ | id=2275
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick GMC Columbia | url=https://www.hendrickgmccolumbia.com/ | id=2276
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Honda Bradenton | url=https://www.hendrickhondabradenton.com/ | id=2277
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Honda Easley | url=https://www.hendrickhondasc.com/ | id=2278
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Honda Hickory | url=https://www.hendrickhondahickory.com/ | id=2279
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Honda of Charleston | url=https://www.charlestonhonda.com/ | id=2280
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Honda of Concord | url=https://www.hondaofconcord.com/ | id=2281
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Honda South Blvd | url=https://www.hendrickhonda.com/ | id=2282
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick KIA of Cary | url=https://www.hendrickkia.com/ | id=2283
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Kia of Concord | url=https://www.hendrickkiaofconcord.com/ | id=2284
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick MINI Charlotte | url=https://www.hendrickmini.com/ | id=2285
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Subaru Hoover | url=https://www.hendricksubaruhoover.com/ | id=2286
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Subaru Southpoint | url=https://www.subarusouthpoint.com/ | id=2287
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Toyota Apex | url=https://www.hendricktoyotaapex.com/ | id=2288
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Toyota Concord | url=https://www.hendricktoyotaconcord.com/ | id=2289
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Toyota Merriam | url=https://www.hendricktoyotamerriam.com/ | id=2290
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Toyota North Charleston | url=https://www.hendricktoyotanorthcharleston.com/ | id=2291
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Volkswagen Frisco | url=https://www.hendrickvwfrisco.com/ | id=2292
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Volkswagen of Concord | url=https://www.hendrickvwofconcord.com/ | id=2293
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hendrick Volvo Cars of Charleston | url=https://www.hendrickvolvocars.com/ | id=2294
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Honda Cars of Aiken | url=https://www.hondacarsofaiken.com/ | id=2295
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Honda Cars of McKinney | url=https://www.hondacarsofmckinney.com/ | id=2296
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Honda Cars of Rock Hill | url=https://www.hondacarsrockhill.com/ | id=2297
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Honda Indian Trail | url=https://www.hondaofindiantrail.com/ | id=2298
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Honda of Bridgewater | url=https://www.hondabridgewater.com/ | id=2299
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Honda of Huntersville | url=https://www.hondahuntersville.com/ | id=2300
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Honda of Newnan | url=https://www.hondaofnewnan.com/ | id=2301
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hoover Chrysler Dodge Jeep Ram Summerville | url=https://www.hooverjeepchrysler.net/ | id=2302
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Hyundai of Asheville | url=https://www.hyundaiofasheville.com/ | id=2303
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Independence Mazda | url=https://www.independencemazda.com/ | id=2304
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Jackie Cooper Infiniti | url=https://jackiecooperinfiniti.com/ | id=2305
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Jackie Cooper Mercedes | url=https://jackiecoopermercedes.com/ | id=2306
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Jackie Cooper Nissan | url=https://jackiecoopernissan.com/ | id=2307
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Jacksonville Chrysler Dodge Jeep Ram | url=https://www.jaxcjdr.com/ | id=2308
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Jeff Gordon Chevrolet | url=https://www.jeffgordonchevy.com/ | id=2309
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Joe Cooper Chevrolet | url=https://joecooperchevroletcadillacgmc.com/ | id=2310
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Joe Cooper Dodge Jeep Shawnee | url=https://joecooperdodgejeep.com/ | id=2311
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Joe Cooper Dodge of Yukon | url=https://joecooperdodgeyukon.com/ | id=2312
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Joe Cooper Ford Edmond | url=https://joecooperfordedmond.com/ | id=2313
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Joe Cooper Ford of Yukon | url=https://joecooperfordyukon.com/ | id=2314
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Joe Cooper Ford Shawnee | url=https://joecooperfordshawnee.com/ | id=2315
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Joe Cooper Hyundai of Midwest City | url=https://joecooperhyundai.com/ | id=2316
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Joe Cooper Lincoln of Edmond | url=https://joecooperlincoln.com/ | id=2317
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=JT's Chrysler Dodge Jeep Ram of Lexington | url=https://www.jtschryslerdodgejeepram.com/ | id=2318
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=JT's Dodgeland of Columbia | url=https://jtscdjrofcolumbia.com/ | id=2319
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=JT's Kia of Columbia | url=https://www.jtskia.com/ | id=2320
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=JT's Kia of Columbia - Greystone | url=https://www.kiacolumbia.com/ | id=2321
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=JTs Kia of Rock Hill | url=https://www.jtskiarockhill.com/ | id=2322
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Keffer Mazda | url=https://www.keffermazda.com/ | id=2323
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Keith Hawthorne Hyundai of Gastonia | url=https://www.hyundaiofgastonia.com/ | id=2324
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Kelly Honda | url=https://www.kelly-honda.com/ | id=2325
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Kelly Infiniti | url=https://www.kellyinfiniti.com/ | id=2326
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Kelly Nissan of Lynnfield | url=https://www.kellynissanoflynnfield.com/ | id=2327
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Kelly Nissan of Woburn | url=https://www.kellynissanofwoburn.com/ | id=2328
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Kelly Volkswagen | url=https://www.kelly-vw.com/ | id=2329
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Kimberly Eakin Kia | url=https://www.kimberlyeakinkia.com/ | id=2330
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Lake Norman Chrysler Dodge Jeep Ram | url=https://www.lakenormanchrysler.com/ | id=2331
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Lake Norman Hyundai | url=https://www.lakenormanhyundai.com/ | id=2332
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Lilliston Chrysler Dodge Jeep Ram | url=https://www.lillistonchryslerdodgejeep.com/ | id=2333
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Lilliston Ford | url=https://www.lillistonford.com/ | id=2334
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Lindsay Buick GMC | url=https://www.lindsaybuickgmctruck.com/ | id=2335
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Madison Honda | url=https://www.madisonhonda.com/ | id=2336
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Mall of Georgia Mazda | url=https://www.mallofgamazda.com/ | id=2337
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Mall of Georgia MINI | url=https://www.mallofgamini.com/ | id=2338
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Mathews Honda of Paris | url=https://www.hondaofparis.net/ | id=2339
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Mathews Nissan of Paris | url=https://www.parisnissan.com/ | id=2340
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=McSweeney Chevrolet GMC | url=https://www.mcsweeneychevygmc.com/ | id=2341
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=McSweeney Chrysler Dodge Jeep Ram - Clanton | url=https://www.mcsweeneycdjr.com/ | id=2342
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=McSweeney Chrysler Dodge Jeep Ram - Pell City | url=https://www.mcsweeneychryslerdodgejeepram.com/ | id=2343
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Mercedes-Benz of San Antonio | url=https://www.mbofsa.com/ | id=2344
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Mike Reichenbach Ford Lincoln | url=https://www.mikereichenbachfordflorence.com/ | id=2345
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Mike Terry Chevrolet GMC | url=https://www.mterryautogroup.com/ | id=2346
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Mike Terry Chevrolet Refugio | url=https://www.miketerrychevrolet.com/ | id=2347
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Mike Terry Ford Mexia | url=https://www.miketerryford.com/ | id=2348
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Mike Terry Hyundai of Silsbee | url=https://www.miketerryhyundai.com/ | id=2349
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Monroe Nissan | url=https://www.monroenissan.com/ | id=2350
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Myrtle Beach Chrysler Jeep | url=https://www.myrtlebeachchryslerjeep.net/ | id=2351
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Nissan  of  Rockville  Centre | url=https://www.nissanofrockvillecentre.com/ | id=2352
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Nissan of Bay Shore | url=https://www.nissanofbayshore.com/ | id=2353
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Nissan of Garden City | url=https://www.nissanofgardencity.com/ | id=2354
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Nissan of Hendersonville | url=https://www.nissanofhendersonville.com/ | id=2355
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Nissan of Huntington | url=https://www.nissanofhuntington.com/ | id=2356
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Nissan of Richmond | url=https://www.nissanrva.com/ | id=2357
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=North Knoxville CDJR | url=https://www.northknoxcdjr.com/ | id=2358
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Octane Buick GMC of Santa Fe | url=https://www.octanegmc.com/ | id=2359
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Owen Ford Jarratt | url=https://www.owenford.com/ | id=2360
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Parks Buick GMC Greenville | url=https://www.parksbuickgmc.com/ | id=2361
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Parks Buick GMC Kernersville | url=https://www.parksgmckernersville.com/ | id=2362
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Parks Chevrolet Charlotte | url=https://www.parkscharlotte.com/ | id=2363
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Parks Chevrolet Huntersville | url=https://www.parkschevrolethuntersville.com/ | id=2364
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Parks Chevrolet Kernersville | url=https://www.parkschevy.com/ | id=2365
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Parks Chevrolet Richmond | url=https://www.parksrichmond.com/ | id=2366
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Parks Chevrolet Spartanburg | url=https://www.parkschevroletspartanburg.com/ | id=2367
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Parks Ford Hendersonville | url=https://www.parksfordhendersonville.com/ | id=2368
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Parks Motors | url=https://www.parksmotors.com/ | id=2369
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Patriot Chevrolet GMC | url=https://www.patriotchevroletgmc.com/ | id=2370
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Paul Miller Auto Outlet | url=https://www.paulmillerauto.com/ | id=2371
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Paul Miller Ford | url=https://www.paulmillerford.com/ | id=2372
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Paul Miller Mazda | url=https://www.paulmillermazda.com/ | id=2373
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Peoria Toyota | url=https://www.peoriatoyota.com/ | id=2374
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Priority Chevrolet Chesapeake | url=https://www.prioritychevrolet.com/ | id=2375
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Priority Honda Hampton | url=https://www.priorityhondahampton.com/ | id=2376
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Priority Infiniti Greenbrier | url=https://www.priorityinfiniti.com/ | id=2377
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Reggie Jackson Airport Honda | url=https://www.reggiejacksonairporthonda.com/ | id=2378
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Buick GMC Duluth | url=https://www.rickhendrickbuickgmcatlanta.com/ | id=2379
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Cadillac Norfolk | url=https://www.rickhendrickcadillacnorfolk.com/ | id=2380
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick CDJRF of North Charleston | url=https://www.jeephendrick.com/ | id=2381
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Buick GMC Richmond | url=https://www.hendrickchevybuickgmcrichmond.com/ | id=2382
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Charleston | url=https://www.rickhendrickchevy.com/ | id=2383
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Duluth | url=https://www.hendrickatlanta.com/ | id=2384
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Naples | url=https://www.rickhendrickchevynaples.com/ | id=2385
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet Norfolk | url=https://www.rickhendrickchevroletnorfolk.com/ | id=2386
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chevrolet of Buford | url=https://www.hendrickbuford.com/ | id=2387
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chrysler Dodge Jeep Ram Duluth | url=https://www.hendrickcdjratlanta.com/ | id=2388
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Chrysler Dodge Jeep Ram Fiat Wilmington | url=https://www.hendrickjeepwilmington.com/ | id=2389
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick City Chevrolet | url=https://www.citychevrolet.com/ | id=2390
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick DCJR Charleston | url=https://www.rickhendrickdodge.com/ | id=2391
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Honda | url=https://www.rickhendrickhonda.com/ | id=2392
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Toyota of Fayetteville | url=https://www.rickhendricktoyota.com/ | id=2393
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rick Hendrick Toyota Sandy Springs | url=https://www.rickhendricktoyotasandysprings.com/ | id=2394
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Rusty Wallace Kia Alcoa | url=https://www.rustywallacekiaalcoa.com/ | id=2395
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Sands Chrysler Dodge Jeep Ram | url=https://www.sandschryslerjeepdodge.net/ | id=2396
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Secret City Chrysler Dodge Jeep Ram | url=https://www.secretcitycdjr.com/ | id=2397
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Serra Honda Brighton | url=https://www.serrahondabrighton.com/ | id=2398
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=South Strand Chrysler Dodge Jeep Ram | url=https://www.southstrandchrysler.com/ | id=2399
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Stevenson Hendrick Honda Wilmington | url=https://www.stevensonhendrickhonda.com/ | id=2400
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Stevenson Hendrick Mazda | url=https://www.stevensonhendrickmazda.com/ | id=2401
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Stevenson-Hendrick Honda Jacksonville | url=https://www.stevensonhendrickhondajacksonville.com/ | id=2402
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Stevenson-Hendrick Toyota Jacksonville | url=https://www.stevensonhendricktoyota.com/ | id=2403
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Stokes Chevrolet of Moncks Corner | url=https://www.stokeschevy.com/ | id=2404
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Stokes Hodges Ford | url=https://www.stokeshodgesford.com/ | id=2405
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Stokes Hodges Kia | url=https://www.stokeshodgeskia.com/ | id=2406
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Stone Mountain Honda | url=https://www.hondaofstonemountain.com/ | id=2407
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Team Chevrolet GMC Salisbury | url=https://www.teamchevync.com/ | id=2408
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Team Chevrolet of Goldsboro | url=https://www.teamgoldsboro.com/ | id=2409
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Team Chevrolet of Swansboro | url=https://www.teamswansboro.com/ | id=2410
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Team Chrysler Dodge Ram of Morganton | url=https://www.teammorganton.com/ | id=2411
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Team Dodge Ram Fiat Myrtle Beach | url=https://www.teamdodgeramsc.com/ | id=2412
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Ted Russell Ford | url=https://www.tedrussellford.net/ | id=2413
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Ted Russell Lincoln | url=https://www.tedrusselllincoln.net/ | id=2414
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Terry Labonte Chevrolet | url=https://www.terrylabontechevy.com/ | id=2415
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Terry Lambert Hyundai | url=https://www.terrylamberthyundai.com/ | id=2416
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Toyota Knoxville | url=https://www.toyotaknoxville.com/ | id=2417
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Toyota of Murfreesboro | url=https://www.toyotaofmurfreesboro.com/ | id=2418
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Toyota of Wilmington | url=https://www.toyotaofwilmington.com/ | id=2419
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Victory Chrysler Dodge Jeep Ram | url=https://www.victoryshallotte.com/ | id=2420
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Volkswagen of Murrieta | url=https://www.vwofmurrieta.com/ | id=2421
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=Volunteer Auto Group | url=https://www.volauto.com/ | id=2422
+2026-02-07 18:10:26 - database - INFO - info:69 - Site added | client=VW of Huntington | url=https://www.vwofhuntington.com/ | id=2423
+2026-02-07 18:10:26 - database - INFO - info:69 - Imported sites from DataFrame | count=219
+2026-02-07 18:10:26 - tabs.manager_tab - INFO - info:69 - Data synced to database | records=219
+2026-02-07 18:10:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_181041.csv
+2026-02-07 18:15:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_181541.csv
+2026-02-07 18:20:41 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_182041.csv
+2026-02-07 18:21:02 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 18:21:03 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 18:21:03 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_182041.csv
+2026-02-07 18:21:04 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_182041.csv
+2026-02-07 18:22:51 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 18:22:52 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 18:22:52 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_182041.csv
+2026-02-07 18:22:52 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_182041.csv
+2026-02-07 18:27:52 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_182752.csv
+2026-02-07 18:32:52 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_183252.csv
+2026-02-07 18:35:42 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 18:35:43 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 18:35:43 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_183252.csv
+2026-02-07 18:35:43 - __main__ - WARNING - warning:73 - Could not load last project | exception=too many values to unpack (expected 2)
+2026-02-07 18:35:51 - UncaughtException - CRITICAL - critical:89 - Uncaught exception
+Exception: too many values to unpack (expected 2)
+Traceback: NoneType: None
+
+2026-02-07 18:38:39 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 18:38:40 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 18:38:40 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_183252.csv
+2026-02-07 18:38:40 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_183252.csv
+2026-02-07 18:43:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_184339.csv
+2026-02-07 18:48:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_184839.csv
+2026-02-07 18:53:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_185339.csv
+2026-02-07 18:58:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_185839.csv
+2026-02-07 19:03:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_190339.csv
+2026-02-07 19:08:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_190839.csv
+2026-02-07 19:13:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_191339.csv
+2026-02-07 19:18:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_191839.csv
+2026-02-07 19:23:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_192339.csv
+2026-02-07 19:28:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_192839.csv
+2026-02-07 19:33:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_193339.csv
+2026-02-07 19:38:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_193839.csv
+2026-02-07 19:43:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_194339.csv
+2026-02-07 19:48:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_194839.csv
+2026-02-07 19:53:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_195339.csv
+2026-02-07 19:58:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_195839.csv
+2026-02-07 20:03:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_200339.csv
+2026-02-07 20:08:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_200839.csv
+2026-02-07 20:13:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_201339.csv
+2026-02-07 20:18:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_201839.csv
+2026-02-07 20:23:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_202339.csv
+2026-02-07 20:28:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_202839.csv
+2026-02-07 20:33:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_203339.csv
+2026-02-07 20:38:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_203839.csv
+2026-02-07 20:43:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_204339.csv
+2026-02-07 20:48:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_204839.csv
+2026-02-07 20:53:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_205339.csv
+2026-02-07 20:58:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_205839.csv
+2026-02-07 21:03:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_210339.csv
+2026-02-07 21:08:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_210839.csv
+2026-02-07 21:13:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_211339.csv
+2026-02-07 21:18:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_211839.csv
+2026-02-07 21:23:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_212339.csv
+2026-02-07 21:28:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_212839.csv
+2026-02-07 21:33:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_213339.csv
+2026-02-07 21:38:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_213839.csv
+2026-02-07 21:43:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_214339.csv
+2026-02-07 21:48:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_214839.csv
+2026-02-07 21:53:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_215339.csv
+2026-02-07 21:58:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_215839.csv
+2026-02-07 22:03:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_220339.csv
+2026-02-07 22:08:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_220839.csv
+2026-02-07 22:13:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_221339.csv
+2026-02-07 22:18:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_221839.csv
+2026-02-07 22:23:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_222339.csv
+2026-02-07 22:28:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_222839.csv
+2026-02-07 22:33:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_223339.csv
+2026-02-07 22:38:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_223839.csv
+2026-02-07 22:43:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_224339.csv
+2026-02-07 22:48:39 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_224839.csv
+2026-02-07 22:51:46 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 22:51:47 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 22:51:47 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_224839.csv
+2026-02-07 22:51:47 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_224839.csv
+2026-02-07 22:52:16 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 22:52:17 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 22:52:17 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_224839.csv
+2026-02-07 22:52:17 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_224839.csv
+2026-02-07 22:57:17 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_225717.csv
+2026-02-07 22:58:14 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 22:58:15 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 22:58:15 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_225717.csv
+2026-02-07 22:58:15 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_225717.csv
+2026-02-07 23:01:35 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 23:01:36 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 23:01:36 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_225717.csv
+2026-02-07 23:01:36 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_225717.csv
+2026-02-07 23:02:32 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 23:02:33 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 23:02:33 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_225717.csv
+2026-02-07 23:02:34 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_225717.csv
+2026-02-07 23:07:33 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_230733.csv
+2026-02-07 23:12:33 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_231233.csv
+2026-02-07 23:17:33 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_231733.csv
+2026-02-07 23:22:33 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_232233.csv
+2026-02-07 23:26:42 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 23:26:42 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 23:26:42 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_232233.csv
+2026-02-07 23:26:43 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_232233.csv
+2026-02-07 23:27:58 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 23:27:59 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 23:27:59 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_232233.csv
+2026-02-07 23:27:59 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_232233.csv
+2026-02-07 23:32:59 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_233259.csv
+2026-02-07 23:37:59 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_233759.csv
+2026-02-07 23:42:59 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_234259.csv
+2026-02-07 23:43:37 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 23:43:37 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 23:43:37 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_234259.csv
+2026-02-07 23:43:38 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_234259.csv
+2026-02-07 23:45:29 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 23:45:29 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 23:45:29 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_234259.csv
+2026-02-07 23:45:30 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_234259.csv
+2026-02-07 23:50:29 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_235029.csv
+2026-02-07 23:53:04 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 23:53:05 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 23:53:05 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_235029.csv
+2026-02-07 23:53:05 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_235029.csv
+2026-02-07 23:54:37 - logger - INFO - info:69 - Logging system initialized
+2026-02-07 23:54:38 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-07 23:54:38 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260207_235029.csv
+2026-02-07 23:54:39 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260207_235029.csv
+2026-02-07 23:59:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260207_235938.csv
+2026-02-08 00:04:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_000438.csv
+2026-02-08 00:09:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_000938.csv
+2026-02-08 00:14:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_001438.csv
+2026-02-08 00:19:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_001938.csv
+2026-02-08 00:24:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_002438.csv
+2026-02-08 00:29:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_002938.csv
+2026-02-08 00:34:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_003438.csv
+2026-02-08 00:39:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_003938.csv
+2026-02-08 00:44:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_004438.csv
+2026-02-08 00:49:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_004938.csv
+2026-02-08 00:54:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_005438.csv
+2026-02-08 00:59:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_005938.csv
+2026-02-08 01:04:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_010438.csv
+2026-02-08 01:09:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_010938.csv
+2026-02-08 01:14:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_011438.csv
+2026-02-08 01:19:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_011938.csv
+2026-02-08 01:24:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_012438.csv
+2026-02-08 01:29:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_012938.csv
+2026-02-08 01:34:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_013438.csv
+2026-02-08 01:39:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_013938.csv
+2026-02-08 01:44:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_014438.csv
+2026-02-08 01:49:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_014938.csv
+2026-02-08 01:54:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_015438.csv
+2026-02-08 01:59:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_015938.csv
+2026-02-08 02:04:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_020438.csv
+2026-02-08 02:09:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_020938.csv
+2026-02-08 02:14:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_021438.csv
+2026-02-08 02:19:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_021938.csv
+2026-02-08 02:24:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_022438.csv
+2026-02-08 02:29:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_022938.csv
+2026-02-08 02:34:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_023438.csv
+2026-02-08 02:39:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_023938.csv
+2026-02-08 02:44:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_024438.csv
+2026-02-08 02:49:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_024938.csv
+2026-02-08 02:54:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_025438.csv
+2026-02-08 02:59:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_025938.csv
+2026-02-08 03:04:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_030438.csv
+2026-02-08 03:09:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_030938.csv
+2026-02-08 03:14:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_031438.csv
+2026-02-08 03:19:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_031938.csv
+2026-02-08 03:24:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_032438.csv
+2026-02-08 03:29:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_032938.csv
+2026-02-08 03:34:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_033438.csv
+2026-02-08 03:39:38 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_033938.csv
+2026-02-08 04:50:52 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_045051.csv
+2026-02-08 04:55:51 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_045551.csv
+2026-02-08 05:17:23 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_051723.csv
+2026-02-08 05:39:07 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_053907.csv
+2026-02-08 05:44:06 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_054406.csv
+2026-02-08 05:49:06 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_054906.csv
+2026-02-08 05:54:06 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_055406.csv
+2026-02-08 05:59:06 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_055906.csv
+2026-02-08 06:04:06 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_060406.csv
+2026-02-08 06:09:06 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_060906.csv
+2026-02-08 06:14:06 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_061406.csv
+2026-02-08 06:19:06 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_061906.csv
+2026-02-08 06:24:06 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_062406.csv
+2026-02-08 06:29:06 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_062906.csv
+2026-02-08 06:34:06 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_063406.csv
+2026-02-08 06:54:12 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_065412.csv
+2026-02-08 06:59:11 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_065911.csv
+2026-02-08 07:04:11 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_070411.csv
+2026-02-08 07:09:11 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_070911.csv
+2026-02-08 07:14:11 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_071411.csv
+2026-02-08 07:19:11 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_071911.csv
+2026-02-08 07:24:11 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_072411.csv
+2026-02-08 07:29:11 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_072911.csv
+2026-02-08 07:34:11 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_073411.csv
+2026-02-08 07:39:11 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_073911.csv
+2026-02-08 07:44:11 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_074411.csv
+2026-02-08 07:48:39 - logger - INFO - info:69 - Logging system initialized
+2026-02-08 07:48:40 - __main__ - INFO - info:69 - Auto-save enabled | interval=300
+2026-02-08 07:48:40 - __main__ - INFO - info:69 - Loading most recent autosave (newer than manual save) | path=data/autosave_20260208_074411.csv
+2026-02-08 07:48:41 - __main__ - INFO - info:69 - Loaded last project | path=data/autosave_20260208_074411.csv
+2026-02-08 07:53:40 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_075340.csv
+2026-02-08 07:58:40 - __main__ - INFO - info:69 - Auto-save completed | path=data/autosave_20260208_075840.csv

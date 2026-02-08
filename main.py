@@ -11,6 +11,7 @@ from PyQt6.QtCore import Qt, QSize, QTimer
 
 from tabs.manager_tab import ManagerTab
 from tabs.scanner_tab import ScannerTab
+from tabs.dashboard_tab import DashboardTab
 
 import assets.styles as styles 
 
@@ -122,7 +123,7 @@ class MainApp(QMainWindow):
         header_layout.addStretch()
         
         # Version label
-        version_label = QLabel("v1.0.0")
+        version_label = QLabel("v2.3.0")
         version_label.setStyleSheet(f"""
             font-size: 11px;
             color: {styles.COLORS["text_tertiary"]};
@@ -138,19 +139,25 @@ class MainApp(QMainWindow):
         self.tabs.setTabPosition(QTabWidget.TabPosition.North)
         self.tabs.setDocumentMode(True)
         
-        # Make tabs expand to fill width (50/50 split)
+        # Make tabs expand to fill width (33/33/33 split)
         self.tabs.tabBar().setExpanding(True)
 
         # Initialize the tabs
         self.manager = ManagerTab()
         self.scanner = ScannerTab()
+        self.dashboard = DashboardTab()
 
+        self.tabs.addTab(self.dashboard, "  Dashboard")
         self.tabs.addTab(self.manager, "  Data Manager")
         self.tabs.addTab(self.scanner, "  Site Scanner")
         
         # Add icons to tabs (using brand color)
-        self.tabs.setTabIcon(0, qta.icon('fa5s.table', color=styles.COLORS["brand_primary"]))
-        self.tabs.setTabIcon(1, qta.icon('fa5s.robot', color=styles.COLORS["brand_primary"]))
+        self.tabs.setTabIcon(0, qta.icon('fa5s.chart-pie', color=styles.COLORS["brand_primary"]))
+        self.tabs.setTabIcon(1, qta.icon('fa5s.table', color=styles.COLORS["brand_primary"]))
+        self.tabs.setTabIcon(2, qta.icon('fa5s.robot', color=styles.COLORS["brand_primary"]))
+        
+        # Connect dashboard refresh signal
+        self.dashboard.refresh_requested.connect(self.refresh_dashboard)
         
         main_layout.addWidget(self.tabs)
 
@@ -240,6 +247,7 @@ class MainApp(QMainWindow):
                 self.manager.file_path = last_file
                 self.manager.populate_table()
                 self.sync_data()
+                self.refresh_dashboard()
                 
                 filename = os.path.basename(last_file)
                 self.status_label.setText(f"Loaded: {filename}")
@@ -284,13 +292,22 @@ class MainApp(QMainWindow):
 
     def on_tab_changed(self, index):
         """Handle tab switching."""
-        if index == 1:  # Scanner tab
+        if index == 0:  # Dashboard tab
+            self.refresh_dashboard()
+            self.status_label.setText("Dashboard: Overview of all sites")
+        elif index == 1:  # Manager tab
+            self.manager.table.setSortingEnabled(True)
+            self.status_label.setText("Manager Mode: Edit your client list")
+        elif index == 2:  # Scanner tab
             self.manager.table.setSortingEnabled(False)
             self.sync_data()
-            self.status_label.setText(" Scanner Mode: Ready to scan")
-        else:  # Manager tab
-            self.manager.table.setSortingEnabled(True)
-            self.status_label.setText(" Manager Mode: Edit your client list")
+            self.status_label.setText("Scanner Mode: Ready to scan")
+
+    def refresh_dashboard(self):
+        """Refresh the dashboard with current data."""
+        df = self.manager.get_dataframe()
+        self.dashboard.update_dashboard(df)
+        self.update_client_count()
 
     def sync_data(self):
         """Sync data from Manager to Scanner."""
@@ -307,7 +324,7 @@ class MainApp(QMainWindow):
             active_item = self.manager.table.item(row, 9)  # Active column
             if active_item and active_item.text() == "Yes":
                 active_count += 1
-        self.client_count_label.setText(f"Active Clients: {active_count} ")
+        self.client_count_label.setText(f"Active Clients: {active_count}")
 
     def update_master_record(self, original_idx, status, msg, vendor, config):
         """Update the Manager table when Scanner finds a result."""

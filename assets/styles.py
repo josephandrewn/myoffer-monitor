@@ -15,9 +15,11 @@ COLORS = {
     "bg_white": "#F5F5F5",           # Cards and elevated surfaces
     "bg_subtle": "#E5E5E5",          # Subtle differentiation
     "bg_hover": "#D8E8F8",           # Hover state (light blue tint)
+    "bg_dark": "#676767",            # Darker background
     
     # Text
     "text_primary": "#1A1A2E",       # Near black with slight blue
+    "text_soft": "#222222",          # Light black text
     "text_secondary": "#5A6978",     # Medium gray-blue
     "text_tertiary": "#8E99A4",      # Light gray
     "text_inverse": "#FFFFFF",       # White text
@@ -41,8 +43,9 @@ COLORS = {
     "warning": "#E67E22",            # Warm orange
     "warning_hover": "#D35400",
     "warning_light": "#FEF5E7",
+    "warning_yellow": "#D5AE00",
     
-    "danger": "#DC3545",             # Red
+    "danger": "#DD1F32",             # Red
     "danger_hover": "#C82333",
     "danger_light": "#FDEAEA",
     
@@ -64,6 +67,7 @@ COLORS = {
     
     "row_unverifiable_bg": "#FEF3C7", # Light amber/yellow
     "row_unverifiable_text": "#92400E", # Dark amber (very readable)
+    "row_unverifiable_red": "#721403", 
     
     "row_inactive_bg": "#F5F5F5",    # Very light gray
     "row_inactive_text": "#A0A0A0",  # Muted
@@ -124,7 +128,7 @@ MODERN_STYLESHEET = f"""
         border-bottom: none;
         padding: 14px 24px;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 16px;
         color: {COLORS["text_secondary"]};
         min-width: 150px;
         border-top-left-radius: 10px;

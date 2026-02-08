@@ -40,7 +40,7 @@ class BlockTracker:
     """
     
     BLOCK_THRESHOLD = 3  # Consecutive blocks before UNVERIFIABLE
-    HISTORY_DAYS = 7     # Only count blocks within this window
+    HISTORY_DAYS = 365     # Only count blocks within this window
     
     def __init__(self, data_dir: str = "data"):
         self.data_dir = data_dir
@@ -840,6 +840,13 @@ class BatchWorker(QThread):
         """Creates a stealthy browser instance with randomized fingerprints."""
         last_err = None
         
+        # Proactively detect Chrome version to avoid mismatch errors
+        if version_main is None:
+            detected_version = self.get_chrome_version()
+            if detected_version:
+                version_main = detected_version
+                print(f"Using detected Chrome version: {version_main}")
+        
         for attempt in range(3):
             try: 
                 options = uc.ChromeOptions()
@@ -1615,9 +1622,14 @@ class SiteMapWorker(QThread):
         driver = None
         
         try:
+            # Proactively detect Chrome version to avoid mismatch errors
+            chrome_version = self.get_chrome_version()
+            if chrome_version:
+                print(f"Using detected Chrome version: {chrome_version}")
+            
             # Try to create driver, with auto-retry on version mismatch
             try:
-                driver = self.create_driver()
+                driver = self.create_driver(version_main=chrome_version)
             except Exception as e:
                 error_msg = str(e).lower()
                 # Check for ChromeDriver version mismatch - multiple patterns
@@ -1630,12 +1642,11 @@ class SiteMapWorker(QThread):
                 
                 if version_mismatch:
                     print("ChromeDriver version mismatch detected!")
-                    print("Clearing cache and detecting Chrome version...")
+                    print("Clearing cache and retrying...")
                     self.clear_chromedriver_cache()
                     time.sleep(2)  # Give filesystem time to settle
                     
-                    # Detect actual Chrome version and retry with it
-                    chrome_version = self.get_chrome_version()
+                    # Retry with detected version
                     driver = self.create_driver(version_main=chrome_version)
                 else:
                     raise  # Re-raise if it's a different error

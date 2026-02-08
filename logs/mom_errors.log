@@ -2441,3 +2441,7 @@ Stacktrace:
 Exception: too many values to unpack (expected 4)
 Traceback: NoneType: None
 
+2026-02-07 18:35:51 - UncaughtException - CRITICAL - critical:89 - Uncaught exception
+Exception: too many values to unpack (expected 2)
+Traceback: NoneType: None
+
